@@ -11,3 +11,9 @@ var RedisStore = require('connect-redis')(session);
 //压缩模块
 var compression = require('compression');
 //安全模块
+var lusca = require('lusca');
+// 创建项目实例
+var app = express();
+
+// 定义EJS模板引擎和模板文件位置，也可以使用jade或其他模型引擎
+app.set('views', path.join(__dirname, 'views'));
