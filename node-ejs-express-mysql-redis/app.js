@@ -6,3 +6,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 //缓存模块
+var session = require('express-session');
+var RedisStore = require('connect-redis')(session);
+//压缩模块
+var compression = require('compression');
+//安全模块
