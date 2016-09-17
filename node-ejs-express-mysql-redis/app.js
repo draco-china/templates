@@ -17,3 +17,10 @@ var app = express();
 
 // 定义EJS模板引擎和模板文件位置，也可以使用jade或其他模型引擎
 app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+// 定义icon图标
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// 定义日志和输出级别
+app.use(logger('dev'));
+// 定义数据解析器
