@@ -24,3 +24,10 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 // 定义日志和输出级别
 app.use(logger('dev'));
 // 定义数据解析器
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+// 定义cookie解析器
+app.use(cookieParser());
+//定义压缩方式
+app.use(compression());
+// 定义静态文件目录
