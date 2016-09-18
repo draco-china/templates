@@ -31,3 +31,10 @@ app.use(cookieParser());
 //定义压缩方式
 app.use(compression());
 // 定义静态文件目录
+app.use(express.static(path.join(__dirname, 'public')));
+
+// 加载路由控制
+var routes = require('./routes');
+var users = require('./routes/users');
+
+//路由中间件
