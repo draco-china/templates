@@ -41,3 +41,10 @@ var users = require('./routes/users');
 var enrouten = require('express-enrouten');
 app.use(enrouten({
   directory: 'controllers'
+}));
+
+// 匹配路径和路由
+app.get('/', routes.index);
+app.get('/users', users.list);
+
+//缓存配置
