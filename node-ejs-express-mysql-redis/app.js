@@ -48,3 +48,6 @@ app.get('/', routes.index);
 app.get('/users', users.list);
 
 //缓存配置
+app.use(session({
+  name: 'session',
+  secret: 'GeminiSession', // 建议使用 128 个字符的随机字符串
