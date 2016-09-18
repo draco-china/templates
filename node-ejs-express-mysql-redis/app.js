@@ -38,3 +38,6 @@ var routes = require('./routes');
 var users = require('./routes/users');
 
 //路由中间件
+var enrouten = require('express-enrouten');
+app.use(enrouten({
+  directory: 'controllers'
