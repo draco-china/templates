@@ -51,3 +51,6 @@ app.get('/users', users.list);
 app.use(session({
   name: 'session',
   secret: 'GeminiSession', // 建议使用 128 个字符的随机字符串
+  resave: false,
+  saveUninitialized: true,
+  httpOnly: true,
