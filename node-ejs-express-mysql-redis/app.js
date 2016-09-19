@@ -54,3 +54,9 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   httpOnly: true,
+  store: new RedisStore({
+    host:'127.0.0.1',
+    port: 6379,
+    ttl: 60 * 60 * 24 * 30,   //Session的有效期为30天
+    //此属性可选。redis可以进行分库操作。若无此参数，则不进行分库
+    //db:'mydb'
