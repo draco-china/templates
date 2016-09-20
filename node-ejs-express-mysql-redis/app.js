@@ -74,3 +74,8 @@ app.use(lusca({
   hsts: {maxAge: 31536000, includeSubDomains: true, preload: true},
   xssProtection: true,
   nosniff:true
+}));
+
+// 404错误处理
+app.use(function(req, res, next) {
+  var err = new Error('Not Found');
