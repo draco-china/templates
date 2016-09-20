@@ -63,3 +63,8 @@ app.use(session({
   }),
   cookie: { maxAge: 60000 * 1000,secure: false },
   key: 'Gemini'
+}));
+
+//安全配置
+app.use(lusca({
+  csrf: false,
