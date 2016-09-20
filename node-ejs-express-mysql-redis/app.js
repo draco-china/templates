@@ -71,3 +71,6 @@ app.use(lusca({
   csp: {},
   xframe: 'SAMEORIGIN',
   p3p: 'CP=CAO PSA OUR',
+  hsts: {maxAge: 31536000, includeSubDomains: true, preload: true},
+  xssProtection: true,
+  nosniff:true
