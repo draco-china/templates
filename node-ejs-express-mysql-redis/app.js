@@ -79,3 +79,9 @@ app.use(lusca({
 // 404错误处理
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+// 开发环境，500错误处理和错误堆栈跟踪
+if (app.get('env') === 'development') {
