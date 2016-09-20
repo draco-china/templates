@@ -68,3 +68,6 @@ app.use(session({
 //安全配置
 app.use(lusca({
   csrf: false,
+  csp: {},
+  xframe: 'SAMEORIGIN',
+  p3p: 'CP=CAO PSA OUR',
