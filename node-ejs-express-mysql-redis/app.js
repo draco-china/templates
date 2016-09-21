@@ -85,3 +85,6 @@ app.use(function(req, res, next) {
 
 // 开发环境，500错误处理和错误堆栈跟踪
 if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
