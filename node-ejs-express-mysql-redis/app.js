@@ -91,3 +91,8 @@ if (app.get('env') === 'development') {
       message: err.message,
       error: err
     });
+  });
+}
+
+// 生产环境，500错误处理
+app.use(function(err, req, res, next) {
