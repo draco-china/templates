@@ -8,3 +8,4 @@ module.exports = function (router) {
 		res.render('index',{title:title});
 	});
 	router.get('/login', function (req, res) {
+		var title="Gemini,contact:Gemini-90s@Hotmail.com";
