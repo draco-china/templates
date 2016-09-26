@@ -11,3 +11,6 @@ module.exports = function (router) {
 		var title="Gemini,contact:Gemini-90s@Hotmail.com";
 		res.render('index',{title:title});
 	});
+};
+
+
