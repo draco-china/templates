@@ -12,3 +12,6 @@ var db_config = {
     password : 'gemini',
     database : 'nodesample'
 };
+var pool = mysql.createPool(db_config);
+
+pool.on('connection', function(connection) {
