@@ -15,3 +15,8 @@ var db_config = {
 var pool = mysql.createPool(db_config);
 
 pool.on('connection', function(connection) {
+    connection.query('SET SESSION auto_increment_increment=1');
+});
+
+//避免sql可以使用?作为标识符的占位符
+var getConnection=function(sql,callback){
