@@ -23,3 +23,5 @@ var getConnection=function(sql,callback){
     pool.getConnection(function(err,conn){
         if(err){
             handleError();
+            query();
+            setInterval(query, 5000);
