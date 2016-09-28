@@ -20,3 +20,6 @@ pool.on('connection', function(connection) {
 
 //避免sql可以使用?作为标识符的占位符
 var getConnection=function(sql,callback){
+    pool.getConnection(function(err,conn){
+        if(err){
+            handleError();
