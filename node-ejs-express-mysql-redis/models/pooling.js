@@ -25,3 +25,7 @@ var getConnection=function(sql,callback){
             handleError();
             query();
             setInterval(query, 5000);
+            callback(err,null,null);
+        }else{
+            conn.query(sql,function(qerr,vals,fields){
+                //释放连接
