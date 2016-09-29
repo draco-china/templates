@@ -35,3 +35,10 @@ var getConnection=function(sql,callback){
             });
         }
     });
+};
+
+//exports.getConnection = getConnection;
+module.exports=getConnection;
+
+var conn;
+//MySQL断线重连
