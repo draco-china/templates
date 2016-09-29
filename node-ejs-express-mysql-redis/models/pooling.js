@@ -29,3 +29,7 @@ var getConnection=function(sql,callback){
         }else{
             conn.query(sql,function(qerr,vals,fields){
                 //释放连接
+                conn.release();
+                //事件驱动回调
+                callback(qerr,vals,fields);
+            });
