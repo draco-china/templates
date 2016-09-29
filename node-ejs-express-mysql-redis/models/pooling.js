@@ -33,3 +33,5 @@ var getConnection=function(sql,callback){
                 //事件驱动回调
                 callback(qerr,vals,fields);
             });
+        }
+    });
