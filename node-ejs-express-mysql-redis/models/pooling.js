@@ -42,3 +42,8 @@ module.exports=getConnection;
 
 var conn;
 //MySQL断线重连
+function handleError () {
+    conn = mysql.createConnection(db_config);
+
+    //连接错误，2秒重试
+    conn.connect(function (err) {
