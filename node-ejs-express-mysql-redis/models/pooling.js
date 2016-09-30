@@ -47,3 +47,6 @@ function handleError () {
 
     //连接错误，2秒重试
     conn.connect(function (err) {
+        if (err) {
+            console.log('error when connecting to db:', err);
+            setTimeout(handleError , 2000);
