@@ -50,3 +50,6 @@ function handleError () {
         if (err) {
             console.log('error when connecting to db:', err);
             setTimeout(handleError , 2000);
+        }
+    });
+
