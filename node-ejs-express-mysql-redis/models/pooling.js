@@ -57,3 +57,6 @@ function handleError () {
         console.log('db error', err);
         // 如果是连接断开，自动重新连接
         if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+            handleError();
+        } else {
+            throw err;
