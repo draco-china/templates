@@ -60,3 +60,5 @@ function handleError () {
             handleError();
         } else {
             throw err;
+        }
+    });
