@@ -62,3 +62,7 @@ function handleError () {
             throw err;
         }
     });
+};
+//MySQL连接池的超时
+function query(){
+    console.log(new Date());
