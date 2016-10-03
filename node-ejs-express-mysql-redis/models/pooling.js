@@ -69,3 +69,9 @@ function query(){
     var sql = "show variables like 'wait_timeout'";
     conn.query(sql, function (err, res) {
         console.log(res);
+    });
+};
+
+
+
+/*获取插入行的id
