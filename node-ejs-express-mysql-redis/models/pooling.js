@@ -79,3 +79,8 @@ function query(){
  connection.query('INSERT INTO posts SET ?', {title: 'test'}, function(err, result) {
  if (err) throw err;
 
+ console.log(result.insertId);
+ });*/
+
+/*
+ 在js类使用如下
