@@ -75,3 +75,7 @@ function query(){
 
 
 /*获取插入行的id
+ 当使用自增主键时获取插入行id，如：
+ connection.query('INSERT INTO posts SET ?', {title: 'test'}, function(err, result) {
+ if (err) throw err;
+
