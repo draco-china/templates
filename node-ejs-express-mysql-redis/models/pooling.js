@@ -66,3 +66,6 @@ function handleError () {
 //MySQL连接池的超时
 function query(){
     console.log(new Date());
+    var sql = "show variables like 'wait_timeout'";
+    conn.query(sql, function (err, res) {
+        console.log(res);
