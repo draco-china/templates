@@ -84,3 +84,7 @@ function query(){
 
 /*
  在js类使用如下
+ var query=require("./lib/mysql.js");
+
+ getConnection("select 1 from 1",function(err,vals,fields){
+ });  */
