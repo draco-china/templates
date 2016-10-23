@@ -753,3 +753,128 @@
 
     if (!selector) {
       selector = $this.attr('href')
+      selector = selector && /#/.test(selector) && selector.replace(/.*(?=#[^\s]*$)/, '') //strip for ie7
+    }
+
+    $parent = selector && $(selector)
+
+    if (!$parent || !$parent.length) $parent = $this.parent()
+
+    return $parent
+  }
+
+
+  /* DROPDOWN PLUGIN DEFINITION
+   * ========================== */
+
+  var old = $.fn.dropdown
+
+  $.fn.dropdown = function (option) {
+    return this.each(function () {
+      var $this = $(this)
+        , data = $this.data('dropdown')
+      if (!data) $this.data('dropdown', (data = new Dropdown(this)))
+      if (typeof option == 'string') data[option].call($this)
+    })
+  }
+
+  $.fn.dropdown.Constructor = Dropdown
+
+
+ /* DROPDOWN NO CONFLICT
+  * ==================== */
+
+  $.fn.dropdown.noConflict = function () {
+    $.fn.dropdown = old
+    return this
+  }
+
+
+  /* APPLY TO STANDARD DROPDOWN ELEMENTS
+   * =================================== */
+
+  $(document)
+    .on('click.dropdown.data-api', clearMenus)
+    .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
+    .on('click.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
+    .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
+
+}(window.jQuery);
+/* =========================================================
+ * bootstrap-modal.js v2.3.2
+ * http://getbootstrap.com/2.3.2/javascript.html#modals
+ * =========================================================
+ * Copyright 2013 Twitter, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================= */
+
+
+!function ($) {
+
+  "use strict"; // jshint ;_;
+
+
+ /* MODAL CLASS DEFINITION
+  * ====================== */
+
+  var Modal = function (element, options) {
+    this.options = options
+    this.$element = $(element)
+      .delegate('[data-dismiss="modal"]', 'click.dismiss.modal', $.proxy(this.hide, this))
+    this.options.remote && this.$element.find('.modal-body').load(this.options.remote)
+  }
+
+  Modal.prototype = {
+
+      constructor: Modal
+
+    , toggle: function () {
+        return this[!this.isShown ? 'show' : 'hide']()
+      }
+
+    , show: function () {
+        var that = this
+          , e = $.Event('show')
+
+        this.$element.trigger(e)
+
+        if (this.isShown || e.isDefaultPrevented()) return
+
+        this.isShown = true
+
+        this.escape()
+
+        this.backdrop(function () {
+          var transition = $.support.transition && that.$element.hasClass('fade')
+
+          if (!that.$element.parent().length) {
+            that.$element.appendTo(document.body) //don't move modals dom position
+          }
+
+          that.$element.show()
+
+          if (transition) {
+            that.$element[0].offsetWidth // force reflow
+          }
+
+          that.$element
+            .addClass('in')
+            .attr('aria-hidden', false)
+
+          that.enforceFocus()
+
+          transition ?
+            that.$element.one($.support.transition.end, function () { that.$element.focus().trigger('shown') }) :
+            that.$element.focus().trigger('shown')
+
