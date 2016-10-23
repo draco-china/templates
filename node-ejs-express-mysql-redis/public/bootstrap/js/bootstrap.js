@@ -878,3 +878,81 @@
             that.$element.one($.support.transition.end, function () { that.$element.focus().trigger('shown') }) :
             that.$element.focus().trigger('shown')
 
+        })
+      }
+
+    , hide: function (e) {
+        e && e.preventDefault()
+
+        var that = this
+
+        e = $.Event('hide')
+
+        this.$element.trigger(e)
+
+        if (!this.isShown || e.isDefaultPrevented()) return
+
+        this.isShown = false
+
+        this.escape()
+
+        $(document).off('focusin.modal')
+
+        this.$element
+          .removeClass('in')
+          .attr('aria-hidden', true)
+
+        $.support.transition && this.$element.hasClass('fade') ?
+          this.hideWithTransition() :
+          this.hideModal()
+      }
+
+    , enforceFocus: function () {
+        var that = this
+        $(document).on('focusin.modal', function (e) {
+          if (that.$element[0] !== e.target && !that.$element.has(e.target).length) {
+            that.$element.focus()
+          }
+        })
+      }
+
+    , escape: function () {
+        var that = this
+        if (this.isShown && this.options.keyboard) {
+          this.$element.on('keyup.dismiss.modal', function ( e ) {
+            e.which == 27 && that.hide()
+          })
+        } else if (!this.isShown) {
+          this.$element.off('keyup.dismiss.modal')
+        }
+      }
+
+    , hideWithTransition: function () {
+        var that = this
+          , timeout = setTimeout(function () {
+              that.$element.off($.support.transition.end)
+              that.hideModal()
+            }, 500)
+
+        this.$element.one($.support.transition.end, function () {
+          clearTimeout(timeout)
+          that.hideModal()
+        })
+      }
+
+    , hideModal: function () {
+        var that = this
+        this.$element.hide()
+        this.backdrop(function () {
+          that.removeBackdrop()
+          that.$element.trigger('hidden')
+        })
+      }
+
+    , removeBackdrop: function () {
+        this.$backdrop && this.$backdrop.remove()
+        this.$backdrop = null
+      }
+
+    , backdrop: function (callback) {
+        var that = this
