@@ -27,3 +27,30 @@ nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
+html, body{
+	background:url('../images/1.jpg') no-repeat 0px 0px;
+	background-size:cover;
+	font-size: 100%;
+	font-family: 'Ubuntu', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a,p{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover,body a{
+	text-decoration:none;
+}
+/*-- main --*/
+.main h1 {
+    font-size:2.8em;
+    text-align: center;
+    padding: 1em 0 0;
+    color: #fff;
+}
+.wthree_copyright{
+	padding: 2em 0 5em;
+	padding-top:10%;
+}
