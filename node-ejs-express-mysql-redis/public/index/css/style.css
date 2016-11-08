@@ -105,3 +105,29 @@ body a:hover,body a{
     width:84.5%;
     font-family: 'Ubuntu', sans-serif;
 }
+.w3l_main_grid1_w3ls input[type="text"]{
+	background:url(../images/1.png) no-repeat 12px 10px;
+}
+.w3l_main_grid1_w3ls input[type="password"]{
+	background:url(../images/2.png) no-repeat 11px 9px;
+}
+.w3l_main_grid1_w3ls input[type="email"]{
+	background:url(../images/3.png) no-repeat 11px 9px;
+}
+.w3l_main_grid1_w3ls input[type="password"]:nth-child(2) {
+    margin:1.5em 0;
+}
+.w3l_main_grid1_w3ls input[type="email"]{
+	margin:1.5em 0 2.5em;
+}
+.w3l_main_grid1_w3ls label{
+	font-size:1em;
+	font-weight:400;
+	color:#999;
+	margin: 1.5em 0 0 0em;
+	text-transform:capitalize;
+}
+.w3l_main_grid1_w3ls label span{
+	color:#2B57EE;
+}
+.checkbox {
