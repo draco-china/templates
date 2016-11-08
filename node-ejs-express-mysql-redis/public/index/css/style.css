@@ -79,3 +79,29 @@ body a:hover,body a{
 }
 .w3l_main_grid1_w3ls h3{
 	font-size: 1.5em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: .7em;
+    background:#2B57EE;
+    text-align: center;
+}
+.w3l_main_grid1_w3ls_sub h3{
+    background:dodgerblue;
+}
+.w3l_main_grid1_w3ls:nth-child(3) h3{
+    background:#EE9E2B;
+}
+.w3l_main_grid1_w3ls_grid{
+	padding:2em;
+	background:#fff;
+}
+.w3l_main_grid1_w3ls input[type="text"],.w3l_main_grid1_w3ls input[type="password"],.w3l_main_grid1_w3ls input[type="email"]{
+	outline: none;
+    padding: 10px 10px 10px 40px;
+    font-size: 14px;
+    color: #212121;
+    border: none;
+    border-bottom: 1px solid #999;
+    width:84.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
