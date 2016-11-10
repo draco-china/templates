@@ -182,3 +182,30 @@ body a:hover,body a{
     font-family: 'Ubuntu', sans-serif;
     background:#2B57EE;
     cursor: pointer;
+    margin:1.5em 0 0;
+}
+.w3l_main_grid1_w3ls_sub input[type="submit"] {
+    background: dodgerblue;
+}
+.w3l_main_grid1_w3ls:nth-child(3) input[type="reset"] {
+    background: #EE9E2B;
+}
+.w3l_main_grid1_w3ls:nth-child(3) input[type="submit"] {
+    background:#EE2B2B;
+}
+.w3l_main_grid1_w3ls input[type="submit"]:hover,.w3l_main_grid1_w3ls input[type="reset"]:hover{
+	background:#212121;
+}
+input[type="submit"],.wthree_copyright p a,input[type="reset"],.w3l_main_grid1_w3ls h5 a,.agile_remember_right a,.w3l_main_grid1_w3ls_grid p a{
+	transition:.5s ease-in;
+	-webkit-transition:.5s ease-in;
+/*-- w3layouts --*/
+	-moz-transition:.5s ease-in;
+	-o-transition:.5s ease-in;
+	-ms-transition:.5s ease-in;
+}
+.w3l_main_grid1_w3ls h4{
+	font-size:1.2em;
+	color:#212121;
+	margin:1.5em 0 1em;
+	text-align:center;
