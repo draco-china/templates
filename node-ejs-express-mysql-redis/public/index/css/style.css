@@ -236,3 +236,33 @@ input[type="submit"],.wthree_copyright p a,input[type="reset"],.w3l_main_grid1_w
 .slide-social a{
     display: none;
 }
+.icon{
+    float: left;
+/*-- agileits --*/
+    padding-top:0px;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+.slide{
+    position: relative;
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+.slide p{
+    position: relative;
+    top:10px;
+    margin: 0;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    color:#FFF !important;
+    text-align: center;
+}
+/* Brand Colours */
+
+/* Slide Animation */
+.slide-social:hover .slide{
+    -webkit-transform: translate(101%, 0);
+    -moz-transform: translate(101%, 0);
+    -ms-transform: translate(101%, 0);
+    -o-transform: translate(101%, 0);
