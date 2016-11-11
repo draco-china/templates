@@ -296,3 +296,28 @@ input[type="submit"],.wthree_copyright p a,input[type="reset"],.w3l_main_grid1_w
 .w3l_main_grid1_w3ls_sub{
 	margin:0 1em;
 }
+.agile_remember_left{
+	float:left;
+}
+.agile_remember_right{
+	float:right;
+}
+.agile_remember_right a{
+	font-size:1em;
+	color:#999;
+	text-decoration:underline;
+}
+.agile_remember {
+    padding:0.5em 0;
+}
+.w3l_main_grid1_w3ls h5{
+	font-size: 14px;
+    color: #999;
+    margin:2em 0 0;
+    text-align: center;
+}
+.w3l_main_grid1_w3ls h5 a{
+	color:#212121;
+	text-decoration:underline;
+}
+.w3l_main_grid1_w3ls h5 a:hover{
