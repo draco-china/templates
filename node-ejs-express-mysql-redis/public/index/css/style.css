@@ -321,3 +321,30 @@ input[type="submit"],.wthree_copyright p a,input[type="reset"],.w3l_main_grid1_w
 	text-decoration:underline;
 }
 .w3l_main_grid1_w3ls h5 a:hover{
+	color:#999;
+}
+.agile_remember_right a:hover{
+	color:#212121;
+}
+.w3l_main_grid1_w3ls_grid p.asd{
+	font-size:14px;
+	color:#999;
+	line-height:1.8em;
+	padding:1em 0 0;
+	text-align: center;
+}
+.w3l_main_grid1_w3ls_grid p a{
+/*-- agileits --*/
+	text-decoration:none;
+	color:#212121;
+	text-decoration:underline;
+}
+.w3l_main_grid1_w3ls_grid p a:hover{
+	color:#999;
+}
+h5.rest {
+    padding-bottom: 1.55em;
+}
+.w3l_main_grid1_w3ls{
+	overflow:hidden;
+}
