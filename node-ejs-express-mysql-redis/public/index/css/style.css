@@ -266,3 +266,33 @@ input[type="submit"],.wthree_copyright p a,input[type="reset"],.w3l_main_grid1_w
     -moz-transform: translate(101%, 0);
     -ms-transform: translate(101%, 0);
     -o-transform: translate(101%, 0);
+    transform: translate(101%, 0);
+}
+.no-cssanimations .slide{
+    display: none; /* hide in IE 8-9 */
+}
+.touch .slide{
+    display: none; /* hide on touch devices */
+}
+/* Transition */
+.slide{
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+/* Example Media Queries */
+@media only screen and (max-width : 30em) { /* 480px/16px = 30em */
+/*-- w3layouts --*/
+    .slide-social{
+        width: 100%;
+    }
+    .slide-social .button{
+        position: absolute;
+        margin-left: 50%;
+    }
+}
+/*-- social-icons --*/
+.w3l_main_grid1_w3ls_sub{
+	margin:0 1em;
+}
