@@ -209,3 +209,30 @@ input[type="submit"],.wthree_copyright p a,input[type="reset"],.w3l_main_grid1_w
 	color:#212121;
 	margin:1.5em 0 1em;
 	text-align:center;
+}
+::-webkit-input-placeholder {
+	color: #212121 !important;
+}
+/*-- social-icons --*/
+.social_icons {
+    text-align: center;
+}
+
+.slide-social{
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 10px 0px 0;
+    width: 131px;
+    height: 40px;
+    background: #D5D5D5;
+    cursor: pointer;
+}
+.slide-social .button{
+    position: absolute;
+    margin:11px 0 0 47px;
+    font-size: 1em;
+    color: #212121;
+}
+.slide-social a{
+    display: none;
+}
