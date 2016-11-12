@@ -375,3 +375,28 @@ h5.rest {
 	.w3l_main_grids {
 		width: 78%;
 	}
+	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
+		width: 83.5%;
+	}
+}
+@media (max-width:1366px){
+	.w3l_main_grids {
+		width: 81%;
+	}
+}
+@media (max-width:1280px){
+	.w3l_main_grids {
+		width: 87%;
+	}
+}
+@media (max-width: 1080px){
+	.w3l_main_grids {
+		width: 93%;
+	}
+	.w3l_main_grid1_w3ls {
+		width: 32.25%;
+	}
+	.w3l_main_grid1_w3ls label,.agile_remember_right a,.slide-social .button {
+		font-size: 14px;
+	}
+	.slide-social {
