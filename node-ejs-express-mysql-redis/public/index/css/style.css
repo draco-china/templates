@@ -400,3 +400,29 @@ h5.rest {
 		font-size: 14px;
 	}
 	.slide-social {
+		width: 115px;
+	}
+	.slide p {
+		font-size: 14px;
+		top: 12px;
+	}
+	.w3l_main_grid1_w3ls_grid p.asd {
+		padding: 0;
+	}
+	h5.rest {
+		padding-bottom: 0.8em;
+	}
+	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
+		width: 80.5%;
+	}
+}
+@media (max-width: 1024px){
+	.main h1 {
+		font-size: 2.5em;
+	}
+	.w3l_main_grid1_w3ls {
+		width: 50%;
+		float: none;
+		margin: 0 auto;
+	}
+	.w3l_main_grid1_w3ls_sub {
