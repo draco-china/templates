@@ -348,3 +348,30 @@ h5.rest {
 .w3l_main_grid1_w3ls{
 	overflow:hidden;
 }
+.w3l_main_grid1_w3ls{
+	transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+	overflow:hidden;
+	position:relative;
+}
+.w3l_main_grid1_w3ls:hover{
+	transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -o-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    box-shadow:0px 0px 10px #262122;
+    -webkit-box-shadow:0px 0px 10px #262122;
+    -moz-box-shadow:0px 0px 10px #262122;
+    -o-box-shadow:0px 0px 10px #262122;
+    -ms-box-shadow:0px 0px 10px #262122;
+    z-index: 1;
+}
+/*-----start-responsive-design------*/
+@media (max-width:1440px){
+	.w3l_main_grids {
+		width: 78%;
+	}
