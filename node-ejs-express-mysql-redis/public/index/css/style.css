@@ -503,3 +503,29 @@ h5.rest {
 	.wthree_copyright {
 		padding: 2em 0 3em;
 	}
+	.w3l_main_grid1_w3ls h3 {
+		font-size: 1.3em;
+	}
+}
+@media (max-width:414px){
+	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
+		width: 83.5%;
+	}
+	.slide-social {
+		width: 139px;
+	}
+}
+@media (max-width:384px){
+	.slide-social {
+		width: 126px;
+	}
+	.slide-social .button {
+		margin: 11px 0 0 48px;
+	}
+}
+@media (max-width:375px){
+	.w3l_main_grid1_w3ls h3 {
+		font-size: 1.2em;
+	}
+	.w3l_main_grid1_w3ls_grid {
+		padding: 1em 1em 2em;
