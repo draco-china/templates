@@ -452,3 +452,28 @@ h5.rest {
 	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
 		width: 88.5%;
 	}
+}
+@media (max-width:667px){
+	.main h1 {
+		font-size: 2.2em;
+	}
+	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
+		width: 86.5%;
+	}
+	.wthree_copyright {
+		padding: 3em 0 4em;
+	}
+}
+@media (max-width: 600px){
+	.main h1 {
+		font-size: 2em;
+	}
+	.w3l_main_grids {
+		margin: 2em auto 0;
+	}
+	.w3l_main_grid1_w3ls {
+		width: 85%;
+	}
+	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
+		width: 87.5%;
+	}
