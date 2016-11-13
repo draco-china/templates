@@ -477,3 +477,29 @@ h5.rest {
 	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
 		width: 87.5%;
 	}
+}
+@media (max-width:568px){
+	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
+		width: 86.5%;
+	}
+	.slide-social .button {
+		margin: 11px 0 0 58px;
+	}
+}
+@media (max-width:480px){
+	.main h1 {
+		font-size: 1.8em;
+	}
+	.w3l_main_grid1_w3ls {
+		width: 95%;
+	}
+	.w3l_main_grid1_w3ls_grid {
+		padding: 1.5em;
+	}
+	.wthree_copyright p {
+		font-size: 14px;
+		padding: 0 1em;
+	}
+	.wthree_copyright {
+		padding: 2em 0 3em;
+	}
