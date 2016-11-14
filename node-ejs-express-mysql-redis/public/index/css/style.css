@@ -554,3 +554,29 @@ h5.rest {
 		margin: 1.5em 0 2em;
 	}
 	.w3l_main_grid1_w3ls h5,.wthree_copyright p {
+		font-size: 13px;
+	}
+	.w3l_main_grid1_w3ls h3 {
+		padding: .5em;
+	}
+	.agile_remember_left {
+		float: none;
+		margin-bottom: 1em;
+	}
+	.agile_remember_right {
+		float: none;
+	}
+	.agile_remember {
+		padding: 0.5em 0 0;
+	}
+	.w3l_main_grid1_w3ls h4 {
+		font-size: 1.1em;
+		margin: 1em 0 1em;
+	}
+	.slide-social {
+		width: 106px;
+		height: 35px;
+	}
+	.slide p {
+		font-size: 13px;
+		top: 11px;
