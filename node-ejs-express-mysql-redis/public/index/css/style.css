@@ -580,3 +580,29 @@ h5.rest {
 	.slide p {
 		font-size: 13px;
 		top: 11px;
+	}
+	.w3l_main_grid1_w3ls_grid p.asd {
+		font-size: 13px;
+	}
+	.w3l_main_grid1_w3ls:nth-child(3) input[type="submit"] {
+		margin: 1em 0;
+	}
+	.slide-social .button {
+		margin: 11px 0 0 39px;
+		font-size: 13px;
+	}
+	.w3l_main_grid1_w3ls_grid {
+		padding: 1em;
+	}
+	.wthree_copyright {
+		padding: 2em 0 2em;
+	}
+	.checkbox i {
+		width: 15px;
+		height: 15px;
+	}
+	.checkbox input + i:after {
+		background: url("../images/4.png") no-repeat 0px 2px;
+		background-size: 55%;
+	}
+}
