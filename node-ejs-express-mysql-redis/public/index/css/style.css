@@ -529,3 +529,28 @@ h5.rest {
 	}
 	.w3l_main_grid1_w3ls_grid {
 		padding: 1em 1em 2em;
+	}
+	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
+		width: 82.5%;
+	}
+	.w3l_main_grid1_w3ls_sub {
+		margin: 1.5em auto !important;
+	}
+	.w3l_main_grid1_w3ls h5 {
+		margin: 1em 0 0;
+	}
+}
+@media (max-width:320px){
+	.main h1 {
+		font-size: 1.6em;
+	}
+	.w3l_main_grid1_w3ls input[type="text"], .w3l_main_grid1_w3ls input[type="password"], .w3l_main_grid1_w3ls input[type="email"] {
+		font-size: 13px;
+	}
+	.checkbox {
+		padding-left: 30px !important;
+	}
+	.w3l_main_grid1_w3ls input[type="email"] {
+		margin: 1.5em 0 2em;
+	}
+	.w3l_main_grid1_w3ls h5,.wthree_copyright p {
