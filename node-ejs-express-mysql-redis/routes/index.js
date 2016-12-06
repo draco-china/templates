@@ -12,3 +12,5 @@ module.exports = router;*/
 
 exports.index = function(req, res){
   res.render('index', { title: 'Gemini,contact:Gemini-90s@Hotmail.com'});
+};
+/*exports.index = function(req, res){
