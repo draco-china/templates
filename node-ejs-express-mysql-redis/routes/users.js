@@ -6,3 +6,10 @@ var router = express.Router();*/
   res.send('respond with a resource');
 });
 
+module.exports = router;*/
+
+
+/*
+ * GET users listing.
+ */
+
