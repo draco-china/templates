@@ -14,3 +14,4 @@ module.exports = router;*/
  */
 
 exports.list = function(req, res){
+  res.send("respond with a Gemini resource!");
