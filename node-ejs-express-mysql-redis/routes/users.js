@@ -13,3 +13,4 @@ module.exports = router;*/
  * GET users listing.
  */
 
+exports.list = function(req, res){
