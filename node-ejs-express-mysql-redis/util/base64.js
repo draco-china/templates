@@ -9,3 +9,4 @@ function encodeSpecial(encodeStr){
     var b = new Buffer(encodeStr);
     var str= b.toString('base64');
     str = str.replace("+", "*").replace("/", "-").replace("=", ".");
+    return str;
