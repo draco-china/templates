@@ -10,3 +10,5 @@ function encodeSpecial(encodeStr){
     var str= b.toString('base64');
     str = str.replace("+", "*").replace("/", "-").replace("=", ".");
     return str;
+}
+//base64解密
