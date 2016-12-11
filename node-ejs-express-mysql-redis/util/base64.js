@@ -7,3 +7,4 @@ var base64url = require("base64-url");
 function encodeSpecial(encodeStr){
     //	var str = base64url.encode(encodeStr);
     var b = new Buffer(encodeStr);
+    var str= b.toString('base64');
