@@ -12,3 +12,4 @@ function encodeSpecial(encodeStr){
     return str;
 }
 //base64解密
+function decodeSpecial(decodeStr){
