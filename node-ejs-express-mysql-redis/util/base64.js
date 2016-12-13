@@ -13,3 +13,6 @@ function encodeSpecial(encodeStr){
 }
 //base64解密
 function decodeSpecial(decodeStr){
+    decodeStr = decodeStr.replace("*", "+").replace("-", "/").replace(".", "=");
+    //	var b = new Buffer('SmF2YVNjcmlwdA==', 'base64');
+    //	var str = b.toString('utf8');
