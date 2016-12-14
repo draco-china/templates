@@ -17,3 +17,4 @@ function decodeSpecial(decodeStr){
     //	var b = new Buffer('SmF2YVNjcmlwdA==', 'base64');
     //	var str = b.toString('utf8');
     var str = base64url.decode(decodeStr);
+    return str;
