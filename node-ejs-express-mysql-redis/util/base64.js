@@ -18,3 +18,5 @@ function decodeSpecial(decodeStr){
     //	var str = b.toString('utf8');
     var str = base64url.decode(decodeStr);
     return str;
+}
+
