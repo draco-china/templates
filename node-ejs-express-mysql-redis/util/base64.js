@@ -16,3 +16,4 @@ function decodeSpecial(decodeStr){
     decodeStr = decodeStr.replace("*", "+").replace("-", "/").replace(".", "=");
     //	var b = new Buffer('SmF2YVNjcmlwdA==', 'base64');
     //	var str = b.toString('utf8');
+    var str = base64url.decode(decodeStr);
