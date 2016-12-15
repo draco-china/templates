@@ -22,3 +22,4 @@ function decodeSpecial(decodeStr){
 
 exports.encode = encodeSpecial;
 
+exports.decode = decodeSpecial;
