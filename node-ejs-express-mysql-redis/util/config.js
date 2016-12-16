@@ -1,0 +1,6 @@
+var sysConfig={
+		//接口服务器
+		//interfaceHost:"192.168.1.88:8090"
+		//interfaceHost:"192.168.1.223:8082",
+		//interfaceHost:"192.168.2.204:8089",
+		//redis host
