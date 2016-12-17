@@ -6,3 +6,5 @@ var sysConfig={
 		//redis host
 		redisHost : "127.0.0.1",
 		redisport : "6379",
+		interfaceProtocol : "http://"
+		//redisTimeout : 30 * 60 //秒
