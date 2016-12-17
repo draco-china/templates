@@ -5,3 +5,4 @@ var sysConfig={
 		//interfaceHost:"192.168.2.204:8089",
 		//redis host
 		redisHost : "127.0.0.1",
+		redisport : "6379",
