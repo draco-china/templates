@@ -8,3 +8,5 @@ var sysConfig={
 		redisport : "6379",
 		interfaceProtocol : "http://"
 		//redisTimeout : 30 * 60 //秒
+};
+
