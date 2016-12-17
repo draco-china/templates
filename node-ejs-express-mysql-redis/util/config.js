@@ -10,3 +10,4 @@ var sysConfig={
 		//redisTimeout : 30 * 60 //秒
 };
 
+exports.interfaceHost=sysConfig.interfaceHost;
