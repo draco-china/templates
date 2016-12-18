@@ -11,3 +11,4 @@ var sysConfig={
 };
 
 exports.interfaceHost=sysConfig.interfaceHost;
+exports.config = sysConfig;
