@@ -7,3 +7,5 @@ var crypto = require('crypto');
 function encodeMd5(encodeStr){
     var md5 = crypto.createHash('md5');
     md5.update(encodeStr);              //更新hash的内容为指定的data。当使用流数据时可能会多次调用该方法。
+    var encodeStr = md5.digest('hex');  //计算所有传入数据的hash摘要。参数encoding（编码方式）可以为'hex', 'binary' 或者'base64'。
+    return encodeStr;
