@@ -12,3 +12,4 @@ function encodeMd5(encodeStr){
 }
 
 //SHA1加密
+function encodeSha1(encodeStr){
