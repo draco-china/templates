@@ -15,3 +15,5 @@ function encodeMd5(encodeStr){
 function encodeSha1(encodeStr){
     var shasum = crypto.createHash('sha1',"Gemini"); //创建并返回一个hash对象，它是一个指定算法的加密hash，用于生成hash摘要。
     // 参数algorithm可选择系统上安装的OpenSSL版本所支持的算法。例如：'sha1', 'md5', 'sha256', 'sha512'等。在近期发行的版本中，openssl list-message-digest-algorithms会显示这些可用的摘要算法。
+    shasum.update(encodeStr);             //更新hash的内容为指定的data。当使用流数据时可能会多次调用该方法。
+    var encodeStr = shasum.digest('hex');//计算所有传入数据的hash摘要。参数encoding（编码方式）可以为'hex', 'binary' 或者'base64'。
