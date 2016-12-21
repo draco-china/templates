@@ -18,3 +18,8 @@ function encodeSha1(encodeStr){
     shasum.update(encodeStr);             //更新hash的内容为指定的data。当使用流数据时可能会多次调用该方法。
     var encodeStr = shasum.digest('hex');//计算所有传入数据的hash摘要。参数encoding（编码方式）可以为'hex', 'binary' 或者'base64'。
     return encodeStr;
+}
+
+
+//console.log(crypto.getCiphers());//输出可用加密算法
+//加密
