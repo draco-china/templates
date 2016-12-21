@@ -23,3 +23,4 @@ function encodeSha1(encodeStr){
 
 //console.log(crypto.getCiphers());//输出可用加密算法
 //加密
+function cipher(buf){
