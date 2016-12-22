@@ -29,3 +29,5 @@ function cipher(buf){
     encrypted += cip.update(buf, 'binary', 'hex');
     encrypted += cip.final('hex');
     return encrypted;
+}
+//解密
