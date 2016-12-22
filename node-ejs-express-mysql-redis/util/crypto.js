@@ -25,3 +25,5 @@ function encodeSha1(encodeStr){
 //加密
 function cipher(buf){
     var encrypted = "";
+    var cip = crypto.createCipher('aes-256-cbc', 'Gemini');
+    encrypted += cip.update(buf, 'binary', 'hex');
