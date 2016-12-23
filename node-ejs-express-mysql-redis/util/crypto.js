@@ -33,3 +33,4 @@ function cipher(buf){
 //解密
 function decipher(encrypted){
     var decrypted = "";
+    var decipher = crypto.createDecipher('aes-256-cbc', 'Gemini');
