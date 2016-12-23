@@ -31,3 +31,5 @@ function cipher(buf){
     return encrypted;
 }
 //解密
+function decipher(encrypted){
+    var decrypted = "";
