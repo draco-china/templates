@@ -36,3 +36,5 @@ function decipher(encrypted){
     var decipher = crypto.createDecipher('aes-256-cbc', 'Gemini');
     decrypted += decipher.update(encrypted, 'hex', 'binary');
     decrypted += decipher.final('binary');
+    return decrypted;
+}
