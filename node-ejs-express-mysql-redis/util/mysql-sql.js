@@ -3,3 +3,5 @@
  */
 /*
     function getUserNumByName(username, callback) {
+        var insertUser_Sql = "INSERT INTO userinfo(id,username,userpass) VALUES(0,?,?)";
+        connection.query(insertUser_Sql, [user.username, user.userpass], function (err,result) {
