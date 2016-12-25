@@ -9,3 +9,5 @@
                 console.log("insertUser_Sql Error: " + err.message);
                 return;
             }
+            connection.release();
+            callback(err,result);
