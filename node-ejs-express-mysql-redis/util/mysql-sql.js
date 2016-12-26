@@ -12,3 +12,6 @@
             connection.release();
             callback(err,result);
         });
+    };
+
+    function getUserNumByName(username, callback) {
