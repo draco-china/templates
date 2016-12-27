@@ -19,3 +19,5 @@
         connection.query(getUserNumByName_Sql, [username], function (err, result) {
             if (err) {
                 console.log("getUserNumByName Error: " + err.message);
+                return;
+            }
