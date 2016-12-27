@@ -18,3 +18,4 @@
         var getUserNumByName_Sql = "SELECT COUNT(1) AS num FROM userinfo WHERE username = ?";
         connection.query(getUserNumByName_Sql, [username], function (err, result) {
             if (err) {
+                console.log("getUserNumByName Error: " + err.message);
