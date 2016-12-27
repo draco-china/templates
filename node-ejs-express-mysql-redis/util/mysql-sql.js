@@ -21,3 +21,4 @@
                 console.log("getUserNumByName Error: " + err.message);
                 return;
             }
+            connection.release();
