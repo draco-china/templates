@@ -26,3 +26,5 @@
         });
     };
 
+   function getUserNumByName(username, callback) {
+        var getUserByUserName_Sql = "SELECT * FROM userinfo WHERE username = ?";
