@@ -29,3 +29,5 @@
    function getUserNumByName(username, callback) {
         var getUserByUserName_Sql = "SELECT * FROM userinfo WHERE username = ?";
         connection.query(getUserByUserName_Sql, [username], function (err, result) {
+            if (err) {
+                return;
