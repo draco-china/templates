@@ -31,3 +31,4 @@
         connection.query(getUserByUserName_Sql, [username], function (err, result) {
             if (err) {
                 return;
+            }
