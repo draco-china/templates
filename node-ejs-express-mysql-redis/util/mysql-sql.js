@@ -32,3 +32,5 @@
             if (err) {
                 return;
             }
+            connection.release();
+            callback(err,result);
