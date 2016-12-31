@@ -34,3 +34,4 @@
             }
             connection.release();
             callback(err,result);
+        });
