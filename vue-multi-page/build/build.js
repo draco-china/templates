@@ -11,3 +11,5 @@ var config = require('../config')
 var webpackConfig = require('./webpack.prod.conf')
 
 var spinner = ora('building for production...')
+spinner.start()
+
