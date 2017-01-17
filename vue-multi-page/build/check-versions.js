@@ -8,3 +8,4 @@ function exec (cmd) {
 
 var versionRequirements = [
   {
+    name: 'node',
