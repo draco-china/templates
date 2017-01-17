@@ -7,3 +7,4 @@ function exec (cmd) {
 }
 
 var versionRequirements = [
+  {
