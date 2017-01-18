@@ -9,3 +9,4 @@ function exec (cmd) {
 var versionRequirements = [
   {
     name: 'node',
+    currentVersion: semver.clean(process.version),
