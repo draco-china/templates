@@ -12,3 +12,4 @@ var versionRequirements = [
     currentVersion: semver.clean(process.version),
     versionRequirement: packageConfig.engines.node
   },
+  {
