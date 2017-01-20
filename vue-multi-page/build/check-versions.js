@@ -14,3 +14,4 @@ var versionRequirements = [
   },
   {
     name: 'npm',
+    currentVersion: exec('npm --version'),
