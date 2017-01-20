@@ -13,3 +13,4 @@ var versionRequirements = [
     versionRequirement: packageConfig.engines.node
   },
   {
+    name: 'npm',
