@@ -17,3 +17,5 @@ var versionRequirements = [
     currentVersion: exec('npm --version'),
     versionRequirement: packageConfig.engines.npm
   }
+]
+
