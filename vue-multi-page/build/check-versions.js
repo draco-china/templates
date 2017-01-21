@@ -20,3 +20,4 @@ var versionRequirements = [
 ]
 
 module.exports = function () {
+  var warnings = []
