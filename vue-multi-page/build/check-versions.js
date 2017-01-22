@@ -21,3 +21,4 @@ var versionRequirements = [
 
 module.exports = function () {
   var warnings = []
+  for (var i = 0; i < versionRequirements.length; i++) {
