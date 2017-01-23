@@ -27,3 +27,4 @@ module.exports = function () {
       warnings.push(mod.name + ': ' +
         chalk.red(mod.currentVersion) + ' should be ' +
         chalk.green(mod.versionRequirement)
+      )
