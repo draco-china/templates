@@ -28,3 +28,4 @@ module.exports = function () {
         chalk.red(mod.currentVersion) + ' should be ' +
         chalk.green(mod.versionRequirement)
       )
+    }
