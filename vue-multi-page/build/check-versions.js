@@ -29,3 +29,5 @@ module.exports = function () {
         chalk.green(mod.versionRequirement)
       )
     }
+  }
+
