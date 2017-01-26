@@ -37,3 +37,4 @@ module.exports = function () {
     console.log()
     for (var i = 0; i < warnings.length; i++) {
       var warning = warnings[i]
+      console.log('  ' + warning)
