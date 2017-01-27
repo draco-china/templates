@@ -40,3 +40,4 @@ module.exports = function () {
       console.log('  ' + warning)
     }
     console.log()
+    process.exit(1)
