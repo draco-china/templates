@@ -29,3 +29,4 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
   quiet: true
 })
 
+var hotMiddleware = require('webpack-hot-middleware')(compiler, {
