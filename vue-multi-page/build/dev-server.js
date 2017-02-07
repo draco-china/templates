@@ -38,3 +38,6 @@ compiler.plugin('compilation', function (compilation) {
     hotMiddleware.publish({ action: 'reload' })
     cb()
   })
+})
+
+// proxy api requests
