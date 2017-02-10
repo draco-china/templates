@@ -57,3 +57,6 @@ app.use(devMiddleware)
 
 // enable hot-reload and state-preserving
 // compilation error display
+app.use(hotMiddleware)
+
+// serve pure static assets
