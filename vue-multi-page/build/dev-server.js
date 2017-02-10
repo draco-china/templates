@@ -63,3 +63,5 @@ app.use(hotMiddleware)
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
+var uri = 'http://localhost:' + port + configure.starPath
+
