@@ -66,3 +66,4 @@ app.use(staticPath, express.static('./static'))
 var uri = 'http://localhost:' + port + configure.starPath
 
 var _resolve
+var readyPromise = new Promise(resolve => {
