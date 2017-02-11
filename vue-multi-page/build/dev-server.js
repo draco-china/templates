@@ -68,3 +68,5 @@ var uri = 'http://localhost:' + port + configure.starPath
 var _resolve
 var readyPromise = new Promise(resolve => {
   _resolve = resolve
+})
+
