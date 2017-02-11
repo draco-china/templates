@@ -70,3 +70,4 @@ var readyPromise = new Promise(resolve => {
   _resolve = resolve
 })
 
+console.log('> Starting dev server...')
