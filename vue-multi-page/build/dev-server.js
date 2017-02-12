@@ -71,3 +71,4 @@ var readyPromise = new Promise(resolve => {
 })
 
 console.log('> Starting dev server...')
+devMiddleware.waitUntilValid(() => {
