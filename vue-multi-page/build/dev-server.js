@@ -77,3 +77,4 @@ devMiddleware.waitUntilValid(() => {
   if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
     opn(uri)
   }
+  _resolve()
