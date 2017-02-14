@@ -78,3 +78,5 @@ devMiddleware.waitUntilValid(() => {
     opn(uri)
   }
   _resolve()
+})
+
