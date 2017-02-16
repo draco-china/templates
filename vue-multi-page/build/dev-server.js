@@ -86,3 +86,4 @@ module.exports = {
   ready: readyPromise,
   close: () => {
     server.close()
+  }
