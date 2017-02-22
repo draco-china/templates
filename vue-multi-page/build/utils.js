@@ -15,3 +15,4 @@ exports.cssLoaders = function (options) {
   options = options || {}
 
   var cssLoader = {
+    loader: 'css-loader',
