@@ -16,3 +16,4 @@ exports.cssLoaders = function (options) {
 
   var cssLoader = {
     loader: 'css-loader',
+    options: {
