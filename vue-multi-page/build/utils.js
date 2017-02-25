@@ -26,3 +26,4 @@ exports.cssLoaders = function (options) {
   function generateLoaders (loader, loaderOptions) {
     var loaders = [cssLoader]
     if (loader) {
+      loaders.push({
