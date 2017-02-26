@@ -29,3 +29,4 @@ exports.cssLoaders = function (options) {
       loaders.push({
         loader: loader + '-loader',
         options: Object.assign({}, loaderOptions, {
+          sourceMap: options.sourceMap
