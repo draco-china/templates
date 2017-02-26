@@ -27,3 +27,4 @@ exports.cssLoaders = function (options) {
     var loaders = [cssLoader]
     if (loader) {
       loaders.push({
+        loader: loader + '-loader',
