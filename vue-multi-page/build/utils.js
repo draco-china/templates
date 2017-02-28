@@ -41,3 +41,4 @@ exports.cssLoaders = function (options) {
         use: loaders,
         fallback: 'vue-style-loader'
       })
+    } else {
