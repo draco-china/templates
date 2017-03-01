@@ -43,3 +43,4 @@ exports.cssLoaders = function (options) {
       })
     } else {
       return ['vue-style-loader'].concat(loaders)
+    }
