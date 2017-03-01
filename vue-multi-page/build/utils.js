@@ -48,3 +48,4 @@ exports.cssLoaders = function (options) {
 
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
+    css: generateLoaders(),
