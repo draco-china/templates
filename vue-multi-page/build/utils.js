@@ -50,3 +50,4 @@ exports.cssLoaders = function (options) {
   return {
     css: generateLoaders(),
     postcss: generateLoaders(),
+    less: generateLoaders('less'),
