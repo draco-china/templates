@@ -55,3 +55,4 @@ exports.cssLoaders = function (options) {
     scss: generateLoaders('sass'),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
+  }
