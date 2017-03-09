@@ -74,3 +74,7 @@ exports.styleLoaders = function (options) {
 
 exports.getEntries = function (globPath) {
     var entries = {},
+        basename, tmp, pathname;
+    /**
+     * 读取src目录,并进行路径裁剪
+     */
