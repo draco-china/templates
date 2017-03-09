@@ -72,3 +72,4 @@ exports.styleLoaders = function (options) {
   return output
 }
 
+exports.getEntries = function (globPath) {
