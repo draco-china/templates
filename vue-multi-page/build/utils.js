@@ -89,3 +89,4 @@ exports.getEntries = function (globPath) {
         // 最终编译输出的文件也在module目录下， 访问路径需要时 localhost:8080/module/index.html
         // slice 从已有的数组中返回选定的元素, -3 倒序选择，即选择最后三个
         basename = path.basename(entry, path.extname(entry));
+        tmp = entry.split('/').splice(-3);
