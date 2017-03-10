@@ -90,3 +90,4 @@ exports.getEntries = function (globPath) {
         // slice 从已有的数组中返回选定的元素, -3 倒序选择，即选择最后三个
         basename = path.basename(entry, path.extname(entry));
         tmp = entry.split('/').splice(-3);
+        pathname = tmp.splice(0, 1) + '/' + basename; // 正确输出js和html的路径
