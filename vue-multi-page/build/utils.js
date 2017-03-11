@@ -97,3 +97,6 @@ exports.getEntries = function (globPath) {
     // 获取的主入口如下： { main: './src/module/index/main.js', test: './src/module/test/test.js' }
     return entries;
 
+}
+
+/*
