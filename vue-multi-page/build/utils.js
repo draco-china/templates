@@ -92,3 +92,6 @@ exports.getEntries = function (globPath) {
         tmp = entry.split('/').splice(-3);
         pathname = tmp.splice(0, 1) + '/' + basename; // 正确输出js和html的路径
         entries[pathname] = entry;
+    });
+    // console.log(entries);
+    // 获取的主入口如下： { main: './src/module/index/main.js', test: './src/module/test/test.js' }
