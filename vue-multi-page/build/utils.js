@@ -101,3 +101,4 @@ exports.getEntries = function (globPath) {
 
 /*
 function getEntry(globPath) {
+    var entries = {}
