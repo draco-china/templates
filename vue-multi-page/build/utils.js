@@ -102,3 +102,6 @@ exports.getEntries = function (globPath) {
 /*
 function getEntry(globPath) {
     var entries = {}
+    /!**
+     * 读取src目录,并进行路径裁剪
+     *!/
