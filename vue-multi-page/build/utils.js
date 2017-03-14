@@ -105,3 +105,4 @@ function getEntry(globPath) {
     /!**
      * 读取src目录,并进行路径裁剪
      *!/
+    glob.sync(globPath).forEach(function (entry) {
