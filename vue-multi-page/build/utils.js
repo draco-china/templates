@@ -119,3 +119,6 @@ function getEntry(globPath) {
         var moduleName = tmp.slice(1, 2);
         // ***************end***************
         entries[moduleName] = entry
+    });
+    // console.log(entries);
+    // 获取的主入口如下： { main: './src/index/main.js', test: './src/test/test.js' }
