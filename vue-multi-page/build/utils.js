@@ -122,3 +122,5 @@ function getEntry(globPath) {
     });
     // console.log(entries);
     // 获取的主入口如下： { main: './src/index/main.js', test: './src/test/test.js' }
+    return entries;
+}*/
