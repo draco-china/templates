@@ -118,3 +118,4 @@ function getEntry(globPath) {
         var tmp = entry.split('/').splice(-3)
         var moduleName = tmp.slice(1, 2);
         // ***************end***************
+        entries[moduleName] = entry
