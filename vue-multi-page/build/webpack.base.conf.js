@@ -10,3 +10,4 @@ function resolve (dir) {
 
 module.exports = {
   entry: utils.getEntries('./src/'+config.build.assetsSubDirectory+'/**/*.js'),// 获得入口js文件
+  output: {
