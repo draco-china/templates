@@ -18,3 +18,4 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
+    extensions: ['.js', '.vue', '.json'],
