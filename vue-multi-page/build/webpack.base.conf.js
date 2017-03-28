@@ -25,3 +25,4 @@ module.exports = {
       'muse-components': 'muse-ui/src'
     }
   },
+  module: {
