@@ -24,3 +24,4 @@ module.exports = {
       '@': resolve('src'),
       'muse-components': 'muse-ui/src'
     }
+  },
