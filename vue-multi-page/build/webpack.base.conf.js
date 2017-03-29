@@ -28,3 +28,4 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.vue$/,
