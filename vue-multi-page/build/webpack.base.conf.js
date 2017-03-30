@@ -32,3 +32,4 @@ module.exports = {
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
+      {
