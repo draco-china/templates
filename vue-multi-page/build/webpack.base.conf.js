@@ -38,3 +38,4 @@ module.exports = {
         include: [resolve('src'), resolve('test')]
       },
       {
+          test: /muse-ui.src.*?js$/,
