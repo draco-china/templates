@@ -35,3 +35,5 @@ module.exports = merge(baseWebpackConfig, {
   ]
 })
 
+var pages = utils.getEntries('./src/'+config.build.assetsSubDirectory+'/**/*.html');
+
