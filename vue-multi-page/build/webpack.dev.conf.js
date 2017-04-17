@@ -39,3 +39,4 @@ var pages = utils.getEntries('./src/'+config.build.assetsSubDirectory+'/**/*.htm
 
 for (var pathname in pages) {
     // 配置生成的html文件，定义路径等
+    var conf = {
