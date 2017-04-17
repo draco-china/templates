@@ -41,3 +41,4 @@ for (var pathname in pages) {
     // 配置生成的html文件，定义路径等
     var conf = {
         filename: pathname + '.html',
+        template: pages[pathname],   // 模板路径
