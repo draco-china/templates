@@ -45,3 +45,4 @@ for (var pathname in pages) {
         inject: true              // js插入位置
 
     };
+    if (pathname in module.exports.entry) {
