@@ -42,3 +42,5 @@ for (var pathname in pages) {
     var conf = {
         filename: pathname + '.html',
         template: pages[pathname],   // 模板路径
+        inject: true              // js插入位置
+
