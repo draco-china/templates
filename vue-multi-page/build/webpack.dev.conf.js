@@ -48,3 +48,4 @@ for (var pathname in pages) {
     if (pathname in module.exports.entry) {
         conf.chunks = ['vendors', pathname];
         conf.hash = true;
+    }
