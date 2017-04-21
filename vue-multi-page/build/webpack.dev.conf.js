@@ -49,3 +49,4 @@ for (var pathname in pages) {
         conf.chunks = ['vendors', pathname];
         conf.hash = true;
     }
+    module.exports.plugins.push(new HtmlWebpackPlugin(conf));
