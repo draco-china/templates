@@ -15,3 +15,6 @@ var entries = utils.getEntries('./src/'+config.build.assetsSubDirectory+'/**/*.j
 var chunks = Object.keys(entries);
 
 
+var env = config.build.env
+
+var webpackConfig = merge(baseWebpackConfig, {
