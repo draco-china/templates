@@ -12,3 +12,6 @@ var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 var CleanPlugin = require('clean-webpack-plugin')//webpack插件，用于清除目录文件
 
 var entries = utils.getEntries('./src/'+config.build.assetsSubDirectory+'/**/*.js'); // 获得入口js文件
+var chunks = Object.keys(entries);
+
+
