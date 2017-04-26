@@ -8,3 +8,4 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 // 将样式提取到单独的css文件中，而不是打包到js文件或使用style标签插入在head标签中
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
