@@ -24,3 +24,4 @@ var webpackConfig = merge(baseWebpackConfig, {
       extract: true
     })
   },
+  devtool: config.build.productionSourceMap ? '#source-map' : config.build.productionSourceMap,
