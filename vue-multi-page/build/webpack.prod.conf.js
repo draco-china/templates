@@ -37,3 +37,6 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
+        warnings: false
+      },
+      //是否显示源码
