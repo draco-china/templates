@@ -40,3 +40,4 @@ var webpackConfig = merge(baseWebpackConfig, {
         warnings: false
       },
       //是否显示源码
+      sourceMap: config.build.productionSourceMap
