@@ -43,3 +43,5 @@ var webpackConfig = merge(baseWebpackConfig, {
       sourceMap: config.build.productionSourceMap
     }),
     new CleanPlugin(['../dist']), //清空生成目录
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    // extract css into its own file
