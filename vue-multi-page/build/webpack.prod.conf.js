@@ -45,3 +45,5 @@ var webpackConfig = merge(baseWebpackConfig, {
     new CleanPlugin(['../dist']), //清空生成目录
     new webpack.optimize.OccurrenceOrderPlugin(),
     // extract css into its own file
+    new ExtractTextPlugin({
+      filename: utils.assetsPath('css/[name].[contenthash].css')
