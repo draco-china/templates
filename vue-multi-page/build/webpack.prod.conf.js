@@ -41,3 +41,5 @@ var webpackConfig = merge(baseWebpackConfig, {
       },
       //是否显示源码
       sourceMap: config.build.productionSourceMap
+    }),
+    new CleanPlugin(['../dist']), //清空生成目录
