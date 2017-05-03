@@ -64,3 +64,4 @@ var webpackConfig = merge(baseWebpackConfig, {
       inject: true,
       minify: {
         removeComments: true,
+        collapseWhitespace: true,
