@@ -80,3 +80,4 @@ var webpackConfig = merge(baseWebpackConfig, {
         // any required modules inside node_modules are extracted to vendor
         return (
           module.resource &&
+          /\.js$/.test(module.resource) &&
