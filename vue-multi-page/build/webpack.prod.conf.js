@@ -84,3 +84,5 @@ var webpackConfig = merge(baseWebpackConfig, {
           module.resource.indexOf(
             path.join(__dirname, '../node_modules')
           ) === 0
+        )
+      }
