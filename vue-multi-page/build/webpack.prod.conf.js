@@ -93,3 +93,5 @@ var webpackConfig = merge(baseWebpackConfig, {
       name: 'manifest',
       chunks: ['vendor']
     }),*/
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendors', // 公共模块的名称
