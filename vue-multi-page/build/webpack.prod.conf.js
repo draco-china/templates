@@ -95,3 +95,5 @@ var webpackConfig = merge(baseWebpackConfig, {
     }),*/
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendors', // 公共模块的名称
+      chunks: chunks,  // chunks是需要提取的模块
+      minChunks: chunks.length
