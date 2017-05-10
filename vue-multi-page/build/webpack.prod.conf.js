@@ -99,3 +99,5 @@ var webpackConfig = merge(baseWebpackConfig, {
       minChunks: chunks.length
     }),
     // copy custom static assets
+    new CopyWebpackPlugin([
+      {
