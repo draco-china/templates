@@ -107,3 +107,5 @@ var webpackConfig = merge(baseWebpackConfig, {
       }
     ])
   ]
+})
+
