@@ -118,3 +118,4 @@ if (config.build.productionGzip) {
       algorithm: 'gzip',
       test: new RegExp(
         '\\.(' +
+        config.build.productionGzipExtensions.join('|') +
