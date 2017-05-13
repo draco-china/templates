@@ -116,3 +116,5 @@ if (config.build.productionGzip) {
     new CompressionWebpackPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
+      test: new RegExp(
+        '\\.(' +
