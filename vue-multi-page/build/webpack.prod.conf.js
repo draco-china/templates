@@ -119,3 +119,5 @@ if (config.build.productionGzip) {
       test: new RegExp(
         '\\.(' +
         config.build.productionGzipExtensions.join('|') +
+        ')$'
+      ),
