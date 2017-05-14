@@ -124,3 +124,6 @@ if (config.build.productionGzip) {
       threshold: 10240,
       minRatio: 0.8
     })
+  )
+}
+
