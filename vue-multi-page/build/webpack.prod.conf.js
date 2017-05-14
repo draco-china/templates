@@ -127,3 +127,4 @@ if (config.build.productionGzip) {
   )
 }
 
+if (config.build.bundleAnalyzerReport) {
