@@ -132,3 +132,7 @@ if (config.build.bundleAnalyzerReport) {
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }
 
+module.exports = webpackConfig
+
+var pages = utils.getEntries('./src/'+config.build.assetsSubDirectory+'/**/*.html');
+
