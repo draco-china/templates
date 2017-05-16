@@ -148,3 +148,5 @@ for (var pathname in pages) {
             removeAttributeQuotes: true
             // more options:
             // https://github.com/kangax/html-minifier#options-quick-reference
+        },
+
