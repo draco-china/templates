@@ -144,3 +144,7 @@ for (var pathname in pages) {
         inject: true,              // js插入位置
         minify: {
             removeComments: true,
+            collapseWhitespace: true,
+            removeAttributeQuotes: true
+            // more options:
+            // https://github.com/kangax/html-minifier#options-quick-reference
