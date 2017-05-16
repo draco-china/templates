@@ -143,3 +143,4 @@ for (var pathname in pages) {
         template: pages[pathname],   // 模板路径
         inject: true,              // js插入位置
         minify: {
+            removeComments: true,
