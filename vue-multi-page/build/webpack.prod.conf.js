@@ -150,3 +150,5 @@ for (var pathname in pages) {
             // https://github.com/kangax/html-minifier#options-quick-reference
         },
 
+    };
+    if (pathname in module.exports.entry) {
