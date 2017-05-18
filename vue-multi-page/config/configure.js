@@ -3,3 +3,5 @@
  */
 var path = require('path')
 
+module.exports = {
+    //项目名称
