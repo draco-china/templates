@@ -7,3 +7,4 @@ module.exports = {
     //项目名称
     ProjectDirectory:'module',
     //默认启动路径
+    starPath:'/module/index.html'
