@@ -8,3 +8,4 @@ module.exports = {
     ProjectDirectory:'module',
     //默认启动路径
     starPath:'/module/index.html'
+}
