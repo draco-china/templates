@@ -3,3 +3,4 @@ var path = require('path')
 var configure = require('../config/configure')
 
 module.exports = {
+  build: {
