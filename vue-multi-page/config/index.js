@@ -23,3 +23,4 @@ module.exports = {
     bundleAnalyzerReport: process.env.npm_config_report
   },
   dev: {
+    env: require('./dev.env'),
