@@ -26,3 +26,4 @@ module.exports = {
     env: require('./dev.env'),
     port: 8080,
     autoOpenBrowser: true,
+    assetsSubDirectory: configure.ProjectDirectory,
