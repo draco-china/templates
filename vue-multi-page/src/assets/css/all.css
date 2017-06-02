@@ -10,3 +10,14 @@ html{
 /* 1 */
 -webkit-text-size-adjust:100%;
 /* 1 */
+-webkit-tap-highlight-color:transparent;
+/* 2 */
+height:100%;
+}
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body{
+margin:0;
+/* 1 */
+font-size:14px;
