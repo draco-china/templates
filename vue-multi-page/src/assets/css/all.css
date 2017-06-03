@@ -39,3 +39,12 @@ footer,
 header,
 hgroup,
 main,
+menu,
+nav,
+section,
+summary{
+display:block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
