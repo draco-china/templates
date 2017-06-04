@@ -84,3 +84,14 @@ text-decoration:none;
  * in all browsers (opinionated).
  */
 a:active,
+a:hover{
+outline-width:0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title]{
+text-decoration:underline;
+/* 1 */
