@@ -108,3 +108,16 @@ font-weight:bolder;
 /**
  * Add the correct font style in Android 4.3-.
  */
+dfn{
+font-style:italic;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small{
+font-size:80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
