@@ -170,3 +170,18 @@ font-size:1em;
 pre{
 overflow:auto;
 /* 1 */
+white-space:pre;
+/* 2 */
+white-space:pre-wrap;
+/* 2 */
+word-wrap:break-word;
+/* 2 */
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Correct color not being inherited.
+      Known issue: affects color of disabled elements.
+ * 2. Change font properties to `inherit` in all browsers (opinionated).
+ * 3. Remove the margin in Firefox and Safari.
+ */
