@@ -185,3 +185,10 @@ word-wrap:break-word;
  * 2. Change font properties to `inherit` in all browsers (opinionated).
  * 3. Remove the margin in Firefox and Safari.
  */
+button,
+input,
+optgroup,
+select,
+textarea{
+color:inherit;
+/* 1 */
