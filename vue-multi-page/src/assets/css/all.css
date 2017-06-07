@@ -229,3 +229,14 @@ html [type="button"], /* 1 */
 [type="submit"]{
 -webkit-appearance:button;
 /* 2 */
+}
+/* Re-set default cursor for disabled elements. */
+[disabled]{
+cursor:default;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"]{
