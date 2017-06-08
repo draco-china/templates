@@ -278,3 +278,12 @@ outline-offset:-2px;
 /* 1 */
 font:inherit;
 /* 2 */
+}
+/* 1. Remove default vertical scrollbar in IE 8/9/10/11. */
+textarea{
+overflow:auto;
+/* 1 */
+resize:none;
+vertical-align:top;
+}
+/* Don't inherit the `font-weight` (applied by a rule above).
