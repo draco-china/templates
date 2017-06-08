@@ -294,3 +294,10 @@ font-weight:700;
 /* webkit focus outline */
 input,
 select,
+textarea{
+outline:0;
+}
+/* Android 下 input focus 消除高亮外框 */
+textarea,
+input{
+-webkit-user-modify:read-write-plaintext-only;
