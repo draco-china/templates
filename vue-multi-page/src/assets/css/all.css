@@ -301,3 +301,12 @@ outline:0;
 textarea,
 input{
 -webkit-user-modify:read-write-plaintext-only;
+}
+input::-ms-clear,
+input::-ms-reveal{
+display:none;
+}
+/**
+ * placeholder text color
+ */
+input:-ms-input-placeholder,
