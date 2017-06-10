@@ -316,3 +316,11 @@ opacity:0.54;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder{
+color:inherit;
+opacity:0.54;
+}
+/* table
+   ========================================================================== */
+/* Remove table cell spacing and padding */
+table{
+border-collapse:collapse;
