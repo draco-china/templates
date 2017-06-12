@@ -349,3 +349,9 @@ line-height:2;
 box-sizing:border-box;
 }
 html, body{
+background-color:#fafafa;
+-webkit-overflow-scrolling:touch;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
