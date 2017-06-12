@@ -355,3 +355,15 @@ background-color:#fafafa;
 -moz-user-select:none;
 -ms-user-select:none;
 user-select:none;
+}
+a{
+color:inherit;
+}
+
+
+
+
+
+/* fallback */
+@font-face {
+font-family: 'Material Icons';
