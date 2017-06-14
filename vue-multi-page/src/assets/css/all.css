@@ -386,3 +386,11 @@ word-wrap: normal;
 direction: ltr;
 -moz-font-feature-settings: 'liga';
 -moz-osx-font-smoothing: grayscale;
+}
+
+/* cyrillic-ext */
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
