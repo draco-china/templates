@@ -641,3 +641,10 @@ unicode-range: U+1F00-1FFF;
 font-family: 'Roboto';
 font-style: italic;
 font-weight: 400;
+src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/cDKhRaXnQTOVbaoxwdOr9xkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Roboto';
+font-style: italic;
