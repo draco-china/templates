@@ -27,3 +27,11 @@
 .icon-Summary:before {
   content: "\e945";
 }
+.icon-access:before {
+  content: "\e946";
+}
+.icon-acetaldehyde:before {
+  content: "\e947";
+}
+.icon-ethanol:before {
+  content: "\e948";
