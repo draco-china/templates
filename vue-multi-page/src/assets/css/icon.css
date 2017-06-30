@@ -35,3 +35,12 @@
 }
 .icon-ethanol:before {
   content: "\e948";
+}
+.icon-scientific-research:before {
+  content: "\e94b";
+}
+.icon-find:before {
+  content: "\e94c";
+}
+.icon-proposal:before {
+  content: "\e94d";
