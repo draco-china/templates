@@ -60,3 +60,11 @@
 .icon-pen:before {
   content: "\e900";
 }
+.icon-home-3:before {
+  content: "\e90b";
+}
+.icon-home-2:before {
+  content: "\e90c";
+}
+.icon-varieties:before {
+  content: "\e90d";
