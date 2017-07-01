@@ -68,3 +68,12 @@
 }
 .icon-varieties:before {
   content: "\e90d";
+}
+.icon-my-2:before {
+  content: "\e90e";
+}
+.icon-my:before {
+  content: "\e90f";
+}
+.icon-dog-2:before {
+  content: "\e910";
