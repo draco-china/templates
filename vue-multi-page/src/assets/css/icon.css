@@ -93,3 +93,11 @@
 .icon-praise:before {
   content: "\e907";
 }
+.icon-master:before {
+  content: "\e918";
+}
+.icon-gender:before {
+  content: "\e919";
+}
+.icon-age:before {
+  content: "\e91b";
