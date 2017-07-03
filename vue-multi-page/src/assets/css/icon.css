@@ -101,3 +101,11 @@
 }
 .icon-age:before {
   content: "\e91b";
+}
+.icon-address:before {
+  content: "\e91d";
+}
+.icon-explain:before {
+  content: "\e91e";
+}
+.icon-news:before {
