@@ -109,3 +109,12 @@
   content: "\e91e";
 }
 .icon-news:before {
+  content: "\e931";
+}
+.icon-height:before {
+  content: "\e935";
+}
+.icon-weight:before {
+  content: "\e93a";
+}
+.icon-Age-2:before {
