@@ -118,3 +118,11 @@
   content: "\e93a";
 }
 .icon-Age-2:before {
+  content: "\e940";
+}
+.icon-score-2:before {
+  content: "\e941";
+}
+.icon-Arrow:before {
+  content: "\e942";
+}
