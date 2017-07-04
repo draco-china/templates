@@ -159,3 +159,11 @@
 .icon-draft:before {
   content: "\e609";
 }
+.icon-check:before {
+  content: "\e60a";
+}
+.icon-invite:before {
+  content: "\e60b";
+}
+.icon-inviteask:before {
+  content: "\e60c";
