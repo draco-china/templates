@@ -134,3 +134,11 @@
 }
 .icon-home:before {
   content: "\e601";
+}
+.icon-list:before {
+  content: "\e602";
+}
+.icon-ask:before {
+  content: "\e603";
+}
+.icon-search:before {
