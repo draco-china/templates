@@ -142,3 +142,12 @@
   content: "\e603";
 }
 .icon-search:before {
+  content: "\e604";
+}
+.icon-more:before {
+  content: "\e605";
+}
+.icon-agree:before {
+  content: "\e606";
+}
+.icon-disagree:before {
