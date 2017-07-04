@@ -151,3 +151,11 @@
   content: "\e606";
 }
 .icon-disagree:before {
+  content: "\e607";
+}
+.icon-reply:before {
+  content: "\e608";
+}
+.icon-draft:before {
+  content: "\e609";
+}
