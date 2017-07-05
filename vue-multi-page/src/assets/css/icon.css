@@ -183,3 +183,12 @@
 .icon-pic:before {
   content: "\e611";
 }
+.icon-insert:before {
+  content: "\e612";
+}
+.icon-user:before {
+  content: "\e613";
+}
+.icon-inbox:before {
+  content: "\e614";
+}
