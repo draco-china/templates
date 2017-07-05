@@ -200,3 +200,11 @@
 }
 .icon-login:before {
   content: "\e617";
+}
+.icon-weibo:before {
+  content: "\e618";
+}
+.icon-qq:before {
+  content: "\e619";
+}
+.icon-signup:before {
