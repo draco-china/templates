@@ -192,3 +192,11 @@
 .icon-inbox:before {
   content: "\e614";
 }
+.icon-setting:before {
+  content: "\e615";
+}
+.icon-logout:before {
+  content: "\e616";
+}
+.icon-login:before {
+  content: "\e617";
