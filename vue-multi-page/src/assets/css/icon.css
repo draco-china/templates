@@ -175,3 +175,11 @@
   content: "\e60e";
 }
 .icon-comment:before {
+  content: "\e60f";
+}
+.icon-gene:before {
+  content: "\e610";
+}
+.icon-pic:before {
+  content: "\e611";
+}
