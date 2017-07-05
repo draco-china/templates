@@ -167,3 +167,11 @@
 }
 .icon-inviteask:before {
   content: "\e60c";
+}
+.icon-loading:before {
+  content: "\e60d";
+}
+.icon-share:before {
+  content: "\e60e";
+}
+.icon-comment:before {
