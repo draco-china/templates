@@ -233,3 +233,11 @@
 }
 .icon-bestbg:before {
   content: "\e623";
+}
+.icon-best:before {
+  content: "\e624";
+}
+.icon-flag:before {
+  content: "\e625";
+}
+.icon-i:before {
