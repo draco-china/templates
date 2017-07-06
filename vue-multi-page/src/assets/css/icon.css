@@ -241,3 +241,11 @@
   content: "\e625";
 }
 .icon-i:before {
+  content: "\e626";
+}
+.icon-bubble:before {
+  content: "\e627";
+}
+.icon-wechat:before {
+  content: "\e628";
+}
