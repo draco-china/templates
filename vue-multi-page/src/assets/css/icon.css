@@ -216,3 +216,12 @@
 .icon-topic:before {
   content: "\e61c";
 }
+.icon-location:before {
+  content: "\e61d";
+}
+.icon-job:before {
+  content: "\e61e";
+}
+.icon-favor:before {
+  content: "\e620";
+}
