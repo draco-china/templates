@@ -208,3 +208,11 @@
   content: "\e619";
 }
 .icon-signup:before {
+  content: "\e61a";
+}
+.icon-users:before {
+  content: "\e61b";
+}
+.icon-topic:before {
+  content: "\e61c";
+}
