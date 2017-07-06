@@ -225,3 +225,11 @@
 .icon-favor:before {
   content: "\e620";
 }
+.icon-down:before {
+  content: "\e621";
+}
+.icon-txweibo:before {
+  content: "\e622";
+}
+.icon-bestbg:before {
+  content: "\e623";
