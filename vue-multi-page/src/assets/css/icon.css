@@ -249,3 +249,11 @@
 .icon-wechat:before {
   content: "\e628";
 }
+.icon-lock:before {
+  content: "\e629";
+}
+.icon-triangle:before {
+  content: "\e62a";
+}
+.icon-bell:before {
+  content: "\e62b";
