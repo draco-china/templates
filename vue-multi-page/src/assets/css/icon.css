@@ -266,3 +266,11 @@
 }
 .icon-report:before {
   content: "\e62e";
+}
+.icon-qzone:before {
+  content: "\e62f";
+}
+.icon-at:before {
+  content: "\e630";
+}
+.icon-attach:before {
