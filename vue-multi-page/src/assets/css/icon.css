@@ -257,3 +257,12 @@
 }
 .icon-bell:before {
   content: "\e62b";
+}
+.icon-fold:before {
+  content: "\e62c";
+}
+.icon-thank:before {
+  content: "\e62d";
+}
+.icon-report:before {
+  content: "\e62e";
