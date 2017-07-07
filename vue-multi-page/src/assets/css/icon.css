@@ -282,3 +282,11 @@
 .icon-mytopic:before {
   content: "\e633";
 }
+.icon-up:before {
+  content: "\e634";
+}
+.icon-plus:before {
+  content: "\e635";
+}
+.icon-followed:before {
+  content: "\e636";
