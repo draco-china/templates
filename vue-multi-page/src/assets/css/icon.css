@@ -290,3 +290,12 @@
 }
 .icon-followed:before {
   content: "\e636";
+}
+.icon-score:before {
+  content: "\e637";
+}
+.icon-prestige:before {
+  content: "\e638";
+}
+.icon-v:before {
+  content: "\e639";
