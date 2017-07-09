@@ -307,3 +307,11 @@
   content: "\e63b";
 }
 .icon-underline:before {
+  content: "\e63c";
+}
+.icon-ul:before {
+  content: "\e63d";
+}
+.icon-ol:before {
+  content: "\e63e";
+}
