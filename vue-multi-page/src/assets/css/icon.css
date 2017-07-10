@@ -315,3 +315,11 @@
 .icon-ol:before {
   content: "\e63e";
 }
+.icon-image:before {
+  content: "\e63f";
+}
+.icon-video:before {
+  content: "\e640";
+}
+.icon-quote:before {
+  content: "\e641";
