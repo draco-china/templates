@@ -323,3 +323,11 @@
 }
 .icon-quote:before {
   content: "\e641";
+}
+.icon-code:before {
+  content: "\e642";
+}
+.icon-preview:before {
+  content: "\e643";
+}
+.icon-help:before {
