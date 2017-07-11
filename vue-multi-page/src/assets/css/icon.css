@@ -356,3 +356,11 @@
 }
 .icon-log:before {
   content: "\e64c";
+}
+.icon-forbid:before {
+  content: "\e64d";
+}
+.icon-transfer:before {
+  content: "\e64e";
+}
+.icon-reader:before {
