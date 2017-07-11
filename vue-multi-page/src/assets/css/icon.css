@@ -348,3 +348,11 @@
 .icon-file:before {
   content: "\e649";
 }
+.icon-verify:before {
+  content: "\e64a";
+}
+.icon-date:before {
+  content: "\e64b";
+}
+.icon-log:before {
+  content: "\e64c";
