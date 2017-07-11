@@ -340,3 +340,11 @@
   content: "\e646";
 }
 .icon-redo:before {
+  content: "\e647";
+}
+.icon-phone:before {
+  content: "\e648";
+}
+.icon-file:before {
+  content: "\e649";
+}
