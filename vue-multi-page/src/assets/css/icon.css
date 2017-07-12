@@ -364,3 +364,12 @@
   content: "\e64e";
 }
 .icon-reader:before {
+  content: "\e64f";
+}
+.icon-unlock:before {
+  content: "\e650";
+}
+.icon-right:before {
+  content: "\e651";
+}
+.icon-left:before {
