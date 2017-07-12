@@ -373,3 +373,11 @@
   content: "\e651";
 }
 .icon-left:before {
+  content: "\e652";
+}
+.icon-bar:before {
+  content: "\e653";
+}
+.icon-download:before {
+  content: "\e654";
+}
