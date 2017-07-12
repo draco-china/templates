@@ -381,3 +381,11 @@
 .icon-download:before {
   content: "\e654";
 }
+.icon-bulb:before {
+  content: "\e655";
+}
+.icon-cart:before {
+  content: "\e656";
+}
+.icon-google:before {
+  content: "\e657";
