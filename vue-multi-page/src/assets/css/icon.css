@@ -397,3 +397,11 @@
   content: "\e659";
 }
 .icon-count:before {
+  content: "\e65a";
+}
+.icon-order:before {
+  content: "\e65b";
+}
+.icon-edit:before {
+  content: "\e65c";
+}
