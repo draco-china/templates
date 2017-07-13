@@ -405,3 +405,12 @@
 .icon-edit:before {
   content: "\e65c";
 }
+.icon-full:before {
+  content: "\e65d";
+}
+.icon-strike:before {
+  content: "\e65e";
+}
+.icon-format:before {
+  content: "\e65f";
+}
