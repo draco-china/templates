@@ -414,3 +414,11 @@
 .icon-format:before {
   content: "\e65f";
 }
+.icon-good:before {
+  content: "\e660";
+}
+.icon-bad:before {
+  content: "\e661";
+}
+.icon-23:before {
+  content: "\e662";
