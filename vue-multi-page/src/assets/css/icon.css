@@ -422,3 +422,11 @@
 }
 .icon-23:before {
   content: "\e662";
+}
+.icon-hear:before {
+  content: "\e663";
+}
+.icon-ear:before {
+  content: "\e664";
+}
+.icon-run:before {
