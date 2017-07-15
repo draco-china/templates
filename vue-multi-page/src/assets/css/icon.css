@@ -438,3 +438,12 @@
 .icon-contact:before {
   content: "\e668";
 }
+.icon-about:before {
+  content: "\e669";
+}
+.icon-protect:before {
+  content: "\e66a";
+}
+.icon-activity:before {
+  content: "\e66b";
+}
