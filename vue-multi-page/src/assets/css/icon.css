@@ -430,3 +430,11 @@
   content: "\e664";
 }
 .icon-run:before {
+  content: "\e665";
+}
+.icon-drugs:before {
+  content: "\e666";
+}
+.icon-contact:before {
+  content: "\e668";
+}
