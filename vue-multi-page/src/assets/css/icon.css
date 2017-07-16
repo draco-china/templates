@@ -447,3 +447,11 @@
 .icon-activity:before {
   content: "\e66b";
 }
+.icon-man:before {
+  content: "\e66c";
+}
+.icon-delete:before {
+  content: "\e66e";
+}
+.icon-road:before {
+  content: "\e66f";
