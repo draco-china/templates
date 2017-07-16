@@ -463,3 +463,11 @@
   content: "\e671";
 }
 .icon-lifting:before {
+  content: "\e672";
+}
+.icon-track:before {
+  content: "\e673";
+}
+.icon-tip:before {
+  content: "\e674";
+}
