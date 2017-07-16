@@ -455,3 +455,11 @@
 }
 .icon-road:before {
   content: "\e66f";
+}
+.icon-walk:before {
+  content: "\e670";
+}
+.icon-climbing:before {
+  content: "\e671";
+}
+.icon-lifting:before {
