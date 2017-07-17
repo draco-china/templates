@@ -479,3 +479,12 @@
 }
 .icon-cake:before {
   content: "\e677";
+}
+.icon-palm:before {
+  content: "\e678";
+}
+.icon-fish:before {
+  content: "\e679";
+}
+.icon-pea:before {
+  content: "\e67a";
