@@ -471,3 +471,11 @@
 .icon-tip:before {
   content: "\e674";
 }
+.icon-milk:before {
+  content: "\e675";
+}
+.icon-chicken:before {
+  content: "\e676";
+}
+.icon-cake:before {
+  content: "\e677";
