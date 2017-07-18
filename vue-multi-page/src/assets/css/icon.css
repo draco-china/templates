@@ -496,3 +496,11 @@
   content: "\e67c";
 }
 .icon-mashroom:before {
+  content: "\e67d";
+}
+.icon-shop:before {
+  content: "\e67e";
+}
+.icon-link:before {
+  content: "\e67f";
+}
