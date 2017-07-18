@@ -504,3 +504,11 @@
 .icon-link:before {
   content: "\e67f";
 }
+.icon-cuvette:before {
+  content: "\e680";
+}
+.icon-box:before {
+  content: "\e681";
+}
+.icon-result:before {
+  content: "\e682";
