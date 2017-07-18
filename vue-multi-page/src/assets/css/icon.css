@@ -488,3 +488,11 @@
 }
 .icon-pea:before {
   content: "\e67a";
+}
+.icon-next:before {
+  content: "\e67b";
+}
+.icon-tomato:before {
+  content: "\e67c";
+}
+.icon-mashroom:before {
