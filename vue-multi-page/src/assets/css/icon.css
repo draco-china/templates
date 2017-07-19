@@ -537,3 +537,11 @@
 .icon-bind:before {
   content: "\e800";
 }
+.icon-cup:before {
+  content: "\e901";
+}
+.icon-Star:before {
+  content: "\e902";
+}
+.icon-position:before {
+  content: "\e903";
