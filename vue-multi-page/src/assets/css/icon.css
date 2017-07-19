@@ -512,3 +512,12 @@
 }
 .icon-result:before {
   content: "\e682";
+}
+.icon-watch:before {
+  content: "\e683";
+}
+.icon-service:before {
+  content: "\e684";
+}
+.icon-finger:before {
+  content: "\e685";
