@@ -521,3 +521,11 @@
 }
 .icon-finger:before {
   content: "\e685";
+}
+.icon-beat:before {
+  content: "\e688";
+}
+.icon-monkey:before {
+  content: "\e689";
+}
+.icon-drug:before {
