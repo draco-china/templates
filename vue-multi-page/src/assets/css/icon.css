@@ -578,3 +578,11 @@
 }
 .icon-flask:before {
   content: "\e91f";
+}
+.icon-lab:before {
+  content: "\e920";
+}
+.icon-overview:before {
+  content: "\e921";
+}
+.icon-tubes:before {
