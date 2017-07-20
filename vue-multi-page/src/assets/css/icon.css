@@ -545,3 +545,11 @@
 }
 .icon-position:before {
   content: "\e903";
+}
+.icon-Age:before {
+  content: "\e904";
+}
+.icon-dog:before {
+  content: "\e905";
+}
+.icon-comment-2:before {
