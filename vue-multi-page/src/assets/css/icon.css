@@ -562,3 +562,11 @@
   content: "\e909";
 }
 .icon-weibo-2:before {
+  content: "\e90a";
+}
+.icon-upward:before {
+  content: "\e916";
+}
+.icon-tree:before {
+  content: "\e917";
+}
