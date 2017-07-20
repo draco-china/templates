@@ -553,3 +553,12 @@
   content: "\e905";
 }
 .icon-comment-2:before {
+  content: "\e906";
+}
+.icon-delete-2:before {
+  content: "\e908";
+}
+.icon-list-2:before {
+  content: "\e909";
+}
+.icon-weibo-2:before {
