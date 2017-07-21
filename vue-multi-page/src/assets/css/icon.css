@@ -586,3 +586,12 @@
   content: "\e921";
 }
 .icon-tubes:before {
+  content: "\e922";
+}
+.icon-ancestry:before {
+  content: "\e923";
+}
+.icon-hot:before {
+  content: "\e924";
+}
+.icon-new:before {
