@@ -595,3 +595,11 @@
   content: "\e924";
 }
 .icon-new:before {
+  content: "\e925";
+}
+.icon-sleep:before {
+  content: "\e926";
+}
+.icon-batch:before {
+  content: "\e927";
+}
