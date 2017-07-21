@@ -619,3 +619,11 @@
   content: "\e92c";
 }
 .icon-cake2:before {
+  content: "\e92d";
+}
+.icon-calendar:before {
+  content: "\e92e";
+}
+.icon-egg:before {
+  content: "\e92f";
+}
