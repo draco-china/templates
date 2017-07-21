@@ -611,3 +611,11 @@
 }
 .icon-probe:before {
   content: "\e92a";
+}
+.icon-sample:before {
+  content: "\e92b";
+}
+.icon-bean:before {
+  content: "\e92c";
+}
+.icon-cake2:before {
