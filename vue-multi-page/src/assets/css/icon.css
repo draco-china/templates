@@ -627,3 +627,12 @@
 .icon-egg:before {
   content: "\e92f";
 }
+.icon-muscle:before {
+  content: "\e930";
+}
+.icon-time:before {
+  content: "\e932";
+}
+.icon-community:before {
+  content: "\e934";
+}
