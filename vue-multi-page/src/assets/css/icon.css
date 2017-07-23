@@ -636,3 +636,11 @@
 .icon-community:before {
   content: "\e934";
 }
+.icon-relation:before {
+  content: "\e936";
+}
+.icon-research-2:before {
+  content: "\e937";
+}
+.icon-research-3:before {
+  content: "\e938";
