@@ -3,3 +3,4 @@
  * 基于vue resource的http请求包装
  */
 Vue.http.interceptors.push(function (request, next) {
+    Vue.$indicator.open();
