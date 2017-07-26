@@ -4,3 +4,4 @@
  */
 Vue.http.interceptors.push(function (request, next) {
     Vue.$indicator.open();
+    next(function (response) {
