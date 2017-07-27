@@ -8,3 +8,5 @@ Vue.http.interceptors.push(function (request, next) {
         Vue.$indicator.close();
         return response;
     })
+});
+
