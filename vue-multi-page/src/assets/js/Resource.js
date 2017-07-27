@@ -10,3 +10,5 @@ Vue.http.interceptors.push(function (request, next) {
     })
 });
 
+var Resource = function() {
+
