@@ -7,3 +7,4 @@ Vue.http.interceptors.push(function (request, next) {
     next(function (response) {
         Vue.$indicator.close();
         return response;
+    })
