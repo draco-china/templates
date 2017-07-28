@@ -15,3 +15,5 @@ var Resource = function() {
     function login() {
         // 这里之所以是写死域名，是因为微信登录只能在m.genefamily.com.cn域名下进行
         location.href="http://m.genefamily.com.cn/user/login";
+    }
+    
