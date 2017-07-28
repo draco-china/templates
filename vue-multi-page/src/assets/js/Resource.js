@@ -17,3 +17,5 @@ var Resource = function() {
         location.href="http://m.genefamily.com.cn/user/login";
     }
     
+    var handleAjaxGet = function (url, data, success, errorfn) {
+
