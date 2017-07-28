@@ -12,3 +12,5 @@ Vue.http.interceptors.push(function (request, next) {
 
 var Resource = function() {
 
+    function login() {
+        // 这里之所以是写死域名，是因为微信登录只能在m.genefamily.com.cn域名下进行
