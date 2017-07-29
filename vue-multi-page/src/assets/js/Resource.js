@@ -22,3 +22,5 @@ var Resource = function() {
         var headers = {
             "Accept": "application/json",
             "Content-Type": "application/json"
+        };
+        // ajax请求强制刷新
