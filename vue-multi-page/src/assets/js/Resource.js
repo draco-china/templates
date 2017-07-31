@@ -26,3 +26,4 @@ var Resource = function() {
         // ajax请求强制刷新
         if (url.indexOf('?') > 0) {
             url = url + '&r' + Math.random();
+        } else {
