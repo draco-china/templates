@@ -31,3 +31,4 @@ var Resource = function() {
         }
         // 添加请求头和参数
         var options={
+            headers: headers,
