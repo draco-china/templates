@@ -33,3 +33,4 @@ var Resource = function() {
         var options={
             headers: headers,
             params:data
+        };
