@@ -37,3 +37,4 @@ var Resource = function() {
         Vue.http.get(url,options).then(function (response) {
             response = response.data;
 
+            if(response.code == 0){
