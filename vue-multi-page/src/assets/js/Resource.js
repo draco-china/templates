@@ -34,3 +34,4 @@ var Resource = function() {
             headers: headers,
             params:data
         };
+        Vue.http.get(url,options).then(function (response) {
