@@ -38,3 +38,4 @@ var Resource = function() {
             response = response.data;
 
             if(response.code == 0){
+                success(response);
