@@ -44,3 +44,4 @@ var Resource = function() {
             }else{
                 Vue.$toast(response.msg)
             }
+        },function (response) {
