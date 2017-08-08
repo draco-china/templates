@@ -46,3 +46,4 @@ var Resource = function() {
             }
         },function (response) {
             if(errorfn){
+                errorfn(response);
