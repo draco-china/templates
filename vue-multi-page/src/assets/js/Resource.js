@@ -50,3 +50,4 @@ var Resource = function() {
             }else{
                 Vue.$toast(response.status +"  "+response.statusText)
             }
+        });
