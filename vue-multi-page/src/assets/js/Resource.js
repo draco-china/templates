@@ -55,3 +55,4 @@ var Resource = function() {
 
     var handleAjaxPost = function(url, data, success, errorfn) {
         if (!data) {
+            data = { };
