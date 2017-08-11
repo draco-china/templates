@@ -51,3 +51,5 @@ var Resource = function() {
                 Vue.$toast(response.status +"  "+response.statusText)
             }
         });
+    };
+
