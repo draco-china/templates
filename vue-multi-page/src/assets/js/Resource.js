@@ -59,3 +59,4 @@ var Resource = function() {
         }
         data._r = Math.random();
         var options = {
+            emulateJSON:true
