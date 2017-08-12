@@ -58,3 +58,4 @@ var Resource = function() {
             data = { };
         }
         data._r = Math.random();
+        var options = {
