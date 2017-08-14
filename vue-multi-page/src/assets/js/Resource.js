@@ -62,3 +62,4 @@ var Resource = function() {
             emulateJSON:true
         };
         Vue.http.post(url,data,options).then(function(response){
+            response = response.data;
