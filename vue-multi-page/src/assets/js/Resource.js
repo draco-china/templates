@@ -66,3 +66,4 @@ var Resource = function() {
             if(response.code == 0){
                 if(success) success(response);
             }else if(response.code ==1){ //请求检测未登录处理
+                login() 
