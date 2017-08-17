@@ -69,3 +69,4 @@ var Resource = function() {
                 login() 
             }else{
                 Vue.$toast(response.msg)
+            }
