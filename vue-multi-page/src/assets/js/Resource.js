@@ -71,3 +71,4 @@ var Resource = function() {
                 Vue.$toast(response.msg)
             }
         },function(response){
+            if(errorfn){
