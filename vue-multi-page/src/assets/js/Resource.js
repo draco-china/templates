@@ -75,3 +75,4 @@ var Resource = function() {
                 errorfn(response);
             }else{
                 Vue.$toast(response.status +"  "+response.statusText)
+            }
