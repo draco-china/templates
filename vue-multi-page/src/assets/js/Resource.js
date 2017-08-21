@@ -79,3 +79,4 @@ var Resource = function() {
         })
     };
     // 获取地址栏参数
+    var getUrlParam = function(name){
