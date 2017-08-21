@@ -77,3 +77,5 @@ var Resource = function() {
                 Vue.$toast(response.status +"  "+response.statusText)
             }
         })
+    };
+    // 获取地址栏参数
