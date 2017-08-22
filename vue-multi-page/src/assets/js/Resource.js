@@ -85,3 +85,4 @@ var Resource = function() {
         if (r!=null) return unescape(r[2]); return null; //返回参数值
     };
     return {
+        get: function (apiUrl, data, success, error) {
