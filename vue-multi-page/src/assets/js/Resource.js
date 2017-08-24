@@ -89,3 +89,4 @@ var Resource = function() {
             handleAjaxGet(apiUrl, data, success, error);
         },
         post: function (apiUrl, data, success, error) {
+            handleAjaxPost(apiUrl, data, success, error);
