@@ -92,3 +92,5 @@ var Resource = function() {
             handleAjaxPost(apiUrl, data, success, error);
         },
         getUrlParam: getUrlParam,
+    };
+}();
