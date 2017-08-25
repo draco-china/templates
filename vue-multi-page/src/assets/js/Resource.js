@@ -91,3 +91,4 @@ var Resource = function() {
         post: function (apiUrl, data, success, error) {
             handleAjaxPost(apiUrl, data, success, error);
         },
+        getUrlParam: getUrlParam,
