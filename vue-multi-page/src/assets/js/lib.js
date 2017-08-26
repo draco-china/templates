@@ -4,3 +4,4 @@
 import Vue from 'vue'
 import vueResource from 'vue-resource'
 import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
