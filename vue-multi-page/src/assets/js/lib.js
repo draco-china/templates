@@ -13,3 +13,4 @@ Vue.use(vueResource)
 Vue.use(MuseUI)
 
 export default{
+    get:function(url, data, success, errorfn){
