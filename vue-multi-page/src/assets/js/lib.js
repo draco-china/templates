@@ -9,3 +9,4 @@ import '@/assets/css/all.css'  //引入公共样式
 import '@/assets/css/icon.css' //字体图标样式
 
 // 注册组件
+Vue.use(vueResource)
