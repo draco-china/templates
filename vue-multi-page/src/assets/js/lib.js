@@ -10,3 +10,5 @@ import '@/assets/css/icon.css' //字体图标样式
 
 // 注册组件
 Vue.use(vueResource)
+Vue.use(MuseUI)
+
