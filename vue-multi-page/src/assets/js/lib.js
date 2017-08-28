@@ -12,3 +12,4 @@ import '@/assets/css/icon.css' //字体图标样式
 Vue.use(vueResource)
 Vue.use(MuseUI)
 
+export default{
