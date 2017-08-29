@@ -19,3 +19,4 @@ export default{
                 "Content-Type": "application/json"
             };
             // ajax请求强制刷新
+            if (url.indexOf('?') > 0) {
