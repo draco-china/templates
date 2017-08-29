@@ -15,3 +15,4 @@ Vue.use(MuseUI)
 export default{
     get:function(url, data, success, errorfn){
             var headers = {
+                "Accept": "application/json",
