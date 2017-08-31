@@ -22,3 +22,4 @@ export default{
             if (url.indexOf('?') > 0) {
                 url = url + '&r' + Math.random();
             } else {
+                url = url + '?r' + Math.random();
