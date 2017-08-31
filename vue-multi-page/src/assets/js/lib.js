@@ -23,3 +23,5 @@ export default{
                 url = url + '&r' + Math.random();
             } else {
                 url = url + '?r' + Math.random();
+            }
+            // 添加请求头和参数
