@@ -28,3 +28,4 @@ export default{
             var options={
                 headers: headers,
                 params:data
+            };
