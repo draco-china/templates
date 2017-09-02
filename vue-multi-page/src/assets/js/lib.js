@@ -30,3 +30,5 @@ export default{
                 params:data
             };
             Vue.http.get(url,options).then(function (response) {
+                response = response.data;
+
