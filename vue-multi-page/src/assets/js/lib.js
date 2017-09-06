@@ -43,3 +43,5 @@ export default{
                 if(errorfn){
                     errorfn(response);
                 }else{
+                    console.log('get')
+                    // Vue.$toast(response.status +"  "+response.statusText)
