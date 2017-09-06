@@ -46,3 +46,4 @@ export default{
                     console.log('get')
                     // Vue.$toast(response.status +"  "+response.statusText)
                 }
+            });
