@@ -48,3 +48,4 @@ export default{
                 }
             });
         },
+    post:function(url, data, success, errorfn){
