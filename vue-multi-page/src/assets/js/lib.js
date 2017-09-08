@@ -53,3 +53,4 @@ export default{
                 data = { };
             }
             data._r = Math.random();
+            var options = {
