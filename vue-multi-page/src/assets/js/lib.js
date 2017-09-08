@@ -51,3 +51,4 @@ export default{
     post:function(url, data, success, errorfn){
             if (!data) {
                 data = { };
+            }
