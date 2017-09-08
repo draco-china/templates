@@ -52,3 +52,4 @@ export default{
             if (!data) {
                 data = { };
             }
+            data._r = Math.random();
