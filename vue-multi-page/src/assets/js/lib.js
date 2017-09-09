@@ -55,3 +55,4 @@ export default{
             data._r = Math.random();
             var options = {
                 emulateJSON:true
+            };
