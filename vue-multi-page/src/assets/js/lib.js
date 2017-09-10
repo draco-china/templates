@@ -59,3 +59,4 @@ export default{
             Vue.http.post(url,data,options).then(function(response){
                 response = response.data;
                 if(response.code == 0){
+                    if(success) success(response);
