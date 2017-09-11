@@ -63,3 +63,4 @@ export default{
                 }else if(response.code ==1){ //请求检测未登录处理
                     login()
                 }else{
+                    Vue.$toast(response.msg)
