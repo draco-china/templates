@@ -72,3 +72,4 @@ export default{
                     console.log('post')
                     //Vue.$toast(response.status +"  "+response.statusText)
                 }
+            })
