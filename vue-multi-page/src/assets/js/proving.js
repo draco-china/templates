@@ -9,3 +9,9 @@ var proving = function(){
 			return false; 
 		} else{
 			return true; 
+		}
+	}
+	
+	//验证金额
+	//任意正整数，正小数（小数位不超过2位）
+	function checkMoney(money){
