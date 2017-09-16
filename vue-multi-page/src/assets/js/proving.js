@@ -6,3 +6,6 @@ var proving = function(){
 	//返回false表示有特殊字符
 	function checkStr(str){
 		if(!!str.match(/^(([^\^\.<>%&',;=?$"':#@!~\]\[{}\\/`\|])*)$/)){ 
+			return false; 
+		} else{
+			return true; 
