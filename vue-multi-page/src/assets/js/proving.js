@@ -19,3 +19,7 @@ var proving = function(){
 			return true; 
 		} else{
 			return false; 
+		}
+	}
+	//手机号码验证
+	function checkMobile(mobile){
