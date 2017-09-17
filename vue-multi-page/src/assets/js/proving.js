@@ -26,3 +26,8 @@ var proving = function(){
 		if(!!mobile.match(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/)){ 
 			return true; 
 		} else{
+			return false; 
+		}
+	}
+	//验证码验证(6位纯数字)
+	function checkCode(code){
