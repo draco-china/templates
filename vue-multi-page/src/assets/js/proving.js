@@ -23,3 +23,6 @@ var proving = function(){
 	}
 	//手机号码验证
 	function checkMobile(mobile){
+		if(!!mobile.match(/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/)){ 
+			return true; 
+		} else{
