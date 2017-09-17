@@ -15,3 +15,7 @@ var proving = function(){
 	//验证金额
 	//任意正整数，正小数（小数位不超过2位）
 	function checkMoney(money){
+		if(!!money.match(/^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/)){ 
+			return true; 
+		} else{
+			return false; 
