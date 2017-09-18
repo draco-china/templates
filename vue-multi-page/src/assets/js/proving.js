@@ -31,3 +31,6 @@ var proving = function(){
 	}
 	//验证码验证(6位纯数字)
 	function checkCode(code){
+		if(!!code.match(/^[0-9]{0,6}$/)){ 
+			return true; 
+		} else{
