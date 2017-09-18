@@ -34,3 +34,7 @@ var proving = function(){
 		if(!!code.match(/^[0-9]{0,6}$/)){ 
 			return true; 
 		} else{
+			return false; 
+		}
+	}
+	//验证邮箱地址
