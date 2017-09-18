@@ -42,3 +42,7 @@ var proving = function(){
 		if(!!mail.match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)){ 
 			return true; 
 		} else{
+			return false; 
+		}
+	}
+	//验证用户名(只包含大小写英文、数字和下划线,同时用户名长度在6-15之间)
