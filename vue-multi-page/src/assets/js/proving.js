@@ -38,3 +38,7 @@ var proving = function(){
 		}
 	}
 	//验证邮箱地址
+	function checkemail(mail){
+		if(!!mail.match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)){ 
+			return true; 
+		} else{
