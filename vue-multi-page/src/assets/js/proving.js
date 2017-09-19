@@ -58,3 +58,6 @@ var proving = function(){
 	function checkName(name){
 	   if(!!name.match( /^[\u4E00-\u9FA5]{2,4}$/)){ 
 			return true; 
+		} else{
+			return false; 
+		}
