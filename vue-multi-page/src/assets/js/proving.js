@@ -52,3 +52,9 @@ var proving = function(){
 		} else{
 			return false; 
 		}
+	}
+	//验证真实姓名
+	//只能是汉字且2-4位
+	function checkName(name){
+	   if(!!name.match( /^[\u4E00-\u9FA5]{2,4}$/)){ 
+			return true; 
