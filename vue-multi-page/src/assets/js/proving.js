@@ -46,3 +46,6 @@ var proving = function(){
 		}
 	}
 	//验证用户名(只包含大小写英文、数字和下划线,同时用户名长度在6-15之间)
+	function checkusername(username){
+	   if(!!username.match(/^(?!\d+$)[a-zA-Z0-9]{6,15}$/)){ 
+			return true; 
