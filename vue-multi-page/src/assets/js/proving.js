@@ -49,3 +49,6 @@ var proving = function(){
 	function checkusername(username){
 	   if(!!username.match(/^(?!\d+$)[a-zA-Z0-9]{6,15}$/)){ 
 			return true; 
+		} else{
+			return false; 
+		}
