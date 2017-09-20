@@ -73,3 +73,6 @@ var proving = function(){
         }; 
 	    var card = document.getElementById('card_no').value;  
 	    //是否为空  
+	    if(card === '')  
+	    {  
+	        alert('请输入身份证号，身份证号不能为空');  
