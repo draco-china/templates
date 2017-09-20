@@ -61,3 +61,7 @@ var proving = function(){
 		} else{
 			return false; 
 		}
+	}
+	//验证身份证号码
+	function checkCardNo(card){
+	  	vcity={ 11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",  
