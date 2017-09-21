@@ -81,3 +81,6 @@ var proving = function(){
 	    }  
 	    //校验长度，类型  
 	    if(isCardNo(card) === false)  
+	    {  
+	        alert('您输入的身份证号码不正确，请重新输入');  
+	        document.getElementById('card_no').focus;  
