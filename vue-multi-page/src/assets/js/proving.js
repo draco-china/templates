@@ -76,3 +76,8 @@ var proving = function(){
 	    if(card === '')  
 	    {  
 	        alert('请输入身份证号，身份证号不能为空');  
+	        document.getElementById('card_no').focus;  
+	        return false;  
+	    }  
+	    //校验长度，类型  
+	    if(isCardNo(card) === false)  
