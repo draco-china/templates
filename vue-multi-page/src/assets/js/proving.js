@@ -84,3 +84,7 @@ var proving = function(){
 	    {  
 	        alert('您输入的身份证号码不正确，请重新输入');  
 	        document.getElementById('card_no').focus;  
+	        return false;  
+	    }  
+	    //检查省份  
+	    if(checkProvince(card) === false)  
