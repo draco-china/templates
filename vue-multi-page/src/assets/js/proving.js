@@ -103,3 +103,7 @@ var proving = function(){
 	    //检验位的检测  
 	    if(checkParity(card) === false)  
 	    {  
+	        alert('您的身份证校验位不正确,请重新输入');  
+	        document.getElementById('card_no').focus();  
+	        return false;  
+	    }  
