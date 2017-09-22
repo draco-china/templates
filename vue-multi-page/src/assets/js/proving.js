@@ -96,3 +96,6 @@ var proving = function(){
 	    //校验生日  
 	    if(checkBirthday(card) === false)  
 	    {  
+	        alert('您输入的身份证号码生日不正确,请重新输入');  
+	        document.getElementById('card_no').focus();  
+	        return false;  
