@@ -125,3 +125,6 @@ var proving = function(){
 		checkProvince = function(card)  
 		{  
 		    var province = card.substr(0,2);  
+		    if(vcity[province] == undefined)  
+		    {  
+		        return false;  
