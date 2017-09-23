@@ -122,3 +122,6 @@ var proving = function(){
 		};  
 		  
 		//取身份证前两位,校验省份  
+		checkProvince = function(card)  
+		{  
+		    var province = card.substr(0,2);  
