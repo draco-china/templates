@@ -115,3 +115,10 @@ var proving = function(){
 		    var reg = /(^\d{15}$)|(^\d{17}(\d|X)$)/;  
 		    if(reg.test(card) === false)  
 		    {  
+		        return false;  
+		    }  
+		  
+		    return true;  
+		};  
+		  
+		//取身份证前两位,校验省份  
