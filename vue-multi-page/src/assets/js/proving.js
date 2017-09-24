@@ -141,3 +141,6 @@ var proving = function(){
 		    {  
 		        var re_fifteen = /^(\d{6})(\d{2})(\d{2})(\d{2})(\d{3})$/;   
 		        var arr_data = card.match(re_fifteen);  
+		        var year = arr_data[2];  
+		        var month = arr_data[3];  
+		        var day = arr_data[4];  
