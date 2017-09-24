@@ -144,3 +144,8 @@ var proving = function(){
 		        var year = arr_data[2];  
 		        var month = arr_data[3];  
 		        var day = arr_data[4];  
+		        var birthday = new Date('19'+year+'/'+month+'/'+day);  
+		        return verifyBirthday('19'+year,month,day,birthday);  
+		    }  
+		    //身份证18位时，次序为省（3位）市（3位）年（4位）月（2位）日（2位）校验位（4位），校验位末尾可能为X  
+		    if(len == '18')  
