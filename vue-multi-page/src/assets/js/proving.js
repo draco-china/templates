@@ -133,3 +133,8 @@ var proving = function(){
 		};  
 		  
 		//检查生日是否正确  
+		checkBirthday = function(card)  
+		{  
+		    var len = card.length;  
+		    //身份证15位时，次序为省（3位）市（3位）年（2位）月（2位）日（2位）校验位（3位），皆为数字  
+		    if(len == '15')  
