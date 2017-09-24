@@ -138,3 +138,6 @@ var proving = function(){
 		    var len = card.length;  
 		    //身份证15位时，次序为省（3位）市（3位）年（2位）月（2位）日（2位）校验位（3位），皆为数字  
 		    if(len == '15')  
+		    {  
+		        var re_fifteen = /^(\d{6})(\d{2})(\d{2})(\d{2})(\d{3})$/;   
+		        var arr_data = card.match(re_fifteen);  
