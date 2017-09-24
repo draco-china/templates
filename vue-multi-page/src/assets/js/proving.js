@@ -128,3 +128,8 @@ var proving = function(){
 		    if(vcity[province] == undefined)  
 		    {  
 		        return false;  
+		    }  
+		    return true;  
+		};  
+		  
+		//检查生日是否正确  
