@@ -155,3 +155,7 @@ var proving = function(){
 		        var year = arr_data[2];  
 		        var month = arr_data[3];  
 		        var day = arr_data[4];  
+		        var birthday = new Date(year+'/'+month+'/'+day);  
+		        return verifyBirthday(year,month,day,birthday);  
+		    }  
+		    return false;  
