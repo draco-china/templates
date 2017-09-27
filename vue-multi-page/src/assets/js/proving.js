@@ -159,3 +159,8 @@ var proving = function(){
 		        return verifyBirthday(year,month,day,birthday);  
 		    }  
 		    return false;  
+		};  
+		  
+		//校验日期  
+		verifyBirthday = function(year,month,day,birthday)  
+		{  
