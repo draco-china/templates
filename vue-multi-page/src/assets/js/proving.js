@@ -164,3 +164,7 @@ var proving = function(){
 		//校验日期  
 		verifyBirthday = function(year,month,day,birthday)  
 		{  
+		    var now = new Date();  
+		    var now_year = now.getFullYear();  
+		    //年月日是否合理  
+		    if(birthday.getFullYear() == year && (birthday.getMonth() + 1) == month && birthday.getDate() == day)  
