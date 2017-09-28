@@ -168,3 +168,7 @@ var proving = function(){
 		    var now_year = now.getFullYear();  
 		    //年月日是否合理  
 		    if(birthday.getFullYear() == year && (birthday.getMonth() + 1) == month && birthday.getDate() == day)  
+		    {  
+		        //判断年份的范围（3岁到100岁之间)  
+		        var time = now_year - year;  
+		        if(time >= 3 && time <= 100)  
