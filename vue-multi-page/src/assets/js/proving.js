@@ -172,3 +172,7 @@ var proving = function(){
 		        //判断年份的范围（3岁到100岁之间)  
 		        var time = now_year - year;  
 		        if(time >= 3 && time <= 100)  
+		        {  
+		            return true;  
+		        }  
+		        return false;  
