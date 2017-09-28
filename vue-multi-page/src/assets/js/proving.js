@@ -176,3 +176,8 @@ var proving = function(){
 		            return true;  
 		        }  
 		        return false;  
+		    }  
+		    return false;  
+		};  
+		  
+		//校验位的检测  
