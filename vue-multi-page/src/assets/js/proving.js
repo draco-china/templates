@@ -185,3 +185,7 @@ var proving = function(){
 		{  
 		    //15位转18位  
 		    card = changeFivteenToEighteen(card);  
+		    var len = card.length;  
+		    if(len == '18')  
+		    {  
+		        var arrInt = new Array(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);   
