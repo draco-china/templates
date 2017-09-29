@@ -195,3 +195,7 @@ var proving = function(){
 		        {   
 		            cardTemp += card.substr(i, 1) * arrInt[i];   
 		        }   
+		        valnum = arrCh[cardTemp % 11];   
+		        if (valnum == card.substr(17, 1))   
+		        {  
+		            return true;  
