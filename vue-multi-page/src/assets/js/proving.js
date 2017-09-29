@@ -189,3 +189,6 @@ var proving = function(){
 		    if(len == '18')  
 		    {  
 		        var arrInt = new Array(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);   
+		        var arrCh = new Array('1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2');   
+		        var cardTemp = 0, i, valnum;   
+		        for(i = 0; i < 17; i ++)   
