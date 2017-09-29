@@ -181,3 +181,7 @@ var proving = function(){
 		};  
 		  
 		//校验位的检测  
+		checkParity = function(card)  
+		{  
+		    //15位转18位  
+		    card = changeFivteenToEighteen(card);  
