@@ -207,3 +207,6 @@ var proving = function(){
 		  
 		//15位转18位身份证号  
 		changeFivteenToEighteen = function(card)  
+		{  
+		    if(card.length == '15')  
+		    {  
