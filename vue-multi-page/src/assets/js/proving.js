@@ -199,3 +199,6 @@ var proving = function(){
 		        if (valnum == card.substr(17, 1))   
 		        {  
 		            return true;  
+		        }  
+		        return false;  
+		    }  
