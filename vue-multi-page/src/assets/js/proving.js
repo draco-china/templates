@@ -214,3 +214,6 @@ var proving = function(){
 		        var arrCh = new Array('1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2');   
 		        var cardTemp = 0, i;     
 		        card = card.substr(0, 6) + '19' + card.substr(6, card.length - 6);  
+		        for(i = 0; i < 17; i ++)   
+		        {   
+		            cardTemp += card.substr(i, 1) * arrInt[i];   
