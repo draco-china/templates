@@ -202,3 +202,8 @@ var proving = function(){
 		        }  
 		        return false;  
 		    }  
+		    return false;  
+		};  
+		  
+		//15位转18位身份证号  
+		changeFivteenToEighteen = function(card)  
