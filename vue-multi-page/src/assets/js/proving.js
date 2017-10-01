@@ -217,3 +217,6 @@ var proving = function(){
 		        for(i = 0; i < 17; i ++)   
 		        {   
 		            cardTemp += card.substr(i, 1) * arrInt[i];   
+		        }   
+		        card += arrCh[cardTemp % 11];   
+		        return card;  
