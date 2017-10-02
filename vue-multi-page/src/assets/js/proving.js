@@ -235,3 +235,7 @@ var proving = function(){
 		if (bankno.length < 16 || bankno.length > 19) {
 			//$("#banknoInfo").html("银行卡号长度必须在16到19之间");
 			return false;
+		}
+		var num = /^\d*$/;  //全数字
+		if (!num.exec(bankno)) {
+			//$("#banknoInfo").html("银行卡号必须全为数字");
