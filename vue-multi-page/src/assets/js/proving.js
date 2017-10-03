@@ -245,3 +245,7 @@ var proving = function(){
 		var strBin="10,18,30,35,37,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,58,60,62,65,68,69,84,87,88,94,95,98,99";    
 		if (strBin.indexOf(bankno.substring(0, 2))== -1) {
 			//$("#banknoInfo").html("银行卡号开头6位不符合规范");
+			return false;
+		}
+        var lastNum=bankno.substr(bankno.length-1,1);//取出最后一位（与luhm进行比较）
+    
