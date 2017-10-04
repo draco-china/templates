@@ -249,3 +249,6 @@ var proving = function(){
 		}
         var lastNum=bankno.substr(bankno.length-1,1);//取出最后一位（与luhm进行比较）
     
+        var first15Num=bankno.substr(0,bankno.length-1);//前15或18位
+        var newArr=new Array();
+        for(var i=first15Num.length-1;i>-1;i--){    //前15或18位倒序存进数组
