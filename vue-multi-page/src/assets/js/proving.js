@@ -255,3 +255,8 @@ var proving = function(){
             newArr.push(first15Num.substr(i,1));
         }
         var arrJiShu=new Array();  //奇数位*2的积 <9
+        var arrJiShu2=new Array(); //奇数位*2的积 >9
+        
+        var arrOuShu=new Array();  //偶数位数组
+        for(var j=0;j<newArr.length;j++){
+            if((j+1)%2==1){//奇数位
