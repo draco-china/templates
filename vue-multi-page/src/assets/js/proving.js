@@ -252,3 +252,6 @@ var proving = function(){
         var first15Num=bankno.substr(0,bankno.length-1);//前15或18位
         var newArr=new Array();
         for(var i=first15Num.length-1;i>-1;i--){    //前15或18位倒序存进数组
+            newArr.push(first15Num.substr(i,1));
+        }
+        var arrJiShu=new Array();  //奇数位*2的积 <9
