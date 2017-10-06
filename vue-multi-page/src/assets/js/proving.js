@@ -260,3 +260,6 @@ var proving = function(){
         var arrOuShu=new Array();  //偶数位数组
         for(var j=0;j<newArr.length;j++){
             if((j+1)%2==1){//奇数位
+                if(parseInt(newArr[j])*2<9)
+                arrJiShu.push(parseInt(newArr[j])*2);
+                else
