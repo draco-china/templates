@@ -266,3 +266,8 @@ var proving = function(){
                 arrJiShu2.push(parseInt(newArr[j])*2);
             }
             else //偶数位
+            arrOuShu.push(newArr[j]);
+        }
+        
+        var jishu_child1=new Array();//奇数位*2 >9 的分割之后的数组个位数
+        var jishu_child2=new Array();//奇数位*2 >9 的分割之后的数组十位数
