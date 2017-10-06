@@ -263,3 +263,6 @@ var proving = function(){
                 if(parseInt(newArr[j])*2<9)
                 arrJiShu.push(parseInt(newArr[j])*2);
                 else
+                arrJiShu2.push(parseInt(newArr[j])*2);
+            }
+            else //偶数位
