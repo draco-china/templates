@@ -271,3 +271,6 @@ var proving = function(){
         
         var jishu_child1=new Array();//奇数位*2 >9 的分割之后的数组个位数
         var jishu_child2=new Array();//奇数位*2 >9 的分割之后的数组十位数
+        for(var h=0;h<arrJiShu2.length;h++){
+            jishu_child1.push(parseInt(arrJiShu2[h])%10);
+            jishu_child2.push(parseInt(arrJiShu2[h])/10);
