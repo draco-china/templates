@@ -282,3 +282,7 @@ var proving = function(){
         var sumJiShuChild2=0; //奇数位*2 >9 的分割之后的数组十位数之和
         var sumTotal=0;
         for(var m=0;m<arrJiShu.length;m++){
+            sumJiShu=sumJiShu+parseInt(arrJiShu[m]);
+        }
+        
+        for(var n=0;n<arrOuShu.length;n++){
