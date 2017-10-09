@@ -286,3 +286,7 @@ var proving = function(){
         }
         
         for(var n=0;n<arrOuShu.length;n++){
+            sumOuShu=sumOuShu+parseInt(arrOuShu[n]);
+        }
+        
+        for(var p=0;p<jishu_child1.length;p++){
