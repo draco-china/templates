@@ -294,3 +294,10 @@ var proving = function(){
             sumJiShuChild2=sumJiShuChild2+parseInt(jishu_child2[p]);
         }      
         //计算总和
+        sumTotal=parseInt(sumJiShu)+parseInt(sumOuShu)+parseInt(sumJiShuChild1)+parseInt(sumJiShuChild2);
+        
+        //计算Luhm值
+        var k= parseInt(sumTotal)%10==0?10:parseInt(sumTotal)%10;        
+        var luhm= 10-k;
+        
+        if(lastNum==luhm){
