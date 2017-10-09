@@ -301,3 +301,6 @@ var proving = function(){
         var luhm= 10-k;
         
         if(lastNum==luhm){
+        $("#banknoInfo").html("Luhm验证通过");
+        return true;
+        }
