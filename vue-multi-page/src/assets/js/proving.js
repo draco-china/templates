@@ -290,3 +290,7 @@ var proving = function(){
         }
         
         for(var p=0;p<jishu_child1.length;p++){
+            sumJiShuChild1=sumJiShuChild1+parseInt(jishu_child1[p]);
+            sumJiShuChild2=sumJiShuChild2+parseInt(jishu_child2[p]);
+        }      
+        //计算总和
