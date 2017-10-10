@@ -304,3 +304,6 @@ var proving = function(){
         $("#banknoInfo").html("Luhm验证通过");
         return true;
         }
+        else{
+        $("#banknoInfo").html("银行卡号必须符合Luhm校验");
+        return false;
