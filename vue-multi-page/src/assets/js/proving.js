@@ -307,3 +307,7 @@ var proving = function(){
         else{
         $("#banknoInfo").html("银行卡号必须符合Luhm校验");
         return false;
+        }        
+    }
+	return {
+		checkStr : checkStr,
