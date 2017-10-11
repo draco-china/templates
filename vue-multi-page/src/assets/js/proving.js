@@ -317,3 +317,7 @@ var proving = function(){
 		checkemail : checkemail,
 		checkusername : checkusername,
 		checkName : checkName,
+		checkCardNo : checkCardNo,
+		checkLuhm : checkLuhm
+	}
+}();
