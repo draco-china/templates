@@ -311,3 +311,6 @@ var proving = function(){
     }
 	return {
 		checkStr : checkStr,
+		checkMoney : checkMoney,
+		checkMobile : checkMobile,
+		checkCode : checkCode,
