@@ -314,3 +314,6 @@ var proving = function(){
 		checkMoney : checkMoney,
 		checkMobile : checkMobile,
 		checkCode : checkCode,
+		checkemail : checkemail,
+		checkusername : checkusername,
+		checkName : checkName,
