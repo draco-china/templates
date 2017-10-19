@@ -22,3 +22,4 @@
 
 <script>
 export default {
+  name: 'hello',
