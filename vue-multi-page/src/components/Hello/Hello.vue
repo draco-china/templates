@@ -21,3 +21,4 @@
 </template>
 
 <script>
+export default {
