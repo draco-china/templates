@@ -43,3 +43,4 @@ ul {
 }
 
 li {
+  display: inline-block;
