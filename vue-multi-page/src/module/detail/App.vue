@@ -3,3 +3,5 @@
     <mu-list>
       <template v-for="item in list">
         <mu-list-item :title="item"/>
+        <mu-divider/>
+      </template>
