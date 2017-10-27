@@ -5,3 +5,4 @@
         <mu-list-item :title="item"/>
         <mu-divider/>
       </template>
+    </mu-list>
