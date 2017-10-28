@@ -7,3 +7,4 @@
       </template>
     </mu-list>
     <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
+  </div>
