@@ -18,3 +18,5 @@
             for (let i = 0; i < 30; i++) {
                 list.push('item' + (i + 1))
             }
+            return {
+                list,
