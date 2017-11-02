@@ -21,3 +21,4 @@
             return {
                 list,
                 num: 30,
+                loading: false,
