@@ -23,3 +23,4 @@
                 num: 30,
                 loading: false,
                 scroller: null
+            }
