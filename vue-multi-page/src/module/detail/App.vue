@@ -24,3 +24,5 @@
                 loading: false,
                 scroller: null
             }
+        },
+        mounted () {
