@@ -34,3 +34,4 @@
             loadMore () {
                 this.loading = true
                 setTimeout(() => {
+                    for (let i = this.num; i < this.num + 10; i++) {
