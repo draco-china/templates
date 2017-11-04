@@ -31,3 +31,4 @@
 
         },
         methods: {
+            loadMore () {
