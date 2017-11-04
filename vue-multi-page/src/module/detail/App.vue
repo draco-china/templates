@@ -32,3 +32,5 @@
         },
         methods: {
             loadMore () {
+                this.loading = true
+                setTimeout(() => {
