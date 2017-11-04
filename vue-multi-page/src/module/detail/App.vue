@@ -30,3 +30,4 @@
             this.scroller = this.$el
 
         },
+        methods: {
