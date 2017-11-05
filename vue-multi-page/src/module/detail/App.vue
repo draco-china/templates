@@ -36,3 +36,4 @@
                 setTimeout(() => {
                     for (let i = this.num; i < this.num + 10; i++) {
                         this.list.push('item' + (i + 1))
+                    }
