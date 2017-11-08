@@ -46,3 +46,5 @@
 </script>
 
 <style lang="css">
+  .demo-infinite-container{
+    width: 100%;
