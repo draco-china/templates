@@ -48,3 +48,4 @@
 <style lang="css">
   .demo-infinite-container{
     width: 100%;
+    height: 100%;
