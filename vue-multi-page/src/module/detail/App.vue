@@ -58,3 +58,4 @@
 <!--
 <template>
   <div id="app">
+    <img src="./images/logo.png">
