@@ -62,3 +62,6 @@
     <div>详情内容</div>
     <a href="index.html">首页</a>
     <i class="icon icon-camera"></i>
+  </div>
+</template>
+
