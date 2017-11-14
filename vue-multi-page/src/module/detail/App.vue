@@ -71,3 +71,5 @@
         name: 'app',
         data(){
             return {
+                datas: [],
+                page: 1,
