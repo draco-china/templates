@@ -74,3 +74,4 @@
                 datas: [],
                 page: 1,
                 busy: false
+            };
