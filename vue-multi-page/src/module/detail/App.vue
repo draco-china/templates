@@ -77,3 +77,5 @@
             };
         },
         created:function(){
+            lib.get("/user/alcohol/hasFillQuestionare",{sampleNumber:1},function (data) {
+                if(!data.data){
