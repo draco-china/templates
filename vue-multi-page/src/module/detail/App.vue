@@ -80,3 +80,4 @@
             lib.get("/user/alcohol/hasFillQuestionare",{sampleNumber:1},function (data) {
                 if(!data.data){
                     window.location.href="/h5/slightlydrunk/information.html?sampleNumber="+sampleNumber;
+                } else {
