@@ -82,3 +82,4 @@
                     window.location.href="/h5/slightlydrunk/information.html?sampleNumber="+sampleNumber;
                 } else {
                     that.isAllShow = true;
+                }
