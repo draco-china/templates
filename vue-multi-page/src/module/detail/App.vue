@@ -84,3 +84,6 @@
                     that.isAllShow = true;
                 }
             });
+        },
+        methods:{
+
