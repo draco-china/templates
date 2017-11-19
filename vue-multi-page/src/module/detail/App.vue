@@ -91,3 +91,4 @@
         components: {
         }
     }
+</script>
