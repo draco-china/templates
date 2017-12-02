@@ -5,3 +5,4 @@
     <mu-icon-button icon="close" slot="left"/>
     <mu-icon-menu icon="more_vert" slot="right">
       <mu-menu-item title="菜单 1"/>
+      <mu-menu-item title="菜单 2"/>
