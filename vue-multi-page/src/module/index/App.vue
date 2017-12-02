@@ -8,3 +8,4 @@
       <mu-menu-item title="菜单 2"/>
       <mu-menu-item title="菜单 3"/>
       <mu-menu-item title="菜单 4"/>
+      <mu-menu-item title="菜单 5"/>
