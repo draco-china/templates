@@ -12,3 +12,5 @@
     </mu-icon-menu>
   </mu-appbar>
   <div class="demo" style="margin-bottom:60px;">
+    <mu-pape :zDepth="1" v-for="item in list">
+      <mu-card>
