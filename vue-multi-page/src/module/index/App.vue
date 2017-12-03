@@ -14,3 +14,4 @@
   <div class="demo" style="margin-bottom:60px;">
     <mu-pape :zDepth="1" v-for="item in list">
       <mu-card>
+        <mu-card-header :title="item" subTitle="这个人很懒什么都没留下">
