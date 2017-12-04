@@ -19,3 +19,5 @@
         </mu-card-header>
         <mu-card-media>
           <img height="200" src="./images/logo.png" />
+        </mu-card-media>
+        <mu-card-text>
