@@ -17,3 +17,4 @@
         <mu-card-header :title="item" subTitle="这个人很懒什么都没留下">
           <mu-avatar src="" slot="avatar"/>
         </mu-card-header>
+        <mu-card-media>
