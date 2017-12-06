@@ -28,3 +28,5 @@
         </mu-card-text>
         <mu-card-actions>
           <mu-icon-button tooltip="点赞" tooltipPosition="top-center" touch>
+            <i class="icon icon-dog-2"></i>
+          </mu-icon-button>
