@@ -33,3 +33,4 @@
           <mu-icon-button tooltip="点赞" tooltipPosition="top-center" touch>
             <i class="icon icon-my"></i>
           </mu-icon-button>
+        </mu-card-actions>
