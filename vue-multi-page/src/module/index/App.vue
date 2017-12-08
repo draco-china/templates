@@ -37,3 +37,4 @@
       </mu-card>
     </mu-pape>
     <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
+  </div>
