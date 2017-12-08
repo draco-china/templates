@@ -36,3 +36,4 @@
         </mu-card-actions>
       </mu-card>
     </mu-pape>
+    <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
