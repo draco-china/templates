@@ -34,3 +34,5 @@
             <i class="icon icon-my"></i>
           </mu-icon-button>
         </mu-card-actions>
+      </mu-card>
+    </mu-pape>
