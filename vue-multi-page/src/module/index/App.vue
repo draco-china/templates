@@ -38,3 +38,5 @@
     </mu-pape>
     <mu-infinite-scroll :scroller="scroller" :loading="loading" @load="loadMore"/>
   </div>
+   <mu-paper :zDepth="5" style="position:fixed;bottom:0;left:0;width:100%">
+      <mu-bottom-nav :value="bottomNav" @change="handleChange">
