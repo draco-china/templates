@@ -40,3 +40,4 @@
   </div>
    <mu-paper :zDepth="5" style="position:fixed;bottom:0;left:0;width:100%">
       <mu-bottom-nav :value="bottomNav" @change="handleChange">
+        <mu-bottom-nav-item value="recents" title="Recents" icon="restore"/>
