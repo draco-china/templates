@@ -46,3 +46,5 @@
       </mu-bottom-nav>
     </mu-paper>
   </div>
+</template>
+
