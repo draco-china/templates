@@ -51,3 +51,4 @@
 <script>
   import lib from '@/assets/js/lib.js'
 
+  export default {
