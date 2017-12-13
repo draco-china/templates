@@ -58,3 +58,4 @@
               list.push('item' + (i + 1))
           }
           return {
+              bottomNav: 'recents',
