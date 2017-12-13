@@ -62,3 +62,5 @@
               list,
               num: 10,
               refreshing: false,
+              trigger: null,
+              loading: false,
