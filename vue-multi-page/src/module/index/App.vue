@@ -59,3 +59,5 @@
           }
           return {
               bottomNav: 'recents',
+              list,
+              num: 10,
