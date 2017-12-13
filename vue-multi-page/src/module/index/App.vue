@@ -61,3 +61,4 @@
               bottomNav: 'recents',
               list,
               num: 10,
+              refreshing: false,
