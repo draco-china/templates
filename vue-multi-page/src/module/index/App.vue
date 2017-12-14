@@ -64,3 +64,4 @@
               refreshing: false,
               trigger: null,
               loading: false,
+              scroller: null,
