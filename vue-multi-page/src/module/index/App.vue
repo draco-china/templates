@@ -65,3 +65,6 @@
               trigger: null,
               loading: false,
               scroller: null,
+          }
+      },
+
