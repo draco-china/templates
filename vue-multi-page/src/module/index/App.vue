@@ -69,3 +69,5 @@
       },
 
       mounted () {
+          this.trigger = this.$el
+          this.$el.style.height=window.screen.height+'px'
