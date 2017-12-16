@@ -75,3 +75,5 @@
       },
       methods:{
           handleChange (val) {
+              this.bottomNav = val
+          },
