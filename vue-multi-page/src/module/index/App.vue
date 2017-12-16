@@ -74,3 +74,4 @@
           this.scroller = this.$el
       },
       methods:{
+          handleChange (val) {
