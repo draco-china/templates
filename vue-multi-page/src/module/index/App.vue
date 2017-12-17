@@ -78,3 +78,4 @@
               this.bottomNav = val
           },
           refresh () {
+              this.refreshing = true
