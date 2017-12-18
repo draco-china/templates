@@ -81,3 +81,4 @@
               this.refreshing = true
               setTimeout(() => {
                   const list = []
+                  for (let i = this.num; i < this.num + 10; i++) {
