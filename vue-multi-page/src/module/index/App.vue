@@ -84,3 +84,4 @@
                   for (let i = this.num; i < this.num + 10; i++) {
                       list.push('item' + (i + 1))
                   }
+                  this.list = list
