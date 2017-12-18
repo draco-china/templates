@@ -79,3 +79,5 @@
           },
           refresh () {
               this.refreshing = true
+              setTimeout(() => {
+                  const list = []
