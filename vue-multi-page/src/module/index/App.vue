@@ -85,3 +85,5 @@
                       list.push('item' + (i + 1))
                   }
                   this.list = list
+                  this.num += 10
+                  this.refreshing = false
