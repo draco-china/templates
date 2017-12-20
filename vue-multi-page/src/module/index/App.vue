@@ -88,3 +88,5 @@
                   this.num += 10
                   this.refreshing = false
               }, 2000)
+          },
+          loadMore () {
