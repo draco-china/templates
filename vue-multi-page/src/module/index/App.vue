@@ -90,3 +90,4 @@
               }, 2000)
           },
           loadMore () {
+              this.loading = true
