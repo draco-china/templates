@@ -97,3 +97,4 @@
                   }
                   this.num += 10
                   this.loading = false
+              }, 2000)
