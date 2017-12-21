@@ -96,3 +96,4 @@
                       this.list.push('item' + (i + 1))
                   }
                   this.num += 10
+                  this.loading = false
