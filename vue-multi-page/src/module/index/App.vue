@@ -106,3 +106,6 @@
   }
 </script>
 
+<style lang="stylus">
+  #app
+    position:relative;
