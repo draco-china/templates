@@ -109,3 +109,4 @@
 <style lang="stylus">
   #app
     position:relative;
+    height:100%;
