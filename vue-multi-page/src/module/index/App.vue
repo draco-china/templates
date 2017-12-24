@@ -116,3 +116,5 @@
   .icon
     vertical-align:middle;
   .mu-card-actions
+    text-align:right;
+  .mu-infinite-scroll
