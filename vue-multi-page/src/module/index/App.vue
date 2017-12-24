@@ -115,3 +115,4 @@
     -webkit-overflow-scrolling: touch;
   .icon
     vertical-align:middle;
+  .mu-card-actions
