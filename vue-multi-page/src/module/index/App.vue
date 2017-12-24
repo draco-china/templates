@@ -113,3 +113,5 @@
     width:100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+  .icon
+    vertical-align:middle;
