@@ -119,3 +119,7 @@
     text-align:right;
   .mu-infinite-scroll
     padding-top:8px;
+    padding-bottom:0!important;
+
+</style>
+
