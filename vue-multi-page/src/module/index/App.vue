@@ -118,3 +118,4 @@
   .mu-card-actions
     text-align:right;
   .mu-infinite-scroll
+    padding-top:8px;
