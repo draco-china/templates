@@ -42,3 +42,33 @@ module.exports = {
     "no-control-regex": 2,
 
     // 禁止使用debugger语句
+    "no-debugger": process.env.NODE_ENV === 'production' ? 2 : 0,
+
+    // 函数参数禁止重名
+    "no-dupe-args": 2,
+
+    // 在创建对象字面量时不允许键重复
+    "no-dupe-keys": 2,
+
+    // 在switch语句中禁止重复的case
+    "no-duplicate-case": 2,
+
+    // 代码块的内容不能为空，禁止空代码块
+    "no-empty": 2,
+
+    // 正则表达式的内容不能为空，禁止使用不匹配任何字符串的正则表达式
+    "no-empty-character-class": 2,
+
+    // 禁止对catch语句中的异常进行赋值
+    "no-ex-assign": 2,
+
+    // 禁止不必要的bool转换
+    "no-extra-boolean-cast": 2,
+
+    // 禁止使用多余的圆括号
+    "no-extra-parens": 2,
+
+    // 禁止多余的冒号
+    "no-extra-semi": 2,
+
+    // 禁止重复的函数声明
