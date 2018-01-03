@@ -72,3 +72,33 @@ module.exports = {
     "no-extra-semi": 2,
 
     // 禁止重复的函数声明
+    "no-func-assign": 2,
+
+    // 禁止在块语句中声明变量或函数
+    "no-inner-declarations": 2,
+
+    // 禁止使用无效的正则语句
+    "no-invalid-regexp": 2,
+
+    // 禁止使用不合法或者不规则的空白符
+    "no-irregular-whitespace": 2,
+
+    // 在in操作符左边的操作项不能用! 例如这样写不对的：if ( !a in b) { // dosomething }
+    "no-negated-in-lhs": 2,
+
+    // 禁止把全局对象当函数调用，比如下面写法错误的：Math(), JSON()
+    "no-obj-calls": 2,
+
+    // 禁止在正则表达式字面量中使用多个空格 /foo bar/
+    "no-regex-spaces": 2,
+
+    // 禁止稀疏数组，清除多余的逗号申明  比如[1,,2]
+    "no-sparse-arrays": 2,
+
+    // 为了保证两行不相关的代码不会意外的被当做一行代码来解析
+    "no-unexpected-multiline": 0,
+
+    // 禁止有执行不到的代码
+    "no-unreachable": 2,
+
+    // 禁止和NaN作比较,推荐使用isNaN方法
