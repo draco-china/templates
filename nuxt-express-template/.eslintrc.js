@@ -232,3 +232,35 @@ module.exports = {
     "no-implicit-globals": 2,
 
     // 在setTimeout(), setInterval() or execScript()中消除隐式eval的使用
+    "no-implied-eval": 2,
+
+    // 禁止无效的this，只能用在构造器，类，对象字面量
+    "no-invalid-this": 0,
+
+    // 禁止使用__iterator__属性
+    "no-iterator": 2,
+
+    // 禁止使用label语句，以避免无限循环
+    "no-labels": [2, { "allowLoop": false, "allowSwitch": false }],
+
+    // 禁止使用不必要的嵌套代码块
+    "no-lone-blocks": 2,
+
+    // 禁止在循环体中定义函数并且函数引用了外部变量
+
+    // 在循环中定义了函数，但是函数内部没有引用外部变量，或者使用let定义的代码块变量，视为合法
+    "no-loop-func": 2,
+
+    // 禁止使用魔法数字，建议使用常量来代替
+    "no-magic-numbers": 0,
+
+    // 保证了在逻辑表达式、条件表达式、申明语句、数组元素、对象属性、sequences、函数参数中不使用超过一个的空白符。
+    "no-multi-spaces": 0,
+
+    // 该规则保证了字符串不分行书写。
+    "no-multi-str": 2,
+
+    // 该规则保证了不重写原生对象。
+    "no-native-reassign": 2,
+
+    // 在使用new来调用构造函数后，必须把生成的实例赋值给一个变量
