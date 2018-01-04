@@ -198,3 +198,37 @@ module.exports = {
     "no-empty-function": 0,
 
     // 在结构赋值时，模式不能为空。在ECMAScript2015的结构赋值中，模式为空是不会报错的，只是这样的结构赋值没有任何效果，该条规则就保证了模式不能为空，也就保证了结构赋值的有效性。
+    "no-empty-pattern": 2,
+
+    // 保证了在和null比较时使用===和!==，而不能够使用==和!=
+    "no-eq-null": 0,
+
+    // 禁止使用eval函数
+    "no-eval": 2,
+
+    // 禁止扩展native对象，不能向native的对象上面添加属性
+    "no-extend-native": 2,
+
+    // 保证了调用bind方法的函数体内有this对象。规避了不必要的使用bind方法的情况。
+
+    // 箭头函数中没有this对象，也就不能够使用bind()方法。该规则保证了在所有的箭头函数中使用bind方法将被视为错误。
+    "no-extra-bind": 2,
+
+    // 如果 loop中没有内嵌的loops或switches, loop标签是不必要的.
+    "no-extra-label": 2,
+
+    // 在case语句中尽量加break，避免不必要的fallthrough错误，消除从一个case到另一个case的非故意的「fall through」。
+
+    // 如果没有添加break等终止语句或者没有添加注释语句，将会抛出错误
+    "no-fallthrough": 2,
+
+    // 在使用浮点小数时，不能够省略小数点前面的数或者后面的数，必须写。比如.2 2. 应该写2.2 2.0
+    "no-floating-decimal": 2,
+
+    // 禁止隐式转换，为了消除简写的类型转换
+    "no-implicit-coercion": 2,
+
+    // 禁止在全局作用域里声明变量或函数
+    "no-implicit-globals": 2,
+
+    // 在setTimeout(), setInterval() or execScript()中消除隐式eval的使用
