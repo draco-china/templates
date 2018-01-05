@@ -394,3 +394,47 @@ module.exports = {
     "callback-return": 0,
 
     // 强制require()出现在模块作用域的顶部
+    "global-require": 0,
+
+    //  如果函数有err入参(err或者error),在函数体内必须进行处理
+    "handle-callback-err": [0, "^(err|error)$"],
+
+    // 声明时不能混用声明类型
+    "no-mixed-requires": 0,
+
+    // 禁止把require方法和new操作符一起使用。
+    "no-new-require": 0,
+
+    // 不能使用__dirname或__filename做路径拼接
+    "no-path-concat": 0,
+
+    // 禁止使用process.env
+    "no-process-env": 0,
+
+    // 禁止使用process.exit()
+    "no-process-exit": 0,
+
+    // 禁用使用指定模块，使用了就会报错
+    "no-restricted-modules": [0, "fs"],
+
+    // 禁止使用同步方法，建议使用异步方法
+    "no-sync": 0,
+
+
+
+
+
+    /*Stylistic Issues*/
+
+    //  用数组字面量定义数组时数组元素前后是否加空格，
+
+    //  never参数： 数组元素前后不能带空格，
+
+    //  always参数：数组元素前后必须留空格
+    "array-bracket-spacing": [0, "never"],
+
+    // 在单行代码块中，代码块前后是否需要留空格
+
+    //  always参数：默认，前后必须留空格
+
+    //  never参数： 前后不能带空格
