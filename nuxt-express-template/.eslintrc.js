@@ -361,3 +361,36 @@ module.exports = {
     "no-delete-var": 0,
 
     // 防止label和声明的变量重名
+    "no-label-var": 2,
+
+    // 禁止使用某些全局变量
+    "no-restricted-globals": [2, "event"],
+
+    // 禁止声明外部作用域中已定义的变量
+    "no-shadow": 0,
+
+    // 声明变量时禁止覆盖JavaScript中的一些保留关键字，比如NaN、Infinity、undefined、eval、arguments等。
+    "no-shadow-restricted-names": 2,
+
+    // 禁止使用未被定义的变量，除非已在配置文件的global中进行了说明。
+    "no-undef": 2,
+
+    // 禁止初始化变量为undefined
+    "no-undef-init": 2,
+
+    // 禁止把undefined作为变量名
+    "no-undefined": 0,
+
+    // 不允许定义的变量在后面的代码中没有被使用到
+    "no-unused-vars": 0,
+
+    // 所有的变量都应该先定义后使用
+    "no-use-before-define": 0,
+
+
+    /*Node.js and CommonJS*/
+
+    // 强制回调后return，避免多次调用回调
+    "callback-return": 0,
+
+    // 强制require()出现在模块作用域的顶部
