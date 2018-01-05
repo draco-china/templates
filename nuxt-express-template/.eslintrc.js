@@ -324,3 +324,40 @@ module.exports = {
     "no-void": 2,
 
     // 生产代码中不能出现warning-comments包含的注释
+    "no-warning-comments": [2, { "terms": ["todo", "fixme", "any other term"], "location": "anywhere" }],
+
+    // 不要使用with语句
+    "no-with": 2,
+
+    // 在使用parseInt()方法时，必须要传递第二个参数来帮助解析。
+    "radix": 2,
+
+    // 在通过var声明变量时，应该放在代码所在作用域的顶部
+    "vars-on-top": 2,
+
+    // 立即执行函数需要通过圆括号包围
+    "wrap-iife": 2,
+
+    // yoda条件语句就是对象字面量应该写在比较操作符的左边，而变量应该写在比较操作符的右边
+
+    // 默认的规则要求，变量写在左边而字面量写在右边
+    "yoda": 2,
+
+
+    /*Strict Mode*/
+
+    // 使用严格模式
+    "strict": 2,
+
+    /*Variables*/
+
+    // 变量声明时必须赋初值
+    "init-declarations": 0,
+
+    // In IE 8 and earlier，禁止catch子句参数与外部作用域变量同名
+    "no-catch-shadow": 2,
+
+    // 禁止使用delete删除var声明的变量
+    "no-delete-var": 0,
+
+    // 防止label和声明的变量重名
