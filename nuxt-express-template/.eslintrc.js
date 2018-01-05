@@ -294,3 +294,33 @@ module.exports = {
     "no-script-url": 0,
 
     // 禁止给自身赋值
+    "no-self-assign": 2,
+
+    // 禁止和自身作比较
+    "no-self-compare": 2,
+
+    // 禁止可能导致结果不明确的逗号操作符
+    "no-sequences": 0,
+
+    // 通过throw语句抛出的对象必须是Error对象本身或者通过Error对象定义的对象。有些情况除外，见官网
+    "no-throw-literal": 2,
+
+    // 禁止使用不被修改的循环条件
+    "no-unmodified-loop-condition": 2,
+
+    // 禁止在代码中出现没有被使用到的表达式或值
+    "no-unused-expressions": [2, { "allowShortCircuit": true, "allowTernary": true }],
+
+    // 禁止在代码中出现没有被使用到的标签
+    "no-unused-labels": 2,
+
+    // 避免使用没有意义的call() 和 apply()
+    "no-useless-call": 2,
+
+    // 避免使用不必要的字符串拼接
+    "no-useless-concat": 2,
+
+    // 不要使用void操作符
+    "no-void": 2,
+
+    // 生产代码中不能出现warning-comments包含的注释
