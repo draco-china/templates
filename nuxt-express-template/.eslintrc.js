@@ -514,3 +514,33 @@ module.exports = {
     "max-depth": [2, 4],
 
     // 规定了代码单行的最大长度
+    "max-len": [0, 80, 4],
+
+    // 规定了回调的最大嵌套层数
+    "max-nested-callbacks": [2, 10],
+
+    // 规定了函数参数的最大个数
+    "max-params": [0, 3],
+
+    // 规定了函数中代码不能够超过多少行
+    "max-statements": [0, 10],
+
+    // 使用构造函数(new)时首字母需大写，首字母大写的函数需用new操作符
+    "new-cap": 2,
+
+    // 使用构造函数(new)时必须圆括号不能省略
+    "new-parens": 0,
+
+    // 规定了变量声明后是否需要空行
+    "newline-after-var": 0,
+
+    // 规定了return语句前是否是否需要空行
+    "newline-before-return": 0,
+
+    // 规定了方法链式调用时是否需换行
+    "newline-per-chained-call": 0,
+
+    // 禁止使用Array构造函数
+    "no-array-constructor": 0,
+
+    // 禁止使用位操作符
