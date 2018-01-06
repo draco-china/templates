@@ -544,3 +544,33 @@ module.exports = {
     "no-array-constructor": 0,
 
     // 禁止使用位操作符
+    "no-bitwise": 0,
+
+    // 禁止使用continue
+    "no-continue": 0,
+
+    // 禁止使用行内注释
+    "no-inline-comments": 0,
+
+    // 禁止在if-else控制语句中，else代码块中仅包含一个if语句
+    "no-lonely-if": 0,
+
+    // 禁止混用tab和空格
+    "no-mixed-spaces-and-tabs": 2,
+
+    // 不要留超过规定数目的空白行
+    "no-multiple-empty-lines": [2, { "max": 3 }],
+
+    // 在if语句中使用了否定表达式，同时else语句又不为空，那么这样的if-else语句将被视为不合法，为什么不将其反过来这样代码更容易理解，该规则同样适用于三元操作符
+    "no-negated-condition": 0,
+
+    // 三元操作符禁止嵌套
+    "no-nested-ternary": 0,
+
+    // 禁止使用new Object()来构造对象
+    "no-new-object": 0,
+
+    // 禁止使用++，--
+    "no-plusplus": 0,
+
+    // 禁止使用某些特定的JavaScript语法，例如FunctionDeclaration 和 WithStatement
