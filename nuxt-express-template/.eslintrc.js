@@ -668,3 +668,40 @@ module.exports = {
     "space-unary-ops": [2, { "words": true, "nonwords": false }],
 
     // 规定是否需要在代码注释起始符//  or /*后面至少紧跟一个空格
+    "spaced-comment": [2, "always", { "markers": ["global", "globals", "eslint", "eslint-disable", "*package", "!", ","] }],
+
+    // 要求在正则表达式的双斜杠外面加一个圆括号，来消除歧义
+    "wrap-regex": 0,
+
+
+    /*ECMAScript 6*/
+
+    // 箭头函数中，如果函数体里只有一句代码时可以省略大括号
+
+    // 规定是否可以省略大括号
+    "arrow-body-style": 0,
+
+    // 箭头函数中，只有一个参数时可以省略圆括号
+
+    // 规定了参数是否需要圆括号包围
+    "arrow-parens": [0, "always"],
+
+    // 规定了箭头函数的箭头前后是否加空格
+    "arrow-spacing": [2, { "before": true, "after": true }],
+
+    // 保证constructor函数中super()应正确出现，比如在继承的classes中（派生类）必须使用super，否则（非派生类）不要使用super。
+    "constructor-super": 2,
+
+    // 规定generator函数中星号前后的空白
+    "generator-star-spacing": [2, { "before": true, "after": true }],
+
+    // 禁止覆盖class命名，也就是说变量名不要和class名重名
+    "no-class-assign": 2,
+
+    // 箭头函数的箭头和比较操作符 (>, <, <=, and >=)很相似，该规则要求在和比较操作符容易发生混淆时禁止使用箭头函数语法
+    "no-confusing-arrow": 2,
+
+    // 禁止修改const声明的变量
+    "no-const-assign": 2,
+
+    // class中的成员不允许有相同的名字
