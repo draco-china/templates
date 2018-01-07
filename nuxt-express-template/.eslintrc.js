@@ -628,3 +628,43 @@ module.exports = {
 
       }
 
+    }],
+
+    // JavaScript不要求在每行末尾加上分号，这是因为JavaScript引擎会决定是否需要在行末加上分号，然后自动帮我们在行末加上分号，这一特性被成为ASI(automatic semicolon insertion)，也是JavaScript语言最富争议的特性之一
+
+    // 尽管ASI允许我们使用更加自由的代码风格，但是它也可能使得你的代码并不是按你期许的方式运行
+
+    // 两个可选参数，always 和never
+
+    // 默认配置always，要求在行末加上分号。
+    "semi": [0, "always"],
+
+    // 该规则用来规定分号前后是否加空格，默认配置如下
+    "semi-spacing": [2, { "before": false, "after": true }],
+
+    // 要求对同一个模块里的import声明按字母排序
+    "sort-imports": 0,
+
+    // 规定在同一个变量声明代码块中，要对变量的声明按字母排序
+    "sort-vars": 2,
+
+    // 规定了在代码块前是否需要加空格
+    "space-before-blocks": [2, "always"],
+
+    // 函数定义时，function关键字后面的小括号前是否需要加空格
+    "space-before-function-paren": [0, "always"],
+
+    // 规定圆括号内部的空格。规定是否需要在(右边，或者)左边加空格。
+    "space-in-parens": [2, "never"],
+
+    // 中綴操作符左右是否添加空格
+    "space-infix-ops": 2,
+
+    // 规定在一元操作符前后是否需要加空格，单词类操作符需要加，而非单词类操作符不用加
+
+    // words - applies to unary word operators such as: new, delete, typeof, void, yield
+
+    // nonwords - applies to unary operators such as: -, +, --, ++, !, !!
+    "space-unary-ops": [2, { "words": true, "nonwords": false }],
+
+    // 规定是否需要在代码注释起始符//  or /*后面至少紧跟一个空格
