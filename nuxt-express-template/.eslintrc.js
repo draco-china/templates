@@ -604,3 +604,27 @@ module.exports = {
     "operator-assignment": [2, "always"],
 
     // 在换行时操作符应该放在行首还是行尾。还可对某些操作符进行重写。
+    "operator-linebreak": [2, "after", { "overrides": { "?": "before", ":": "before" } }],
+
+    // 在代码块中，代码块的开始和结尾是否应该留一个空行
+    "padded-blocks": 0,
+
+    // 对象的属性名是否强制加双引号
+    "quote-props": [0, "always"],
+
+    // 在JavaScript中有三种方式定义字符串，双引号、单引号、反义符（ECMAScript2015）。规定了字符串定义的方式
+    "quotes": [0, "single", "avoid-escape"],
+
+    // 注释格式要求JSDoc格式
+    "require-jsdoc": [0, {
+
+      "require": {
+
+        "FunctionDeclaration": true,
+
+        "MethodDefinition": false,
+
+        "ClassDeclaration": false
+
+      }
+
