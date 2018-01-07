@@ -574,3 +574,33 @@ module.exports = {
     "no-plusplus": 0,
 
     // 禁止使用某些特定的JavaScript语法，例如FunctionDeclaration 和 WithStatement
+    "no-restricted-syntax": [0, "FunctionExpression", "WithStatement"],
+
+    // 函数调用时，函数名和圆括号之间不能有空格
+    "no-spaced-func": 2,
+
+    // 禁止使用三元操作符
+    "no-ternary": 0,
+
+    // 禁止行末加空格
+    "no-trailing-spaces": 0,
+
+    // 禁止在标识符前后使用下划线
+    "no-underscore-dangle": 0,
+
+    // 禁止使用没有必要的三元操作符，因为用有些三元操作符可以使用其他语句替换
+    "no-unneeded-ternary": [0, { "defaultAssignment": false }],
+
+    // 禁止属性操作符.的前后和[之前有空格
+    "no-whitespace-before-property": 2,
+
+    // 规定对象字面量中大括号内是否允许加空格，也适用于ES6中的结构赋值和模块import和export
+    "object-curly-spacing": [0, "never"],
+
+    // 规定了在每个函数中声明变量是否只使用一次var，该规则同样适用于let和const
+    "one-var": [2, { "initialized": "never" }],
+
+    // 规定了使用赋值操作符的简写形式
+    "operator-assignment": [2, "always"],
+
+    // 在换行时操作符应该放在行首还是行尾。还可对某些操作符进行重写。
