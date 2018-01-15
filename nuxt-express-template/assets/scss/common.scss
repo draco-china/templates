@@ -30,3 +30,4 @@
   transition: transform .5s;
 }
 .scale-enter, .scale-leave-active {
+  transform: scale(0)
