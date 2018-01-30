@@ -21,3 +21,4 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
+  content: '';
