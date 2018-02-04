@@ -213,3 +213,22 @@ sub,
 sup {
   font-size: 75%;
   line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+::-moz-selection {
+  background-color: #b3d4fc; /* 1 */
