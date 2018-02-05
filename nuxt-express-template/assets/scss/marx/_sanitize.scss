@@ -274,3 +274,36 @@ video {
 audio:not([controls]) {
   display: none;
   height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+
+svg {
+  fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data (https://html.spec.whatwg.org/multipage/tables.html#tables)
+   ========================================================================== */
+
+/**
+ * Collapse border spacing
+ */
+
