@@ -307,3 +307,27 @@ svg:not(:root) {
  * Collapse border spacing
  */
 
+table {
+  border-collapse: collapse;
+}
+
+/* Forms (https://html.spec.whatwg.org/multipage/forms.html#forms)
+   ========================================================================== */
+
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Inherit styling in all browsers (opinionated).
+ */
+
+button,
