@@ -189,3 +189,25 @@
 /// @param {Boolean} $inset - Inset
 
 @mixin box-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4), $inset: "") {
+  @if ($inset != "") {
+    @include css3-prefix('box-shadow', $inset $x $y $blur $color);
+  } @else {
+    @include css3-prefix('box-shadow', $x $y $blur $color);
+  }
+}
+
+
+/// Box Sizing
+/// @param {*} $type [border-box] - Type
+/// @require {mixin} css3-prefix
+
+@mixin box-sizing($type: border-box) {
+  @include css3-prefix('box-sizing', $type);
+}
+
+
+/// Columns
+/// @param {Integer} $count [3] - Count
+/// @param {Integer} $gap [10] - Gap
+/// @require {mixin} css3-prefix
+
