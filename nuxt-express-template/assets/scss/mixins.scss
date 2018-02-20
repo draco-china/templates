@@ -353,3 +353,18 @@
 
 @mixin transform-style($style: preserve-3d) {
   @include css3-prefix('transform-style', $style);
+}
+
+/// Transition
+/// @param {List} $properties - Properties
+/// @require {mixin} css3-prefix
+
+@mixin transition($properties...) {
+
+  @if length($properties) >= 1 {
+    @include css3-prefix('transition', $properties);
+  }
+
+  @else {
+    @include css3-prefix('transition',  "all 0.2s ease-in-out 0s");
+  }
