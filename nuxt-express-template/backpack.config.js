@@ -3,3 +3,4 @@ module.exports = {
     config.entry.main = './server/index.js'
     return config
   }
+}
