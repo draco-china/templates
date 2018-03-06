@@ -8,3 +8,4 @@ module.exports = {
       error_file: "/tmp/error.log",
       out_file: "/tmp/out.log",
       env: {
+        "NODE_ENV": "production",
