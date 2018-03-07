@@ -9,3 +9,4 @@ module.exports = {
       out_file: "/tmp/out.log",
       env: {
         "NODE_ENV": "production",
+      }
