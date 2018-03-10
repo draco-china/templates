@@ -15,3 +15,4 @@ export const textOverflow = (text, length) => {
 
 // 首字母大写
 export const firstUpperCase = str => {
+  return str ? str.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase()) : str
