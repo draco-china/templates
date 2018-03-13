@@ -6,3 +6,4 @@ export default {
   firstUpperCase,
   timeAgo,
   toYMD,
+  toLocalString
