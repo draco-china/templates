@@ -15,3 +15,4 @@ const pluralize = (time, label) => {
 export const timeAgo = time => {
   time = time instanceof Date ? time : new Date(time)
   const between = Date.now() / 1000 - Number(time) / 1000
+  if (between < 3600) {
