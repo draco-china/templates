@@ -18,3 +18,4 @@ export const timeAgo = time => {
   if (between < 3600) {
     if (Object.is(~~(between / 60), 0)) {
       return '刚刚'
+    }
