@@ -19,3 +19,4 @@ export const timeAgo = time => {
     if (Object.is(~~(between / 60), 0)) {
       return '刚刚'
     }
+    return pluralize(~~(between / 60), ' 分钟')
