@@ -23,3 +23,4 @@ export const timeAgo = time => {
   } else if (between < 86400) {
     return pluralize(~~(between / 3600), ' 小时')
   } else {
+    return pluralize(~~(between / 86400), ' 天')
