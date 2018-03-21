@@ -35,3 +35,4 @@ export const toLocalString = date => {
 // YMDHMS时间转换过滤器
 export const toYMD = date => {
   if (!date) { return date }
+  date = new Date(date)
