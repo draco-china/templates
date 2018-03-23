@@ -4,3 +4,5 @@
       <nuxt></nuxt>
     </keep-alive>
   </div>
+</template>
+
