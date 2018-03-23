@@ -7,3 +7,4 @@
 </template>
 
 <script>
+export default {
