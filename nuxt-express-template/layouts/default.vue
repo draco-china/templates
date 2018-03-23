@@ -3,3 +3,4 @@
     <keep-alive>
       <nuxt></nuxt>
     </keep-alive>
+  </div>
