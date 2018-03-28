@@ -6,3 +6,4 @@
     </h1>
     <h2 class="info">
       {{ error.message }}
+    </h2>
