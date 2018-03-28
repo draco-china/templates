@@ -4,3 +4,5 @@
     <h1 class="title">
       {{ error.statusCode }}
     </h1>
+    <h2 class="info">
+      {{ error.message }}
