@@ -11,3 +11,4 @@
       Homepage
     </nuxt-link>
   </section>
+</template>
