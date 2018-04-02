@@ -21,3 +21,5 @@ export default {
 <style scoped>
 .title
 {
+  margin-top: 15px;
+  font-size: 5em;
