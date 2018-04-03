@@ -26,3 +26,5 @@ export default {
 }
 .info
 {
+  font-weight: 300;
+  color: #9aabb1;
