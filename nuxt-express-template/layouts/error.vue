@@ -23,3 +23,5 @@ export default {
 {
   margin-top: 15px;
   font-size: 5em;
+}
+.info
