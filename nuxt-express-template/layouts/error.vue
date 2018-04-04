@@ -33,3 +33,5 @@ export default {
 .button
 {
   margin-top: 50px;
+}
+</style>
