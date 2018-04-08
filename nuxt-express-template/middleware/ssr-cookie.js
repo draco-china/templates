@@ -6,3 +6,4 @@ export default function ({ isServer, req, res }, next) {
       axios.defaults.headers.common.cookie = req.headers.cookie
     }
     if(req.headers.referer != undefined) {
+      axios.defaults.headers.Referer = req.headers.referer
