@@ -13,3 +13,12 @@ module.exports = {
       require('autoprefixer')({
         browsers: ['last 3 versions']
       })
+    ],
+    // 将重复引用的(第三方/自有)模块添加到vendor.bundle.js
+    vendor: ['axios'],
+    /*
+    ** Run ESLINT on save
+    */
+    extend (config, ctx) {
+      if (ctx.isClient) {
+        config.module.rules.push({
