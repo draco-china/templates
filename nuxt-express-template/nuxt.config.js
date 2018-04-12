@@ -39,3 +39,11 @@ module.exports = {
   */
   css: [
     { src: '~/assets/scss/app.scss', lang: 'scss' }
+  ],
+  dev: (process.env.NODE_ENV !== 'production'),
+  env: {
+    baseUrl: `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`
+  },
+  /*
+  ** Headers of the page
+  */
