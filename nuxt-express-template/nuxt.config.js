@@ -31,3 +31,11 @@ module.exports = {
     }
   },
   cache: {
+    max: 10,
+    maxAge: 600000
+  },
+  /*
+  ** Global CSS
+  */
+  css: [
+    { src: '~/assets/scss/app.scss', lang: 'scss' }
