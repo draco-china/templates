@@ -52,3 +52,8 @@ module.exports = {
     titleTemplate: '%s | nuxt-exprss-template',
     htmlAttrs: {
       xmlns: 'http://www.w3.org/1999/xhtml',
+      lang: 'zh'
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { 'http-equiv': 'cleartype', content: 'on' },
