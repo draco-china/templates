@@ -47,3 +47,8 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  head: {
+    title: 'nuxt-exprss-template',
+    titleTemplate: '%s | nuxt-exprss-template',
+    htmlAttrs: {
+      xmlns: 'http://www.w3.org/1999/xhtml',
