@@ -57,3 +57,8 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { 'http-equiv': 'cleartype', content: 'on' },
+      { name: 'author', content: 'Darker@hotmail.com' },
+      { name: 'MobileOptimized', content: '320' },
+      { name: 'HandheldFriendly', content: 'True' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' },
