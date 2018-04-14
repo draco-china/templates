@@ -76,3 +76,8 @@ module.exports = {
         // src: '/scripts/test.js'
         // innerHTML: ``
       }
+    ],
+    noscript: [
+      { innerHTML: 'This website requires JavaScript.' }
+    ]
+  },
