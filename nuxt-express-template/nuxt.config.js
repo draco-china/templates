@@ -66,3 +66,13 @@ module.exports = {
       { hid: 'description', name: 'description', content: '凡心所向 素履所往 生如逆旅 一苇以航' }
     ],
     link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        // async: 'async',
+        // defer: 'defer',
+        // type: 'text/javascript',
+        // src: '/scripts/test.js'
+        // innerHTML: ``
+      }
