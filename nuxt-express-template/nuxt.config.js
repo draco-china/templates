@@ -81,3 +81,9 @@ module.exports = {
       { innerHTML: 'This website requires JavaScript.' }
     ]
   },
+  offline: true, // true or https://github.com/NekR/offline-plugin/blob/master/docs/options.md
+  plugins: [
+    // { src: '~/plugins/axios.js'},
+    { src: '~/plugins/filters.js' },
+    { src: '~/plugins/ga.js', ssr: false },
+    { src: '~/plugins/copy-right.js', ssr: false },
