@@ -92,3 +92,7 @@ module.exports = {
   ],
   render: {
     http2: true,
+    resourceHints: true
+  },
+  router: {
+    middleware: ['ssr-cookie'],
