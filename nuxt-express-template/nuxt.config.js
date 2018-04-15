@@ -87,3 +87,8 @@ module.exports = {
     { src: '~/plugins/filters.js' },
     { src: '~/plugins/ga.js', ssr: false },
     { src: '~/plugins/copy-right.js', ssr: false },
+    { src: '~/plugins/baidu-seo-push.js', ssr: false },
+    { src: '~/plugins/offline.js', ssr: false }
+  ],
+  render: {
+    http2: true,
