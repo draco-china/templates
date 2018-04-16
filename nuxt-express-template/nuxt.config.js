@@ -96,3 +96,9 @@ module.exports = {
   },
   router: {
     middleware: ['ssr-cookie'],
+    linkActiveClass: 'active-link', // 链接激活时使用的 CSS 类名
+    linkExactActiveClass: 'exact-active-link', // 当链接被精确匹配的时候应该激活的 class
+    scrollBehavior(to, from, savedPosition) {
+      // savedPosition is only available for popstate navigations.
+      if (savedPosition) {
+        return savedPosition
