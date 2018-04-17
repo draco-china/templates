@@ -102,3 +102,10 @@ module.exports = {
       // savedPosition is only available for popstate navigations.
       if (savedPosition) {
         return savedPosition
+      } else {
+        let position = {}
+        // if no children detected
+        if (to.matched.length < 2) {
+          // scroll to the top of the page
+          position = { x: 0, y: 0 }
+        }
