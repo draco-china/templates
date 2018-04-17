@@ -109,3 +109,10 @@ module.exports = {
           // scroll to the top of the page
           position = { x: 0, y: 0 }
         }
+        else if (to.matched.some((r) => r.components.default.options.scrollToTop)) {
+          // if one of the children has scrollToTop option set to true
+          position = { x: 0, y: 0 }
+        }
+        // if link has anchor,  scroll to anchor by returning the selector
+        if (to.hash) {
+          position = { selector: to.hash }
