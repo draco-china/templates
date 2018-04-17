@@ -116,3 +116,8 @@ module.exports = {
         // if link has anchor,  scroll to anchor by returning the selector
         if (to.hash) {
           position = { selector: to.hash }
+        }
+        return position
+      }
+    },
+    extendRoutes(routes) {}
