@@ -121,3 +121,11 @@ module.exports = {
       }
     },
     extendRoutes(routes) {}
+  },
+  /*
+  ** Customize the progress-bar color
+  */
+  loading: {
+    color: '#3dd4ff'
+  }
+}
