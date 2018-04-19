@@ -9,3 +9,7 @@
     </h2>
     <nuxt-link class="button" to="/">
       Users
+    </nuxt-link>
+  </section>
+</template>
+
