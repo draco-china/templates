@@ -29,3 +29,7 @@ export default {
   },
   head () {
     return {
+      title: `User: ${this.user.name}`
+    }
+  }
+}
