@@ -25,3 +25,7 @@ export default {
       })
       .catch((e) => {
         error({ statusCode: 404, message: 'User not found' })
+      })
+  },
+  head () {
+    return {
