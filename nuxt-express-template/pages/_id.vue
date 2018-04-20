@@ -22,3 +22,6 @@ export default {
     return axios.get('/api/users/' + params.id)
       .then((res) => {
         return { user: res.data }
+      })
+      .catch((e) => {
+        error({ statusCode: 404, message: 'User not found' })
