@@ -46,3 +46,6 @@ export default {
 
   .button, .button:visited
   {
+    display: inline-block;
+    color: black;
+    letter-spacing: 1px;
