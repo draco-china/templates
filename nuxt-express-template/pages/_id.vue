@@ -49,3 +49,7 @@ export default {
     display: inline-block;
     color: black;
     letter-spacing: 1px;
+    background-color: #fff;
+    border: 2px solid #000;
+    text-decoration: none;
+    text-transform: uppercase;
