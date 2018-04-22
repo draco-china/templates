@@ -58,3 +58,7 @@ export default {
 
   .button:hover, .button:focus
   {
+    color: #fff;
+    background-color: #000;
+  }
+
