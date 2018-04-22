@@ -53,3 +53,8 @@ export default {
     border: 2px solid #000;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 15px 45px;
+  }
+
+  .button:hover, .button:focus
+  {
