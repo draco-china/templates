@@ -62,3 +62,7 @@ export default {
     background-color: #000;
   }
 
+  .title
+  {
+    color: #000;
+    font-weight: 300;
