@@ -70,3 +70,6 @@ export default {
     margin: 0;
   }
 .title
+{
+  margin-top: 30px;
+}
