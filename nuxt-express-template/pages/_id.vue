@@ -81,3 +81,7 @@ export default {
   margin-top: 10px;
 }
 .button
+{
+  margin-top: 30px;
+}
+</style>
