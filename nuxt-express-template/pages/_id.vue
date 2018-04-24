@@ -73,3 +73,7 @@ export default {
 {
   margin-top: 30px;
 }
+.info
+{
+  font-weight: 300;
+  color: #9aabb1;
