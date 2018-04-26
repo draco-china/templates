@@ -28,3 +28,7 @@ export default {
       title: 'About'
     }
   }
+}
+</script>
+
+<style scoped>
