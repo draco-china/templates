@@ -24,3 +24,7 @@ export default {
     return { users: data }
   },
   head () {
+    return {
+      title: 'About'
+    }
+  }
