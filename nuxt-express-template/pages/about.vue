@@ -40,3 +40,6 @@ export default {
     text-align: center;
 }
 
+.button, .button:visited
+{
+    display: inline-block;
