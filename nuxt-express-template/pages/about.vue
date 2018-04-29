@@ -76,3 +76,7 @@ export default {
   padding: 0;
 }
 .user
+{
+  margin: 10px 0;
+}
+</style>
