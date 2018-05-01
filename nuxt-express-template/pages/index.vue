@@ -11,3 +11,9 @@
         </nuxt-link>
       </li>
     </ul>
+  </section>
+</template>
+
+<script>
+import axios from '~/plugins/axios'
+
