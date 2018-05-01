@@ -4,3 +4,7 @@
     <h1 class="title">
       USERS
     </h1>
+    <ul class="users">
+      <li v-for="(user, index) in users" :key="index" class="user">
+        <nuxt-link :to="{ name: 'id', params: { id: index }}">
+          {{ user.name }}
