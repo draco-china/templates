@@ -21,3 +21,6 @@ export default {
   async asyncData () {
     // eslint-disable-next-line
     let { data } = await axios.get('/api/users')
+    return { users: data }
+  },
+  head () {
