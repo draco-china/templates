@@ -47,3 +47,6 @@ export default {
     letter-spacing: 1px;
     background-color: #fff;
     border: 2px solid #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 45px;
