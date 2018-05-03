@@ -50,3 +50,8 @@ export default {
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 45px;
+}
+
+.button:hover, .button:focus
+{
+    color: #fff;
