@@ -66,3 +66,6 @@ export default {
     margin: 0;
 }
 .title
+{
+  margin: 30px 0;
+}
