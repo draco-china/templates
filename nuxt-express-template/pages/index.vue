@@ -69,3 +69,7 @@ export default {
 {
   margin: 30px 0;
 }
+.users
+{
+  list-style: none;
+  margin: 0;
