@@ -11,3 +11,6 @@ if (process.server) {
 // 功能: 把json中所有的undefined值替换成空字符串
 // 返回: 处理完成的json
 // 参数: json 指定的json
+const replaceAll = json => {
+  // 如果json无内容，返回json
+  if(json.isNull || json.isNaN || json.isUndefined || json == {}) {
