@@ -17,3 +17,5 @@ const replaceAll = json => {
     return json;
   }
   for(const key in json) {
+    if(json[key].isArray) {
+      for(let i = 0, len = json[key].length; i < len; i++) {
