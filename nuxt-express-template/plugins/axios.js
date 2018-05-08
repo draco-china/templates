@@ -26,3 +26,6 @@ const replaceAll = json => {
           json[key][i] = ''
         }
         if(json[key][i].isUndefined) {
+          json[key][i] = ''
+        }
+      }
