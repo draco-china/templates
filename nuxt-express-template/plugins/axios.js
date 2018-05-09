@@ -29,3 +29,5 @@ const replaceAll = json => {
           json[key][i] = ''
         }
       }
+    }
+    if(json[key].isObject) {
