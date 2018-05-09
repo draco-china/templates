@@ -31,3 +31,5 @@ const replaceAll = json => {
       }
     }
     if(json[key].isObject) {
+      json[key] = replaceAll(json[key])
+    }
