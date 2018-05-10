@@ -47,3 +47,6 @@ const replaceAll = json => {
 axios.interceptors.request.use(config => {
   if(config.method === 'post') {
     config.data = replaceAll(config.data);
+    config.data = qs.stringify(config.data);
+  }
+  return config
