@@ -45,3 +45,5 @@ const replaceAll = json => {
 
 // 拦截器
 axios.interceptors.request.use(config => {
+  if(config.method === 'post') {
+    config.data = replaceAll(config.data);
