@@ -41,3 +41,7 @@ const replaceAll = json => {
     }
   }
   return json;
+}
+
+// 拦截器
+axios.interceptors.request.use(config => {
