@@ -38,3 +38,6 @@ const replaceAll = json => {
     }
     if(json[key].isUndefined) {
       json[key] = ''
+    }
+  }
+  return json;
