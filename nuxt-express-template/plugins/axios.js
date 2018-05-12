@@ -58,3 +58,7 @@ axios.interceptors.response.use(response => {
   return response
 }, error => {
   return Promise.reject(error)
+})
+
+Vue.prototype.$http = axios
+export default axios.create(options)
