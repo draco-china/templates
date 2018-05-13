@@ -10,3 +10,4 @@ if (process.env.NODE_ENV === 'production') {
   const baiduPush = href => {
     !function(){
       let e = /([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi
+      let r = href || window.location.href
