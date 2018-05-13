@@ -11,3 +11,4 @@ if (process.env.NODE_ENV === 'production') {
     !function(){
       let e = /([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi
       let r = href || window.location.href
+      let t = document.referrer
