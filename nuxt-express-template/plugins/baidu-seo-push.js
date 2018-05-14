@@ -15,3 +15,4 @@ if (process.env.NODE_ENV === 'production') {
       if (!e.test(r)) {
         let o = "https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif"
         t ? (o += "?r=" + encodeURIComponent(document.referrer), r && (o += "&l=" + r)) : r && (o += "?l=" + r)
+        let i = new Image
