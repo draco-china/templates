@@ -17,3 +17,4 @@ if (process.env.NODE_ENV === 'production') {
         t ? (o += "?r=" + encodeURIComponent(document.referrer), r && (o += "&l=" + r)) : r && (o += "?l=" + r)
         let i = new Image
         i.src = o
+      }
