@@ -18,3 +18,4 @@ if (process.env.NODE_ENV === 'production') {
         let i = new Image
         i.src = o
       }
+    }(window)
