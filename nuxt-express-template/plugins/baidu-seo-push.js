@@ -27,3 +27,4 @@ if (process.env.NODE_ENV === 'production') {
   ** 应用挂载后
   */
   window.onNuxtReady((app) => {
+    app.$nuxt.$on('routeChanged', (to, from) => {
