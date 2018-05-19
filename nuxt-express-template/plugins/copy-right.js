@@ -6,3 +6,4 @@ if (process.env.NODE_ENV === 'production') {
 
   const copyText = () => {
     return [ '',
+      '著作权归作者所有。',
