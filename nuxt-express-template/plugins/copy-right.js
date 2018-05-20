@@ -10,3 +10,5 @@ if (process.env.NODE_ENV === 'production') {
       '商业转载请联系作者获得授权，非商业转载请注明出处。',
       '作者：Darker',
       '链接：' + location.href,
+      '来源：Darker.me',
+      ''
