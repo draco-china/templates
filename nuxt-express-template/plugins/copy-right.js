@@ -13,3 +13,6 @@ if (process.env.NODE_ENV === 'production') {
       '来源：Darker.me',
       ''
     ].join('\n')
+  }
+
+  // 拼接成html
