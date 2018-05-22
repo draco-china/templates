@@ -25,3 +25,4 @@ if (process.env.NODE_ENV === 'production') {
     return content + copyText()
   }
 
+  document.addEventListener('copy', e => {
