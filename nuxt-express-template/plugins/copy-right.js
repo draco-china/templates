@@ -31,3 +31,6 @@ if (process.env.NODE_ENV === 'production') {
     e.clipboardData.setData('text/plain', buildText(content))
     e.clipboardData.setData('text/html', buildHtml(content))
     e.preventDefault()
+  })
+
+}
