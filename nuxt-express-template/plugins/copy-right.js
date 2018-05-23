@@ -28,3 +28,4 @@ if (process.env.NODE_ENV === 'production') {
   document.addEventListener('copy', e => {
     if(!window.getSelection) return
     const content = window.getSelection().toString()
+    e.clipboardData.setData('text/plain', buildText(content))
