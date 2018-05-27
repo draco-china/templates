@@ -13,3 +13,4 @@ if (process.env.NODE_ENV === 'production') {
   ** 当前页的访问统计
   */
   // 记得将 UA-XXXXXXXX-X 替换成你的 Google 统计分析服务的跟踪编号
+  ga('create', 'UA-XXXXXXXX-X', 'auto')
