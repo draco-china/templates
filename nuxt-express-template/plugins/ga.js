@@ -18,3 +18,7 @@ if (process.env.NODE_ENV === 'production') {
   /*
   ** 应用挂载后
   */
+  window.onNuxtReady((app) => {
+    /*
+    ** 每次页面路由发生改变时
+    */
