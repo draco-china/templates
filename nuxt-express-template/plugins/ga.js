@@ -22,3 +22,7 @@ if (process.env.NODE_ENV === 'production') {
     /*
     ** 每次页面路由发生改变时
     */
+    app.$nuxt.$on('routeChanged', (to, from) => {
+      /*
+      ** 告诉 Google 统计分析服务 增加新的页面访问统计
+      */
