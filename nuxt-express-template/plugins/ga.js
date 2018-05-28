@@ -28,3 +28,4 @@ if (process.env.NODE_ENV === 'production') {
       */
       ga('set', 'page', to.fullPath)
       ga('send', 'pageview')
+    })
