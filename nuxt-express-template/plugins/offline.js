@@ -14,3 +14,4 @@ if (process.env.NODE_ENV === 'production') {
       },
       onUpdated: function () {
         window.location.reload()
+      }
