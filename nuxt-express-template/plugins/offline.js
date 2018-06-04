@@ -13,3 +13,4 @@ if (process.env.NODE_ENV === 'production') {
         OfflinePlugin.applyUpdate()
       },
       onUpdated: function () {
+        window.location.reload()
