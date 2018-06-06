@@ -5,3 +5,5 @@ import users from './users'
 const router = Router()
 
 // Add USERS Routes
+router.use(users)
+
