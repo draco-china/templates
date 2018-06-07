@@ -4,3 +4,4 @@ const router = Router()
 
 // Mock Users
 const users = [
+  { name: 'Alexandre' },
