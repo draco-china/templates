@@ -7,3 +7,6 @@ const users = [
   { name: 'Alexandre' },
   { name: 'Pooya' },
   { name: 'Sébastien' },
+]
+
+/* GET users listing. */
