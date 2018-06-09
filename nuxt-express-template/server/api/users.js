@@ -6,3 +6,4 @@ const router = Router()
 const users = [
   { name: 'Alexandre' },
   { name: 'Pooya' },
+  { name: 'Sébastien' },
