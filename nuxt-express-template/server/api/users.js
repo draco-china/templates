@@ -20,3 +20,4 @@ router.get('/users/:id', function (req, res, next) {
   if (id >= 0 && id < users.length) {
     res.json(users[id])
   } else {
+    res.sendStatus(404)
