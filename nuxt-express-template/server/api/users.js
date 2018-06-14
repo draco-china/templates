@@ -21,3 +21,4 @@ router.get('/users/:id', function (req, res, next) {
     res.json(users[id])
   } else {
     res.sendStatus(404)
+  }
