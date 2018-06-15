@@ -24,3 +24,4 @@ router.get('/users/:id', function (req, res, next) {
   }
 })
 
+export default router
