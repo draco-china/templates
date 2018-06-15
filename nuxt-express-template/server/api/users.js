@@ -22,3 +22,5 @@ router.get('/users/:id', function (req, res, next) {
   } else {
     res.sendStatus(404)
   }
+})
+
