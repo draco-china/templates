@@ -5,3 +5,5 @@ import cookieParser from 'cookie-parser'
 // import gc from 'idle-gc'
 import api from './api'
 
+const app = express()
+
