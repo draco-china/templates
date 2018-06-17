@@ -7,3 +7,4 @@ import api from './api'
 
 const app = express()
 
+app.use(bodyParser.urlencoded({ extended: true }))
