@@ -20,3 +20,4 @@ app.set('port', port)
 app.use('/api', api)
 
 // Import and Set Nuxt.js options
+let config = require('../nuxt.config.js')
