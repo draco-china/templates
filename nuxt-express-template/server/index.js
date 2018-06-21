@@ -30,3 +30,6 @@ const nuxt = new Nuxt(config)
 if (config.dev) {
   const builder = new Builder(nuxt)
   builder.build()
+}
+
+// Give nuxt middleware to express
