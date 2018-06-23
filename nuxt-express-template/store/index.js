@@ -8,3 +8,5 @@ import Service from '~/plugins/axios'
 // global actions
 export const actions = {
   // 全局服务初始化
+  nuxtServerInit(store, { params, route, isServer, req }) {
+    // 检查设备类型
