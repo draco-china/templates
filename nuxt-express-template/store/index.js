@@ -6,3 +6,5 @@
 import Service from '~/plugins/axios'
 
 // global actions
+export const actions = {
+  // 全局服务初始化
