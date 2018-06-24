@@ -13,3 +13,4 @@ export const actions = {
     const userAgent = isServer ? req.headers['user-agent'] : navigator.userAgent
     const isMobile = /(iPhone|iPod|Opera Mini|Android.*Mobile|NetFront|PSP|BlackBerry|Windows Phone)/ig.test(userAgent)
     store.commit('option/SET_IS_MOBILE', isMobile)
+    store.commit('option/SET_USER_AGENT', userAgent)
