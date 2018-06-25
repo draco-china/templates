@@ -16,3 +16,7 @@ export const actions = {
     store.commit('option/SET_USER_AGENT', userAgent)
   }
 
+}
+
+
+
