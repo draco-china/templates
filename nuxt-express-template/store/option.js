@@ -5,3 +5,5 @@
 */
 
 export const state = () => {
+  return {
+    // 是否为移动端
