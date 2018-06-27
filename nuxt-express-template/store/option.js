@@ -10,3 +10,4 @@ export const state = () => {
     isMobile: false,
     // ua
     userAgent: ''
+  }
