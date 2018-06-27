@@ -11,3 +11,5 @@ export const state = () => {
     // ua
     userAgent: ''
   }
+}
+
