@@ -20,3 +20,4 @@ export const getters = {
 export const mutations = {
 
   // 设置是否移动端状态
+  SET_IS_MOBILE(state, action) {
