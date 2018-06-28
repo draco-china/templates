@@ -17,3 +17,6 @@ export const getters = {
   isMobile: state => state.isMobile,
 }
 
+export const mutations = {
+
+  // 设置是否移动端状态
