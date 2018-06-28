@@ -14,3 +14,4 @@ export const state = () => {
 }
 
 export const getters = {
+  isMobile: state => state.isMobile,
