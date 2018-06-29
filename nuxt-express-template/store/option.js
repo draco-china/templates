@@ -26,3 +26,4 @@ export const mutations = {
 
   // 设置UA
   SET_USER_AGENT(state, action) {
+    state.userAgent = action
