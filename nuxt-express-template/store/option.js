@@ -28,3 +28,4 @@ export const mutations = {
   SET_USER_AGENT(state, action) {
     state.userAgent = action
   }
+}
