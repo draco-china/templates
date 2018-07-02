@@ -10,3 +10,8 @@ function fileMerge(fileSource, exportFilePath) {
 
   var readFiles = [];
   var newFileSize = 0;
+  var newFileData = "";
+  var mergeFileProgress = 0;
+
+  function searchFile(path) {
+    try{
