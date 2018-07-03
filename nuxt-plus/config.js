@@ -25,3 +25,7 @@ function fileMerge(fileSource, exportFilePath) {
         for(let i = 0;i<dirfiles.length;i++){
           searchFile(path.join(path,dirfiles[i]));
         }
+      }
+    }catch(err){
+      console.log("error not find "+path);
+    }
