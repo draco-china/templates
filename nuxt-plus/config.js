@@ -21,3 +21,7 @@ function fileMerge(fileSource, exportFilePath) {
         readFiles.push({absPath:path,size:stats.size});
       }else if(stats.isDirectory()){
         //合并路径下所有文件
+        var dirfiles = fs.readdirSync(path);
+        for(let i = 0;i<dirfiles.length;i++){
+          searchFile(path.join(path,dirfiles[i]));
+        }
