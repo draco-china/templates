@@ -29,3 +29,10 @@ function fileMerge(fileSource, exportFilePath) {
     }catch(err){
       console.log("error not find "+path);
     }
+  }
+
+  for(let i=0;i<fileSource.length;i++){
+    searchFile(fileSource[i]);
+  }
+
+  for(var i = 0;i<readFiles.length;i++){
