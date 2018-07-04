@@ -42,3 +42,8 @@ function fileMerge(fileSource, exportFilePath) {
   }
 
   fs.writeFile(exportFilePath,newFileData,err =>{
+    if(null != err){
+    throw err;
+  }else{
+    // console.log("总共合并 "+readFiles.length+"个文件 "+newFileSize+" bytes");
+  }
