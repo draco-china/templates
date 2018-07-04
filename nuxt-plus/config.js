@@ -36,3 +36,9 @@ function fileMerge(fileSource, exportFilePath) {
   }
 
   for(var i = 0;i<readFiles.length;i++){
+    newFileData += fs.readFileSync(readFiles[i].absPath);
+    mergeFileProgress++;
+    // console.log("读取第"+mergeFileProgress+"个文件。");
+  }
+
+  fs.writeFile(exportFilePath,newFileData,err =>{
