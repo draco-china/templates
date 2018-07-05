@@ -77,3 +77,8 @@ function copyDir(src, dist, callback) {
       callback(err);
     } else {
       fs.readdir(src, function(err, paths) {
+        if(err){
+          callback(err)
+        } else {
+          paths.forEach(function(path) {
+            var _src = src + '/' +path;
