@@ -68,3 +68,8 @@ function copyDir(src, dist, callback) {
     if(err){
       // 目录不存在时创建目录
       fs.mkdirSync(dist);
+    }
+    _copy(null, src, dist);
+  });
+
+  function _copy(err, src, dist) {
