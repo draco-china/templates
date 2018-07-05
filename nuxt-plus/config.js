@@ -73,3 +73,7 @@ function copyDir(src, dist, callback) {
   });
 
   function _copy(err, src, dist) {
+    if(err){
+      callback(err);
+    } else {
+      fs.readdir(src, function(err, paths) {
