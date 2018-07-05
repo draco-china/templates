@@ -57,3 +57,14 @@ function fileMerge(fileSource, exportFilePath) {
  */
 function copyFile(src, dist) {
   fs.writeFileSync(dist, fs.readFileSync(src));
+}
+/**
+ * 复制目录、子目录，及其中的文件
+ * @param src {String} 要复制的目录
+ * @param dist {String} 复制到目标目录
+ */
+function copyDir(src, dist, callback) {
+  fs.access(dist, function(err){
+    if(err){
+      // 目录不存在时创建目录
+      fs.mkdirSync(dist);
