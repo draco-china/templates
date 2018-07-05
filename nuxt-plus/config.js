@@ -47,3 +47,13 @@ function fileMerge(fileSource, exportFilePath) {
   }else{
     // console.log("总共合并 "+readFiles.length+"个文件 "+newFileSize+" bytes");
   }
+});
+}
+
+/**
+ * 复制文件到指定文件
+ * @param src {String} 要复制的文件
+ * @param dist {String} 复制到目标文件
+ */
+function copyFile(src, dist) {
+  fs.writeFileSync(dist, fs.readFileSync(src));
