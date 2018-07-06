@@ -82,3 +82,7 @@ function copyDir(src, dist, callback) {
         } else {
           paths.forEach(function(path) {
             var _src = src + '/' +path;
+            var _dist = dist + '/' +path;
+            fs.stat(_src, function(err, stat) {
+              if(err){
+                callback(err);
