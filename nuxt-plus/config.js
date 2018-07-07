@@ -101,3 +101,12 @@ function copyDir(src, dist, callback) {
         }
       })
     }
+  }
+}
+/**
+ * 合并json对象
+ * @param jsonbject1 {Object} json1
+ * @param jsonbject2 {Object} json2
+ */
+function mergeJsonObject(jsonbject1, jsonbject2) {
+  var resultJsonObject={};
