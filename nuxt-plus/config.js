@@ -96,3 +96,8 @@ function copyDir(src, dist, callback) {
                   copyDir(_src, _dist, callback)
                 }
               }
+            })
+          })
+        }
+      })
+    }
