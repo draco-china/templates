@@ -91,3 +91,8 @@ function copyDir(src, dist, callback) {
                 if(stat.isFile()) {
                   console.log(path+'添加成功')
                   fs.writeFileSync(_dist, fs.readFileSync(_src));
+                } else if(stat.isDirectory()) {
+                  // 当是目录是，递归复制
+                  copyDir(_src, _dist, callback)
+                }
+              }
