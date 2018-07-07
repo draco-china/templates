@@ -86,3 +86,8 @@ function copyDir(src, dist, callback) {
             fs.stat(_src, function(err, stat) {
               if(err){
                 callback(err);
+              } else {
+                // 判断是文件还是目录
+                if(stat.isFile()) {
+                  console.log(path+'添加成功')
+                  fs.writeFileSync(_dist, fs.readFileSync(_src));
