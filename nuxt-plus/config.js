@@ -126,3 +126,7 @@ function mergeJsonObject(jsonbject1, jsonbject2) {
  * @return {String}
  */
 function jsonStringify(data, space) {
+  var seen = [];
+  return JSON.stringify(data, function (key, val) {
+    if (!val || typeof val !== 'object') {
+      return val;
