@@ -114,3 +114,15 @@ function mergeJsonObject(jsonbject1, jsonbject2) {
     resultJsonObject[attr]=jsonbject1[attr];
   }
   for(var attr in jsonbject2){
+    resultJsonObject[attr]=jsonbject2[attr];
+  }
+  return resultJsonObject;
+};
+/**
+ * 返回安全的JSON字符串
+ *
+ * @param {Object} data
+ * @param {String|Number} space 缩进
+ * @return {String}
+ */
+function jsonStringify(data, space) {
