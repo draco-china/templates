@@ -134,3 +134,8 @@ function jsonStringify(data, space) {
     if (seen.indexOf(val) !== -1) {
       return '[Circular]';
     }
+    seen.push(val);
+    return val;
+  }, space);
+};
+
