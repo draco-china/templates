@@ -130,3 +130,7 @@ function jsonStringify(data, space) {
   return JSON.stringify(data, function (key, val) {
     if (!val || typeof val !== 'object') {
       return val;
+    }
+    if (seen.indexOf(val) !== -1) {
+      return '[Circular]';
+    }
