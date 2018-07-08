@@ -110,3 +110,7 @@ function copyDir(src, dist, callback) {
  */
 function mergeJsonObject(jsonbject1, jsonbject2) {
   var resultJsonObject={};
+  for(var attr in jsonbject1){
+    resultJsonObject[attr]=jsonbject1[attr];
+  }
+  for(var attr in jsonbject2){
