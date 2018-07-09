@@ -139,3 +139,9 @@ function jsonStringify(data, space) {
   }, space);
 };
 
+copyDir(dir+'/assets', __dirname+'/assets', function(err) {
+  if(err) {
+    console.log('assets写入失败')
+  }
+})
+
