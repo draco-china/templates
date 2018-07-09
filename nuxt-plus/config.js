@@ -149,3 +149,8 @@ copyDir(dir+'/filters', __dirname+'/filters', function(err) {
   if(err) {
     console.log('filters写入失败')
   }
+})
+
+copyDir(dir+'/middleware', __dirname+'/middleware', function(err) {
+  if(err) {
+    console.log('middleware写入失败')
