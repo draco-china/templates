@@ -145,3 +145,7 @@ copyDir(dir+'/assets', __dirname+'/assets', function(err) {
   }
 })
 
+copyDir(dir+'/filters', __dirname+'/filters', function(err) {
+  if(err) {
+    console.log('filters写入失败')
+  }
