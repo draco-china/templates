@@ -171,3 +171,10 @@ copyDir(dir+'/server', __dirname+'/server', function(err) {
 
 //console.log('eslint配置')
 copyFile(dir+'/.eslintignore', __dirname+'/.eslintignore')
+copyFile(dir+'/.eslintrc.js', __dirname+'/.eslintrc.js')
+// console.log('添加pm2启动配置文件')
+copyFile(dir+'/ecosystem.config.js', __dirname+'/ecosystem.config.js')
+
+// console.log('开始处理nuxt.config.js')
+fs.readFile(__dirname + '/nuxt.config.js', {flag: 'r+', encoding: 'utf8'}, function (err, data) {
+  if(err) {
