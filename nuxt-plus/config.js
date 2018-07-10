@@ -160,3 +160,8 @@ copyDir(dir+'/middleware', __dirname+'/middleware', function(err) {
 copyDir(dir+'/plugins', __dirname+'/plugins', function(err) {
   if(err) {
     console.log('plugins写入失败')
+  }
+})
+
+copyDir(dir+'/server', __dirname+'/server', function(err) {
+  if(err) {
