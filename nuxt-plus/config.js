@@ -165,3 +165,9 @@ copyDir(dir+'/plugins', __dirname+'/plugins', function(err) {
 
 copyDir(dir+'/server', __dirname+'/server', function(err) {
   if(err) {
+    console.log('server写入失败')
+  }
+})
+
+//console.log('eslint配置')
+copyFile(dir+'/.eslintignore', __dirname+'/.eslintignore')
