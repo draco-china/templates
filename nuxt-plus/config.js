@@ -183,3 +183,7 @@ fs.readFile(__dirname + '/nuxt.config.js', {flag: 'r+', encoding: 'utf8'}, funct
   }
   var reg = /\/\*-{10} START -{10}\*\/[\S\s]*\/\*-{10} END -{10}\*\//g;
   if(!data.match(reg)) {
+    var fileSourceNuxt = [__dirname+'/nuxt.config.js', dir+'/nuxt.config.js'];
+    var goalFileNuxt = __dirname+"/nuxt.config.js";
+    fileMerge(fileSourceNuxt,goalFileNuxt);
+    console.log('nuxt.config.js处理完成')
