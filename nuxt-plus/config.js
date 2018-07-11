@@ -191,3 +191,8 @@ fs.readFile(__dirname + '/nuxt.config.js', {flag: 'r+', encoding: 'utf8'}, funct
     replace(data, data.match(reg)[0])
   }
 });
+function replace(oldData, matchData) {
+  fs.readFile(dir + '/nuxt.config.js', {flag: 'r+', encoding: 'utf8'}, function (err, data) {
+    if (err) throw err;
+    fs.writeFile(__dirname + '/nuxt.config.js', oldData.replace(matchData, data), 'utf8', (err) => {
+      if (err) throw err;
