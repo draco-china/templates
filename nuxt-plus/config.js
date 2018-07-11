@@ -178,3 +178,8 @@ copyFile(dir+'/ecosystem.config.js', __dirname+'/ecosystem.config.js')
 // console.log('开始处理nuxt.config.js')
 fs.readFile(__dirname + '/nuxt.config.js', {flag: 'r+', encoding: 'utf8'}, function (err, data) {
   if(err) {
+    console.error(err);
+    return;
+  }
+  var reg = /\/\*-{10} START -{10}\*\/[\S\s]*\/\*-{10} END -{10}\*\//g;
+  if(!data.match(reg)) {
