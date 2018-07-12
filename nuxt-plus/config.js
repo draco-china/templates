@@ -196,3 +196,8 @@ function replace(oldData, matchData) {
     if (err) throw err;
     fs.writeFile(__dirname + '/nuxt.config.js', oldData.replace(matchData, data), 'utf8', (err) => {
       if (err) throw err;
+    console.log('nuxt.config.js处理完成')
+  });
+  })
+}
+// console.log('开始处理package.json')
