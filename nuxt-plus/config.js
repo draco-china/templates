@@ -205,3 +205,7 @@ var json1,json2;
 fs.readFile(dir + '/package.json', {flag: 'r+', encoding: 'utf8'}, function (err, data) {
   if(err) {
     console.error(err);
+    return;
+  }
+  json1 = JSON.parse(data)
+  fs.readFile(__dirname + '/package.json', {flag: 'r+', encoding: 'utf8'}, function (err, data) {
