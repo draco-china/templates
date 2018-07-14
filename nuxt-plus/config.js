@@ -214,3 +214,8 @@ fs.readFile(dir + '/package.json', {flag: 'r+', encoding: 'utf8'}, function (err
       return;
     }
     json2 = JSON.parse(data)
+    merge(json1,json2)
+  });
+});
+
+function merge(json1, json2) {
