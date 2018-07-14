@@ -219,3 +219,7 @@ fs.readFile(dir + '/package.json', {flag: 'r+', encoding: 'utf8'}, function (err
 });
 
 function merge(json1, json2) {
+  var dependencies = mergeJsonObject(json2.dependencies, json1.dependencies)
+  var devDependencies = mergeJsonObject(json2.devDependencies,json1.devDependencies)
+  json2 = mergeJsonObject(json2, {dependencies: dependencies})
+  json2 = mergeJsonObject(json2, {devDependencies: devDependencies})
