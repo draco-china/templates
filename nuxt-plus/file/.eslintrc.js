@@ -30,3 +30,18 @@ module.exports = {
     "comma-dangle": [0, "never"],
 
     // 禁止在条件表达式中使用赋值语句
+    "no-cond-assign": 2,
+
+    // 禁止使用console
+    "no-console": 0,
+
+    // 禁止在条件中使用常量表达式 if(true) if(1)
+    "no-constant-condition": 2,
+
+    // 禁止在正则表达式中使用控制符
+    "no-control-regex": 2,
+
+    // 禁止使用debugger语句
+    "no-debugger": process.env.NODE_ENV === 'production' ? 2 : 0,
+
+    // 函数参数禁止重名
