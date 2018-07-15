@@ -223,3 +223,8 @@ function merge(json1, json2) {
   var devDependencies = mergeJsonObject(json2.devDependencies,json1.devDependencies)
   json2 = mergeJsonObject(json2, {dependencies: dependencies})
   json2 = mergeJsonObject(json2, {devDependencies: devDependencies})
+  fs.writeFile(__dirname + '/package.json', jsonStringify(json2, 2), 'utf8', (err) => {
+    if (err) throw err;
+  console.log('package.json处理完成')
+});
+}
