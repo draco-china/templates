@@ -63,3 +63,18 @@ module.exports = {
     "no-ex-assign": 2,
 
     // 禁止不必要的bool转换
+    "no-extra-boolean-cast": 2,
+
+    // 禁止使用多余的圆括号
+    "no-extra-parens": 2,
+
+    // 禁止多余的冒号
+    "no-extra-semi": 2,
+
+    // 禁止重复的函数声明
+    "no-func-assign": 2,
+
+    // 禁止在块语句中声明变量或函数
+    "no-inner-declarations": 2,
+
+    // 禁止使用无效的正则语句
