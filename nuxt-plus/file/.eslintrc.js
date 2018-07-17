@@ -115,3 +115,33 @@ module.exports = {
     /*Best Practices*/
 
     // 在声明对象时getter和setter需成对出现
+    "accessor-pairs": 2,
+
+    // 数值方法的回调函数中强制写return语句
+    "array-callback-return": 2,
+
+    // 当在代码块中用var声明变量，并在代码块外使用时报错
+    "block-scoped-var": 0,
+
+    // 用来控制函数的复杂度，分支超过5时报错
+    "complexity": [0, 5],
+
+    // 不同分支的return语句不能返回不同的类型，要么一致要么都没有
+    "consistent-return": 0,
+
+    //  if else while for do后面的代码块是否需要{ }包围，参数：
+
+    //  multi         只有块中有多行语句时才需要{ }包围
+
+    //  multi-line    只有块中有多行语句时才需要{ }包围, 但是块中的执行语句只有一行时，块中的语句只能跟和if语句在同一行。
+
+    //                 if (foo) foo++; else doSomething();
+
+    //  multi-or-nest 只有块中有多行语句时才需要{ }包围, 如果块中的执行语句只有一行，执行语句可以另起一行也可以跟在if语句后面
+
+    //  [2, "multi", "consistent"] 保持前后语句的{ }一致
+
+    //  default: [2, "all"] 全都需要{ }包围
+    "curly": 2,
+
+    // 所有的switch语句都必须要有一个default分支
