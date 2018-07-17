@@ -96,3 +96,22 @@ module.exports = {
     "no-sparse-arrays": 2,
 
     // 为了保证两行不相关的代码不会意外的被当做一行代码来解析
+    "no-unexpected-multiline": 0,
+
+    // 禁止有执行不到的代码
+    "no-unreachable": 2,
+
+    // 禁止和NaN作比较,推荐使用isNaN方法
+    "use-isnan": 2,
+
+    // 用来检测JSDoc是否完整和合法
+    "valid-jsdoc": 2,
+
+    // typeof操作符返回的结果会是 "undefined",  "object",  "boolean", "number", "string", 和  "function"之一。
+
+    // 保证typeof 操作符返回的结果必须和上面六个字符串作比较
+    "valid-typeof": 2,
+
+    /*Best Practices*/
+
+    // 在声明对象时getter和setter需成对出现
