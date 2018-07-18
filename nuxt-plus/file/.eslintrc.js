@@ -198,3 +198,20 @@ module.exports = {
     "no-empty-function": 0,
 
     // 在结构赋值时，模式不能为空。在ECMAScript2015的结构赋值中，模式为空是不会报错的，只是这样的结构赋值没有任何效果，该条规则就保证了模式不能为空，也就保证了结构赋值的有效性。
+    "no-empty-pattern": 2,
+
+    // 保证了在和null比较时使用===和!==，而不能够使用==和!=
+    "no-eq-null": 0,
+
+    // 禁止使用eval函数
+    "no-eval": 2,
+
+    // 禁止扩展native对象，不能向native的对象上面添加属性
+    "no-extend-native": 2,
+
+    // 保证了调用bind方法的函数体内有this对象。规避了不必要的使用bind方法的情况。
+
+    // 箭头函数中没有this对象，也就不能够使用bind()方法。该规则保证了在所有的箭头函数中使用bind方法将被视为错误。
+    "no-extra-bind": 2,
+
+    // 如果 loop中没有内嵌的loops或switches, loop标签是不必要的.
