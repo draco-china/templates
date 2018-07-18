@@ -215,3 +215,23 @@ module.exports = {
     "no-extra-bind": 2,
 
     // 如果 loop中没有内嵌的loops或switches, loop标签是不必要的.
+    "no-extra-label": 2,
+
+    // 在case语句中尽量加break，避免不必要的fallthrough错误，消除从一个case到另一个case的非故意的「fall through」。
+
+    // 如果没有添加break等终止语句或者没有添加注释语句，将会抛出错误
+    "no-fallthrough": 2,
+
+    // 在使用浮点小数时，不能够省略小数点前面的数或者后面的数，必须写。比如.2 2. 应该写2.2 2.0
+    "no-floating-decimal": 2,
+
+    // 禁止隐式转换，为了消除简写的类型转换
+    "no-implicit-coercion": 2,
+
+    // 禁止在全局作用域里声明变量或函数
+    "no-implicit-globals": 2,
+
+    // 在setTimeout(), setInterval() or execScript()中消除隐式eval的使用
+    "no-implied-eval": 2,
+
+    // 禁止无效的this，只能用在构造器，类，对象字面量
