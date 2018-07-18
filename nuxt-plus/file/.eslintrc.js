@@ -145,3 +145,34 @@ module.exports = {
     "curly": 2,
 
     // 所有的switch语句都必须要有一个default分支
+    "default-case": 2,
+
+    //  在书写对象的属性或方法时，新的一行代码可以以. 开头，也可以以. 结束。
+
+    //  强制统一object.key中 . 的位置，参数:
+
+    //       property，'.'号应与属性在同一行
+
+    //       object, '.' 号应与对象名在同一行
+    "dot-location": [2, "property"],
+
+    //  强制使用.号取属性
+
+    //  参数： allowKeywords：true  使用保留字做属性名时，只能使用.方式取属性
+
+    //                        false 使用保留字做属性名时, 只能使用[]方式取属性
+
+    //                        e.g [2, {"allowKeywords": false}]
+
+    //         allowPattern:  当属性名匹配提供的正则表达式时，允许使用[]方式取值,否则只能用.号取值
+
+    //                        e.g [2, {"allowPattern": "^[a-z]+(_[a-z]+)+$"}]
+    "dot-notation": [2, { "allowKeywords": true }],
+
+    // 在进行比较时，必须使用全等=== 和完全不等!==
+    "eqeqeq": [0, "allow-null"],
+
+    // 在for-in 循环中要使用if语句
+    "guard-for-in": 2,
+
+    // 代码中禁止使用alert, confirm, and prompt
