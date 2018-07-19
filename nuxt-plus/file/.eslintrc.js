@@ -235,3 +235,20 @@ module.exports = {
     "no-implied-eval": 2,
 
     // 禁止无效的this，只能用在构造器，类，对象字面量
+    "no-invalid-this": 0,
+
+    // 禁止使用__iterator__属性
+    "no-iterator": 2,
+
+    // 禁止使用label语句，以避免无限循环
+    "no-labels": [2, { "allowLoop": false, "allowSwitch": false }],
+
+    // 禁止使用不必要的嵌套代码块
+    "no-lone-blocks": 2,
+
+    // 禁止在循环体中定义函数并且函数引用了外部变量
+
+    // 在循环中定义了函数，但是函数内部没有引用外部变量，或者使用let定义的代码块变量，视为合法
+    "no-loop-func": 2,
+
+    // 禁止使用魔法数字，建议使用常量来代替
