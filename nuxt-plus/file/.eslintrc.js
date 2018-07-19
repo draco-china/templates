@@ -252,3 +252,21 @@ module.exports = {
     "no-loop-func": 2,
 
     // 禁止使用魔法数字，建议使用常量来代替
+    "no-magic-numbers": 0,
+
+    // 保证了在逻辑表达式、条件表达式、申明语句、数组元素、对象属性、sequences、函数参数中不使用超过一个的空白符。
+    "no-multi-spaces": 0,
+
+    // 该规则保证了字符串不分行书写。
+    "no-multi-str": 2,
+
+    // 该规则保证了不重写原生对象。
+    "no-native-reassign": 2,
+
+    // 在使用new来调用构造函数后，必须把生成的实例赋值给一个变量
+    "no-new": 2,
+
+    // 禁止使用new Function(); 语句。
+    "no-new-func": 2,
+
+    // 禁止使用new创建String,Number, and Boolean实例
