@@ -285,3 +285,21 @@ module.exports = {
     "no-proto": 2,
 
     // 避免重复声明一个变量
+    "no-redeclare": [2, { "builtinGlobals": true }],
+
+    // 不要在return语句中使用赋值语句
+    "no-return-assign": [2, "always"],
+
+    // 禁止代码中使用类似javascript:void(0)的javascript: urls.
+    "no-script-url": 0,
+
+    // 禁止给自身赋值
+    "no-self-assign": 2,
+
+    // 禁止和自身作比较
+    "no-self-compare": 2,
+
+    // 禁止可能导致结果不明确的逗号操作符
+    "no-sequences": 0,
+
+    // 通过throw语句抛出的对象必须是Error对象本身或者通过Error对象定义的对象。有些情况除外，见官网
