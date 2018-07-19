@@ -270,3 +270,18 @@ module.exports = {
     "no-new-func": 2,
 
     // 禁止使用new创建String,Number, and Boolean实例
+    "no-new-wrappers": 2,
+
+    // 禁止使用八进制数字
+    "no-octal": 2,
+
+    // 禁止使用八进制转义序列，比如 var foo = "Copyright \251";
+    "no-octal-escape": 2,
+
+    // 禁止对函数的参数重新进行无意义的赋值
+    "no-param-reassign": 0,
+
+    // 禁止使用__proto__属性
+    "no-proto": 2,
+
+    // 避免重复声明一个变量
