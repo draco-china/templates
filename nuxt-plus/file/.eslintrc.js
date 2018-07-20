@@ -318,3 +318,21 @@ module.exports = {
     "no-useless-call": 2,
 
     // 避免使用不必要的字符串拼接
+    "no-useless-concat": 2,
+
+    // 不要使用void操作符
+    "no-void": 2,
+
+    // 生产代码中不能出现warning-comments包含的注释
+    "no-warning-comments": [2, { "terms": ["todo", "fixme", "any other term"], "location": "anywhere" }],
+
+    // 不要使用with语句
+    "no-with": 2,
+
+    // 在使用parseInt()方法时，必须要传递第二个参数来帮助解析。
+    "radix": 2,
+
+    // 在通过var声明变量时，应该放在代码所在作用域的顶部
+    "vars-on-top": 2,
+
+    // 立即执行函数需要通过圆括号包围
