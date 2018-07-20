@@ -336,3 +336,25 @@ module.exports = {
     "vars-on-top": 2,
 
     // 立即执行函数需要通过圆括号包围
+    "wrap-iife": 2,
+
+    // yoda条件语句就是对象字面量应该写在比较操作符的左边，而变量应该写在比较操作符的右边
+
+    // 默认的规则要求，变量写在左边而字面量写在右边
+    "yoda": 2,
+
+
+    /*Strict Mode*/
+
+    // 使用严格模式
+    "strict": 2,
+
+    /*Variables*/
+
+    // 变量声明时必须赋初值
+    "init-declarations": 0,
+
+    // In IE 8 and earlier，禁止catch子句参数与外部作用域变量同名
+    "no-catch-shadow": 2,
+
+    // 禁止使用delete删除var声明的变量
