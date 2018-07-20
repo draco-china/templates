@@ -303,3 +303,18 @@ module.exports = {
     "no-sequences": 0,
 
     // 通过throw语句抛出的对象必须是Error对象本身或者通过Error对象定义的对象。有些情况除外，见官网
+    "no-throw-literal": 2,
+
+    // 禁止使用不被修改的循环条件
+    "no-unmodified-loop-condition": 2,
+
+    // 禁止在代码中出现没有被使用到的表达式或值
+    "no-unused-expressions": [2, { "allowShortCircuit": true, "allowTernary": true }],
+
+    // 禁止在代码中出现没有被使用到的标签
+    "no-unused-labels": 2,
+
+    // 避免使用没有意义的call() 和 apply()
+    "no-useless-call": 2,
+
+    // 避免使用不必要的字符串拼接
