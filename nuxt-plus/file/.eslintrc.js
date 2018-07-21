@@ -394,3 +394,18 @@ module.exports = {
     "callback-return": 0,
 
     // 强制require()出现在模块作用域的顶部
+    "global-require": 0,
+
+    //  如果函数有err入参(err或者error),在函数体内必须进行处理
+    "handle-callback-err": [0, "^(err|error)$"],
+
+    // 声明时不能混用声明类型
+    "no-mixed-requires": 0,
+
+    // 禁止把require方法和new操作符一起使用。
+    "no-new-require": 0,
+
+    // 不能使用__dirname或__filename做路径拼接
+    "no-path-concat": 0,
+
+    // 禁止使用process.env
