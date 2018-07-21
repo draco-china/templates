@@ -376,3 +376,21 @@ module.exports = {
     "no-undef": 2,
 
     // 禁止初始化变量为undefined
+    "no-undef-init": 2,
+
+    // 禁止把undefined作为变量名
+    "no-undefined": 0,
+
+    // 不允许定义的变量在后面的代码中没有被使用到
+    "no-unused-vars": 0,
+
+    // 所有的变量都应该先定义后使用
+    "no-use-before-define": 0,
+
+
+    /*Node.js and CommonJS*/
+
+    // 强制回调后return，避免多次调用回调
+    "callback-return": 0,
+
+    // 强制require()出现在模块作用域的顶部
