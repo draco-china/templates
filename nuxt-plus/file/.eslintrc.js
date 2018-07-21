@@ -358,3 +358,21 @@ module.exports = {
     "no-catch-shadow": 2,
 
     // 禁止使用delete删除var声明的变量
+    "no-delete-var": 0,
+
+    // 防止label和声明的变量重名
+    "no-label-var": 2,
+
+    // 禁止使用某些全局变量
+    "no-restricted-globals": [2, "event"],
+
+    // 禁止声明外部作用域中已定义的变量
+    "no-shadow": 0,
+
+    // 声明变量时禁止覆盖JavaScript中的一些保留关键字，比如NaN、Infinity、undefined、eval、arguments等。
+    "no-shadow-restricted-names": 2,
+
+    // 禁止使用未被定义的变量，除非已在配置文件的global中进行了说明。
+    "no-undef": 2,
+
+    // 禁止初始化变量为undefined
