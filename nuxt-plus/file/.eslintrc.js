@@ -409,3 +409,35 @@ module.exports = {
     "no-path-concat": 0,
 
     // 禁止使用process.env
+    "no-process-env": 0,
+
+    // 禁止使用process.exit()
+    "no-process-exit": 0,
+
+    // 禁用使用指定模块，使用了就会报错
+    "no-restricted-modules": [0, "fs"],
+
+    // 禁止使用同步方法，建议使用异步方法
+    "no-sync": 0,
+
+
+
+
+
+    /*Stylistic Issues*/
+
+    //  用数组字面量定义数组时数组元素前后是否加空格，
+
+    //  never参数： 数组元素前后不能带空格，
+
+    //  always参数：数组元素前后必须留空格
+    "array-bracket-spacing": [0, "never"],
+
+    // 在单行代码块中，代码块前后是否需要留空格
+
+    //  always参数：默认，前后必须留空格
+
+    //  never参数： 前后不能带空格
+    "block-spacing": [2, "always"],
+
+    // 大括号的样式，比如下面的大括号语法采用『1tbs』,允许单行样式
