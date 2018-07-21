@@ -441,3 +441,22 @@ module.exports = {
     "block-spacing": [2, "always"],
 
     // 大括号的样式，比如下面的大括号语法采用『1tbs』,允许单行样式
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+
+    // 强制使用驼峰命名
+    "camelcase": 0,
+
+    // 规定了逗号前后的空白，默认配置规定逗号前面没有空白，而逗号后面需要留空白
+    "comma-spacing": [2, { "before": false, "after": true }],
+
+    // 规定了逗号放的位置，默认配置逗号应该放在行末，如果设置为first，逗号就应放在行首
+    "comma-style": [2, "last"],
+
+    // 是否在对象的动态属性（computed properties： ES6引入）中添加空白，默认配置不添加空白
+    "computed-property-spacing": [2, "never"],
+
+    // 统一this的别名（this赋值的变量名）保证整个应用程序代码的统一。
+
+    // 如果一个变量被指定为this对象的别名，那么这个变量就不能够用来赋其他值，只能够用来保存this对象。
+
+    // 如果this对象明确被赋值给了一个变量，那么这个变量应该是配置中指定的那个变量名。
