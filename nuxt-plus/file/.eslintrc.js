@@ -460,3 +460,33 @@ module.exports = {
     // 如果一个变量被指定为this对象的别名，那么这个变量就不能够用来赋其他值，只能够用来保存this对象。
 
     // 如果this对象明确被赋值给了一个变量，那么这个变量应该是配置中指定的那个变量名。
+    "consistent-this": [0, "self"],
+
+    // 该规则规定文件最后强制换行，仅需留一空行
+    "eol-last": 2,
+
+    // 要求给函数表达式命名，便于debug
+    "func-names": 0,
+
+    // 在JavaScript中有两种方式定义函数:函数声明和函数表达式。
+
+    // 函数声明就是把function关键词写在最前面，后面跟一个函数名。我们可以在函数申明代码前调用函数
+
+    // 函数表达式是通过var等声明变量的关键字开头，然后跟函数名，再后面是function本身。在使用函数表达式定义函数前调用函数会报错
+
+    //  统一定义函数是所采用的方式，参数：
+
+    //     declaration: 强制使用方法声明的方式，function f(){} e.g [2, "declaration"]
+
+    //     expression：强制使用方法表达式的方式，默认方式，var f = function() {}  e.g [2, "expression"]
+
+    //     allowArrowFunctions: declaration风格中允许箭头函数。 e.g [2, "declaration", {"allowArrowFunctions":true}]
+    "func-style": [2, "expression"],
+
+    // 规定了标识符命名的黑名单
+    "id-blacklist": [0, "data", "err", "e", "cb", "callback"],
+
+    // 规定标识符的长度，默认配置标识符最少两个字符
+    "id-length": [2, { "min": 1 }],
+
+    // 命名检测，标识符命名需和配置中的正则表达式匹配，但是该规则对函数调用无效。
