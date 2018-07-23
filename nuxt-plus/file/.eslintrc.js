@@ -505,3 +505,21 @@ module.exports = {
     "keyword-spacing": [0, { "before": true, "after": true, "overrides": {} }],
 
     // 统一换行符，"\n" unix(for LF) and "\r\n" for windows(CRLF)，默认unix
+    "linebreak-style": 0,
+
+    // 规定注释和代码块之间是否留空行
+    "lines-around-comment": 0,
+
+    // 规定代码最多可以嵌套多少层
+    "max-depth": [2, 4],
+
+    // 规定了代码单行的最大长度
+    "max-len": [0, 80, 4],
+
+    // 规定了回调的最大嵌套层数
+    "max-nested-callbacks": [2, 10],
+
+    // 规定了函数参数的最大个数
+    "max-params": [0, 3],
+
+    // 规定了函数中代码不能够超过多少行
