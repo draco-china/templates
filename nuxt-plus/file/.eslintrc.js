@@ -538,3 +538,21 @@ module.exports = {
     "newline-before-return": 0,
 
     // 规定了方法链式调用时是否需换行
+    "newline-per-chained-call": 0,
+
+    // 禁止使用Array构造函数
+    "no-array-constructor": 0,
+
+    // 禁止使用位操作符
+    "no-bitwise": 0,
+
+    // 禁止使用continue
+    "no-continue": 0,
+
+    // 禁止使用行内注释
+    "no-inline-comments": 0,
+
+    // 禁止在if-else控制语句中，else代码块中仅包含一个if语句
+    "no-lonely-if": 0,
+
+    // 禁止混用tab和空格
