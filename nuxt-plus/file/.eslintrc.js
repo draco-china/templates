@@ -490,3 +490,18 @@ module.exports = {
     "id-length": [2, { "min": 1 }],
 
     // 命名检测，标识符命名需和配置中的正则表达式匹配，但是该规则对函数调用无效。
+    "id-match": [0, "^[a-z]+([A-Z][a-z]+)*$", { "properties": false }],
+
+    //  统一代码缩进方式，默认值是4 spaces.
+    "indent": 0,
+
+    // 规定了在JSX中的属性值是使用单引号还是双引号,默认使用双引号
+    "jsx-quotes": [2, "prefer-double"],
+
+    // 该规则规定了在对象字面量语法中key和value之间的空白，冒号前不要留空格，冒号后面需留一个空格
+    "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
+
+    //  规定了keyword前后是否需要留一个空格
+    "keyword-spacing": [0, { "before": true, "after": true, "overrides": {} }],
+
+    // 统一换行符，"\n" unix(for LF) and "\r\n" for windows(CRLF)，默认unix
