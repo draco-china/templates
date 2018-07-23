@@ -523,3 +523,18 @@ module.exports = {
     "max-params": [0, 3],
 
     // 规定了函数中代码不能够超过多少行
+    "max-statements": [0, 10],
+
+    // 使用构造函数(new)时首字母需大写，首字母大写的函数需用new操作符
+    "new-cap": 2,
+
+    // 使用构造函数(new)时必须圆括号不能省略
+    "new-parens": 0,
+
+    // 规定了变量声明后是否需要空行
+    "newline-after-var": 0,
+
+    // 规定了return语句前是否是否需要空行
+    "newline-before-return": 0,
+
+    // 规定了方法链式调用时是否需换行
