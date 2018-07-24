@@ -620,3 +620,20 @@ module.exports = {
 
       "require": {
 
+        "FunctionDeclaration": true,
+
+        "MethodDefinition": false,
+
+        "ClassDeclaration": false
+
+      }
+
+    }],
+
+    // JavaScript不要求在每行末尾加上分号，这是因为JavaScript引擎会决定是否需要在行末加上分号，然后自动帮我们在行末加上分号，这一特性被成为ASI(automatic semicolon insertion)，也是JavaScript语言最富争议的特性之一
+
+    // 尽管ASI允许我们使用更加自由的代码风格，但是它也可能使得你的代码并不是按你期许的方式运行
+
+    // 两个可选参数，always 和never
+
+    // 默认配置always，要求在行末加上分号。
