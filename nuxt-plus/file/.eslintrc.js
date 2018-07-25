@@ -637,3 +637,21 @@ module.exports = {
     // 两个可选参数，always 和never
 
     // 默认配置always，要求在行末加上分号。
+    "semi": [0, "always"],
+
+    // 该规则用来规定分号前后是否加空格，默认配置如下
+    "semi-spacing": [2, { "before": false, "after": true }],
+
+    // 要求对同一个模块里的import声明按字母排序
+    "sort-imports": 0,
+
+    // 规定在同一个变量声明代码块中，要对变量的声明按字母排序
+    "sort-vars": 2,
+
+    // 规定了在代码块前是否需要加空格
+    "space-before-blocks": [2, "always"],
+
+    // 函数定义时，function关键字后面的小括号前是否需要加空格
+    "space-before-function-paren": [0, "always"],
+
+    // 规定圆括号内部的空格。规定是否需要在(右边，或者)左边加空格。
