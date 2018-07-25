@@ -655,3 +655,27 @@ module.exports = {
     "space-before-function-paren": [0, "always"],
 
     // 规定圆括号内部的空格。规定是否需要在(右边，或者)左边加空格。
+    "space-in-parens": [2, "never"],
+
+    // 中綴操作符左右是否添加空格
+    "space-infix-ops": 2,
+
+    // 规定在一元操作符前后是否需要加空格，单词类操作符需要加，而非单词类操作符不用加
+
+    // words - applies to unary word operators such as: new, delete, typeof, void, yield
+
+    // nonwords - applies to unary operators such as: -, +, --, ++, !, !!
+    "space-unary-ops": [2, { "words": true, "nonwords": false }],
+
+    // 规定是否需要在代码注释起始符//  or /*后面至少紧跟一个空格
+    "spaced-comment": [2, "always", { "markers": ["global", "globals", "eslint", "eslint-disable", "*package", "!", ","] }],
+
+    // 要求在正则表达式的双斜杠外面加一个圆括号，来消除歧义
+    "wrap-regex": 0,
+
+
+    /*ECMAScript 6*/
+
+    // 箭头函数中，如果函数体里只有一句代码时可以省略大括号
+
+    // 规定是否可以省略大括号
