@@ -699,3 +699,17 @@ module.exports = {
     "no-class-assign": 2,
 
     // 箭头函数的箭头和比较操作符 (>, <, <=, and >=)很相似，该规则要求在和比较操作符容易发生混淆时禁止使用箭头函数语法
+    "no-confusing-arrow": 2,
+
+    // 禁止修改const声明的变量
+    "no-const-assign": 2,
+
+    // class中的成员不允许有相同的名字
+    "no-dupe-class-members": 2,
+
+    // 禁止在Symbol对象前使用new操作符
+    "no-new-symbol": 2,
+
+    // 该规则可以定义不允许在应用中导入的模块
+    "no-restricted-imports": [2,
+
