@@ -713,3 +713,22 @@ module.exports = {
     // 该规则可以定义不允许在应用中导入的模块
     "no-restricted-imports": [2,
 
+      "assert", "buffer", "child_process", "cluster", "crypto", "dgram", "dns", "domain", "events", "freelist", "fs", "http", "https", "module", "net", "os", "path", "punycode", "querystring", "readline", "repl", "smalloc", "stream", "string_decoder", "sys", "timers", "tls", "tracing", "tty", "url", "util", "vm", "zlib"
+
+    ],
+
+    // 在构造函数中，禁止在super()调用前使用this/super对象
+    "no-this-before-super": 2,
+
+    // ES2015提供了默认的空构造函数，禁止使用不必要的空构造函数
+    "no-useless-constructor": 2,
+
+    // 禁用var，用let和const代替var
+    "no-var": 2,
+
+    // ES6中提供了定义对象字面量的方法和属性的简写形式。强制要求在对象字面量中使用方法和属性的简写形式
+    "object-shorthand": 0,
+
+    // 函数作为函数的参数传入时，传入的函数需要是箭头函数
+
+    // 箭头函数中的this对象直接绑定到了其外面包围的函数的this对象。
