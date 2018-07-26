@@ -747,3 +747,16 @@ module.exports = {
     "prefer-spread": 2,
 
     // 在ES2015(ES6)中推荐使用模板代替以前的字符串拼接
+    "prefer-template ": 0,
+
+    // 生成器函数中必须有yield关键字，如果没有会报错。
+    "require-yield": 2,
+
+    // 模板字符串中使用${ 和 } 包含的表达式前后是否需要留空格，默认规则禁止花括号内有空格
+    "template-curly-spacing": [2, "never"],
+
+    // yield*表达式中的*号前后是否留空格，默认after，比如yield* other()
+    "yield-star-spacing": [2, "after"]
+
+  }
+}
