@@ -732,3 +732,18 @@ module.exports = {
     // 函数作为函数的参数传入时，传入的函数需要是箭头函数
 
     // 箭头函数中的this对象直接绑定到了其外面包围的函数的this对象。
+    "prefer-arrow-callback": 0,
+
+    // 如果一个变量声明后不再被修改，那么应使用const来声明该变量
+    "prefer-const": 1,
+
+    // 推荐使用Reflect上的方法替代以前老方法
+    "prefer-reflect": 2,
+
+    //  在ES2015(ES6)中推荐使用剩余参数(...rest)代替arguments变量
+    "prefer-rest-params": 2,
+
+    // 在ES2015(ES6)中推荐使用扩展符替代apply()方法
+    "prefer-spread": 2,
+
+    // 在ES2015(ES6)中推荐使用模板代替以前的字符串拼接
