@@ -1,2 +1,3 @@
 *, *:hover {
   @include transition(background-color .25s linear,
+          color .05s linear,
