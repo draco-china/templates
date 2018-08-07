@@ -37,3 +37,4 @@
   transition: opacity .15s;
 }
 .option-enter, .option-leave-active {
+  opacity: 0;
