@@ -321,3 +321,15 @@ table {
 button,
 input,
 optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Inherit styling in all browsers (opinionated).
+ */
+
+button,
+input,
+select,
