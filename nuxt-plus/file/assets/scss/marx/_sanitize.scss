@@ -308,3 +308,16 @@ svg:not(:root) {
  */
 
 table {
+  border-collapse: collapse;
+}
+
+/* Forms (https://html.spec.whatwg.org/multipage/forms.html#forms)
+   ========================================================================== */
+
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
