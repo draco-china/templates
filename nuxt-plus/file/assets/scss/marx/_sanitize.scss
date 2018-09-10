@@ -499,3 +499,22 @@ menu {
 
 summary {
   display: list-item;
+}
+
+/* Scripting (https://html.spec.whatwg.org/multipage/scripting.html#scripting-3)
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
