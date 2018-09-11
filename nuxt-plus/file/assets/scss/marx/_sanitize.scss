@@ -557,3 +557,19 @@ textarea,
  */
 
 [aria-busy="true"] {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements (opinionated).
+ */
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+ * Change the display on visually hidden accessible elements (opinionated).
+ */
+
+[aria-hidden="false"][hidden]:not(:focus) {
