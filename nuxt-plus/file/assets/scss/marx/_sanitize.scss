@@ -538,3 +538,22 @@ summary,
 textarea,
 [tabindex] {
   -ms-touch-action: manipulation; /* 1 */
+  touch-action: manipulation;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* ARIA (https://w3c.github.io/html-aria/)
+   ========================================================================== */
+
+/**
+ * Change the cursor on busy elements (opinionated).
+ */
+
+[aria-busy="true"] {
