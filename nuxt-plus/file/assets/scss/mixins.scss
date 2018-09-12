@@ -5,3 +5,22 @@
   List of CSS3 Sass Mixins File to be @imported and @included as you need
 
   The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+
+
+////
+/// @author Matthieu Aussaguel
+/// @group sass-css3-mixins
+////
+
+
+/// Adds a browser prefix to the property
+/// @param {*} $property Property
+/// @param {*} $value Value
+
+@mixin css3-prefix($property, $value) {
