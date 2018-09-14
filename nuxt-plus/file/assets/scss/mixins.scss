@@ -62,3 +62,9 @@
     background-image:      -o-linear-gradient(left, $startColor, $endColor);
     background-image:         linear-gradient(left, $startColor, $endColor);
     filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}', gradientType='1');
+}
+
+@mixin background-oblique($startColor: #3C3C3C, $endColor: #999999) {
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, left top, right bottom, from($startColor), to($endColor));
+  background-image: -webkit-linear-gradient(135deg, $startColor 25%, $endColor 50%);
