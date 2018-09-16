@@ -157,3 +157,9 @@
 
 @mixin box($orient: horizontal, $pack: center, $align: center) {
   display: -webkit-box;
+  display: -moz-box;
+  display: box;
+
+  @include css3-prefix('box-orient', $orient);
+  @include css3-prefix('box-pack', $pack);
+  @include css3-prefix('box-align', $align);
