@@ -202,3 +202,15 @@
 /// @require {mixin} css3-prefix
 
 @mixin box-sizing($type: border-box) {
+  @include css3-prefix('box-sizing', $type);
+}
+
+
+/// Columns
+/// @param {Integer} $count [3] - Count
+/// @param {Integer} $gap [10] - Gap
+/// @require {mixin} css3-prefix
+
+@mixin columns($count: 3, $gap: 10) {
+  @include css3-prefix('column-count', $count);
+  @include css3-prefix('column-gap', $gap);
