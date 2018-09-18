@@ -230,3 +230,20 @@
   @include css3-prefix('box-shadow', 0 0 0 1px $colorTwo);
 
   @include border-radius( $radius );
+}
+
+
+/// Flex
+/// @param {Integer} $value [1] - Value
+/// @require {mixin} css3-prefix
+
+@mixin flex($value: 1) {
+  @include css3-prefix('box-flex', $value);
+}
+
+
+/// Flip
+/// @param {Double} $scaleX [-1] - ScaleX
+/// @require {mixin} css3-prefix
+
+@mixin flip($scaleX: -1) {
