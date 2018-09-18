@@ -266,3 +266,15 @@
        url($woffFileSrc) format('woff'),
        url($ttfFileSrc)  format('truetype'),
        url($svgFileSrc + $svgFontID) format('svg');
+}
+
+
+/// Opacity
+/// @param {Double} $opacity [0.5] - Opacity
+/// @require {mixin} css3-prefix
+
+@mixin opacity($opacity: 0.5) {
+    $opacityMultiplied: ($opacity * 100);
+
+    filter:         alpha(opacity=$opacityMultiplied);
+    -ms-filter:     "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacityMultiplied + ")";
