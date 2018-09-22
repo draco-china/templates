@@ -392,3 +392,8 @@
 /// @param {*} $animation-name - Animation name
 /// @content [Animation css]
 
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
