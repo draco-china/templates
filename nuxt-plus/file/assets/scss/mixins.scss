@@ -420,3 +420,8 @@
 }
 
 // clearfix 清除浮动
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
