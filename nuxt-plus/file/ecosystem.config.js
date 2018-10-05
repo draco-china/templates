@@ -4,3 +4,4 @@ module.exports = {
       name: "nuxt-exprss-template",
       script: "./build/main.js",
       max_memory_restart: "256M",
+      log_date_format: "YYYY-MM-DD HH:mm Z",
