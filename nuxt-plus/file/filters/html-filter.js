@@ -14,3 +14,4 @@ export const textOverflow = (text, length) => {
 }
 
 // 首字母大写
+export const firstUpperCase = str => {
