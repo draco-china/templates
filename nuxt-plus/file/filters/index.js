@@ -5,3 +5,4 @@ export default {
   textOverflow,
   firstUpperCase,
   timeAgo,
+  toYMD,
