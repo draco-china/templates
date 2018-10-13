@@ -9,3 +9,6 @@
 // 取剩余秒
 const pluralize = (time, label) => {
   return time + label + '前'
+}
+
+// 相对时间过滤器，传入时间，返回距离今天有多久
