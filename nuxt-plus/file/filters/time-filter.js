@@ -14,3 +14,4 @@ const pluralize = (time, label) => {
 // 相对时间过滤器，传入时间，返回距离今天有多久
 export const timeAgo = time => {
   time = time instanceof Date ? time : new Date(time)
+  const between = Date.now() / 1000 - Number(time) / 1000
