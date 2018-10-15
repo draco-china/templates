@@ -20,3 +20,4 @@ export const timeAgo = time => {
       return '刚刚'
     }
     return pluralize(~~(between / 60), ' 分钟')
+  } else if (between < 86400) {
