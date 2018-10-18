@@ -25,3 +25,6 @@ export const timeAgo = time => {
   } else {
     return pluralize(~~(between / 86400), ' 天')
   }
+}
+
+// 转换为本地时间格式
