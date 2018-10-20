@@ -36,3 +36,4 @@ export const toLocalString = date => {
 export const toYMD = date => {
   if (!date) { return date }
   date = new Date(date)
+  return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours() > 11 ? '下午' : '上午'}`
