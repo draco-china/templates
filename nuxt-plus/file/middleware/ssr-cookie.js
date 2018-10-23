@@ -9,3 +9,4 @@ export default function ({ isServer, req, res }, next) {
       axios.defaults.headers.Referer = req.headers.referer
     }
   }
+  next()
