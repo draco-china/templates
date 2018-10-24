@@ -8,3 +8,4 @@
  * @param value // 需要push到数组的值或者对象
  */
 function pushArr(path, value) {
+  var pathArr = path.split('.'),
