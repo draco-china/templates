@@ -10,3 +10,5 @@
 function pushArr(path, value) {
   var pathArr = path.split('.'),
     len = pathArr.length,
+    str = 'module.exports';
+  for (var i = 0; i < len; i++ ) {
