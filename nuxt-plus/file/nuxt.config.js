@@ -9,3 +9,4 @@
  */
 function pushArr(path, value) {
   var pathArr = path.split('.'),
+    len = pathArr.length,
