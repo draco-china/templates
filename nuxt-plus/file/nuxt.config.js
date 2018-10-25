@@ -13,3 +13,4 @@ function pushArr(path, value) {
     str = 'module.exports';
   for (var i = 0; i < len; i++ ) {
     str += '.'+pathArr[i];
+    if(eval(str) == undefined){
