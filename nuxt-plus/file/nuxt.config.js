@@ -14,3 +14,5 @@ function pushArr(path, value) {
   for (var i = 0; i < len; i++ ) {
     str += '.'+pathArr[i];
     if(eval(str) == undefined){
+      eval(str + '= {}')
+      if(i == len-1) {
