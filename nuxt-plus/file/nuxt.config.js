@@ -17,3 +17,4 @@ function pushArr(path, value) {
       eval(str + '= {}')
       if(i == len-1) {
         eval(str + '= []')
+      }
