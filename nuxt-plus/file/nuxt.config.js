@@ -21,3 +21,11 @@ function pushArr(path, value) {
     }
   }
   eval(str).push(value)
+}
+
+/**
+ * 将值插入map对象中
+ * @param path // module.exports下的路径
+ * @param key // 键值对的名称 如果不需要可不填 value的值将直接赋给path 此时value的值类型必须为 boolean String Number
+ * @param value // 键值对的值
+ */
