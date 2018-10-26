@@ -18,3 +18,4 @@ function pushArr(path, value) {
       if(i == len-1) {
         eval(str + '= []')
       }
+    }
