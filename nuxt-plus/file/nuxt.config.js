@@ -16,3 +16,4 @@ function pushArr(path, value) {
     if(eval(str) == undefined){
       eval(str + '= {}')
       if(i == len-1) {
+        eval(str + '= []')
