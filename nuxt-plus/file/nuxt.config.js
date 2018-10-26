@@ -19,3 +19,5 @@ function pushArr(path, value) {
         eval(str + '= []')
       }
     }
+  }
+  eval(str).push(value)
