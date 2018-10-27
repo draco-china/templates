@@ -30,3 +30,5 @@ function pushArr(path, value) {
  * @param value // 键值对的值
  */
 function pushMap(path, key, value) {
+  var pathMap = path.split('.'),
+    len = pathMap.length,
