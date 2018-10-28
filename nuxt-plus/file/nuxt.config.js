@@ -32,3 +32,4 @@ function pushArr(path, value) {
 function pushMap(path, key, value) {
   var pathMap = path.split('.'),
     len = pathMap.length,
+    str = 'module.exports';
