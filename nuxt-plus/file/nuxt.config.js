@@ -33,3 +33,4 @@ function pushMap(path, key, value) {
   var pathMap = path.split('.'),
     len = pathMap.length,
     str = 'module.exports';
+  for (var i = 0; i < len; i++ ) {
