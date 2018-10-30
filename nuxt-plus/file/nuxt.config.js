@@ -35,3 +35,5 @@ function pushMap(path, key, value) {
     str = 'module.exports';
   for (var i = 0; i < len; i++ ) {
     str += '.'+pathMap[i];
+    if(eval(str) == undefined){
+      eval(str + '= {}')
