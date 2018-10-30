@@ -38,3 +38,4 @@ function pushMap(path, key, value) {
     if(eval(str) == undefined){
       eval(str + '= {}')
     }
+  }
