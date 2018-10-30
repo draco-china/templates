@@ -37,3 +37,4 @@ function pushMap(path, key, value) {
     str += '.'+pathMap[i];
     if(eval(str) == undefined){
       eval(str + '= {}')
+    }
