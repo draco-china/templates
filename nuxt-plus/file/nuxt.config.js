@@ -41,3 +41,4 @@ function pushMap(path, key, value) {
   }
   if(key) {
     eval(str)[key] = value
+  } else {
