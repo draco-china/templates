@@ -43,3 +43,6 @@ function pushMap(path, key, value) {
     eval(str)[key] = value
   } else {
     eval(str + '=' + value)
+  }
+}
+// 为JS和Vue文件定制babel配置。https://nuxtjs.org/api/configuration-build/#analyze
