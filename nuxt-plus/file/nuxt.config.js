@@ -46,3 +46,4 @@ function pushMap(path, key, value) {
   }
 }
 // 为JS和Vue文件定制babel配置。https://nuxtjs.org/api/configuration-build/#analyze
+pushMap('build.babel', 'presets', ['es2015', 'stage-2'])
