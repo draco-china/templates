@@ -51,3 +51,7 @@ pushMap('build.babel', 'plugins', ['transform-async-to-generator', 'transform-ru
 pushMap('build.babel', 'comments', true)
 
 // 打包公共模块添加
+pushArr('build.vendor', 'swiper')
+pushArr('build.vendor', 'qs')
+
+// 插入css自动补全
