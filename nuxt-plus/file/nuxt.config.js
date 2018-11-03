@@ -57,3 +57,7 @@ pushArr('build.vendor', 'qs')
 // 插入css自动补全
 pushArr('build.postcss', require('postcss-nested')())
 pushArr('build.postcss', require('postcss-responsive-type')())
+pushArr('build.postcss', require('postcss-hexrgba')())
+pushArr('build.postcss', require('autoprefixer')({browsers: ['last 3 versions']}))
+
+// 设置缓存组件数量及时间
