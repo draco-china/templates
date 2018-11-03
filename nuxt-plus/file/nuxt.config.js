@@ -61,3 +61,4 @@ pushArr('build.postcss', require('postcss-hexrgba')())
 pushArr('build.postcss', require('autoprefixer')({browsers: ['last 3 versions']}))
 
 // 设置缓存组件数量及时间
+pushMap('cache', 'max', 10)
