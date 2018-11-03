@@ -62,3 +62,6 @@ pushArr('build.postcss', require('autoprefixer')({browsers: ['last 3 versions']}
 
 // 设置缓存组件数量及时间
 pushMap('cache', 'max', 10)
+pushMap('cache', 'maxAge', 1000 * 60 * 10)
+
+// 设置全局css
