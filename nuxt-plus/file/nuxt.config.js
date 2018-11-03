@@ -55,3 +55,4 @@ pushArr('build.vendor', 'swiper')
 pushArr('build.vendor', 'qs')
 
 // 插入css自动补全
+pushArr('build.postcss', require('postcss-nested')())
