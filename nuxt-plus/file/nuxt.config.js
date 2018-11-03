@@ -56,3 +56,4 @@ pushArr('build.vendor', 'qs')
 
 // 插入css自动补全
 pushArr('build.postcss', require('postcss-nested')())
+pushArr('build.postcss', require('postcss-responsive-type')())
