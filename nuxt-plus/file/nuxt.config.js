@@ -65,3 +65,6 @@ pushMap('cache', 'max', 10)
 pushMap('cache', 'maxAge', 1000 * 60 * 10)
 
 // 设置全局css
+pushArr('css', { src: '~/assets/scss/app.scss', lang: 'scss' })
+
+// 设置开发环境判断值
