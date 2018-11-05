@@ -74,3 +74,7 @@ pushMap('dev', '', (process.env.NODE_ENV !== 'production'))
 pushMap('env', 'baseUrl', `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`)
 
 // 开启离线应用
+pushMap('offline', '', true)
+
+// 添加插件
+// 1.添加全局过滤器
