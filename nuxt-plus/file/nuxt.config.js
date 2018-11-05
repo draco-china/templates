@@ -80,3 +80,7 @@ pushMap('offline', '', true)
 // 1.添加全局过滤器
 pushArr('plugins', { src: '~/plugins/filters.js' })
 // 2.添加google统计
+pushArr('plugins', { src: '~/plugins/ga.js', ssr: false })
+// 3.添加复制事件后插入版权声明
+pushArr('plugins', { src: '~/plugins/copy-right.js', ssr: false })
+// 4.添加百度seo自动push脚本
