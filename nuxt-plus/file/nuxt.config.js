@@ -78,3 +78,5 @@ pushMap('offline', '', true)
 
 // 添加插件
 // 1.添加全局过滤器
+pushArr('plugins', { src: '~/plugins/filters.js' })
+// 2.添加google统计
