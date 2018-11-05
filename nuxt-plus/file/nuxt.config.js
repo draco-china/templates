@@ -68,3 +68,9 @@ pushMap('cache', 'maxAge', 1000 * 60 * 10)
 pushArr('css', { src: '~/assets/scss/app.scss', lang: 'scss' })
 
 // 设置开发环境判断值
+pushMap('dev', '', (process.env.NODE_ENV !== 'production'))
+
+// 设置生产环境变量
+pushMap('env', 'baseUrl', `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`)
+
+// 开启离线应用
