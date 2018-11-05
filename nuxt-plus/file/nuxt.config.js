@@ -84,3 +84,5 @@ pushArr('plugins', { src: '~/plugins/ga.js', ssr: false })
 // 3.添加复制事件后插入版权声明
 pushArr('plugins', { src: '~/plugins/copy-right.js', ssr: false })
 // 4.添加百度seo自动push脚本
+pushArr('plugins', { src: '~/plugins/baidu-seo-push.js', ssr: false })
+// 5.添加开启离线应用
