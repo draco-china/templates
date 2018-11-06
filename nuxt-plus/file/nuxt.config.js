@@ -86,3 +86,5 @@ pushArr('plugins', { src: '~/plugins/copy-right.js', ssr: false })
 // 4.添加百度seo自动push脚本
 pushArr('plugins', { src: '~/plugins/baidu-seo-push.js', ssr: false })
 // 5.添加开启离线应用
+pushArr('plugins', { src: '~/plugins/offline.js', ssr: false })
+// 6.添加swiper组件
