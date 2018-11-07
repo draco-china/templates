@@ -88,3 +88,9 @@ pushArr('plugins', { src: '~/plugins/baidu-seo-push.js', ssr: false })
 // 5.添加开启离线应用
 pushArr('plugins', { src: '~/plugins/offline.js', ssr: false })
 // 6.添加swiper组件
+pushArr('plugins', { src: '~/plugins/swiper.js', ssr: false })
+// 添加路由中间件
+pushArr('router.middleware', 'ssr-cookie')
+
+/********** DO NOT MODIFY **********/
+/*---------- END ----------*/
