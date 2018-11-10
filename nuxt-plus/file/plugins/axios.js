@@ -15,3 +15,4 @@ const replaceAll = json => {
     return json;
   }
   for(const key in json) {
+    if(json[key].isArray) {
