@@ -14,3 +14,4 @@ const replaceAll = json => {
   if(json.isNull || json.isNaN || json.isUndefined || json == {}) {
     return json;
   }
+  for(const key in json) {
