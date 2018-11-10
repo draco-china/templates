@@ -11,3 +11,4 @@ const service = axios.create({
 // 参数: json 指定的json
 const replaceAll = json => {
   // 如果json无内容，返回json
+  if(json.isNull || json.isNaN || json.isUndefined || json == {}) {
