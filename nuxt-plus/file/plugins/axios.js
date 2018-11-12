@@ -20,3 +20,4 @@ const replaceAll = json => {
         if(json[key][i].isObject) {
           json[key][i] = replaceAll(json[key][i])
         }
+        if(json[key][i].isNull) {
