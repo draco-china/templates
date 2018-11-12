@@ -21,3 +21,5 @@ const replaceAll = json => {
           json[key][i] = replaceAll(json[key][i])
         }
         if(json[key][i].isNull) {
+          json[key][i] = ''
+        }
