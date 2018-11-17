@@ -33,3 +33,4 @@ const replaceAll = json => {
     }
     if(json[key].isNull) {
       json[key] = ''
+    }
