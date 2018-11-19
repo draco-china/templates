@@ -38,3 +38,4 @@ const replaceAll = json => {
       json[key] = ''
     }
   }
+  return json;
