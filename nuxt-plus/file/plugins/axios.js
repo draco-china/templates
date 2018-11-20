@@ -44,3 +44,4 @@ const replaceAll = json => {
 // 拦截器
 service.interceptors.request.use(config => {
   if(config.method === 'post') {
+  config.data = replaceAll(config.data);
