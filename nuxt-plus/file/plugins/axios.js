@@ -47,3 +47,5 @@ service.interceptors.request.use(config => {
   config.data = replaceAll(config.data);
   config.data = qs.stringify(config.data);
 }
+return config
+}, error => {
