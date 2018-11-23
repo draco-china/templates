@@ -52,3 +52,4 @@ return config
   return Promise.reject(error)
 })
 
+service.interceptors.response.use(response => {
