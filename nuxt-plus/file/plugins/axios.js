@@ -58,3 +58,5 @@ service.interceptors.response.use(response => {
   return Promise.reject(error)
 })
 
+Vue.prototype.$http = axios
+export default service
