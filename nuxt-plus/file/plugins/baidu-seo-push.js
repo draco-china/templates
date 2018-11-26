@@ -8,3 +8,4 @@ if (process.env.NODE_ENV === 'production') {
   ** https://zz.bdstatic.com/linksubmit/push.js
   */
   const baiduPush = href => {
+    !function(){
