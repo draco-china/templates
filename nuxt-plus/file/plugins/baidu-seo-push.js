@@ -21,3 +21,8 @@ if (process.env.NODE_ENV === 'production') {
     }(window)
   }
 
+  baiduPush()
+
+  /*
+  ** 应用挂载后
+  */
