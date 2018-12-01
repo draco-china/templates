@@ -19,3 +19,5 @@ if (process.env.NODE_ENV === 'production') {
         i.src = o
       }
     }(window)
+  }
+
