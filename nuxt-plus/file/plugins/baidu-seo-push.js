@@ -30,3 +30,4 @@ if (process.env.NODE_ENV === 'production') {
     app.$nuxt.$on('routeChanged', (to, from) => {
       baiduPush(window.location.origin + to.fullPath)
     })
+  })
