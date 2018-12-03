@@ -31,3 +31,4 @@ if (process.env.NODE_ENV === 'production') {
       baiduPush(window.location.origin + to.fullPath)
     })
   })
+}
