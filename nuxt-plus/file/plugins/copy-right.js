@@ -11,3 +11,4 @@ if (process.env.NODE_ENV === 'production') {
       '作者：Darker',
       '链接：' + location.href,
       '来源：Darker.me',
+      ''
