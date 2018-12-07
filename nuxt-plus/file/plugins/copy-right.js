@@ -16,3 +16,4 @@ if (process.env.NODE_ENV === 'production') {
   }
 
   // 拼接成html
+  const buildText = content => {
