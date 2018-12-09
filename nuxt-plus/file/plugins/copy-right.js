@@ -18,3 +18,6 @@ if (process.env.NODE_ENV === 'production') {
   // 拼接成html
   const buildText = content => {
     return content + copyText()
+  }
+
+  // 拼接成html
