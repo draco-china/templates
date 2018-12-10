@@ -29,3 +29,4 @@ if (process.env.NODE_ENV === 'production') {
     if(!window.getSelection) return
     const content = window.getSelection().toString()
     e.clipboardData.setData('text/plain', buildText(content))
+    e.clipboardData.setData('text/html', buildHtml(content))
