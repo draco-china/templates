@@ -26,3 +26,4 @@ if (process.env.NODE_ENV === 'production') {
   }
 
   document.addEventListener('copy', e => {
+    if(!window.getSelection) return
