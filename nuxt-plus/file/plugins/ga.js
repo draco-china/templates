@@ -27,3 +27,4 @@ if (process.env.NODE_ENV === 'production') {
       ** 告诉 Google 统计分析服务 增加新的页面访问统计
       */
       ga('set', 'page', to.fullPath)
+      ga('send', 'pageview')
