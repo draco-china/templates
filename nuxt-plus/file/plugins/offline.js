@@ -5,3 +5,4 @@ if (process.env.NODE_ENV === 'production') {
     OfflinePlugin.install({
       onInstalled: function () {
         console.log('Offline plugin installed.') // eslint-disable-line no-console
+      },
