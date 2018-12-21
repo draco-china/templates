@@ -12,3 +12,4 @@ if (process.env.NODE_ENV === 'production') {
       onUpdateReady: function () {
         OfflinePlugin.applyUpdate()
       },
+      onUpdated: function () {
