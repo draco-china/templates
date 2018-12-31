@@ -36,3 +36,9 @@ if (config.dev) {
 app.use(nuxt.render)
 
 // Listen the server
+app.listen(port, host)
+
+// The first GC run starts 15 minutes after the last activity
+// gc.start(1000*60* 15)
+
+// eslint-disable-next-line no-console
