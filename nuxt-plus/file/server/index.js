@@ -42,3 +42,4 @@ app.listen(port, host)
 // gc.start(1000*60* 15)
 
 // eslint-disable-next-line no-console
+console.log('Server listening on ' + host + ':' + port)
