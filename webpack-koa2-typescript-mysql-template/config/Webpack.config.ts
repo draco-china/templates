@@ -6,3 +6,4 @@ import { Configuration, ExternalsElement } from 'webpack';
 
 class WebpackConfig implements Configuration {
   target: Configuration['target'] = 'node';
+  mode: Configuration['mode'] = 'production';
