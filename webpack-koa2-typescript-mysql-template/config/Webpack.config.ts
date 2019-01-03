@@ -9,3 +9,4 @@ class WebpackConfig implements Configuration {
   mode: Configuration['mode'] = 'production';
   entry = [path.resolve(__dirname, '../server/app.ts')];
   output = {
+    path: path.resolve(__dirname, '../dist'),
