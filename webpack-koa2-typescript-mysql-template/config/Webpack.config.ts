@@ -8,3 +8,4 @@ class WebpackConfig implements Configuration {
   target: Configuration['target'] = 'node';
   mode: Configuration['mode'] = 'production';
   entry = [path.resolve(__dirname, '../server/app.ts')];
+  output = {
