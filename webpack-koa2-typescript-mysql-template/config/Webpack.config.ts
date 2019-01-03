@@ -10,3 +10,5 @@ class WebpackConfig implements Configuration {
   entry = [path.resolve(__dirname, '../server/app.ts')];
   output = {
     path: path.resolve(__dirname, '../dist'),
+    filename: 'app.js'
+  };
