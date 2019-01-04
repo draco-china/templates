@@ -12,3 +12,4 @@ class WebpackConfig implements Configuration {
     path: path.resolve(__dirname, '../dist'),
     filename: 'app.js'
   };
+  externals: ExternalsElement[] = [];
