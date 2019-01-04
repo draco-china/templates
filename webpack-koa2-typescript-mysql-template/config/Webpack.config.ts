@@ -13,3 +13,4 @@ class WebpackConfig implements Configuration {
     filename: 'app.js'
   };
   externals: ExternalsElement[] = [];
+  module = {
