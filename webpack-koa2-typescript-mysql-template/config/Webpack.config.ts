@@ -16,3 +16,5 @@ class WebpackConfig implements Configuration {
   module = {
     rules: [
       {
+        test: /\.ts(x?)$/,
+        use: [
