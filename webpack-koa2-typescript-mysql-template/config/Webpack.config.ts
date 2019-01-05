@@ -15,3 +15,4 @@ class WebpackConfig implements Configuration {
   externals: ExternalsElement[] = [];
   module = {
     rules: [
+      {
