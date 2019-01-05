@@ -18,3 +18,4 @@ class WebpackConfig implements Configuration {
       {
         test: /\.ts(x?)$/,
         use: [
+          {
