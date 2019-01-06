@@ -20,3 +20,4 @@ class WebpackConfig implements Configuration {
         use: [
           {
             loader: 'ts-loader',
+            options: {
