@@ -21,3 +21,4 @@ class WebpackConfig implements Configuration {
           {
             loader: 'ts-loader',
             options: {
+              transpileOnly: true,
