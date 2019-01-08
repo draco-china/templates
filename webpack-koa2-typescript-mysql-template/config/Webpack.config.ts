@@ -23,3 +23,5 @@ class WebpackConfig implements Configuration {
             options: {
               transpileOnly: true,
               configFile: path.resolve(__dirname, '../tsconfig.json')
+            }
+          }
