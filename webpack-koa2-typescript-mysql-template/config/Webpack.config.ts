@@ -25,3 +25,4 @@ class WebpackConfig implements Configuration {
               configFile: path.resolve(__dirname, '../tsconfig.json')
             }
           }
+        ],
