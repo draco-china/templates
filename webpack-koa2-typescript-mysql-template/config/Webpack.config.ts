@@ -29,3 +29,5 @@ class WebpackConfig implements Configuration {
         exclude: /node_modules/
       }
     ]
+  };
+  resolve = {
