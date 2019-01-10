@@ -34,3 +34,4 @@ class WebpackConfig implements Configuration {
     extensions: ['.ts', '.js', '.json'],
   };
   // 开发环境也使用NoEmitOnErrorsPlugin
+  plugins = [new webpack.NoEmitOnErrorsPlugin()];
