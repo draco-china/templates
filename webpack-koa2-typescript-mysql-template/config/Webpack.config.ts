@@ -31,3 +31,4 @@ class WebpackConfig implements Configuration {
     ]
   };
   resolve = {
+    extensions: ['.ts', '.js', '.json'],
