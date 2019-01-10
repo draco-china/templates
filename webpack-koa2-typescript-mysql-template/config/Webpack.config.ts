@@ -32,3 +32,5 @@ class WebpackConfig implements Configuration {
   };
   resolve = {
     extensions: ['.ts', '.js', '.json'],
+  };
+  // 开发环境也使用NoEmitOnErrorsPlugin
