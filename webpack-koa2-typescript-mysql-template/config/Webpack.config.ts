@@ -38,3 +38,4 @@ class WebpackConfig implements Configuration {
   constructor(mode: Configuration['mode']) {
     this.mode = mode;
     if (mode === 'development') {
+      this.entry.push('webpack/hot/signal');
