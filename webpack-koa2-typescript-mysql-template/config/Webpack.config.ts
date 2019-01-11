@@ -36,3 +36,5 @@ class WebpackConfig implements Configuration {
   // 开发环境也使用NoEmitOnErrorsPlugin
   plugins = [new webpack.NoEmitOnErrorsPlugin()];
   constructor(mode: Configuration['mode']) {
+    this.mode = mode;
+    if (mode === 'development') {
