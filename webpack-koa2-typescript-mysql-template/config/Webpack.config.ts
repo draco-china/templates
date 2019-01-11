@@ -39,3 +39,4 @@ class WebpackConfig implements Configuration {
     this.mode = mode;
     if (mode === 'development') {
       this.entry.push('webpack/hot/signal');
+      this.externals.push(
