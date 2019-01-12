@@ -41,3 +41,4 @@ class WebpackConfig implements Configuration {
       this.entry.push('webpack/hot/signal');
       this.externals.push(
         nodeExternals({
+          whitelist: ['webpack/hot/signal']
