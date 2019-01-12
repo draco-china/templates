@@ -43,3 +43,5 @@ class WebpackConfig implements Configuration {
         nodeExternals({
           whitelist: ['webpack/hot/signal']
         })
+      );
+      const devPlugins = [
