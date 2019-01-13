@@ -45,3 +45,4 @@ class WebpackConfig implements Configuration {
         })
       );
       const devPlugins = [
+        new webpack.HotModuleReplacementPlugin(),
