@@ -49,3 +49,5 @@ class WebpackConfig implements Configuration {
         new StartServerPlugin({
           name: 'app.js',
           signal: true,
+          nodeArgs: ['--inspect']
+        }),
