@@ -48,3 +48,4 @@ class WebpackConfig implements Configuration {
         new webpack.HotModuleReplacementPlugin(),
         new StartServerPlugin({
           name: 'app.js',
+          signal: true,
