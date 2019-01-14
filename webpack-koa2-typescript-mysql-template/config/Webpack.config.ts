@@ -52,3 +52,4 @@ class WebpackConfig implements Configuration {
           nodeArgs: ['--inspect']
         }),
       ];
+      this.plugins.push(...devPlugins);
