@@ -51,3 +51,4 @@ class WebpackConfig implements Configuration {
           signal: true,
           nodeArgs: ['--inspect']
         }),
+      ];
