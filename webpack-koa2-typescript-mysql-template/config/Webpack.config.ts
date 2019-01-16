@@ -55,3 +55,6 @@ class WebpackConfig implements Configuration {
       this.plugins.push(...devPlugins);
     }
   }
+}
+
+export default WebpackConfig;
