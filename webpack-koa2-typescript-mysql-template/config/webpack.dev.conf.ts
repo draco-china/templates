@@ -5,3 +5,4 @@ import * as nodeExternals from 'webpack-node-externals';
 
 const config: webpack.Configuration = {
   mode: 'development',
+  entry: [
