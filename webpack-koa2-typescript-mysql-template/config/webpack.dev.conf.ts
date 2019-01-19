@@ -8,3 +8,4 @@ const config: webpack.Configuration = {
   entry: [
     'webpack/hot/signal',
     path.resolve(__dirname, '../server/app.ts')
+  ],
