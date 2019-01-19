@@ -7,3 +7,4 @@ const config: webpack.Configuration = {
   mode: 'development',
   entry: [
     'webpack/hot/signal',
+    path.resolve(__dirname, '../server/app.ts')
