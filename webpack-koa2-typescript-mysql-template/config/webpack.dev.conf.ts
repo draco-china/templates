@@ -12,3 +12,4 @@ const config: webpack.Configuration = {
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: 'app.js'
+  },
