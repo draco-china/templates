@@ -14,3 +14,4 @@ const config: webpack.Configuration = {
     filename: 'app.js'
   },
   externals: [nodeExternals({
+    whitelist: ['webpack/hot/signal']
