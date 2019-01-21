@@ -13,3 +13,4 @@ const config: webpack.Configuration = {
     path: path.resolve(__dirname, '../dist'),
     filename: 'app.js'
   },
+  externals: [nodeExternals({
