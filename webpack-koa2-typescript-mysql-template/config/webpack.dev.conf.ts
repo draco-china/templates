@@ -19,3 +19,4 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       {
+        test: /\.ts(x?)$/,
