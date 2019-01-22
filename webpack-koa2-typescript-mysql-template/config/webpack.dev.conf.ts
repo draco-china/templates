@@ -17,3 +17,4 @@ const config: webpack.Configuration = {
     whitelist: ['webpack/hot/signal']
   })],
   module: {
+    rules: [
