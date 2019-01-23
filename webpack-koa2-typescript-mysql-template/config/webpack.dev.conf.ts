@@ -24,3 +24,4 @@ const config: webpack.Configuration = {
           {
             loader: 'ts-loader',
             options: {
+              transpileOnly: true,
