@@ -22,3 +22,4 @@ const config: webpack.Configuration = {
         test: /\.ts(x?)$/,
         use: [
           {
+            loader: 'ts-loader',
