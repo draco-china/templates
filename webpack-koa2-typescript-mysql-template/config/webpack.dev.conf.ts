@@ -27,3 +27,4 @@ const config: webpack.Configuration = {
               transpileOnly: true,
               configFile: path.resolve(__dirname, '../tsconfig.json')
             }
+          }
