@@ -28,3 +28,4 @@ const config: webpack.Configuration = {
               configFile: path.resolve(__dirname, '../tsconfig.json')
             }
           }
+        ],
