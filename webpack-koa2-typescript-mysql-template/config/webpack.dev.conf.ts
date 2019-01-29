@@ -38,3 +38,4 @@ const config: webpack.Configuration = {
     extensions: ['.ts', '.js', '.json'],
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
