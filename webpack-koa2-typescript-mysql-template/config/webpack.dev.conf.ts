@@ -41,3 +41,4 @@ const config: webpack.Configuration = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new StartServerPlugin({
+      name: 'app.js',
