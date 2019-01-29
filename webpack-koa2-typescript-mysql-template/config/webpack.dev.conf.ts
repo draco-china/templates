@@ -39,3 +39,4 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
