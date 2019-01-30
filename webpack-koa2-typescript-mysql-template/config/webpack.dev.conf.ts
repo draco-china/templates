@@ -43,3 +43,4 @@ const config: webpack.Configuration = {
     new StartServerPlugin({
       name: 'app.js',
       signal: true,
+      nodeArgs: ['--inspect']
