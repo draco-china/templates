@@ -42,3 +42,4 @@ const config: webpack.Configuration = {
     new webpack.NoEmitOnErrorsPlugin(),
     new StartServerPlugin({
       name: 'app.js',
+      signal: true,
