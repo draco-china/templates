@@ -44,3 +44,4 @@ const config: webpack.Configuration = {
       name: 'app.js',
       signal: true,
       nodeArgs: ['--inspect']
+    }),
