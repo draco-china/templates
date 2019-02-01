@@ -46,3 +46,6 @@ const config: webpack.Configuration = {
       nodeArgs: ['--inspect']
     }),
   ]
+};
+
+export default config;
