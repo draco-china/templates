@@ -45,3 +45,4 @@ const config: webpack.Configuration = {
       signal: true,
       nodeArgs: ['--inspect']
     }),
+  ]
