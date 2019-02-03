@@ -5,3 +5,4 @@ const config: webpack.Configuration = {
   mode: 'production',
   entry: [
     path.resolve(__dirname, '../server/app.ts')
+  ],
