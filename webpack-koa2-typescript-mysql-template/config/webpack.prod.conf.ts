@@ -7,3 +7,4 @@ const config: webpack.Configuration = {
     path.resolve(__dirname, '../server/app.ts')
   ],
   output: {
+    path: path.resolve(__dirname, '../dist'),
