@@ -6,3 +6,4 @@ const config: webpack.Configuration = {
   entry: [
     path.resolve(__dirname, '../server/app.ts')
   ],
+  output: {
