@@ -12,3 +12,4 @@ const config: webpack.Configuration = {
   },
   module: {
     rules: [
+      {
