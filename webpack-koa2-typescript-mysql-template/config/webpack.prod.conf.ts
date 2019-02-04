@@ -11,3 +11,4 @@ const config: webpack.Configuration = {
     filename: 'app.js'
   },
   module: {
+    rules: [
