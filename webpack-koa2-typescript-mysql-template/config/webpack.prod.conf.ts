@@ -14,3 +14,4 @@ const config: webpack.Configuration = {
     rules: [
       {
         test: /\.ts(x?)$/,
+        use: [
