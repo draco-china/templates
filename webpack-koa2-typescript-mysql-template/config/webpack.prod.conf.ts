@@ -17,3 +17,4 @@ const config: webpack.Configuration = {
         use: [
           {
             loader: 'ts-loader',
+            options: {
