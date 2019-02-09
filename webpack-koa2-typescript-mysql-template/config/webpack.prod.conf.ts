@@ -24,3 +24,4 @@ const config: webpack.Configuration = {
           }
         ],
         exclude: /node_modules/
+      }
