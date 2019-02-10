@@ -30,3 +30,4 @@ const config: webpack.Configuration = {
   target: 'node',
   resolve: {
     extensions: ['.ts', '.js', '.json'],
+  },
