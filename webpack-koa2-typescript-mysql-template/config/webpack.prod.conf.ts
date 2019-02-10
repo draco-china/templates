@@ -28,3 +28,4 @@ const config: webpack.Configuration = {
     ]
   },
   target: 'node',
+  resolve: {
