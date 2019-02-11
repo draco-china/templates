@@ -31,3 +31,4 @@ const config: webpack.Configuration = {
   resolve: {
     extensions: ['.ts', '.js', '.json'],
   },
+  plugins: [
