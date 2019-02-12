@@ -33,3 +33,4 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin()
+  ]
