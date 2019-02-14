@@ -8,3 +8,4 @@ webpack(buildConfig).run((err: Error) => {
   if (err) {
     console.log(err);
   }
+});
