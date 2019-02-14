@@ -6,3 +6,4 @@ const buildConfig = new WebpackConfig('production');
 
 webpack(buildConfig).run((err: Error) => {
   if (err) {
+    console.log(err);
