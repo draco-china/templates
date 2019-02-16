@@ -7,3 +7,4 @@ const devConfig = new WebpackConfig('development');
 
 // 通过watch来实时编译
 webpack(devConfig).watch({
+  aggregateTimeout: 300
