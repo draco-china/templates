@@ -9,3 +9,4 @@ const devConfig = new WebpackConfig('development');
 webpack(devConfig).watch({
   aggregateTimeout: 300
 }, (err: Error) => {
+  if (err) {
