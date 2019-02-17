@@ -12,3 +12,4 @@ webpack(devConfig).watch({
   if (err) {
     console.log(err);
   }
+});
