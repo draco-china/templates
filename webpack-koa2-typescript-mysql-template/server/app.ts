@@ -4,3 +4,5 @@ import * as http from 'http';
 import { router } from './routers/index';
 import { error, cors } from './middleware';
 
+const app = new Koa();
+
