@@ -6,3 +6,4 @@ import { error, cors } from './middleware';
 
 const app = new Koa();
 
+app
