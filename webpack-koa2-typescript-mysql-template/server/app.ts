@@ -11,3 +11,6 @@ app
   .use(error) // 全局错误统一处理
   .use(cors)  // 跨域配置
   .use(router.routes())
+  .use(router.allowedMethods());
+
+// app.callback() 会返回一个能够通过http.createServer创建server的函数，类似express和connect。
