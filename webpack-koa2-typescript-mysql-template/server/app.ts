@@ -8,3 +8,4 @@ const app = new Koa();
 
 app
   .use(bodyparser())  // 使用ctx.body解析
+  .use(error) // 全局错误统一处理
