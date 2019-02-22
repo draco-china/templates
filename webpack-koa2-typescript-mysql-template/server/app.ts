@@ -14,3 +14,5 @@ app
   .use(router.allowedMethods());
 
 // app.callback() 会返回一个能够通过http.createServer创建server的函数，类似express和connect。
+let currentApp = app.callback();
+// 创建server
