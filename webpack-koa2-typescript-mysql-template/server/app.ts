@@ -24,3 +24,5 @@ server.listen(3000, () => {
 });
 
 // 热加载
+if (module.hot) {
+  // 监听./app.ts
