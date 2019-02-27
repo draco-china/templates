@@ -30,3 +30,4 @@ if (module.hot) {
     // 如果有改动，就使用新的app来处理请求
     server.removeListener('request', currentApp);
     currentApp = app.callback();
+    server.on('request', currentApp);
