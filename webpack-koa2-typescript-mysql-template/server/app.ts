@@ -31,3 +31,4 @@ if (module.hot) {
     server.removeListener('request', currentApp);
     currentApp = app.callback();
     server.on('request', currentApp);
+  });
