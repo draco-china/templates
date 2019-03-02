@@ -3,3 +3,4 @@
  * @author Daker(Daker.zhou@gmail.com)
  */
 export default {
+  TOKEN: 'Daker-china',
