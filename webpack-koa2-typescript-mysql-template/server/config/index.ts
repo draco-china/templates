@@ -5,3 +5,4 @@
 export default {
   TOKEN: 'Daker-china',
   DATABASE: {
+    host: 'localhost',
