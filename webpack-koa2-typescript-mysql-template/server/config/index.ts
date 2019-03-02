@@ -4,3 +4,4 @@
  */
 export default {
   TOKEN: 'Daker-china',
+  DATABASE: {
