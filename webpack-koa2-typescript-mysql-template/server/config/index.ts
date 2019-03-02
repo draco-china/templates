@@ -6,3 +6,4 @@ export default {
   TOKEN: 'Daker-china',
   DATABASE: {
     host: 'localhost',
+    port: 3306,
