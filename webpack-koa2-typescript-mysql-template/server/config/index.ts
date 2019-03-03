@@ -7,3 +7,4 @@ export default {
   DATABASE: {
     host: 'localhost',
     port: 3306,
+    database: 'Daker',
