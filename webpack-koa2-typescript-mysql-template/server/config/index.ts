@@ -8,3 +8,4 @@ export default {
     host: 'localhost',
     port: 3306,
     database: 'Daker',
+    user: 'Daker',
