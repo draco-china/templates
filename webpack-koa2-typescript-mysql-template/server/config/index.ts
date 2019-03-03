@@ -9,3 +9,4 @@ export default {
     port: 3306,
     database: 'Daker',
     user: 'Daker',
+    password: 'Daker'
