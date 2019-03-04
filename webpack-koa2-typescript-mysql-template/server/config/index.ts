@@ -10,3 +10,4 @@ export default {
     database: 'Daker',
     user: 'Daker',
     password: 'Daker'
+  }
