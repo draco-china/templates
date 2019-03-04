@@ -11,3 +11,4 @@ export default {
     user: 'Daker',
     password: 'Daker'
   }
+};
