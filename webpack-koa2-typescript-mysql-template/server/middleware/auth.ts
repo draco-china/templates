@@ -4,3 +4,5 @@
  */
 
 import * as jwt from 'jsonwebtoken';
+import CONF from '../config';
+
