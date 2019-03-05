@@ -6,3 +6,5 @@
 import * as jwt from 'jsonwebtoken';
 import CONF from '../config';
 
+export default async (ctx: any, next: any) => {
+
