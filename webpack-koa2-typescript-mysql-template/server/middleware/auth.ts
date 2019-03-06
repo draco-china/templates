@@ -12,3 +12,5 @@ export default async (ctx: any, next: any) => {
 
   if (!token) {
     ctx.throw(401, 'No token detected.');
+  }
+
