@@ -11,3 +11,4 @@ export default async (ctx: any, next: any) => {
   const token = ctx.request.header.authorization;
 
   if (!token) {
+    ctx.throw(401, 'No token detected.');
