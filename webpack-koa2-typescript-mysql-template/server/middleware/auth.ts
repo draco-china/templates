@@ -14,3 +14,4 @@ export default async (ctx: any, next: any) => {
     ctx.throw(401, 'No token detected.');
   }
 
+  let tokenContent: string | object | undefined;
