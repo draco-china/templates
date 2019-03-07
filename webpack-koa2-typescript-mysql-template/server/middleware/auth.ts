@@ -15,3 +15,4 @@ export default async (ctx: any, next: any) => {
   }
 
   let tokenContent: string | object | undefined;
+  try {
