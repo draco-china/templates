@@ -20,3 +20,4 @@ export default async (ctx: any, next: any) => {
     // Todo 缓存到 redis
   } catch (err) {
     // Token 过期
+    if (err.name === 'TokenExpiredError') {
