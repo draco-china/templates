@@ -18,3 +18,5 @@ export default async (ctx: any, next: any) => {
   try {
     tokenContent = await jwt.verify(token, CONF.TOKEN);
     // Todo 缓存到 redis
+  } catch (err) {
+    // Token 过期
