@@ -16,3 +16,5 @@ export default async (ctx: any, next: any) => {
 
   let tokenContent: string | object | undefined;
   try {
+    tokenContent = await jwt.verify(token, CONF.TOKEN);
+    // Todo 缓存到 redis
