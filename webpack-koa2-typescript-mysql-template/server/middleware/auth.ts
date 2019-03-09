@@ -27,3 +27,4 @@ export default async (ctx: any, next: any) => {
     ctx.throw(401, 'Invalid Token');
   }
 
+  ctx.token = tokenContent;
