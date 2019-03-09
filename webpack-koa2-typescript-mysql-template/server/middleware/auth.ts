@@ -22,3 +22,5 @@ export default async (ctx: any, next: any) => {
     // Token 过期
     if (err.name === 'TokenExpiredError') {
       ctx.throw(401, 'Token expried');
+    }
+    // Token 验证失败
