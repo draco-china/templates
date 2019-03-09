@@ -24,3 +24,4 @@ export default async (ctx: any, next: any) => {
       ctx.throw(401, 'Token expried');
     }
     // Token 验证失败
+    ctx.throw(401, 'Invalid Token');
