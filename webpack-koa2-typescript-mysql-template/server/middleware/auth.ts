@@ -21,3 +21,4 @@ export default async (ctx: any, next: any) => {
   } catch (err) {
     // Token 过期
     if (err.name === 'TokenExpiredError') {
+      ctx.throw(401, 'Token expried');
