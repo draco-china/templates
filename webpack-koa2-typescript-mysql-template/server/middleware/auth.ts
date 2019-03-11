@@ -29,3 +29,4 @@ export default async (ctx: any, next: any) => {
 
   ctx.token = tokenContent;
   return await next();
+};
