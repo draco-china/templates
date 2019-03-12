@@ -5,3 +5,4 @@
 
 export default async (ctx: any, next: any) => {
   // set Header
+  const origin = ctx.origin || '';
