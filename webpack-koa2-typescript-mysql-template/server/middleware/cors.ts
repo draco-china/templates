@@ -9,3 +9,4 @@ export default async (ctx: any, next: any) => {
   if (['http://localhost:3000'].includes(origin)) {
     ctx.set('Access-Control-Allow-Origin', origin);
   }
+  ctx.set('Access-Control-Allow-Headers', `Authorization, Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With`);
