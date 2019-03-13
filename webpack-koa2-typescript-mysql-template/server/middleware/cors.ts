@@ -7,3 +7,4 @@ export default async (ctx: any, next: any) => {
   // set Header
   const origin = ctx.origin || '';
   if (['http://localhost:3000'].includes(origin)) {
+    ctx.set('Access-Control-Allow-Origin', origin);
