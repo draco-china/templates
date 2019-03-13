@@ -11,3 +11,4 @@ export default async (ctx: any, next: any) => {
   }
   ctx.set('Access-Control-Allow-Headers', `Authorization, Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With`);
   ctx.set('Access-Control-Allow-Methods', 'PUT,PATCH,POST,GET,DELETE,OPTIONS');
+  ctx.set('Access-Control-Allow-Credentials', 'true');
