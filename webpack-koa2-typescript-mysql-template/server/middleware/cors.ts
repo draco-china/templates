@@ -13,3 +13,4 @@ export default async (ctx: any, next: any) => {
   ctx.set('Access-Control-Allow-Methods', 'PUT,PATCH,POST,GET,DELETE,OPTIONS');
   ctx.set('Access-Control-Allow-Credentials', 'true');
   ctx.set('Access-Control-Max-Age', '1728000');
+  ctx.set('Content-Type', 'application/json;charset=utf-8');
