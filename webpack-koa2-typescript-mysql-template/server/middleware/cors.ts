@@ -17,3 +17,4 @@ export default async (ctx: any, next: any) => {
   ctx.set('X-Powered-By', 'Nodepress 1.0.0');
 
   // OPTIONS request
+  if (Object.is(ctx.method, 'OPTIONS')) {
