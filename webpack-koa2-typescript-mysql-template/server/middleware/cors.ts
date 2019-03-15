@@ -18,3 +18,4 @@ export default async (ctx: any, next: any) => {
 
   // OPTIONS request
   if (Object.is(ctx.method, 'OPTIONS')) {
+    return ctx.status = 200;
