@@ -22,3 +22,4 @@ export default async (ctx: any, next: any) => {
   }
   // Pass the request to the next middleware function
   await next();
+};
