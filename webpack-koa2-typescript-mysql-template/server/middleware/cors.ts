@@ -21,3 +21,4 @@ export default async (ctx: any, next: any) => {
     return ctx.status = 200;
   }
   // Pass the request to the next middleware function
+  await next();
