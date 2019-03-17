@@ -5,3 +5,4 @@
 
 export default async (ctx: any, next: any) => {
   try {
+    await next();
