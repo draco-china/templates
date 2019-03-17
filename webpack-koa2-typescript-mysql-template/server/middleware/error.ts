@@ -6,3 +6,5 @@
 export default async (ctx: any, next: any) => {
   try {
     await next();
+  } catch (err) {
+    // will only respond with JSON
