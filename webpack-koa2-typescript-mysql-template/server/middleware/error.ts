@@ -4,3 +4,4 @@
  */
 
 export default async (ctx: any, next: any) => {
+  try {
