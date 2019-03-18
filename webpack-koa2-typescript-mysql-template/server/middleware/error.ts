@@ -12,3 +12,4 @@ export default async (ctx: any, next: any) => {
     ctx.body = {
       success: false,
       message: err.message
+    };
