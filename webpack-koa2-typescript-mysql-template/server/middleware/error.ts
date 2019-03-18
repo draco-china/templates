@@ -11,3 +11,4 @@ export default async (ctx: any, next: any) => {
     ctx.status = err.statusCode || err.status || 500;
     ctx.body = {
       success: false,
+      message: err.message
