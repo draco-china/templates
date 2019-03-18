@@ -10,3 +10,4 @@ export default async (ctx: any, next: any) => {
     // will only respond with JSON
     ctx.status = err.statusCode || err.status || 500;
     ctx.body = {
+      success: false,
