@@ -13,3 +13,4 @@ export default async (ctx: any, next: any) => {
       success: false,
       message: err.message
     };
+  }
