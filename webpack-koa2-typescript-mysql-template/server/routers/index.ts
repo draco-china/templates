@@ -5,3 +5,4 @@ const router = new Router();
 router.get('/*', async (ctx) => {
   ctx.body = {
     name: 'Koa2-TypeScript-Template',
+    version: '1.0.0',
