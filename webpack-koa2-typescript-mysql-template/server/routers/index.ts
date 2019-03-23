@@ -7,3 +7,4 @@ router.get('/*', async (ctx) => {
     name: 'Koa2-TypeScript-Template',
     version: '1.0.0',
     author: 'Daker-china<daker.zhou@gmail.com>',
+    site: 'https://daker.xin',
