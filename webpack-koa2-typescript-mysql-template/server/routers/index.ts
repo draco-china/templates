@@ -9,3 +9,4 @@ router.get('/*', async (ctx) => {
     author: 'Daker-china<daker.zhou@gmail.com>',
     site: 'https://daker.xin',
     github: 'https://github.com/daker-china',
+    powered: ['Nodejs', 'Koa2', 'TypeScript']
