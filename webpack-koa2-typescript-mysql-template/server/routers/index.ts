@@ -8,3 +8,4 @@ router.get('/*', async (ctx) => {
     version: '1.0.0',
     author: 'Daker-china<daker.zhou@gmail.com>',
     site: 'https://daker.xin',
+    github: 'https://github.com/daker-china',
