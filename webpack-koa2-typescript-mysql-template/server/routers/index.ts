@@ -10,3 +10,4 @@ router.get('/*', async (ctx) => {
     site: 'https://daker.xin',
     github: 'https://github.com/daker-china',
     powered: ['Nodejs', 'Koa2', 'TypeScript']
+  };
