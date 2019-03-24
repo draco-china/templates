@@ -13,3 +13,5 @@ router.get('/*', async (ctx) => {
   };
 });
 
+export { router };
+
