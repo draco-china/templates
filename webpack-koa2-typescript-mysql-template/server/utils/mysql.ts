@@ -6,3 +6,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
   connection.connect(err => {
     if (err) {
       console.log('数据库连接失败');
+      throw err;
