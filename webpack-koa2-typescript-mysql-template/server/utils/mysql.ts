@@ -9,3 +9,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
       throw err;
     }
     connection.query(sql, params, (err, results, fields) => {
+      if (err) {
