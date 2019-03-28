@@ -11,3 +11,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
     connection.query(sql, params, (err, results, fields) => {
       if (err) {
         console.log('数据库操作失败');
+        throw err;
