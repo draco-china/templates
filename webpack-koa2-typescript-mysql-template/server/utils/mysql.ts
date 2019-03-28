@@ -8,3 +8,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
       console.log('数据库连接失败');
       throw err;
     }
+    connection.query(sql, params, (err, results, fields) => {
