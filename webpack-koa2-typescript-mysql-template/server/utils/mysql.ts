@@ -7,3 +7,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
     if (err) {
       console.log('数据库连接失败');
       throw err;
+    }
