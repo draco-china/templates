@@ -14,3 +14,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
         throw err;
       }
       callback && callback(results, fields);
+      connection.end(err => {
