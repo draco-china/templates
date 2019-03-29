@@ -13,3 +13,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
         console.log('数据库操作失败');
         throw err;
       }
+      callback && callback(results, fields);
