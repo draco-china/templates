@@ -15,3 +15,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
       }
       callback && callback(results, fields);
       connection.end(err => {
+        if (err) {
