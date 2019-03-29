@@ -12,3 +12,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
       if (err) {
         console.log('数据库操作失败');
         throw err;
+      }
