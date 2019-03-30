@@ -17,3 +17,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
       connection.end(err => {
         if (err) {
           console.log('关闭数据库连接失败');
+          throw err;
