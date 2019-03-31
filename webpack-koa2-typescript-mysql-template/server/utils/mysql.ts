@@ -20,3 +20,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
           throw err;
         }
       });
+    });
