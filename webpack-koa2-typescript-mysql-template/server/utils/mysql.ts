@@ -19,3 +19,4 @@ export default (sql: string, params: Array<any>, callback: any) => {
           console.log('关闭数据库连接失败');
           throw err;
         }
+      });
