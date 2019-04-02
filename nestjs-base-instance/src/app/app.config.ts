@@ -8,3 +8,4 @@
  * @LastEditTime: 2018-12-29 18:30:43
  */
 import { argv } from 'yargs';
+import { environment } from '@/app/app.environment'
