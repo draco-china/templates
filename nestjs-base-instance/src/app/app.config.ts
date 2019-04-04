@@ -16,3 +16,4 @@ export const APP = {
   ENVIRONMENT: environment
 };
 
+export const CROSS_DOMAIN = {
