@@ -12,3 +12,4 @@ import { environment } from '@/app/app.environment'
 import * as packages from '../../package.json';
  
 export const APP = {
+  PORT: 8000,
