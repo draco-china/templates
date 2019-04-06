@@ -18,3 +18,4 @@ export const APP = {
 
 export const CROSS_DOMAIN = {
   allowedOrigins: ['https://daker.xin', 'https://admin.daker.xin'],
+  allowedReferer: 'daker.xin',
