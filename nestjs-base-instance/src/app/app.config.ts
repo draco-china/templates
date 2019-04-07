@@ -22,3 +22,4 @@ export const CROSS_DOMAIN = {
 };
 
 export const AUTH = {
+  expiresIn: argv.auth_expires_in || 3600,
