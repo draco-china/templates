@@ -21,3 +21,4 @@ export const CROSS_DOMAIN = {
   allowedReferer: 'daker.xin',
 };
 
+export const AUTH = {
