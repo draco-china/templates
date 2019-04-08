@@ -26,3 +26,5 @@ export const AUTH = {
   tokenSecret: argv.auth_token_secret || 'daker-api',
   defaultUserName: argv.auth_username || 'daker-china',
   defaultPassWord: argv.auth_password || 'daker-china'
+};
+
