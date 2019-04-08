@@ -25,3 +25,4 @@ export const AUTH = {
   expiresIn: argv.auth_expires_in || 3600,
   tokenSecret: argv.auth_token_secret || 'daker-api',
   defaultUserName: argv.auth_username || 'daker-china',
+  defaultPassWord: argv.auth_password || 'daker-china'
