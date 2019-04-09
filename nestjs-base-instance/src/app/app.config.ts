@@ -28,3 +28,4 @@ export const AUTH = {
   defaultPassWord: argv.auth_password || 'daker-china'
 };
 
+export const MONGODB = {
