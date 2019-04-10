@@ -34,3 +34,4 @@ export const MONGODB = {
   password: argv.db_password || 'DB_password'
 };
 
+export const GITHUB = {
