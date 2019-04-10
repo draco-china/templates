@@ -30,3 +30,4 @@ export const AUTH = {
 
 export const MONGODB = {
   uri: `mongodb://127.0.0.1:${argv.db_port || 27017}/`,
+  username: argv.db_username || 'DB_username',
