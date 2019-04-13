@@ -39,3 +39,4 @@ export const GITHUB = {
 };
 
 export const INFO = {
+  name: packages.name,
