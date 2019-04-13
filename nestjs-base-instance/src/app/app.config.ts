@@ -38,3 +38,4 @@ export const GITHUB = {
   username: 'daker-china',
 };
 
+export const INFO = {
