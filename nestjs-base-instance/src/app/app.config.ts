@@ -40,3 +40,4 @@ export const GITHUB = {
 
 export const INFO = {
   name: packages.name,
+  version: packages.version,
