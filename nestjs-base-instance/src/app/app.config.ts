@@ -43,3 +43,4 @@ export const INFO = {
   version: packages.version,
   author: packages.author,
   site: packages.author.url,
+  github: 'https://github.com/daker-china',
