@@ -44,3 +44,4 @@ export const INFO = {
   author: packages.author,
   site: packages.author.url,
   github: 'https://github.com/daker-china',
+  powered: ['Vue', 'Nuxt.js', 'ReactNative', 'Nodejs', 'MongoDB', 'Koa2', 'Nginx', 'TypeScript']
