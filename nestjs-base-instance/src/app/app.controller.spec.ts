@@ -3,3 +3,5 @@ import { AppController } from './app.controller';
 import * as APP_CONFIG from './app.config';
 
 describe('AppController', () => {
+  let app: TestingModule;
+
