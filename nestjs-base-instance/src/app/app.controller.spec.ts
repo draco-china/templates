@@ -5,3 +5,4 @@ import * as APP_CONFIG from './app.config';
 describe('AppController', () => {
   let app: TestingModule;
 
+  beforeAll(async () => {
