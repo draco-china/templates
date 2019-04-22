@@ -12,3 +12,4 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
+    it('should return "INFO"', () => {
