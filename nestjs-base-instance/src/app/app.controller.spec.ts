@@ -11,3 +11,4 @@ describe('AppController', () => {
     }).compile();
   });
 
+  describe('root', () => {
