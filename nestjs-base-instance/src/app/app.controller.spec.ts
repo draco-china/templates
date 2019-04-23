@@ -13,3 +13,4 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "INFO"', () => {
+      const appController = app.get<AppController>(AppController);
