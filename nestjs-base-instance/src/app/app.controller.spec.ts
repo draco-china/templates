@@ -15,3 +15,4 @@ describe('AppController', () => {
     it('should return "INFO"', () => {
       const appController = app.get<AppController>(AppController);
       expect(appController.root()).toBe(APP_CONFIG.INFO);
+    });
