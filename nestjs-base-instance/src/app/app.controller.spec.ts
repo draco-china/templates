@@ -17,3 +17,4 @@ describe('AppController', () => {
       expect(appController.root()).toBe(APP_CONFIG.INFO);
     });
   });
+});
