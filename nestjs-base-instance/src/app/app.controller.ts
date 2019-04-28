@@ -4,3 +4,4 @@ import * as APP_CONFIG from '@/app/app.config';
 @Controller()
 export class AppController {
 
+  @Get()
