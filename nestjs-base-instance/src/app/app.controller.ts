@@ -5,3 +5,4 @@ import * as APP_CONFIG from '@/app/app.config';
 export class AppController {
 
   @Get()
+  root(): any {
