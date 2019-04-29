@@ -6,3 +6,4 @@ export class AppController {
 
   @Get()
   root(): any {
+    return APP_CONFIG.INFO;
