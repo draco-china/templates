@@ -8,3 +8,4 @@ export class AppController {
   root(): any {
     return APP_CONFIG.INFO;
    }
+}
