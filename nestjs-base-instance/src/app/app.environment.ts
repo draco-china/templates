@@ -7,3 +7,4 @@ export const isTestMode = Object.is(environment, 'test');
 export default {
   isDevMode,
   isProdMode,
+  isTestMode,
