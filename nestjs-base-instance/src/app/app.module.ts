@@ -19,3 +19,4 @@ import { AuthModule } from '@/auth/auth.module';
     MongooseModule.forRoot('mongodb://localhost/nest', { useNewUrlParser: true }),
     AuthModule
   ],
+  controllers: [AppController],
