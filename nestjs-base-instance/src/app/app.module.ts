@@ -23,3 +23,4 @@ import { AuthModule } from '@/auth/auth.module';
   providers: [],
 })
 
+export class AppModule implements NestModule {
