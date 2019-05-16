@@ -4,3 +4,4 @@ import { AuthController } from './auth.controller';
 describe('Auth Controller', () => {
   let module: TestingModule;
   
+  beforeAll(async () => {
