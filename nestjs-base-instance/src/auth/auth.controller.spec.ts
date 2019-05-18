@@ -6,3 +6,4 @@ describe('Auth Controller', () => {
   
   beforeAll(async () => {
     module = await Test.createTestingModule({
+      controllers: [AuthController],
