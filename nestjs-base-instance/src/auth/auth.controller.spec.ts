@@ -9,3 +9,4 @@ describe('Auth Controller', () => {
       controllers: [AuthController],
     }).compile();
   });
+  it('should be defined', () => {
