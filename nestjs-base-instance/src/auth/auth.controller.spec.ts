@@ -10,3 +10,4 @@ describe('Auth Controller', () => {
     }).compile();
   });
   it('should be defined', () => {
+    const controller: AuthController = module.get<AuthController>(AuthController);
