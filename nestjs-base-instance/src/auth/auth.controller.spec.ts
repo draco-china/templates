@@ -8,3 +8,4 @@ describe('Auth Controller', () => {
     module = await Test.createTestingModule({
       controllers: [AuthController],
     }).compile();
+  });
