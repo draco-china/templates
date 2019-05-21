@@ -12,3 +12,4 @@ describe('Auth Controller', () => {
   it('should be defined', () => {
     const controller: AuthController = module.get<AuthController>(AuthController);
     expect(controller).toBeDefined();
+  });
