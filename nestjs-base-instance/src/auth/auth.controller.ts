@@ -7,3 +7,4 @@ import { CreateUserDto } from '@/users/dto/createUser.dto';
 import { LoginUserDto } from '@/users/dto/loginUser.dto';
 
 @ApiUseTags('auth')
+@Controller('auth')
