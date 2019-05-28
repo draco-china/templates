@@ -10,3 +10,4 @@ import { LoginUserDto } from '@/users/dto/loginUser.dto';
 @Controller('auth')
 export class AuthController {
   constructor(
+    private readonly authService: AuthService,
