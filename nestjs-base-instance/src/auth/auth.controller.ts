@@ -11,3 +11,4 @@ import { LoginUserDto } from '@/users/dto/loginUser.dto';
 export class AuthController {
   constructor(
     private readonly authService: AuthService,
+    private readonly usersService: UsersService
