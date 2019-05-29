@@ -15,3 +15,4 @@ export class AuthController {
   ) { }
 
   @Post('signup')
+  public async signUp(@Response() res, @Body() user: CreateUserDto) {
