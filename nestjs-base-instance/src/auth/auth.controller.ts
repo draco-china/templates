@@ -18,3 +18,4 @@ export class AuthController {
   public async signUp(@Response() res, @Body() user: CreateUserDto) {
     const result = await this.usersService.create(user);
     if (!result) {
+      return res.status(HttpStatus.BAD_REQUEST).json(result);
