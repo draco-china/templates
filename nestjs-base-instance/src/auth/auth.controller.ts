@@ -19,3 +19,4 @@ export class AuthController {
     const result = await this.usersService.create(user);
     if (!result) {
       return res.status(HttpStatus.BAD_REQUEST).json(result);
+    }
