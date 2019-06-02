@@ -21,3 +21,5 @@ export class AuthController {
       return res.status(HttpStatus.BAD_REQUEST).json(result);
     }
     return res.status(HttpStatus.OK).json(result);
+  }
+
