@@ -23,3 +23,4 @@ export class AuthController {
     return res.status(HttpStatus.OK).json(result);
   }
 
+  @Post('signin')
