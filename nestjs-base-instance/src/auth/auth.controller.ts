@@ -20,3 +20,4 @@ export class AuthController {
     if (!result) {
       return res.status(HttpStatus.BAD_REQUEST).json(result);
     }
+    return res.status(HttpStatus.OK).json(result);
