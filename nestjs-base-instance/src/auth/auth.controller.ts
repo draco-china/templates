@@ -25,3 +25,4 @@ export class AuthController {
 
   @Post('signin')
   public async signIn(@Response() res, @Body() user: LoginUserDto){
+    return await this.usersService.findOne({ username: user.username, password: user.password }).then(result => {
