@@ -24,3 +24,4 @@ export class AuthController {
   }
 
   @Post('signin')
+  public async signIn(@Response() res, @Body() user: LoginUserDto){
