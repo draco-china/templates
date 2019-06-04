@@ -27,3 +27,4 @@ export class AuthController {
   public async signIn(@Response() res, @Body() user: LoginUserDto){
     return await this.usersService.findOne({ username: user.username, password: user.password }).then(result => {
       if (!result) {
+        res.status(HttpStatus.UNAUTHORIZED).json({
