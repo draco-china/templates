@@ -28,3 +28,4 @@ export class AuthController {
     return await this.usersService.findOne({ username: user.username, password: user.password }).then(result => {
       if (!result) {
         res.status(HttpStatus.UNAUTHORIZED).json({
+          message: '用户名或密码错误，登录失败',
