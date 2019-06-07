@@ -32,3 +32,4 @@ export class AuthController {
           success: false,
         });
       } else {
+        console.log('start getting the token');
