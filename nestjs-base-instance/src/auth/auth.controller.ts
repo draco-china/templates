@@ -34,3 +34,4 @@ export class AuthController {
       } else {
         console.log('start getting the token');
         const token = this.authService.createToken(user);
+        return res
