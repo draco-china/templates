@@ -38,3 +38,4 @@ export class AuthController {
           .status(HttpStatus.OK)
           .header('Authorization', `Bearer ${token}`)
           .json({
+            message: '登录成功',
