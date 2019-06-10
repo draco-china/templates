@@ -37,3 +37,4 @@ export class AuthController {
         return res
           .status(HttpStatus.OK)
           .header('Authorization', `Bearer ${token}`)
+          .json({
