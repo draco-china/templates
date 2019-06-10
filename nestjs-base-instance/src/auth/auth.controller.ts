@@ -36,3 +36,4 @@ export class AuthController {
         const token = this.authService.createToken(user);
         return res
           .status(HttpStatus.OK)
+          .header('Authorization', `Bearer ${token}`)
