@@ -39,3 +39,4 @@ export class AuthController {
           .header('Authorization', `Bearer ${token}`)
           .json({
             message: '登录成功',
+            success: true,
