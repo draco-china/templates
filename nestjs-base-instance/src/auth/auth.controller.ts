@@ -41,3 +41,4 @@ export class AuthController {
             message: '登录成功',
             success: true,
             result
+          });
