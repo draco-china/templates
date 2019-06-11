@@ -40,3 +40,4 @@ export class AuthController {
           .json({
             message: '登录成功',
             success: true,
+            result
