@@ -7,3 +7,4 @@ import { UsersModule } from '@/users/users.module';
 import { AuthController } from './auth.controller';
 import { AUTH } from '@/app/app.config'
 
+@Module({
