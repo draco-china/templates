@@ -8,3 +8,4 @@ import { AuthController } from './auth.controller';
 import { AUTH } from '@/app/app.config'
 
 @Module({
+  imports: [
