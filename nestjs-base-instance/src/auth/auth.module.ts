@@ -9,3 +9,4 @@ import { AUTH } from '@/app/app.config'
 
 @Module({
   imports: [
+    PassportModule.register({ defaultStrategy: 'jwt' }),
