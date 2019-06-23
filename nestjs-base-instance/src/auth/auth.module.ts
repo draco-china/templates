@@ -15,3 +15,4 @@ import { AUTH } from '@/app/app.config'
       signOptions: {
         expiresIn: AUTH.expiresIn,
       },
+    }),
