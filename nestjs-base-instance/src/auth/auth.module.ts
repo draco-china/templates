@@ -14,3 +14,4 @@ import { AUTH } from '@/app/app.config'
       secretOrPrivateKey: AUTH.tokenSecret,
       signOptions: {
         expiresIn: AUTH.expiresIn,
+      },
