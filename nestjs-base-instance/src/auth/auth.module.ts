@@ -12,3 +12,4 @@ import { AUTH } from '@/app/app.config'
     PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.register({
       secretOrPrivateKey: AUTH.tokenSecret,
+      signOptions: {
