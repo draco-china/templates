@@ -16,3 +16,4 @@ import { AUTH } from '@/app/app.config'
         expiresIn: AUTH.expiresIn,
       },
     }),
+    UsersModule,
