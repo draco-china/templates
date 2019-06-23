@@ -13,3 +13,4 @@ import { AUTH } from '@/app/app.config'
     JwtModule.register({
       secretOrPrivateKey: AUTH.tokenSecret,
       signOptions: {
+        expiresIn: AUTH.expiresIn,
