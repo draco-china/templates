@@ -17,3 +17,4 @@ import { AUTH } from '@/app/app.config'
       },
     }),
     UsersModule,
+  ],
