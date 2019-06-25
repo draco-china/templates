@@ -18,3 +18,4 @@ import { AUTH } from '@/app/app.config'
     }),
     UsersModule,
   ],
+  controllers: [AuthController],
