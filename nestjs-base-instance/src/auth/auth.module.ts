@@ -19,3 +19,4 @@ import { AUTH } from '@/app/app.config'
     UsersModule,
   ],
   controllers: [AuthController],
+  providers: [AuthService, JwtStrategy],
