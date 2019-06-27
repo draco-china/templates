@@ -20,3 +20,4 @@ import { AUTH } from '@/app/app.config'
   ],
   controllers: [AuthController],
   providers: [AuthService, JwtStrategy],
+  exports: [AuthService, JwtStrategy]
