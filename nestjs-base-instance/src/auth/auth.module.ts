@@ -22,3 +22,4 @@ import { AUTH } from '@/app/app.config'
   providers: [AuthService, JwtStrategy],
   exports: [AuthService, JwtStrategy]
 })
+export class AuthModule {}
