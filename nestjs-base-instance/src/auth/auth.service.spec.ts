@@ -5,3 +5,4 @@ describe('AuthService', () => {
   let service: AuthService;
   
   beforeAll(async () => {
+    const module: TestingModule = await Test.createTestingModule({
