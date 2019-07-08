@@ -4,3 +4,4 @@ import { UsersService } from '../users/users.service';
 import { JwtPayload } from './interfaces/jwt-payload.interface';
 
 @Injectable()
+export class AuthService {
