@@ -10,3 +10,6 @@ export class AuthService {
     private readonly jwtService: JwtService,
   ) {}
 
+  createToken(user: JwtPayload) {
+    // In the real-world app you shouldn't expose this method publicly
+    // instead, return a token once you verify user credentials
