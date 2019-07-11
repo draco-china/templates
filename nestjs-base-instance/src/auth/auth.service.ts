@@ -13,3 +13,4 @@ export class AuthService {
   createToken(user: JwtPayload) {
     // In the real-world app you shouldn't expose this method publicly
     // instead, return a token once you verify user credentials
+    return this.jwtService.sign(user);
