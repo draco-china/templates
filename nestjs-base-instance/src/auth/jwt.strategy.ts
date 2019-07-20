@@ -9,3 +9,4 @@ import { AUTH } from '@/app/app.config'
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
   constructor(private readonly authService: AuthService) {
+    super({
