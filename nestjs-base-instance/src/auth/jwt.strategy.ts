@@ -7,3 +7,4 @@ import { JwtPayload } from './interfaces/jwt-payload.interface';
 import { AUTH } from '@/app/app.config'
 
 @Injectable()
+export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
