@@ -10,3 +10,4 @@ import { AUTH } from '@/app/app.config'
 export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
   constructor(private readonly authService: AuthService) {
     super({
+      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
