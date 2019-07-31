@@ -12,3 +12,4 @@ export class HttpExceptionFilter implements ExceptionFilter {
       success: false,
       error: exception.message.error,
       message: exception.message.message
+    });
