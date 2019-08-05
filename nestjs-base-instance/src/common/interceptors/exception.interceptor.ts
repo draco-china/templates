@@ -3,3 +3,4 @@ import { HttpException } from '@nestjs/common';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
+@Injectable()
