@@ -7,3 +7,4 @@ import { catchError } from 'rxjs/operators';
 export class ErrorsInterceptor implements NestInterceptor {
   intercept(
     context: ExecutionContext,
+    call$: Observable<any>,
