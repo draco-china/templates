@@ -9,3 +9,4 @@ export class ErrorsInterceptor implements NestInterceptor {
     context: ExecutionContext,
     call$: Observable<any>,
   ): Observable<any> {
+    return call$.pipe(
