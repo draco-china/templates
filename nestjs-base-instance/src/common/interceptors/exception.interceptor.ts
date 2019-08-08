@@ -10,3 +10,4 @@ export class ErrorsInterceptor implements NestInterceptor {
     call$: Observable<any>,
   ): Observable<any> {
     return call$.pipe(
+      catchError(err =>
