@@ -14,3 +14,4 @@ export class ErrorsInterceptor implements NestInterceptor {
         throwError(new HttpException('Message', HttpStatus.BAD_GATEWAY)),
       ),
     );
+  }
