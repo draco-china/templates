@@ -15,3 +15,4 @@ export class ErrorsInterceptor implements NestInterceptor {
       ),
     );
   }
+}
