@@ -6,3 +6,4 @@ import { tap } from 'rxjs/operators';
 export class LoggingInterceptor implements NestInterceptor {
   intercept(
     context: ExecutionContext,
+    call$: Observable<any>,
