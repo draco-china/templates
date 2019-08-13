@@ -10,3 +10,4 @@ export class LoggingInterceptor implements NestInterceptor {
   ): Observable<any> {
     const request = context.switchToHttp().getRequest();
     const response = context.switchToHttp().getResponse();
+    const content = request.method + ' -> ' + request.url;
