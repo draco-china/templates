@@ -15,3 +15,4 @@ export class LoggingInterceptor implements NestInterceptor {
 
     const now = Date.now();
     return call$.pipe(tap(() => console.log(`- After...`, content, response.statusCode, `${Date.now() - now}ms`)));
+  }
