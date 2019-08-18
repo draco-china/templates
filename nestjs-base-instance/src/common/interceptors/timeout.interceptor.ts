@@ -4,3 +4,4 @@ import { timeout } from 'rxjs/operators';
 
 @Injectable()
 export class TimeoutInterceptor implements NestInterceptor {
+  intercept(
