@@ -9,3 +9,4 @@ export class TimeoutInterceptor implements NestInterceptor {
     call$: Observable<any>,
   ): Observable<any> {
     return call$.pipe(timeout(5000));
+  }
