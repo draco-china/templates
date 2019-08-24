@@ -7,3 +7,4 @@ export interface Response<T> {
 }
 
 @Injectable()
+export class TransformInterceptor<T>
