@@ -11,3 +11,4 @@ export class TransformInterceptor<T>
   implements NestInterceptor<T, Response<T>> {
   intercept(
     context: ExecutionContext,
+    call$: Observable<T>,
