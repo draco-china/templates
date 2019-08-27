@@ -12,3 +12,4 @@ export class TransformInterceptor<T>
   intercept(
     context: ExecutionContext,
     call$: Observable<T>,
+  ): Observable<Response<T>> {
