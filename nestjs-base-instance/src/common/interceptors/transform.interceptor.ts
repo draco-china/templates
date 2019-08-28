@@ -13,3 +13,4 @@ export class TransformInterceptor<T>
     context: ExecutionContext,
     call$: Observable<T>,
   ): Observable<Response<T>> {
+    return call$.pipe(map(data => ({ data })));
