@@ -15,3 +15,4 @@ export class TransformInterceptor<T>
   ): Observable<Response<T>> {
     return call$.pipe(map(data => ({ data })));
   }
+}
