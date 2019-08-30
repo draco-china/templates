@@ -9,3 +9,4 @@
  */
 
 import { Injectable, NestMiddleware, MiddlewareFunction, HttpStatus, RequestMethod } from '@nestjs/common';
+import * as APP_CONFIG from '@/app/app.config';
