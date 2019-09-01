@@ -13,3 +13,4 @@ import * as APP_CONFIG from '@/app/app.config';
 import { isDevMode, isProdMode } from '@/app/app.environment';
 
 
+@Injectable()
