@@ -15,3 +15,4 @@ import { isDevMode, isProdMode } from '@/app/app.environment';
 
 @Injectable()
 export class CorsMiddleware implements NestMiddleware {
+  resolve(...args: any[]): MiddlewareFunction {
