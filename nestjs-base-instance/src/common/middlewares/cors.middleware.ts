@@ -16,3 +16,5 @@ import { isDevMode, isProdMode } from '@/app/app.environment';
 @Injectable()
 export class CorsMiddleware implements NestMiddleware {
   resolve(...args: any[]): MiddlewareFunction {
+    return (request, response, next) => {
+      // 生产环境下，需要验证用户来源渠道，防止非正常请求
