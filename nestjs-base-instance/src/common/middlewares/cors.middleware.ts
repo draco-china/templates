@@ -20,3 +20,4 @@ export class CorsMiddleware implements NestMiddleware {
       // 生产环境下，需要验证用户来源渠道，防止非正常请求
       if(isProdMode) {
         const { origin, referer } = request.headers;
+        const checkHeader = field => !field || field.includes(APP_CONFIG.CROSS_DOMAIN.allowedReferer);
