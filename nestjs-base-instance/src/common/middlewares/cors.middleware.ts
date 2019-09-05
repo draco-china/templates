@@ -24,3 +24,4 @@ export class CorsMiddleware implements NestMiddleware {
         const isVerifiedOrigin = checkHeader(origin);
         const isVerifiedReferer = checkHeader(referer);
         if (!isVerifiedOrigin && !isVerifiedReferer) {
+          return response.status(HttpStatus.UNAUTHORIZED).json({
