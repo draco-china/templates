@@ -22,3 +22,4 @@ export class CorsMiddleware implements NestMiddleware {
         const { origin, referer } = request.headers;
         const checkHeader = field => !field || field.includes(APP_CONFIG.CROSS_DOMAIN.allowedReferer);
         const isVerifiedOrigin = checkHeader(origin);
+        const isVerifiedReferer = checkHeader(referer);
