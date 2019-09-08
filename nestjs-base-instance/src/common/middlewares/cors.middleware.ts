@@ -29,3 +29,5 @@ export class CorsMiddleware implements NestMiddleware {
             message: '非法请求!'
           });
         }
+      }
+
