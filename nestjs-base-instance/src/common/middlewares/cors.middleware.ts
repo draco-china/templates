@@ -32,3 +32,4 @@ export class CorsMiddleware implements NestMiddleware {
       }
 
       const getMethod = method => RequestMethod[method];
+      const origin = request.headers.origin || '';
