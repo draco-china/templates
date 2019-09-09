@@ -31,3 +31,4 @@ export class CorsMiddleware implements NestMiddleware {
         }
       }
 
+      const getMethod = method => RequestMethod[method];
