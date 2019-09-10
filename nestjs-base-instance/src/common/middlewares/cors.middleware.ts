@@ -35,3 +35,6 @@ export class CorsMiddleware implements NestMiddleware {
       const origin = request.headers.origin || '';
       const allowedOrigins = [...APP_CONFIG.CROSS_DOMAIN.allowedOrigins]
       const allowedMethods = [RequestMethod.GET, RequestMethod.HEAD, RequestMethod.PUT, RequestMethod.PATCH, RequestMethod.POST, RequestMethod.DELETE];
+      const allowedHeaders = ['Authorization', 'Origin', 'No-Cache', 'X-Requested-With', 'If-Modified-Since', 'Pragma', 'Last-Modified', 'Cache-Control', 'Expires', 'Content-Type', 'X-E4M-With'];
+      
+      // Allow Origin
