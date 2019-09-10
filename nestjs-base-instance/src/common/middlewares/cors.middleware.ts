@@ -38,3 +38,4 @@ export class CorsMiddleware implements NestMiddleware {
       const allowedHeaders = ['Authorization', 'Origin', 'No-Cache', 'X-Requested-With', 'If-Modified-Since', 'Pragma', 'Last-Modified', 'Cache-Control', 'Expires', 'Content-Type', 'X-E4M-With'];
       
       // Allow Origin
+      if (!origin || allowedOrigins.includes(origin) || isDevMode) {
