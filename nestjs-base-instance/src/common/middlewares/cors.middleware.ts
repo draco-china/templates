@@ -43,3 +43,4 @@ export class CorsMiddleware implements NestMiddleware {
       }
       
       // Headers
+      response.header('Access-Control-Allow-Headers', allowedHeaders.join(','));
