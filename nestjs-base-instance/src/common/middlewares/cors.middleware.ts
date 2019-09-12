@@ -47,3 +47,6 @@ export class CorsMiddleware implements NestMiddleware {
       response.header('Access-Control-Allow-Methods',  allowedMethods.map(getMethod).join(','));
       response.header('Access-Control-Max-Age', '1728000');
       response.header('Content-Type', 'application/json; charset=utf-8');
+      response.header('X-Powered-By', 'daker-api v1.0.0');
+
+      // OPTIONS Request
