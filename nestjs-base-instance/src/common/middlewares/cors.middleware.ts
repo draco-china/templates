@@ -50,3 +50,4 @@ export class CorsMiddleware implements NestMiddleware {
       response.header('X-Powered-By', 'daker-api v1.0.0');
 
       // OPTIONS Request
+      if (request.method === getMethod(RequestMethod.OPTIONS)) {
