@@ -53,3 +53,4 @@ export class CorsMiddleware implements NestMiddleware {
       if (request.method === getMethod(RequestMethod.OPTIONS)) {
         return response.sendStatus(HttpStatus.NO_CONTENT);
       } else {
+        return next();
