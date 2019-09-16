@@ -56,3 +56,4 @@ export class CorsMiddleware implements NestMiddleware {
         return next();
       }
     };
+  }
