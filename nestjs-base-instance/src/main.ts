@@ -14,3 +14,6 @@ import { TimeoutInterceptor } from '@/common/interceptors/timeout.interceptor';
 
 
 async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+
+  // 构建 swagger
