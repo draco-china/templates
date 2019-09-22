@@ -17,3 +17,4 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   // 构建 swagger
+  const options = new DocumentBuilder().build();
