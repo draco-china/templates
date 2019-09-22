@@ -13,3 +13,4 @@ import { LoggingInterceptor } from '@/common/interceptors/logging.interceptor';
 import { TimeoutInterceptor } from '@/common/interceptors/timeout.interceptor';
 
 
+async function bootstrap() {
