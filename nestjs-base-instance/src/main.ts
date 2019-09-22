@@ -8,3 +8,5 @@ import { AppModule } from '@/app/app.module';
 import { APP } from '@/app/app.config';
 import { HttpExceptionFilter } from '@/common/filters/http-exception.filter';
 import { ErrorsInterceptor } from '@/common/interceptors/exception.interceptor.ts';
+import { LoggingInterceptor } from '@/common/interceptors/logging.interceptor';
+// import { TransformInterceptor } from '@/common/interceptors/transform.interceptor';
