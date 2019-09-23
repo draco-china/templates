@@ -18,3 +18,4 @@ async function bootstrap() {
 
   // 构建 swagger
   const options = new DocumentBuilder().build();
+  const document = SwaggerModule.createDocument(app, options);
