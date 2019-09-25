@@ -22,3 +22,4 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
 
   await app
+    .use(Helmet())
