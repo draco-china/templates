@@ -24,3 +24,4 @@ async function bootstrap() {
   await app
     .use(Helmet())
     .use(Compression())
+    .use(BodyParser.json({ limit: '1mb' }))
