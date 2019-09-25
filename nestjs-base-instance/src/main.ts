@@ -23,3 +23,4 @@ async function bootstrap() {
 
   await app
     .use(Helmet())
+    .use(Compression())
