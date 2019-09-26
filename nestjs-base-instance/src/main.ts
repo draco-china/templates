@@ -26,3 +26,4 @@ async function bootstrap() {
     .use(Compression())
     .use(BodyParser.json({ limit: '1mb' }))
     .use(BodyParser.urlencoded({ extended: true }))
+    .useGlobalFilters(new HttpExceptionFilter())
