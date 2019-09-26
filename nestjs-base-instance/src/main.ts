@@ -25,3 +25,4 @@ async function bootstrap() {
     .use(Helmet())
     .use(Compression())
     .use(BodyParser.json({ limit: '1mb' }))
+    .use(BodyParser.urlencoded({ extended: true }))
