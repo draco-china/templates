@@ -27,3 +27,4 @@ async function bootstrap() {
     .use(BodyParser.json({ limit: '1mb' }))
     .use(BodyParser.urlencoded({ extended: true }))
     .useGlobalFilters(new HttpExceptionFilter())
+    .useGlobalPipes(new ValidationPipe())
