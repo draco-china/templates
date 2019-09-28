@@ -29,3 +29,4 @@ async function bootstrap() {
     .useGlobalFilters(new HttpExceptionFilter())
     .useGlobalPipes(new ValidationPipe())
     .useGlobalInterceptors(
+      new ErrorsInterceptor(),
