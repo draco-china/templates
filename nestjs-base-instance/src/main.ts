@@ -28,3 +28,4 @@ async function bootstrap() {
     .use(BodyParser.urlencoded({ extended: true }))
     .useGlobalFilters(new HttpExceptionFilter())
     .useGlobalPipes(new ValidationPipe())
+    .useGlobalInterceptors(
