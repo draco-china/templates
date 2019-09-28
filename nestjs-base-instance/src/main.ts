@@ -31,3 +31,5 @@ async function bootstrap() {
     .useGlobalInterceptors(
       new ErrorsInterceptor(),
       new LoggingInterceptor(),
+      new TimeoutInterceptor(),
+      // new TransformInterceptor()
