@@ -30,3 +30,4 @@ async function bootstrap() {
     .useGlobalPipes(new ValidationPipe())
     .useGlobalInterceptors(
       new ErrorsInterceptor(),
+      new LoggingInterceptor(),
