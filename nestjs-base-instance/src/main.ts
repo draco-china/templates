@@ -33,3 +33,4 @@ async function bootstrap() {
       new LoggingInterceptor(),
       new TimeoutInterceptor(),
       // new TransformInterceptor()
+    )
