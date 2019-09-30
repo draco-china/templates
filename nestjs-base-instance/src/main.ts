@@ -35,3 +35,4 @@ async function bootstrap() {
       // new TransformInterceptor()
     )
     .listen(APP.PORT, () => {
+      console.info(`Server is running at http://localhost:${APP.PORT}, env:${APP.ENVIRONMENT}`);
