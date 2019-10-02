@@ -37,3 +37,4 @@ async function bootstrap() {
     .listen(APP.PORT, () => {
       console.info(`Server is running at http://localhost:${APP.PORT}, env:${APP.ENVIRONMENT}`);
       console.info('Press CTRL-C to stop \n');
+    });
