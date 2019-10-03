@@ -39,3 +39,4 @@ async function bootstrap() {
       console.info('Press CTRL-C to stop \n');
     });
 }
+bootstrap();
