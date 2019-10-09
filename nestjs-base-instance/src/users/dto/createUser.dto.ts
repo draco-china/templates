@@ -8,3 +8,5 @@ export class CreateUserDto {
 
   @ApiModelProperty()
   @IsEmail()
+  readonly email: string;
+
