@@ -11,3 +11,4 @@ export class CreateUserDto {
   readonly email: string;
 
   @ApiModelProperty()
+  @IsString()
