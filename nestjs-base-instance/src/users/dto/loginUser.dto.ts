@@ -4,3 +4,4 @@ export class LoginUserDto {
   @ApiModelProperty()
   readonly username: string;
 
+  @ApiModelProperty()
