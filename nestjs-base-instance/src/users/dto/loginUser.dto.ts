@@ -5,3 +5,4 @@ export class LoginUserDto {
   readonly username: string;
 
   @ApiModelProperty()
+  readonly password: string;
