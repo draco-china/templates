@@ -6,3 +6,4 @@ export class LoginUserDto {
 
   @ApiModelProperty()
   readonly password: string;
+}
