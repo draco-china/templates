@@ -5,3 +5,6 @@ export interface User extends Document {
   readonly username: String;
 
   // 密码
+  readonly password: String;
+
+  // 签名
