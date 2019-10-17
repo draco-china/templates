@@ -8,3 +8,6 @@ export interface User extends Document {
   readonly password: String;
 
   // 签名
+  readonly slogan: String;
+
+  // 头像
