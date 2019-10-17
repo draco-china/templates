@@ -11,3 +11,6 @@ export interface User extends Document {
   readonly slogan: String;
 
   // 头像
+  readonly gravatar: String;
+
+  // 扩展属性
