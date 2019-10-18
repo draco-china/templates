@@ -14,3 +14,4 @@ export interface User extends Document {
   readonly gravatar: String;
 
   // 扩展属性
+  readonly extends: Array<Object>;
