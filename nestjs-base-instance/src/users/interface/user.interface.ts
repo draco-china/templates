@@ -15,3 +15,4 @@ export interface User extends Document {
 
   // 扩展属性
   readonly extends: Array<Object>;
+}
