@@ -4,3 +4,4 @@ export const UserSchema = new mongoose.Schema({
   // 用户名
   username: {
     type: String,
+    trim: true,
