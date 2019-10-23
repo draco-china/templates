@@ -9,3 +9,4 @@ export const UserSchema = new mongoose.Schema({
   },
 
   // 密码
+  password: {
