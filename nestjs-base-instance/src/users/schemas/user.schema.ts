@@ -6,3 +6,6 @@ export const UserSchema = new mongoose.Schema({
     type: String,
     trim: true,
     required: 'UserName is required'
+  },
+
+  // 密码
