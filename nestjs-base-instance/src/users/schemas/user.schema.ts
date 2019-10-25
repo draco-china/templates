@@ -12,3 +12,4 @@ export const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     trim: true,
+    required: 'Password is required'
