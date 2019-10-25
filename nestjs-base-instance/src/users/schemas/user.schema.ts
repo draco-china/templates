@@ -13,3 +13,6 @@ export const UserSchema = new mongoose.Schema({
     type: String,
     trim: true,
     required: 'Password is required'
+  },
+
+  // 邮箱
