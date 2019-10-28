@@ -18,3 +18,4 @@ export const UserSchema = new mongoose.Schema({
   // 邮箱
   email: {
     type: String,
+    trim: true,
