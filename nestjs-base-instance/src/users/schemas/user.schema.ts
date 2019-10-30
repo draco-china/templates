@@ -22,3 +22,4 @@ export const UserSchema = new mongoose.Schema({
     lowercase: true,
     unique: true,
     required: 'Email address is required',
+    validate: [ /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/, 'invalid email' ]
