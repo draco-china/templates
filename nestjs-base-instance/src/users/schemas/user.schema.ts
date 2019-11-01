@@ -27,3 +27,4 @@ export const UserSchema = new mongoose.Schema({
 
   // 签名
   slogan: {
+    type: String,
