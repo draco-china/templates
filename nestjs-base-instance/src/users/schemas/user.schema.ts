@@ -29,3 +29,4 @@ export const UserSchema = new mongoose.Schema({
   slogan: {
     type: String,
     trim: true,
+    default: ''
