@@ -30,3 +30,6 @@ export const UserSchema = new mongoose.Schema({
     type: String,
     trim: true,
     default: ''
+  },
+
+  // 头像
