@@ -34,3 +34,4 @@ export const UserSchema = new mongoose.Schema({
 
   // 头像
   gravatar: {
+    type: String,
