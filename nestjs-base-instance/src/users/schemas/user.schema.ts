@@ -36,3 +36,4 @@ export const UserSchema = new mongoose.Schema({
   gravatar: {
     type: String,
     trim: true,
+    default: ''
