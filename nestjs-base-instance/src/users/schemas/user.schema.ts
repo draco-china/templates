@@ -37,3 +37,6 @@ export const UserSchema = new mongoose.Schema({
     type: String,
     trim: true,
     default: ''
+  },
+
+  // 扩展属性
