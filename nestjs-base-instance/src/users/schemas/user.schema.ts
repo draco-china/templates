@@ -44,3 +44,6 @@ export const UserSchema = new mongoose.Schema({
     name: {type: String, validate: /\S+/},
     value: {type: String, validate: /\S+/}
   }]
+});
+
+
