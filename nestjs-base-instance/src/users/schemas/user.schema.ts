@@ -41,3 +41,4 @@ export const UserSchema = new mongoose.Schema({
 
   // 扩展属性
   extends: [{
+    name: {type: String, validate: /\S+/},
