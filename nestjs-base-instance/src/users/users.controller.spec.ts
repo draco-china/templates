@@ -4,3 +4,4 @@ import { UsersController } from './users.controller';
 describe('Users Controller', () => {
   let module: TestingModule;
   
+  beforeAll(async () => {
