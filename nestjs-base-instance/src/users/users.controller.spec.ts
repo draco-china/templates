@@ -8,3 +8,4 @@ describe('Users Controller', () => {
     module = await Test.createTestingModule({
       controllers: [UsersController],
     }).compile();
+  });
