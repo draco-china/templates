@@ -9,3 +9,4 @@ describe('Users Controller', () => {
       controllers: [UsersController],
     }).compile();
   });
+  it('should be defined', () => {
