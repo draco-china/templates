@@ -11,3 +11,4 @@ describe('Users Controller', () => {
   });
   it('should be defined', () => {
     const controller: UsersController = module.get<UsersController>(UsersController);
+    expect(controller).toBeDefined();
