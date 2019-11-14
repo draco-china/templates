@@ -13,3 +13,4 @@ describe('Users Controller', () => {
     const controller: UsersController = module.get<UsersController>(UsersController);
     expect(controller).toBeDefined();
   });
+});
