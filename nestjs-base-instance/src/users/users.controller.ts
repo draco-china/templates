@@ -5,3 +5,4 @@ import { AuthGuard } from '@nestjs/passport';
 import { UsersService } from './users.service';
 import { User } from './interface/user.interface'
 
+@ApiUseTags('users')
