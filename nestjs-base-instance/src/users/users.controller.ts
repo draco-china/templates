@@ -2,3 +2,4 @@ import { Controller, UseGuards, HttpStatus, Response, Request, Get, Post, Body, 
 import { ApiUseTags, ApiResponse } from '@nestjs/swagger';
 // import { JwtAuthGuard } from '@/common/guards/jwt-auth.guard';
 import { AuthGuard } from '@nestjs/passport';
+import { UsersService } from './users.service';
