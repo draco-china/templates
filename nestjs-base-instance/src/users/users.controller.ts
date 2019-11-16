@@ -6,3 +6,4 @@ import { UsersService } from './users.service';
 import { User } from './interface/user.interface'
 
 @ApiUseTags('users')
+@Controller('users')
