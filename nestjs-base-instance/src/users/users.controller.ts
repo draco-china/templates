@@ -7,3 +7,4 @@ import { User } from './interface/user.interface'
 
 @ApiUseTags('users')
 @Controller('users')
+export class UsersController {
