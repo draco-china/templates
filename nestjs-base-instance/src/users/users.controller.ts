@@ -9,3 +9,4 @@ import { User } from './interface/user.interface'
 @Controller('users')
 export class UsersController {
   constructor(
+    private readonly usersService: UsersService
