@@ -10,3 +10,5 @@ import { User } from './interface/user.interface'
 export class UsersController {
   constructor(
     private readonly usersService: UsersService
+  ) { }
+
