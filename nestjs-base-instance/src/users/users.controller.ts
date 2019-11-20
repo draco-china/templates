@@ -12,3 +12,4 @@ export class UsersController {
     private readonly usersService: UsersService
   ) { }
 
+  @Get()
