@@ -14,3 +14,4 @@ export class UsersController {
 
   @Get()
   @UseGuards(AuthGuard('jwt'))
+  async getUser(@Response() res, @Headers('Authorization') Authorization: string): Promise<User[]> {
