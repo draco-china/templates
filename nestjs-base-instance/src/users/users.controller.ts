@@ -16,3 +16,4 @@ export class UsersController {
   @UseGuards(AuthGuard('jwt'))
   async getUser(@Response() res, @Headers('Authorization') Authorization: string): Promise<User[]> {
     const result = await this.usersService.findAll();
+    return res.status(HttpStatus.OK).json(result);
