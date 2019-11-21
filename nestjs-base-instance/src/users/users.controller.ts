@@ -13,3 +13,4 @@ export class UsersController {
   ) { }
 
   @Get()
+  @UseGuards(AuthGuard('jwt'))
