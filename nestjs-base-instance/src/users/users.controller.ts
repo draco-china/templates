@@ -18,3 +18,5 @@ export class UsersController {
     const result = await this.usersService.findAll();
     return res.status(HttpStatus.OK).json(result);
   }
+}
+
