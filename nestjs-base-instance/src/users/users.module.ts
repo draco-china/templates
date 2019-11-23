@@ -4,3 +4,4 @@ import { UsersController } from './users.controller';
 import { UsersService } from './users.service';
 import { UserSchema } from './schemas/user.schema';
 
+@Module({
