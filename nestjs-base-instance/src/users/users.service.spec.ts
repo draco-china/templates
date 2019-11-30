@@ -4,3 +4,4 @@ import { UsersService } from './users.service';
 describe('UsersService', () => {
   let service: UsersService;
   
+  beforeAll(async () => {
