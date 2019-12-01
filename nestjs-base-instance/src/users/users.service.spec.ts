@@ -8,3 +8,4 @@ describe('UsersService', () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [UsersService],
     }).compile();
+    service = module.get<UsersService>(UsersService);
