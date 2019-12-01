@@ -6,3 +6,4 @@ describe('UsersService', () => {
   
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      providers: [UsersService],
