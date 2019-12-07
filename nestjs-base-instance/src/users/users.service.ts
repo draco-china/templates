@@ -6,3 +6,4 @@ import { User } from './interface/user.interface';
 import { CreateUserDto } from './dto/createUser.dto';
 
 @Injectable()
+export class UsersService {
