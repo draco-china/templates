@@ -5,3 +5,4 @@ import { debug } from 'console';
 import { User } from './interface/user.interface';
 import { CreateUserDto } from './dto/createUser.dto';
 
+@Injectable()
