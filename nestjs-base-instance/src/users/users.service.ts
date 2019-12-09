@@ -8,3 +8,4 @@ import { CreateUserDto } from './dto/createUser.dto';
 @Injectable()
 export class UsersService {
   constructor(@InjectModel('User') private readonly userModel: PassportLocalModel<User>) { }
+  async findAll(): Promise<User[]> {
