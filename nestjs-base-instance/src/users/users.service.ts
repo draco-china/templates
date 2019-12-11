@@ -16,3 +16,4 @@ export class UsersService {
     return await this.userModel.findOne(options, '-_id -__v -password').exec();
   }
 
+  async findById(id: number): Promise<User | null> {
