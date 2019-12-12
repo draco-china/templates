@@ -20,3 +20,4 @@ export class UsersService {
     return await this.userModel.findById(id).exec();
   }
 
+  async create(createUserDto: CreateUserDto): Promise<User> {
