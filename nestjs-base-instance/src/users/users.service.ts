@@ -18,3 +18,5 @@ export class UsersService {
 
   async findById(id: number): Promise<User | null> {
     return await this.userModel.findById(id).exec();
+  }
+
