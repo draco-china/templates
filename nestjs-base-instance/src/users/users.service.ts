@@ -28,3 +28,4 @@ export class UsersService {
   async update(id: number, User: User): Promise<User | null> {
     const user = await this.userModel.findById(id).exec();
 
+    if (!user._id) {
