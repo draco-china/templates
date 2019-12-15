@@ -25,3 +25,4 @@ export class UsersService {
     return await createdUser.save();
   }
 
+  async update(id: number, User: User): Promise<User | null> {
