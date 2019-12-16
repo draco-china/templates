@@ -29,3 +29,4 @@ export class UsersService {
     const user = await this.userModel.findById(id).exec();
 
     if (!user._id) {
+      debug('user not found');
