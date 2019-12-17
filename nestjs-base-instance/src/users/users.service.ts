@@ -30,3 +30,5 @@ export class UsersService {
 
     if (!user._id) {
       debug('user not found');
+    }
+
