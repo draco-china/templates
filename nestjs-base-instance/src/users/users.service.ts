@@ -32,3 +32,4 @@ export class UsersService {
       debug('user not found');
     }
 
+    await this.userModel.findByIdAndUpdate(id, User).exec();
