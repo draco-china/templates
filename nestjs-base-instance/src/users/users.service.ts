@@ -33,3 +33,4 @@ export class UsersService {
     }
 
     await this.userModel.findByIdAndUpdate(id, User).exec();
+    return await this.userModel.findById(id).exec();
