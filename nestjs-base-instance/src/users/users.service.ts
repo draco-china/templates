@@ -36,3 +36,4 @@ export class UsersService {
     return await this.userModel.findById(id).exec();
   }
   async delete(id: number): Promise<string> {
+    try {
