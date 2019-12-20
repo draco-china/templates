@@ -38,3 +38,4 @@ export class UsersService {
   async delete(id: number): Promise<string> {
     try {
       await this.userModel.findByIdAndRemove(id).exec();
+      return 'The user has been deleted';
