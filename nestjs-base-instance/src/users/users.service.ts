@@ -39,3 +39,4 @@ export class UsersService {
     try {
       await this.userModel.findByIdAndRemove(id).exec();
       return 'The user has been deleted';
+    }
