@@ -41,3 +41,4 @@ export class UsersService {
       return 'The user has been deleted';
     }
     catch (err) {
+      debug(err);
