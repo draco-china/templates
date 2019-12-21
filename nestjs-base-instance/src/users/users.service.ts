@@ -43,3 +43,4 @@ export class UsersService {
     catch (err) {
       debug(err);
       return 'The user could not be deleted';
+    }
