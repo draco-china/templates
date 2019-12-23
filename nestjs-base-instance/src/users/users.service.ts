@@ -45,3 +45,4 @@ export class UsersService {
       return 'The user could not be deleted';
     }
   }
+}
