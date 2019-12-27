@@ -7,3 +7,4 @@ import * as APP_CONFIG from './../src/app/app.config';
 describe('AppController (e2e)', () => {
   let app: INestApplication;
 
+  beforeAll(async () => {
