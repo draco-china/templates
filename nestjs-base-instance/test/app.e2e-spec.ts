@@ -8,3 +8,4 @@ describe('AppController (e2e)', () => {
   let app: INestApplication;
 
   beforeAll(async () => {
+    const moduleFixture = await Test.createTestingModule({
