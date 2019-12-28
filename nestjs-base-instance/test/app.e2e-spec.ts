@@ -10,3 +10,5 @@ describe('AppController (e2e)', () => {
   beforeAll(async () => {
     const moduleFixture = await Test.createTestingModule({
       imports: [AppModule],
+    }).compile();
+
