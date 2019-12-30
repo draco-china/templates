@@ -18,3 +18,4 @@ describe('AppController (e2e)', () => {
 
   it('/ (GET)', () => {
     return request(app.getHttpServer())
+      .get('/')
