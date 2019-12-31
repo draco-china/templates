@@ -22,3 +22,4 @@ describe('AppController (e2e)', () => {
       .expect(200)
       .expect(APP_CONFIG.INFO);
   });
+});
