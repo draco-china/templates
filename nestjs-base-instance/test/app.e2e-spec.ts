@@ -21,3 +21,4 @@ describe('AppController (e2e)', () => {
       .get('/')
       .expect(200)
       .expect(APP_CONFIG.INFO);
+  });
