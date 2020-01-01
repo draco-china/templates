@@ -4,3 +4,7 @@ import { IConfig } from 'umi-types';
 const config: IConfig = {
   base: '/app1',
   runtimePublicPath: false,
+  publicPath: '/subapps/app1/',
+  outputPath: '../dist/subapps/app1',
+  mountElementId: 'app1',
+  treeShaking: true,
