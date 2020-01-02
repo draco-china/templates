@@ -8,3 +8,7 @@ const config: IConfig = {
   outputPath: '../dist/subapps/app1',
   mountElementId: 'app1',
   treeShaking: true,
+  routes: [
+    {
+      path: '/',
+      component: '../layouts/index',
