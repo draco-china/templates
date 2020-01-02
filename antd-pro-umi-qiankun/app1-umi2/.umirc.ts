@@ -16,3 +16,7 @@ const config: IConfig = {
     },
   ],
   plugins: [
+    [
+      '@umijs/plugin-qiankun',
+      {
+        slave: {},
