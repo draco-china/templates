@@ -12,3 +12,7 @@ const config: IConfig = {
     {
       path: '/',
       component: '../layouts/index',
+      routes: [{ path: '/', component: '../pages/index' }],
+    },
+  ],
+  plugins: [
