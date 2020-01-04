@@ -33,3 +33,7 @@ const config: IConfig = {
         dll: false,
         locale: {
           enable: true,
+          default: 'en-US',
+        },
+        routes: {
+          exclude: [
