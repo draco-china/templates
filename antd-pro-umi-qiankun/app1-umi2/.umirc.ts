@@ -29,3 +29,7 @@ const config: IConfig = {
         antd: true,
         dva: true,
         dynamicImport: { webpackChunkName: true },
+        title: 'app1-umi2',
+        dll: false,
+        locale: {
+          enable: true,
