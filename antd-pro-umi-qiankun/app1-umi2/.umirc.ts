@@ -45,3 +45,8 @@ const config: IConfig = {
           ],
         },
       },
+    ],
+  ],
+};
+
+export default config;
