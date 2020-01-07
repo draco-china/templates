@@ -5,3 +5,4 @@ export const dva = {
       console.error(err.message);
     },
   },
+};
