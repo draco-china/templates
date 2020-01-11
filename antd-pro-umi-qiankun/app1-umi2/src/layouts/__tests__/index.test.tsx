@@ -9,3 +9,4 @@ describe('Layout: BasicLayout', () => {
     expect(wrapper.root.children.length).toBe(1);
     const outerLayer = wrapper.root.children[0] as ReactTestInstance;
     expect(outerLayer.type).toBe('div');
+    const title = outerLayer.children[0] as ReactTestInstance;
