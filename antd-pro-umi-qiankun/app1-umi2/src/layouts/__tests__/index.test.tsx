@@ -6,3 +6,4 @@ import renderer, { ReactTestInstance, ReactTestRenderer } from 'react-test-rende
 describe('Layout: BasicLayout', () => {
   it('Render correctly', () => {
     const wrapper: ReactTestRenderer = renderer.create(<BasicLayout />);
+    expect(wrapper.root.children.length).toBe(1);
