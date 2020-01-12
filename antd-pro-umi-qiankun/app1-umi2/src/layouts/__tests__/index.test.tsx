@@ -11,3 +11,4 @@ describe('Layout: BasicLayout', () => {
     expect(outerLayer.type).toBe('div');
     const title = outerLayer.children[0] as ReactTestInstance;
     expect(title.type).toBe('h1');
+    expect(title.children[0]).toBe('Yay! Welcome to umi!');
