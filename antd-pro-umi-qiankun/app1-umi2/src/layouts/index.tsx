@@ -10,3 +10,4 @@ const BasicLayout: React.FC = props => {
   );
 };
 
+export default BasicLayout;
