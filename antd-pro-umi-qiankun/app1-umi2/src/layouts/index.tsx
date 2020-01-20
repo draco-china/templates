@@ -8,3 +8,5 @@ const BasicLayout: React.FC = props => {
       {props.children}
     </div>
   );
+};
+
