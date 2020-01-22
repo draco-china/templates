@@ -6,3 +6,4 @@ import renderer, { ReactTestInstance, ReactTestRenderer } from 'react-test-rende
 jest.mock('umi-plugin-locale');
 
 describe('Page: index', () => {
+  it('Render correctly', () => {
