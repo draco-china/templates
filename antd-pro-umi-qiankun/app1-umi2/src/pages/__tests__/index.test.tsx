@@ -7,3 +7,5 @@ jest.mock('umi-plugin-locale');
 
 describe('Page: index', () => {
   it('Render correctly', () => {
+    const wrapper: ReactTestRenderer = renderer.create(<Index />);
+    expect(wrapper.root.children.length).toBe(1);
