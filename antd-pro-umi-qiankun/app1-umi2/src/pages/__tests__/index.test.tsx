@@ -15,3 +15,5 @@ describe('Page: index', () => {
     const getStartLink = outerLayer.findAllByProps({
       href: 'https://umijs.org/guide/getting-started.html',
     }) as ReactTestInstance[];
+    expect(getStartLink.length).toBe(1);
+    expect(getStartLink[0].children).toMatchObject(['Mock text']);
