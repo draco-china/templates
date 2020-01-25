@@ -17,3 +17,5 @@ describe('Page: index', () => {
     }) as ReactTestInstance[];
     expect(getStartLink.length).toBe(1);
     expect(getStartLink[0].children).toMatchObject(['Mock text']);
+  });
+});
