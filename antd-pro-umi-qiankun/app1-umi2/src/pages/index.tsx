@@ -11,3 +11,5 @@ export default function() {
           <a href="https://umijs.org/guide/getting-started.html">
             {formatMessage({ id: 'index.start' })}
           </a>
+        </li>
+      </ul>
