@@ -43,3 +43,26 @@ export default defineConfig({
   //     }
   //   : false,
   dva: {
+    hmr: true,
+  },
+  locale: {
+    // default zh-CN
+    default: 'zh-CN',
+    // default true, when it is true, will use `navigator.language` overwrite default
+    baseNavigator: true,
+  },
+  dynamicImport: {
+    loading: '@/components/PageLoading/index',
+  },
+  // pwa: pwa
+  // ? {
+  //     workboxPluginMode: 'InjectManifest',
+  //     workboxOptions: {
+  //       importWorkboxFrom: 'local',
+  //     },
+  //   }
+  // : false,
+  targets: {
+    ie: 11,
+  },
+  // umi routes: https://umijs.org/zh/guide/router.html
