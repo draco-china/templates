@@ -24,3 +24,22 @@ const {
 export default defineConfig({
   qiankun: {
     master: {
+      defer: true,
+      jsSandbox: true,
+      prefetch: true,
+      lifeCycles: {
+        // see https://github.com/umijs/qiankun#registermicroapps
+        afterMount: props => {
+          console.log(props);
+        },
+      },
+    },
+  },
+  hash: true,
+  antd: {},
+  // analytics: isAntDesignProPreview
+  //   ? {
+  //       ga: 'UA-72788897-6',
+  //     }
+  //   : false,
+  dva: {
