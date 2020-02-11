@@ -104,3 +104,15 @@ export default defineConfig({
               component: './Admin',
               authority: ['admin'],
               routes: [
+                {
+                  path: '/admin/sub-page',
+                  name: 'sub-page',
+                  icon: 'smile',
+                  component: './Welcome',
+                  authority: ['admin'],
+                },
+              ],
+            },
+            {
+              name: 'list.table-list',
+              icon: 'table',
