@@ -91,3 +91,16 @@ export default defineConfig({
               path: '/',
               redirect: '/welcome',
             },
+            {
+              path: '/welcome',
+              name: 'welcome',
+              icon: 'smile',
+              component: './Welcome',
+            },
+            {
+              path: '/admin',
+              name: 'admin',
+              icon: 'crown',
+              component: './Admin',
+              authority: ['admin'],
+              routes: [
