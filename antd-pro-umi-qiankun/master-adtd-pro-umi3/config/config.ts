@@ -79,3 +79,15 @@ export default defineConfig({
       ],
     },
     {
+      path: '/',
+      component: '../layouts/SecurityLayout',
+      routes: [
+        {
+          path: '/',
+          component: '../layouts/BasicLayout',
+          authority: ['admin', 'user'],
+          routes: [
+            {
+              path: '/',
+              redirect: '/welcome',
+            },
