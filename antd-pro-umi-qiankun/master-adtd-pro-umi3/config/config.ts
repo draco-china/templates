@@ -170,3 +170,16 @@ export default defineConfig({
             .split('/')
             .map((a: string) => a.replace(/([A-Z])/g, '-$1'))
             .map((a: string) => a.toLowerCase());
+          return `antd-pro${arr.join('-')}-${localName}`.replace(/--/g, '-');
+        }
+        return localName;
+      },
+    },
+  },
+  manifest: {
+    basePath: '/',
+  },
+  proxy: proxy[REACT_APP_ENV || 'dev'],
+  chainWebpack: webpackPlugin,
+  outputPath: '../dist/master',
+});
