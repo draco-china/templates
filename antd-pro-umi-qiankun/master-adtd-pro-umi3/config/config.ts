@@ -145,3 +145,16 @@ export default defineConfig({
   },
   ignoreMomentLocale: true,
   lessLoader: {
+    javascriptEnabled: true,
+  },
+  cssLoader: {
+    modules: {
+      getLocalIdent: (
+        context: {
+          resourcePath: string;
+        },
+        _: string,
+        localName: string,
+      ) => {
+        if (
+          context.resourcePath.includes('node_modules') ||
