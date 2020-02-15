@@ -14,3 +14,15 @@ export interface DefaultSettings {
   /**
    * nav menu position: `sidemenu` or `topmenu`
    */
+  layout: 'sidemenu' | 'topmenu';
+  /**
+   * layout of content: `Fluid` or `Fixed`, only works when layout is topmenu
+   */
+  contentWidth: ContentWidth;
+  /**
+   * sticky header
+   */
+  fixedHeader: boolean;
+  /**
+   * auto hide header
+   */
