@@ -26,3 +26,8 @@ export interface DefaultSettings {
   /**
    * auto hide header
    */
+  autoHideHeader: boolean;
+  /**
+   * sticky siderbar
+   */
+  fixSiderbar: boolean;
