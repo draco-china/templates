@@ -53,3 +53,6 @@ export default {
   fixSiderbar: false,
   colorWeak: false,
   menu: {
+    locale: true,
+  },
+  title: 'Ant Design Pro',
