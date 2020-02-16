@@ -42,3 +42,6 @@ export interface DefaultSettings {
   colorWeak: boolean;
 }
 
+export default {
+  navTheme: 'dark',
+  // 拂晓蓝
