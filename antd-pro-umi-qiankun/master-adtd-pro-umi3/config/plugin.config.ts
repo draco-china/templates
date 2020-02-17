@@ -11,3 +11,9 @@ function getModulePackageName(module: { context: string }) {
   }
 
   const moduleRelativePath = module.context.substring(nodeModulesPath.length);
+  const [moduleDirName] = moduleRelativePath.split(path.sep);
+  let packageName: string | null = moduleDirName;
+  // handle tree shaking
+  if (packageName && packageName.match('^_')) {
+    // eslint-disable-next-line prefer-destructuring
+    packageName = packageName.match(/^_(@?[^@]+)/)![1];
