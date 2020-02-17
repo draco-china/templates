@@ -17,3 +17,11 @@ function getModulePackageName(module: { context: string }) {
   if (packageName && packageName.match('^_')) {
     // eslint-disable-next-line prefer-destructuring
     packageName = packageName.match(/^_(@?[^@]+)/)![1];
+  }
+  return packageName;
+}
+
+const webpackPlugin = (config: IWebpackChainConfig) => {
+  // optimize chunks
+  config.optimization
+    // share the same chunks across different modules
