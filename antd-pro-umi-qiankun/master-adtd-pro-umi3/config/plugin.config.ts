@@ -5,3 +5,9 @@ import * as IWebpackChainConfig from 'webpack-chain';
 function getModulePackageName(module: { context: string }) {
   if (!module.context) return null;
 
+  const nodeModulesPath = path.join(__dirname, '../node_modules/');
+  if (module.context.substring(0, nodeModulesPath.length) !== nodeModulesPath) {
+    return null;
+  }
+
+  const moduleRelativePath = module.context.substring(nodeModulesPath.length);
