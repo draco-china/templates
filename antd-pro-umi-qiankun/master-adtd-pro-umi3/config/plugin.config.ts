@@ -39,3 +39,7 @@ const webpackPlugin = (config: IWebpackChainConfig) => {
               return [
                 'bizcharts',
                 'gg-editor',
+                'g6',
+                '@antv',
+                'l7',
+                'gg-editor-core',
