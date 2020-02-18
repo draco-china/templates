@@ -43,3 +43,8 @@ const webpackPlugin = (config: IWebpackChainConfig) => {
                 '@antv',
                 'l7',
                 'gg-editor-core',
+                'bizcharts-plugin-slider',
+              ].includes(packageName);
+            }
+            return false;
+          },
