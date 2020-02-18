@@ -29,3 +29,8 @@ const webpackPlugin = (config: IWebpackChainConfig) => {
     .splitChunks({
       chunks: 'async',
       name: 'vendors',
+      maxInitialRequests: Infinity,
+      minSize: 0,
+      cacheGroups: {
+        vendors: {
+          test: (module: { context: string }) => {
