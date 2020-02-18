@@ -34,3 +34,8 @@ const webpackPlugin = (config: IWebpackChainConfig) => {
       cacheGroups: {
         vendors: {
           test: (module: { context: string }) => {
+            const packageName = getModulePackageName(module) || '';
+            if (packageName) {
+              return [
+                'bizcharts',
+                'gg-editor',
