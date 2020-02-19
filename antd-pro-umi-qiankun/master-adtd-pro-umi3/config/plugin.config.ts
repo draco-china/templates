@@ -57,3 +57,9 @@ const webpackPlugin = (config: IWebpackChainConfig) => {
             }
             return 'misc';
           },
+        },
+      },
+    });
+};
+
+export default webpackPlugin;
