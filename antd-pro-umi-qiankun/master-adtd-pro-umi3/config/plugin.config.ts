@@ -52,3 +52,8 @@ const webpackPlugin = (config: IWebpackChainConfig) => {
             const packageName = getModulePackageName(module);
             if (packageName) {
               if (['bizcharts', '@antv_data-set'].indexOf(packageName) >= 0) {
+                return 'viz'; // visualization package
+              }
+            }
+            return 'misc';
+          },
