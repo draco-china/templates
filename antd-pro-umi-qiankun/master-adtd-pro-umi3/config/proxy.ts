@@ -12,3 +12,5 @@ export default {
       changeOrigin: true,
       pathRewrite: { '^': '' },
     },
+  },
+  test: {
