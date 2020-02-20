@@ -6,3 +6,5 @@
  * https://pro.ant.design/docs/deploy
  */
 export default {
+  dev: {
+    '/api/': {
