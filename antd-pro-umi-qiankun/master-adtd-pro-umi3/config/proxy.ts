@@ -26,3 +26,5 @@ export default {
       changeOrigin: true,
       pathRewrite: { '^': '' },
     },
+  },
+};
