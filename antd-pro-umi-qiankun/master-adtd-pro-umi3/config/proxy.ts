@@ -24,3 +24,5 @@ export default {
     '/api/': {
       target: 'your pre url',
       changeOrigin: true,
+      pathRewrite: { '^': '' },
+    },
