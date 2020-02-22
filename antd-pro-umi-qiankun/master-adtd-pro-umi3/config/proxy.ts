@@ -20,3 +20,5 @@ export default {
       pathRewrite: { '^': '' },
     },
   },
+  pre: {
+    '/api/': {
