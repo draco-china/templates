@@ -22,3 +22,5 @@ export default {
   },
   pre: {
     '/api/': {
+      target: 'your pre url',
+      changeOrigin: true,
