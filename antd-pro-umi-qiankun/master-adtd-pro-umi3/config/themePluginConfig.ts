@@ -26,3 +26,13 @@ export default {
         '@primary-color': '#FAAD14',
       },
     },
+    {
+      key: 'cyan',
+      fileName: 'cyan.css',
+      modifyVars: {
+        '@primary-color': '#13C2C2',
+      },
+    },
+    {
+      key: 'green',
+      fileName: 'green.css',
