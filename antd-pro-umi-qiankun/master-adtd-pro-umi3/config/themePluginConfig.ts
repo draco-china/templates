@@ -17,3 +17,12 @@ export default {
       fileName: 'volcano.css',
       modifyVars: {
         '@primary-color': '#FA541C',
+      },
+    },
+    {
+      key: 'sunset',
+      fileName: 'sunset.css',
+      modifyVars: {
+        '@primary-color': '#FAAD14',
+      },
+    },
