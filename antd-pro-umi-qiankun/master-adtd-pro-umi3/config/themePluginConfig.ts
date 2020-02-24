@@ -36,3 +36,12 @@ export default {
     {
       key: 'green',
       fileName: 'green.css',
+      modifyVars: {
+        '@primary-color': '#52C41A',
+      },
+    },
+    {
+      key: 'geekblue',
+      fileName: 'geekblue.css',
+      modifyVars: {
+        '@primary-color': '#2F54EB',
