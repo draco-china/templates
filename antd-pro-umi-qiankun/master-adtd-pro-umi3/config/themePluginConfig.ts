@@ -45,3 +45,14 @@ export default {
       fileName: 'geekblue.css',
       modifyVars: {
         '@primary-color': '#2F54EB',
+      },
+    },
+    {
+      key: 'purple',
+      fileName: 'purple.css',
+      modifyVars: {
+        '@primary-color': '#722ED1',
+      },
+    },
+
+    {
