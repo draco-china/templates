@@ -65,3 +65,13 @@ export default {
     },
     {
       key: 'volcano',
+      theme: 'dark',
+      fileName: 'dark-volcano.css',
+      modifyVars: {
+        '@primary-color': '#FA541C',
+      },
+    },
+    {
+      key: 'sunset',
+      theme: 'dark',
+      fileName: 'dark-sunset.css',
