@@ -75,3 +75,12 @@ export default {
       key: 'sunset',
       theme: 'dark',
       fileName: 'dark-sunset.css',
+      modifyVars: {
+        '@primary-color': '#FAAD14',
+      },
+    },
+    {
+      key: 'cyan',
+      theme: 'dark',
+      fileName: 'dark-cyan.css',
+      modifyVars: {
