@@ -56,3 +56,12 @@ export default {
     },
 
     {
+      key: 'dust',
+      theme: 'dark',
+      fileName: 'dark-dust.css',
+      modifyVars: {
+        '@primary-color': '#F5222D',
+      },
+    },
+    {
+      key: 'volcano',
