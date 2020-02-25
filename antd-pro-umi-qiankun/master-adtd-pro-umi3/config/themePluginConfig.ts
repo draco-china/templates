@@ -84,3 +84,13 @@ export default {
       theme: 'dark',
       fileName: 'dark-cyan.css',
       modifyVars: {
+        '@primary-color': '#13C2C2',
+      },
+    },
+    {
+      key: 'green',
+      theme: 'dark',
+      fileName: 'dark-green.css',
+      modifyVars: {
+        '@primary-color': '#52C41A',
+      },
