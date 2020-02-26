@@ -103,3 +103,13 @@ export default {
         '@primary-color': '#2F54EB',
       },
     },
+    {
+      key: 'purple',
+      theme: 'dark',
+      fileName: 'dark-purple.css',
+      modifyVars: {
+        '@primary-color': '#722ED1',
+      },
+    },
+  ],
+};
