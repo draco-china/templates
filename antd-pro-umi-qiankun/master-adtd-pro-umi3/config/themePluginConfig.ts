@@ -94,3 +94,12 @@ export default {
       modifyVars: {
         '@primary-color': '#52C41A',
       },
+    },
+    {
+      key: 'geekblue',
+      theme: 'dark',
+      fileName: 'dark-geekblue.css',
+      modifyVars: {
+        '@primary-color': '#2F54EB',
+      },
+    },
