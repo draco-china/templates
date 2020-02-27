@@ -2,3 +2,4 @@
 module.exports = {
   launch: {
     args: [
+      '--disable-gpu',
