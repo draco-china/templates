@@ -4,3 +4,4 @@ module.exports = {
     args: [
       '--disable-gpu',
       '--disable-dev-shm-usage',
+      '--no-first-run',
