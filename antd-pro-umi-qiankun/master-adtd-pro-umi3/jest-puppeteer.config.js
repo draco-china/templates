@@ -3,3 +3,4 @@ module.exports = {
   launch: {
     args: [
       '--disable-gpu',
+      '--disable-dev-shm-usage',
