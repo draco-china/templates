@@ -5,3 +5,4 @@ module.exports = {
       '--disable-gpu',
       '--disable-dev-shm-usage',
       '--no-first-run',
+      '--no-zygote',
