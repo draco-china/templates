@@ -6,3 +6,4 @@ module.exports = {
       '--disable-dev-shm-usage',
       '--no-first-run',
       '--no-zygote',
+      '--no-sandbox',
