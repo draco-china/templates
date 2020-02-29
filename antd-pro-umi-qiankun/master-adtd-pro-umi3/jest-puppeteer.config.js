@@ -8,3 +8,4 @@ module.exports = {
       '--no-zygote',
       '--no-sandbox',
     ],
+  },
