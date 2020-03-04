@@ -16,3 +16,11 @@ const getNotices = (req: Request, res: Response) => {
       datetime: '2017-08-08',
       type: 'notification',
     },
+    {
+      id: '000000003',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/kISTdvpyTAhtGxpovNWd.png',
+      title: '这种模板可以区分多种通知类型',
+      datetime: '2017-08-07',
+      read: true,
+      type: 'notification',
+    },
