@@ -24,3 +24,12 @@ const getNotices = (req: Request, res: Response) => {
       read: true,
       type: 'notification',
     },
+    {
+      id: '000000004',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/GvqBnKhFgObvnSGkDsje.png',
+      title: '左侧图标用于区分不同的类型',
+      datetime: '2017-08-07',
+      type: 'notification',
+    },
+    {
+      id: '000000005',
