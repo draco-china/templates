@@ -50,3 +50,12 @@ const getNotices = (req: Request, res: Response) => {
     {
       id: '000000007',
       avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
+      title: '朱偏右 回复了你',
+      description: '这种模板用于提醒谁与你发生了互动，左侧放『谁』的头像',
+      datetime: '2017-08-07',
+      type: 'message',
+      clickClose: true,
+    },
+    {
+      id: '000000008',
+      avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
