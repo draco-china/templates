@@ -13,3 +13,15 @@ export default {
     email: 'antdesign@alipay.com',
     signature: '海纳百川，有容乃大',
     title: '交互专家',
+    group: '蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED',
+    tags: [
+      {
+        key: '0',
+        label: '很有想法的',
+      },
+      {
+        key: '1',
+        label: '专注设计',
+      },
+      {
+        key: '2',
