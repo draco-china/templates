@@ -50,3 +50,16 @@ export default {
       },
       city: {
         label: '杭州市',
+        key: '330100',
+      },
+    },
+    address: '西湖区工专路 77 号',
+    phone: '0752-268888888',
+  },
+  // GET POST 可省略
+  'GET /api/users': [
+    {
+      key: '1',
+      name: 'John Brown',
+      age: 32,
+      address: 'New York No. 1 Lake Park',
