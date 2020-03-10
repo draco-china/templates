@@ -25,3 +25,16 @@ export default {
       },
       {
         key: '2',
+        label: '辣~',
+      },
+      {
+        key: '3',
+        label: '大长腿',
+      },
+      {
+        key: '4',
+        label: '川妹子',
+      },
+      {
+        key: '5',
+        label: '海纳百川',
