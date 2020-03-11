@@ -76,3 +76,15 @@ export default {
       age: 32,
       address: 'Sidney No. 1 Lake Park',
     },
+  ],
+  'POST /api/login/account': (req: Request, res: Response) => {
+    const { password, userName, type } = req.body;
+    if (password === 'ant.design' && userName === 'admin') {
+      res.send({
+        status: 'ok',
+        type,
+        currentAuthority: 'admin',
+      });
+      return;
+    }
+    if (password === 'ant.design' && userName === 'user') {
