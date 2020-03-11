@@ -100,3 +100,17 @@ export default {
         status: 'ok',
         type,
         currentAuthority: 'admin',
+      });
+      return;
+    }
+
+    res.send({
+      status: 'error',
+      type,
+      currentAuthority: 'guest',
+    });
+  },
+  'POST /api/register': (req: Request, res: Response) => {
+    res.send({ status: 'ok', currentAuthority: 'user' });
+  },
+  'GET /api/500': (req: Request, res: Response) => {
