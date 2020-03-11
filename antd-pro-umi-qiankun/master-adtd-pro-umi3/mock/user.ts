@@ -88,3 +88,15 @@ export default {
       return;
     }
     if (password === 'ant.design' && userName === 'user') {
+      res.send({
+        status: 'ok',
+        type,
+        currentAuthority: 'user',
+      });
+      return;
+    }
+    if (type === 'mobile') {
+      res.send({
+        status: 'ok',
+        type,
+        currentAuthority: 'admin',
