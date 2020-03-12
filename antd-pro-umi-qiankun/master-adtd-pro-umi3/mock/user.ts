@@ -114,3 +114,15 @@ export default {
     res.send({ status: 'ok', currentAuthority: 'user' });
   },
   'GET /api/500': (req: Request, res: Response) => {
+    res.status(500).send({
+      timestamp: 1513932555104,
+      status: 500,
+      error: 'error',
+      message: 'error',
+      path: '/base/category/list',
+    });
+  },
+  'GET /api/404': (req: Request, res: Response) => {
+    res.status(404).send({
+      timestamp: 1513932643431,
+      status: 404,
