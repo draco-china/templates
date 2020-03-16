@@ -17,3 +17,5 @@ type IAuthorizedType = React.FunctionComponent<AuthorizedProps> & {
 };
 
 const Authorized: React.FunctionComponent<AuthorizedProps> = ({
+  children,
+  authority,
