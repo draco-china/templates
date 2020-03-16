@@ -7,3 +7,7 @@ import Secured from './Secured';
 
 interface AuthorizedProps {
   authority: IAuthorityType;
+  noMatch?: React.ReactNode;
+}
+
+type IAuthorizedType = React.FunctionComponent<AuthorizedProps> & {
