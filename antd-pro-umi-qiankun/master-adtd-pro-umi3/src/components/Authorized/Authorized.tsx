@@ -13,3 +13,7 @@ interface AuthorizedProps {
 type IAuthorizedType = React.FunctionComponent<AuthorizedProps> & {
   Secured: typeof Secured;
   check: typeof check;
+  AuthorizedRoute: typeof AuthorizedRoute;
+};
+
+const Authorized: React.FunctionComponent<AuthorizedProps> = ({
