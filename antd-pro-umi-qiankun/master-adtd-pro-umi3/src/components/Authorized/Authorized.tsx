@@ -29,3 +29,7 @@ const Authorized: React.FunctionComponent<AuthorizedProps> = ({
 }) => {
   const childrenRender: React.ReactNode = typeof children === 'undefined' ? null : children;
   const dom = check(authority, childrenRender, noMatch);
+  return <>{dom}</>;
+};
+
+export default Authorized as IAuthorizedType;
