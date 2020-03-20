@@ -17,3 +17,6 @@ const AuthorizedRoute: React.SFC<AuthorizedRoutePops> = ({
   render,
   authority,
   redirectPath,
+  ...rest
+}) => (
+  <Authorized
