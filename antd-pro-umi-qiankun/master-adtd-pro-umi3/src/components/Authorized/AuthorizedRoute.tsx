@@ -9,3 +9,7 @@ interface AuthorizedRoutePops {
   component: React.ComponentClass<any, any>;
   render: (props: any) => React.ReactNode;
   redirectPath: string;
+  authority: IAuthorityType;
+}
+
+const AuthorizedRoute: React.SFC<AuthorizedRoutePops> = ({
