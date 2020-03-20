@@ -15,3 +15,5 @@ interface AuthorizedRoutePops {
 const AuthorizedRoute: React.SFC<AuthorizedRoutePops> = ({
   component: Component,
   render,
+  authority,
+  redirectPath,
