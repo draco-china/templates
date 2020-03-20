@@ -20,3 +20,5 @@ const AuthorizedRoute: React.SFC<AuthorizedRoutePops> = ({
   ...rest
 }) => (
   <Authorized
+    authority={authority}
+    noMatch={<Route {...rest} render={() => <Redirect to={{ pathname: redirectPath }} />} />}
