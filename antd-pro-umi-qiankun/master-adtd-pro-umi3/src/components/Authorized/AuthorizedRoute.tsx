@@ -25,3 +25,5 @@ const AuthorizedRoute: React.SFC<AuthorizedRoutePops> = ({
   >
     <Route
       {...rest}
+      render={(props: any) => (Component ? <Component {...props} /> : render(props))}
+    />
