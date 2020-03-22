@@ -19,3 +19,10 @@ export type IAuthorityType =
  * @param { 未通过的组件 | no pass components } Exception
  */
 const checkPermissions = <T, K>(
+  authority: IAuthorityType,
+  currentAuthority: string | string[],
+  target: T,
+  Exception: K,
+): T | K | React.ReactNode => {
+  // 没有判定权限.默认查看所有
+  // Retirement authority, return target;
