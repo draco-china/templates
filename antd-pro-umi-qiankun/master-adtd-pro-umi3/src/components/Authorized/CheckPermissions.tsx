@@ -44,3 +44,8 @@ const checkPermissions = <T, K>(
   if (typeof authority === 'string') {
     if (Array.isArray(currentAuthority)) {
       if (currentAuthority.some(item => authority === item)) {
+        return target;
+      }
+    } else if (authority === currentAuthority) {
+      return target;
+    }
