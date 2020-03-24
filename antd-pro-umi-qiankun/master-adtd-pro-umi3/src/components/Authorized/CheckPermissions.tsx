@@ -49,3 +49,10 @@ const checkPermissions = <T, K>(
     } else if (authority === currentAuthority) {
       return target;
     }
+    return Exception;
+  }
+  // Promise 处理
+  if (authority instanceof Promise) {
+    return <PromiseRender<T, K> ok={target} error={Exception} promise={authority} />;
+  }
+  // Function 处理
