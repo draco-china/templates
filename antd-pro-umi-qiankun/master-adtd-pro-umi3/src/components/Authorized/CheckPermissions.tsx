@@ -56,3 +56,9 @@ const checkPermissions = <T, K>(
     return <PromiseRender<T, K> ok={target} error={Exception} promise={authority} />;
   }
   // Function 处理
+  if (typeof authority === 'function') {
+    try {
+      const bool = authority(currentAuthority);
+      // 函数执行后返回值是 Promise
+      if (bool instanceof Promise) {
+        return <PromiseRender<T, K> ok={target} error={Exception} promise={bool} />;
