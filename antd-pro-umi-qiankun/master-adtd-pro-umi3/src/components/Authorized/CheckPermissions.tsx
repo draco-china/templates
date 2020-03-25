@@ -72,3 +72,12 @@ const checkPermissions = <T, K>(
     }
   }
   throw new Error('unsupported parameters');
+};
+
+export { checkPermissions };
+
+function check<T, K>(authority: IAuthorityType, target: T, Exception: K): T | K | React.ReactNode {
+  return checkPermissions<T, K>(authority, CURRENT, target, Exception);
+}
+
+export default check;
