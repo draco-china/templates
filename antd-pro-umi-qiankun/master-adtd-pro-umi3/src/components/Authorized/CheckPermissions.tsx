@@ -62,3 +62,8 @@ const checkPermissions = <T, K>(
       // 函数执行后返回值是 Promise
       if (bool instanceof Promise) {
         return <PromiseRender<T, K> ok={target} error={Exception} promise={bool} />;
+      }
+      if (bool) {
+        return target;
+      }
+      return Exception;
