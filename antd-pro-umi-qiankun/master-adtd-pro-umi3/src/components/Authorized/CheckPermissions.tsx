@@ -67,3 +67,8 @@ const checkPermissions = <T, K>(
         return target;
       }
       return Exception;
+    } catch (error) {
+      throw error;
+    }
+  }
+  throw new Error('unsupported parameters');
