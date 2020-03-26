@@ -6,3 +6,12 @@ import { isComponentClass } from './Secured';
 
 interface PromiseRenderProps<T, K> {
   ok: T;
+  error: K;
+  promise: Promise<boolean>;
+}
+
+interface PromiseRenderState {
+  component: React.ComponentClass | React.FunctionComponent;
+}
+
+export default class PromiseRender<T, K> extends React.Component<
