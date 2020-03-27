@@ -22,3 +22,11 @@ export default class PromiseRender<T, K> extends React.Component<
     component: () => null,
   };
 
+  componentDidMount() {
+    this.setRenderComponent(this.props);
+  }
+
+  shouldComponentUpdate = (nextProps: PromiseRenderProps<T, K>, nextState: PromiseRenderState) => {
+    const { component } = this.state;
+    if (!isEqual(nextProps, this.props)) {
+      this.setRenderComponent(nextProps);
