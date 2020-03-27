@@ -15,3 +15,10 @@ interface PromiseRenderState {
 }
 
 export default class PromiseRender<T, K> extends React.Component<
+  PromiseRenderProps<T, K>,
+  PromiseRenderState
+> {
+  state: PromiseRenderState = {
+    component: () => null,
+  };
+
