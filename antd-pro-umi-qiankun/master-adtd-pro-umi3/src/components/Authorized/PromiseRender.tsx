@@ -63,3 +63,10 @@ export default class PromiseRender<T, K> extends React.Component<
     if (isComponentClass(target)) {
       const Target = target as React.ComponentClass;
       return (props: any) => <Target {...props} />;
+    }
+    if (React.isValidElement(target)) {
+      return (props: any) => React.cloneElement(target, props);
+    }
+    return () => target as React.ReactNode & null;
+  };
+
