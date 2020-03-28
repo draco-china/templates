@@ -45,3 +45,9 @@ export default class PromiseRender<T, K> extends React.Component<
           component: ok,
         });
         return true;
+      })
+      .catch(() => {
+        this.setState({
+          component: error,
+        });
+      });
