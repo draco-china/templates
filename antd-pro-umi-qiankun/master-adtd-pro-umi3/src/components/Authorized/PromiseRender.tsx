@@ -84,3 +84,10 @@ export default class PromiseRender<T, K> extends React.Component<
           margin: 'auto',
           paddingTop: 50,
           textAlign: 'center',
+        }}
+      >
+        <Spin size="large" />
+      </div>
+    );
+  }
+}
