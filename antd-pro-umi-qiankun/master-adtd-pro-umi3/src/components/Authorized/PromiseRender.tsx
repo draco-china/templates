@@ -78,3 +78,9 @@ export default class PromiseRender<T, K> extends React.Component<
       <Component {...rest} />
     ) : (
       <div
+        style={{
+          width: '100%',
+          height: '100%',
+          margin: 'auto',
+          paddingTop: 50,
+          textAlign: 'center',
