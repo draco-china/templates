@@ -20,3 +20,5 @@ export const isComponentClass = (component: React.ComponentClass | React.ReactNo
 // Secured is not instantiated
 const checkIsInstantiation = (target: React.ComponentClass | React.ReactNode) => {
   if (isComponentClass(target)) {
+    const Target = target as React.ComponentClass;
+    return (props: any) => <Target {...props} />;
