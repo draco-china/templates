@@ -22,3 +22,6 @@ const checkIsInstantiation = (target: React.ComponentClass | React.ReactNode) =>
   if (isComponentClass(target)) {
     const Target = target as React.ComponentClass;
     return (props: any) => <Target {...props} />;
+  }
+  if (React.isValidElement(target)) {
+    return (props: any) => React.cloneElement(target, props);
