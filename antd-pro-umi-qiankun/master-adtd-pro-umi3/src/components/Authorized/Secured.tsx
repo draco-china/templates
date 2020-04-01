@@ -60,3 +60,7 @@ const authorize = (authority: string, error?: React.ReactNode) => {
   return function decideAuthority(target: React.ComponentClass | React.ReactNode) {
     const component = CheckPermissions(authority, target, classError || Exception403);
     return checkIsInstantiation(component);
+  };
+};
+
+export default authorize;
