@@ -52,3 +52,5 @@ const authorize = (authority: string, error?: React.ReactNode) => {
    */
   let classError: boolean | React.FunctionComponent = false;
   if (error) {
+    classError = (() => error) as React.FunctionComponent;
+  }
