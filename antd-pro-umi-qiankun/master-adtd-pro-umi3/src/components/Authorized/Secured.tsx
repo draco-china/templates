@@ -54,3 +54,6 @@ const authorize = (authority: string, error?: React.ReactNode) => {
   if (error) {
     classError = (() => error) as React.FunctionComponent;
   }
+  if (!authority) {
+    throw new Error('authority is required');
+  }
