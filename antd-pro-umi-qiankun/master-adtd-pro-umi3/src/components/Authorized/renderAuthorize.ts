@@ -10,3 +10,5 @@ type CurrentAuthorityType = string | string[] | (() => typeof CURRENT);
 const renderAuthorize = <T>(Authorized: T): ((currentAuthority: CurrentAuthorityType) => T) => (
   currentAuthority: CurrentAuthorityType,
 ): T => {
+  if (currentAuthority) {
+    if (typeof currentAuthority === 'function') {
