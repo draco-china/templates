@@ -8,3 +8,5 @@ type CurrentAuthorityType = string | string[] | (() => typeof CURRENT);
  * @param {string|()=>String} currentAuthority
  */
 const renderAuthorize = <T>(Authorized: T): ((currentAuthority: CurrentAuthorityType) => T) => (
+  currentAuthority: CurrentAuthorityType,
+): T => {
