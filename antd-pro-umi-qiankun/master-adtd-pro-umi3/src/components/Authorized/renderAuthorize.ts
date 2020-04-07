@@ -14,3 +14,5 @@ const renderAuthorize = <T>(Authorized: T): ((currentAuthority: CurrentAuthority
     if (typeof currentAuthority === 'function') {
       CURRENT = currentAuthority();
     }
+    if (
+      Object.prototype.toString.call(currentAuthority) === '[object String]' ||
