@@ -12,3 +12,5 @@ const renderAuthorize = <T>(Authorized: T): ((currentAuthority: CurrentAuthority
 ): T => {
   if (currentAuthority) {
     if (typeof currentAuthority === 'function') {
+      CURRENT = currentAuthority();
+    }
