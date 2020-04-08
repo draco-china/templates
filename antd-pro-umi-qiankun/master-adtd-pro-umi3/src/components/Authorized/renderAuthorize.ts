@@ -23,3 +23,6 @@ const renderAuthorize = <T>(Authorized: T): ((currentAuthority: CurrentAuthority
   } else {
     CURRENT = 'NULL';
   }
+  return Authorized;
+};
+
