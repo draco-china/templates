@@ -26,3 +26,5 @@ const renderAuthorize = <T>(Authorized: T): ((currentAuthority: CurrentAuthority
   return Authorized;
 };
 
+export { CURRENT };
+export default <T>(Authorized: T) => renderAuthorize<T>(Authorized);
