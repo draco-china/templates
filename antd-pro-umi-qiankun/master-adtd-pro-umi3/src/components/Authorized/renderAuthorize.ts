@@ -21,3 +21,5 @@ const renderAuthorize = <T>(Authorized: T): ((currentAuthority: CurrentAuthority
       CURRENT = currentAuthority as string[];
     }
   } else {
+    CURRENT = 'NULL';
+  }
