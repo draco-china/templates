@@ -19,3 +19,5 @@ const renderAuthorize = <T>(Authorized: T): ((currentAuthority: CurrentAuthority
       Array.isArray(currentAuthority)
     ) {
       CURRENT = currentAuthority as string[];
+    }
+  } else {
