@@ -4,3 +4,10 @@ import { ClickParam } from 'antd/es/menu';
 import React from 'react';
 import { connect, history } from 'umi';
 import { ConnectProps, ConnectState } from '@/models/connect';
+import { CurrentUser } from '@/models/user';
+import HeaderDropdown from '../HeaderDropdown';
+import styles from './index.less';
+
+export interface GlobalHeaderRightProps extends ConnectProps {
+  currentUser?: CurrentUser;
+  menu?: boolean;
