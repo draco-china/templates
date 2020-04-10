@@ -21,3 +21,11 @@ class AvatarDropdown extends React.Component<GlobalHeaderRightProps> {
       const { dispatch } = this.props;
 
       if (dispatch) {
+        dispatch({
+          type: 'login/logout',
+        });
+      }
+
+      return;
+    }
+
