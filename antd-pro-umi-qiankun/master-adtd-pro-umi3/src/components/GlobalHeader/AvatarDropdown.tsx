@@ -11,3 +11,13 @@ import styles from './index.less';
 export interface GlobalHeaderRightProps extends ConnectProps {
   currentUser?: CurrentUser;
   menu?: boolean;
+}
+
+class AvatarDropdown extends React.Component<GlobalHeaderRightProps> {
+  onMenuClick = (event: ClickParam) => {
+    const { key } = event;
+
+    if (key === 'logout') {
+      const { dispatch } = this.props;
+
+      if (dispatch) {
