@@ -49,3 +49,11 @@ class AvatarDropdown extends React.Component<GlobalHeaderRightProps> {
           </Menu.Item>
         )}
         {menu && (
+          <Menu.Item key="settings">
+            <SettingOutlined />
+            个人设置
+          </Menu.Item>
+        )}
+        {menu && <Menu.Divider />}
+
+        <Menu.Item key="logout">
