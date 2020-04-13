@@ -76,3 +76,11 @@ class AvatarDropdown extends React.Component<GlobalHeaderRightProps> {
           marginLeft: 8,
           marginRight: 8,
         }}
+      />
+    );
+  }
+}
+
+export default connect(({ user }: ConnectState) => ({
+  currentUser: user.currentUser,
+}))(AvatarDropdown);
