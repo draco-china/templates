@@ -70,3 +70,9 @@ class AvatarDropdown extends React.Component<GlobalHeaderRightProps> {
         </span>
       </HeaderDropdown>
     ) : (
+      <Spin
+        size="small"
+        style={{
+          marginLeft: 8,
+          marginRight: 8,
+        }}
