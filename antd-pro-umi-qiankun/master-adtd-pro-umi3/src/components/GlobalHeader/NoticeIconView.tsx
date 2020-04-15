@@ -26,3 +26,19 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
         type: 'global/fetchNotices',
       });
     }
+  }
+
+  changeReadState = (clickedItem: NoticeItem): void => {
+    const { id } = clickedItem;
+    const { dispatch } = this.props;
+
+    if (dispatch) {
+      dispatch({
+        type: 'global/changeNoticeReadState',
+        payload: id,
+      });
+    }
+  };
+
+  handleNoticeClear = (title: string, key: string) => {
+    const { dispatch } = this.props;
