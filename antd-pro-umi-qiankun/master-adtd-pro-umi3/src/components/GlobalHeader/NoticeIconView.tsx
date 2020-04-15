@@ -11,3 +11,18 @@ import styles from './index.less';
 
 export interface GlobalHeaderRightProps extends ConnectProps {
   notices?: NoticeItem[];
+  currentUser?: CurrentUser;
+  fetchingNotices?: boolean;
+  onNoticeVisibleChange?: (visible: boolean) => void;
+  onNoticeClear?: (tabName?: string) => void;
+}
+
+class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
+  componentDidMount() {
+    const { dispatch } = this.props;
+
+    if (dispatch) {
+      dispatch({
+        type: 'global/fetchNotices',
+      });
+    }
