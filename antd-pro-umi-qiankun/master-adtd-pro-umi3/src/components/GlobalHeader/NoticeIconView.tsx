@@ -87,3 +87,17 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
             }}
           >
             {newNotice.extra}
+          </Tag>
+        );
+      }
+
+      return newNotice;
+    });
+    return groupBy(newNotices, 'type');
+  };
+
+  getUnreadData = (noticeData: { [key: string]: NoticeItem[] }) => {
+    const unreadMsg: {
+      [key: string]: number;
+    } = {};
+    Object.keys(noticeData).forEach(key => {
