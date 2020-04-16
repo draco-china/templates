@@ -42,3 +42,18 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
 
   handleNoticeClear = (title: string, key: string) => {
     const { dispatch } = this.props;
+    message.success(`${'清空了'} ${title}`);
+
+    if (dispatch) {
+      dispatch({
+        type: 'global/clearNotices',
+        payload: key,
+      });
+    }
+  };
+
+  getNoticeData = (): {
+    [key: string]: NoticeItem[];
+  } => {
+    const { notices = [] } = this.props;
+
