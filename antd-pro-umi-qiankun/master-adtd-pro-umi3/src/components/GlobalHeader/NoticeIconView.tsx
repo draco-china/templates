@@ -57,3 +57,20 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
   } => {
     const { notices = [] } = this.props;
 
+    if (notices.length === 0) {
+      return {};
+    }
+
+    const newNotices = notices.map(notice => {
+      const newNotice = { ...notice };
+
+      if (newNotice.datetime) {
+        newNotice.datetime = moment(notice.datetime as string).fromNow();
+      }
+
+      if (newNotice.id) {
+        newNotice.key = newNotice.id;
+      }
+
+      if (newNotice.extra && newNotice.status) {
+        const color = {
