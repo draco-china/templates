@@ -74,3 +74,16 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
 
       if (newNotice.extra && newNotice.status) {
         const color = {
+          todo: '',
+          processing: 'blue',
+          urgent: 'red',
+          doing: 'gold',
+        }[newNotice.status];
+        newNotice.extra = (
+          <Tag
+            color={color}
+            style={{
+              marginRight: 0,
+            }}
+          >
+            {newNotice.extra}
