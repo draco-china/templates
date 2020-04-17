@@ -101,3 +101,19 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
       [key: string]: number;
     } = {};
     Object.keys(noticeData).forEach(key => {
+      const value = noticeData[key];
+
+      if (!unreadMsg[key]) {
+        unreadMsg[key] = 0;
+      }
+
+      if (Array.isArray(value)) {
+        unreadMsg[key] = value.filter(item => !item.read).length;
+      }
+    });
+    return unreadMsg;
+  };
+
+  render() {
+    const { currentUser, fetchingNotices, onNoticeVisibleChange } = this.props;
+    const noticeData = this.getNoticeData();
