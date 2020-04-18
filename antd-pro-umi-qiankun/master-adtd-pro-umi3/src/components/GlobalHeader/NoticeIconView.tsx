@@ -117,3 +117,16 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
   render() {
     const { currentUser, fetchingNotices, onNoticeVisibleChange } = this.props;
     const noticeData = this.getNoticeData();
+    const unreadMsg = this.getUnreadData(noticeData);
+    return (
+      <NoticeIcon
+        className={styles.action}
+        count={currentUser && currentUser.unreadCount}
+        onItemClick={item => {
+          this.changeReadState(item as NoticeItem);
+        }}
+        loading={fetchingNotices}
+        clearText="清空"
+        viewMoreText="查看更多"
+        onClear={this.handleNoticeClear}
+        onPopupVisibleChange={onNoticeVisibleChange}
