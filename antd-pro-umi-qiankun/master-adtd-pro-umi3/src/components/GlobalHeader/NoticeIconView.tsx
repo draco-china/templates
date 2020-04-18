@@ -155,3 +155,17 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
           emptyText="你已完成所有待办"
           count={unreadMsg.event}
           list={noticeData.event}
+          showViewMore
+        />
+      </NoticeIcon>
+    );
+  }
+}
+
+export default connect(({ user, global, loading }: ConnectState) => ({
+  currentUser: user.currentUser,
+  collapsed: global.collapsed,
+  fetchingMoreNotices: loading.effects['global/fetchMoreNotices'],
+  fetchingNotices: loading.effects['global/fetchNotices'],
+  notices: global.notices,
+}))(GlobalHeaderRight);
