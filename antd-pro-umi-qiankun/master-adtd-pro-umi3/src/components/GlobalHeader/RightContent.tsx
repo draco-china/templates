@@ -17,3 +17,11 @@ export interface GlobalHeaderRightProps extends ConnectProps {
 const ENVTagColor = {
   dev: 'orange',
   test: 'green',
+  pre: '#87d068',
+};
+
+const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
+  const { theme, layout } = props;
+  let className = styles.right;
+
+  if (theme === 'dark' && layout === 'topmenu') {
