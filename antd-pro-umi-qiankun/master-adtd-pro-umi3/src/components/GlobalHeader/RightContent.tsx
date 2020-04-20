@@ -10,3 +10,10 @@ import styles from './index.less';
 
 export type SiderTheme = 'light' | 'dark';
 export interface GlobalHeaderRightProps extends ConnectProps {
+  theme?: SiderTheme;
+  layout: 'sidemenu' | 'topmenu';
+}
+
+const ENVTagColor = {
+  dev: 'orange',
+  test: 'green',
