@@ -44,3 +44,12 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
             label: <a href="https://protable.ant.design/">Pro Table</a>,
             value: 'Pro Table',
           },
+          {
+            label: <a href="https://prolayout.ant.design/">Pro Layout</a>,
+            value: 'Pro Layout',
+          },
+        ]}
+        // onSearch={value => {
+        //   //console.log('input', value);
+        // }}
+      />
