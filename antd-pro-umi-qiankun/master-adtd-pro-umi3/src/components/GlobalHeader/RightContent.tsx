@@ -65,3 +65,9 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
       </Tooltip>
       <Avatar />
       {REACT_APP_ENV && (
+        <span>
+          <Tag color={ENVTagColor[REACT_APP_ENV]}>{REACT_APP_ENV}</Tag>
+        </span>
+      )}
+      <SelectLang className={styles.action} />
+    </div>
