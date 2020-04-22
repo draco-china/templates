@@ -71,3 +71,10 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = props => {
       )}
       <SelectLang className={styles.action} />
     </div>
+  );
+};
+
+export default connect(({ settings }: ConnectState) => ({
+  theme: settings.navTheme,
+  layout: settings.layout,
+}))(GlobalHeaderRight);
