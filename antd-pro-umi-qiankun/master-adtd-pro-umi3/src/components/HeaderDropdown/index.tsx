@@ -12,3 +12,4 @@ export interface HeaderDropdownProps extends Omit<DropDownProps, 'overlay'> {
   placement?: 'bottomLeft' | 'bottomRight' | 'topLeft' | 'topCenter' | 'topRight' | 'bottomCenter';
 }
 
+const HeaderDropdown: React.FC<HeaderDropdownProps> = ({ overlayClassName: cls, ...restProps }) => (
