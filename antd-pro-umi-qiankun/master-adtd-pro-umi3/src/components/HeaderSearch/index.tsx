@@ -8,3 +8,11 @@ import classNames from 'classnames';
 import styles from './index.less';
 
 export interface HeaderSearchProps {
+  onSearch?: (value?: string) => void;
+  onChange?: (value?: string) => void;
+  onVisibleChange?: (b: boolean) => void;
+  className?: string;
+  placeholder?: string;
+  options: AutoCompleteProps['options'];
+  defaultOpen?: boolean;
+  open?: boolean;
