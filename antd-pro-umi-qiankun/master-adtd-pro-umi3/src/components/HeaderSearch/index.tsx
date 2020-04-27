@@ -25,3 +25,13 @@ const HeaderSearch: React.FC<HeaderSearchProps> = props => {
     className,
     defaultValue,
     onVisibleChange,
+    placeholder,
+    open,
+    defaultOpen,
+    ...restProps
+  } = props;
+
+  const inputRef = useRef<Input | null>(null);
+
+  const [value, setValue] = useMergeValue<string | undefined>(defaultValue, {
+    value: props.value,
