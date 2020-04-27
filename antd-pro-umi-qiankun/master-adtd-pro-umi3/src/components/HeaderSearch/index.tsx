@@ -16,3 +16,12 @@ export interface HeaderSearchProps {
   options: AutoCompleteProps['options'];
   defaultOpen?: boolean;
   open?: boolean;
+  defaultValue?: string;
+  value?: string;
+}
+
+const HeaderSearch: React.FC<HeaderSearchProps> = props => {
+  const {
+    className,
+    defaultValue,
+    onVisibleChange,
