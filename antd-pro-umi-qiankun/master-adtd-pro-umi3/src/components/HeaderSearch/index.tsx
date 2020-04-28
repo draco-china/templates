@@ -54,3 +54,11 @@ const HeaderSearch: React.FC<HeaderSearchProps> = props => {
         setSearchMode(true);
         if (searchMode && inputRef.current) {
           inputRef.current.focus();
+        }
+      }}
+      onTransitionEnd={({ propertyName }) => {
+        if (propertyName === 'width' && !searchMode) {
+          if (onVisibleChange) {
+            onVisibleChange(searchMode);
+          }
+        }
