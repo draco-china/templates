@@ -62,3 +62,11 @@ const HeaderSearch: React.FC<HeaderSearchProps> = props => {
             onVisibleChange(searchMode);
           }
         }
+      }}
+    >
+      <SearchOutlined
+        key="Icon"
+        style={{
+          cursor: 'pointer',
+        }}
+      />
