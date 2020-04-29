@@ -70,3 +70,11 @@ const HeaderSearch: React.FC<HeaderSearchProps> = props => {
           cursor: 'pointer',
         }}
       />
+      <AutoComplete
+        key="AutoComplete"
+        className={inputClass}
+        value={value}
+        style={{
+          height: 28,
+          marginTop: -6,
+        }}
