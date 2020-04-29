@@ -78,3 +78,11 @@ const HeaderSearch: React.FC<HeaderSearchProps> = props => {
           height: 28,
           marginTop: -6,
         }}
+        options={restProps.options}
+        onChange={setValue}
+      >
+        <Input
+          ref={inputRef}
+          defaultValue={defaultValue}
+          aria-label={placeholder}
+          placeholder={placeholder}
