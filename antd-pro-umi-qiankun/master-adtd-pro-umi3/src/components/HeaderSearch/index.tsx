@@ -86,3 +86,11 @@ const HeaderSearch: React.FC<HeaderSearchProps> = props => {
           defaultValue={defaultValue}
           aria-label={placeholder}
           placeholder={placeholder}
+          onKeyDown={e => {
+            if (e.key === 'Enter') {
+              if (restProps.onSearch) {
+                restProps.onSearch(value);
+              }
+            }
+          }}
+          onBlur={() => {
