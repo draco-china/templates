@@ -94,3 +94,12 @@ const HeaderSearch: React.FC<HeaderSearchProps> = props => {
             }
           }}
           onBlur={() => {
+            setSearchMode(false);
+          }}
+        />
+      </AutoComplete>
+    </div>
+  );
+};
+
+export default HeaderSearch;
