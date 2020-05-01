@@ -18,3 +18,12 @@ export interface NoticeIconTabProps {
   onClear?: () => void;
   emptyText?: string;
   clearText?: string;
+  viewMoreText?: string;
+  list: NoticeIconData[];
+  onViewMore?: (e: any) => void;
+}
+const NoticeList: React.SFC<NoticeIconTabProps> = ({
+  data = [],
+  onClick,
+  onClear,
+  title,
