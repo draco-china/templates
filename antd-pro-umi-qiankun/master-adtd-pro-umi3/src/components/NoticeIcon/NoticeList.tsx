@@ -65,3 +65,12 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
 
           return (
             <List.Item
+              className={itemCls}
+              key={item.key || i}
+              onClick={() => onClick && onClick(item)}
+            >
+              <List.Item.Meta
+                className={styles.meta}
+                avatar={leftIcon}
+                title={
+                  <div className={styles.title}>
