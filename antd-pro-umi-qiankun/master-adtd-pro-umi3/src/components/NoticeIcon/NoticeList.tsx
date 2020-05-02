@@ -45,3 +45,13 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
       </div>
     );
   }
+  return (
+    <div>
+      <List<NoticeIconData>
+        className={styles.list}
+        dataSource={data}
+        renderItem={(item, i) => {
+          const itemCls = classNames(styles.item, {
+            [styles.read]: item.read,
+          });
+          // eslint-disable-next-line no-nested-ternary
