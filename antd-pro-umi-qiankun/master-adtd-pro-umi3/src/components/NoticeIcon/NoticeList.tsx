@@ -27,3 +27,12 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
   onClick,
   onClear,
   title,
+  onViewMore,
+  emptyText,
+  showClear = true,
+  clearText,
+  viewMoreText,
+  showViewMore = false,
+}) => {
+  if (data.length === 0) {
+    return (
