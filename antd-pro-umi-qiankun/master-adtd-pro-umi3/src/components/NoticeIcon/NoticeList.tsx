@@ -74,3 +74,12 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
                 avatar={leftIcon}
                 title={
                   <div className={styles.title}>
+                    {item.title}
+                    <div className={styles.extra}>{item.extra}</div>
+                  </div>
+                }
+                description={
+                  <div>
+                    <div className={styles.description}>{item.description}</div>
+                    <div className={styles.datetime}>{item.datetime}</div>
+                  </div>
