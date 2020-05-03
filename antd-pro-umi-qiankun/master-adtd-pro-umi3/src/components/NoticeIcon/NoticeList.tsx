@@ -83,3 +83,12 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
                     <div className={styles.description}>{item.description}</div>
                     <div className={styles.datetime}>{item.datetime}</div>
                   </div>
+                }
+              />
+            </List.Item>
+          );
+        }}
+      />
+      <div className={styles.bottomBar}>
+        {showClear ? (
+          <div onClick={onClear}>
