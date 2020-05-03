@@ -92,3 +92,12 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
       <div className={styles.bottomBar}>
         {showClear ? (
           <div onClick={onClear}>
+            {clearText} {title}
+          </div>
+        ) : null}
+        {showViewMore ? (
+          <div
+            onClick={e => {
+              if (onViewMore) {
+                onViewMore(e);
+              }
