@@ -22,3 +22,14 @@ export interface NoticeIconData {
 }
 
 export interface NoticeIconProps {
+  count?: number;
+  bell?: React.ReactNode;
+  className?: string;
+  loading?: boolean;
+  onClear?: (tabName: string, tabKey: string) => void;
+  onItemClick?: (item: NoticeIconData, tabProps: NoticeIconTabProps) => void;
+  onViewMore?: (tabProps: NoticeIconTabProps, e: MouseEvent) => void;
+  onTabChange?: (tabTile: string) => void;
+  style?: React.CSSProperties;
+  onPopupVisibleChange?: (visible: boolean) => void;
+  popupVisible?: boolean;
