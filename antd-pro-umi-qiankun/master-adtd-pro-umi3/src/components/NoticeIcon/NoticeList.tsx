@@ -101,3 +101,14 @@ const NoticeList: React.SFC<NoticeIconTabProps> = ({
               if (onViewMore) {
                 onViewMore(e);
               }
+            }}
+          >
+            {viewMoreText}
+          </div>
+        ) : null}
+      </div>
+    </div>
+  );
+};
+
+export default NoticeList;
