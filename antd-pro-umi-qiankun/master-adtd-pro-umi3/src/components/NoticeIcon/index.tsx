@@ -33,3 +33,14 @@ export interface NoticeIconProps {
   style?: React.CSSProperties;
   onPopupVisibleChange?: (visible: boolean) => void;
   popupVisible?: boolean;
+  clearText?: string;
+  viewMoreText?: string;
+  clearClose?: boolean;
+  emptyImage?: string;
+  children: React.ReactElement<NoticeIconTabProps>[];
+}
+
+const NoticeIcon: React.FC<NoticeIconProps> & {
+  Tab: typeof NoticeList;
+} = props => {
+  const getNotificationBox = (): React.ReactNode => {
