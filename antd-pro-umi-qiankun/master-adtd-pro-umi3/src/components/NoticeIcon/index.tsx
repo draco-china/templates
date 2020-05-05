@@ -44,3 +44,13 @@ const NoticeIcon: React.FC<NoticeIconProps> & {
   Tab: typeof NoticeList;
 } = props => {
   const getNotificationBox = (): React.ReactNode => {
+    const {
+      children,
+      loading,
+      onClear,
+      onTabChange,
+      onItemClick,
+      onViewMore,
+      clearText,
+      viewMoreText,
+    } = props;
