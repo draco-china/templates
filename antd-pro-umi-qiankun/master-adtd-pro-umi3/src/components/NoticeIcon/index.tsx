@@ -75,3 +75,13 @@ const NoticeIcon: React.FC<NoticeIconProps> & {
             onClear={(): void => onClear && onClear(title, tabKey)}
             onClick={(item): void => onItemClick && onItemClick(item, child.props)}
             onViewMore={(event): void => onViewMore && onViewMore(child.props, event)}
+            showClear={showClear}
+            showViewMore={showViewMore}
+            title={title}
+            {...child.props}
+          />
+        </TabPane>,
+      );
+    });
+    return (
+      <Spin spinning={loading} delay={300}>
