@@ -65,3 +65,13 @@ const NoticeIcon: React.FC<NoticeIconProps> & {
       const { list, title, count, tabKey, showClear, showViewMore } = child.props;
       const len = list && list.length ? list.length : 0;
       const msgCount = count || count === 0 ? count : len;
+      const tabTitle: string = msgCount > 0 ? `${title} (${msgCount})` : title;
+      panes.push(
+        <TabPane tab={tabTitle} key={tabKey}>
+          <NoticeList
+            clearText={clearText}
+            viewMoreText={viewMoreText}
+            data={list}
+            onClear={(): void => onClear && onClear(title, tabKey)}
+            onClick={(item): void => onItemClick && onItemClick(item, child.props)}
+            onViewMore={(event): void => onViewMore && onViewMore(child.props, event)}
