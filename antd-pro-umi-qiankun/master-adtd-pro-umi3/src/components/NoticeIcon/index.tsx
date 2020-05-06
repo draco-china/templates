@@ -54,3 +54,14 @@ const NoticeIcon: React.FC<NoticeIconProps> & {
       clearText,
       viewMoreText,
     } = props;
+    if (!children) {
+      return null;
+    }
+    const panes: React.ReactNode[] = [];
+    React.Children.forEach(children, (child: React.ReactElement<NoticeIconTabProps>): void => {
+      if (!child) {
+        return;
+      }
+      const { list, title, count, tabKey, showClear, showViewMore } = child.props;
+      const len = list && list.length ? list.length : 0;
+      const msgCount = count || count === 0 ? count : len;
