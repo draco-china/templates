@@ -108,3 +108,14 @@ const NoticeIcon: React.FC<NoticeIconProps> & {
       </Badge>
     </span>
   );
+  if (!notificationBox) {
+    return trigger;
+  }
+
+  return (
+    <HeaderDropdown
+      placement="bottomRight"
+      overlay={notificationBox}
+      overlayClassName={styles.popover}
+      trigger={['click']}
+      visible={visible}
