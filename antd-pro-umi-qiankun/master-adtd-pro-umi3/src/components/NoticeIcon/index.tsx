@@ -119,3 +119,17 @@ const NoticeIcon: React.FC<NoticeIconProps> & {
       overlayClassName={styles.popover}
       trigger={['click']}
       visible={visible}
+      onVisibleChange={setVisible}
+    >
+      {trigger}
+    </HeaderDropdown>
+  );
+};
+
+NoticeIcon.defaultProps = {
+  emptyImage: 'https://gw.alipayobjects.com/zos/rmsportal/wAhyIChODzsoKIOBHcBk.svg',
+};
+
+NoticeIcon.Tab = NoticeList;
+
+export default NoticeIcon;
