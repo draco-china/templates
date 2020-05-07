@@ -98,3 +98,13 @@ const NoticeIcon: React.FC<NoticeIconProps> & {
     value: props.popupVisible,
     onChange: props.onPopupVisibleChange,
   });
+  const noticeButtonClass = classNames(className, styles.noticeButton);
+  const notificationBox = getNotificationBox();
+  const NoticeBellIcon = bell || <BellOutlined className={styles.icon} />;
+  const trigger = (
+    <span className={classNames(noticeButtonClass, { opened: visible })}>
+      <Badge count={count} style={{ boxShadow: 'none' }} className={styles.badge}>
+        {NoticeBellIcon}
+      </Badge>
+    </span>
+  );
