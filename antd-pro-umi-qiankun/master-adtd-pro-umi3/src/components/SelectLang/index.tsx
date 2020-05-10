@@ -26,3 +26,7 @@ const SelectLang: React.FC<SelectLangProps> = props => {
   };
   const languageIcons = {
     'zh-CN': '🇨🇳',
+    'zh-TW': '🇭🇰',
+    'en-US': '🇺🇸',
+    'pt-BR': '🇧🇷',
+  };
