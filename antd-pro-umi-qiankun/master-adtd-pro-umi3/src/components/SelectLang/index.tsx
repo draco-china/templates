@@ -30,3 +30,7 @@ const SelectLang: React.FC<SelectLangProps> = props => {
     'en-US': '🇺🇸',
     'pt-BR': '🇧🇷',
   };
+  const langMenu = (
+    <Menu className={styles.menu} selectedKeys={[selectedLang]} onClick={changeLang}>
+      {locales.map(locale => (
+        <Menu.Item key={locale}>
