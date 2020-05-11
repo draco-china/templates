@@ -34,3 +34,7 @@ const SelectLang: React.FC<SelectLangProps> = props => {
     <Menu className={styles.menu} selectedKeys={[selectedLang]} onClick={changeLang}>
       {locales.map(locale => (
         <Menu.Item key={locale}>
+          <span role="img" aria-label={languageLabels[locale]}>
+            {languageIcons[locale]}
+          </span>{' '}
+          {languageLabels[locale]}
