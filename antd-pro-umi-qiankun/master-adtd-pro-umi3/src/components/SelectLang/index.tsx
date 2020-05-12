@@ -38,3 +38,7 @@ const SelectLang: React.FC<SelectLangProps> = props => {
             {languageIcons[locale]}
           </span>{' '}
           {languageLabels[locale]}
+        </Menu.Item>
+      ))}
+    </Menu>
+  );
