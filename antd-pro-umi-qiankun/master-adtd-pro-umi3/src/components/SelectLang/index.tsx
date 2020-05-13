@@ -46,3 +46,9 @@ const SelectLang: React.FC<SelectLangProps> = props => {
     <HeaderDropdown overlay={langMenu} placement="bottomRight">
       <span className={classNames(styles.dropDown, className)}>
         <GlobalOutlined title="语言" />
+      </span>
+    </HeaderDropdown>
+  );
+};
+
+export default SelectLang;
