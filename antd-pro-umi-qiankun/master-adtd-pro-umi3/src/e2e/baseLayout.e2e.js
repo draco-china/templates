@@ -10,3 +10,6 @@ function formatter(routes, parentPath = '') {
     if (item.path) {
       result.push(`${fixedParentPath}/${item.path}`.replace(/\/{1,}/g, '/'));
     }
+    if (item.routes) {
+      result = result.concat(
+        formatter(item.routes, item.path ? `${fixedParentPath}/${item.path}` : parentPath),
