@@ -16,3 +16,8 @@ function formatter(routes, parentPath = '') {
       );
     }
   });
+  return uniq(result.filter(item => !!item));
+}
+
+beforeAll(async () => {
+  await page.goto(`${BASE_URL}`);
