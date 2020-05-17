@@ -24,3 +24,7 @@ beforeAll(async () => {
   await page.evaluate(() => {
     localStorage.setItem('antd-pro-authority', '["admin"]');
   });
+});
+
+describe('Ant Design Pro E2E test', () => {
+  const testPage = path => async () => {
