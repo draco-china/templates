@@ -4,3 +4,5 @@ describe('Homepage', () => {
   it('topmenu should have footer', async () => {
     const params = '?navTheme=light&layout=topmenu';
     await page.goto(`${BASE_URL}${params}`);
+    await page.waitForSelector('footer', {
+      timeout: 2000,
