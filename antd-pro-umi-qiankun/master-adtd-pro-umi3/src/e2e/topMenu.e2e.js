@@ -8,3 +8,4 @@ describe('Homepage', () => {
       timeout: 2000,
     });
     const haveFooter = await page.evaluate(
+      () => document.getElementsByTagName('footer').length > 0,
