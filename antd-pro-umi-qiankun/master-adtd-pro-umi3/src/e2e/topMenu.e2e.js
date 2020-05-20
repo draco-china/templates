@@ -6,3 +6,4 @@ describe('Homepage', () => {
     await page.goto(`${BASE_URL}${params}`);
     await page.waitForSelector('footer', {
       timeout: 2000,
+    });
