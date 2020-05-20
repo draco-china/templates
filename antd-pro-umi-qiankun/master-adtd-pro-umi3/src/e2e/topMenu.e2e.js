@@ -7,3 +7,4 @@ describe('Homepage', () => {
     await page.waitForSelector('footer', {
       timeout: 2000,
     });
+    const haveFooter = await page.evaluate(
