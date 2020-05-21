@@ -9,3 +9,4 @@ describe('Homepage', () => {
     });
     const haveFooter = await page.evaluate(
       () => document.getElementsByTagName('footer').length > 0,
+    );
