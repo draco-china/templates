@@ -54,3 +54,10 @@ if (pwa) {
       message: formatMessage({ id: 'app.pwa.serviceworker.updated' }),
       description: formatMessage({ id: 'app.pwa.serviceworker.updated.hint' }),
       btn,
+      key,
+      onClose: async () => {},
+    });
+  });
+} else if ('serviceWorker' in navigator) {
+  // unregister service worker
+  const { serviceWorker } = navigator;
