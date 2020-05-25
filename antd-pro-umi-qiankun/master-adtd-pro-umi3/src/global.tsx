@@ -43,3 +43,8 @@ if (pwa) {
       <Button
         type="primary"
         onClick={() => {
+          notification.close(key);
+          reloadSW();
+        }}
+      >
+        {formatMessage({ id: 'app.pwa.serviceworker.updated.ok' })}
