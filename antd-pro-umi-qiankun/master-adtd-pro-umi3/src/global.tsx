@@ -48,3 +48,9 @@ if (pwa) {
         }}
       >
         {formatMessage({ id: 'app.pwa.serviceworker.updated.ok' })}
+      </Button>
+    );
+    notification.open({
+      message: formatMessage({ id: 'app.pwa.serviceworker.updated' }),
+      description: formatMessage({ id: 'app.pwa.serviceworker.updated.hint' }),
+      btn,
