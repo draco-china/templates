@@ -61,3 +61,9 @@ if (pwa) {
 } else if ('serviceWorker' in navigator) {
   // unregister service worker
   const { serviceWorker } = navigator;
+  if (serviceWorker.getRegistrations) {
+    serviceWorker.getRegistrations().then(sws => {
+      sws.forEach(sw => {
+        sw.unregister();
+      });
+    });
