@@ -37,3 +37,24 @@ const noMatch = (
 );
 export interface BasicLayoutProps extends ProLayoutProps {
   breadcrumbNameMap: {
+    [path: string]: MenuDataItem;
+  };
+  route: ProLayoutProps['route'] & {
+    authority: string[];
+  };
+  settings: Settings;
+  dispatch: Dispatch;
+}
+export type BasicLayoutContext = { [K in 'location']: BasicLayoutProps[K] } & {
+  breadcrumbNameMap: {
+    [path: string]: MenuDataItem;
+  };
+};
+/**
+ * use Authorized check all menu item
+ */
+
+const menuDataRender = (menuList: MenuDataItem[]): MenuDataItem[] =>
+  menuList.map(item => {
+    const localItem = { ...item, children: item.children ? menuDataRender(item.children) : [] };
+    return Authorized.check(item.authority, localItem, null) as MenuDataItem;
