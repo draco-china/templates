@@ -20,3 +20,20 @@ import { ConnectState } from '@/models/connect';
 import {
   // isAntDesignPro,
   getAuthorityFromRouter,
+} from '@/utils/utils';
+import logo from '../assets/logo.svg';
+
+const noMatch = (
+  <Result
+    status={403}
+    title="403"
+    subTitle="Sorry, you are not authorized to access this page."
+    extra={
+      <Button type="primary">
+        <Link to="/user/login">Go Login</Link>
+      </Button>
+    }
+  />
+);
+export interface BasicLayoutProps extends ProLayoutProps {
+  breadcrumbNameMap: {
