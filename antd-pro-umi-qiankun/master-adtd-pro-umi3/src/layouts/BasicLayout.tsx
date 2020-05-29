@@ -58,3 +58,20 @@ const menuDataRender = (menuList: MenuDataItem[]): MenuDataItem[] =>
   menuList.map(item => {
     const localItem = { ...item, children: item.children ? menuDataRender(item.children) : [] };
     return Authorized.check(item.authority, localItem, null) as MenuDataItem;
+  });
+
+const defaultFooterDom = (
+  <DefaultFooter
+    copyright="2019 蚂蚁金服体验技术部出品"
+    links={[
+      {
+        key: 'Ant Design Pro',
+        title: 'Ant Design Pro',
+        href: 'https://pro.ant.design',
+        blankTarget: true,
+      },
+      {
+        key: 'github',
+        title: <GithubOutlined />,
+        href: 'https://github.com/ant-design/ant-design-pro',
+        blankTarget: true,
