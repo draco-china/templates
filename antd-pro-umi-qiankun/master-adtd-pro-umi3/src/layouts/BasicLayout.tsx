@@ -115,3 +115,24 @@ const footerRender: BasicLayoutProps['footerRender'] = () => {
 
 const BasicLayout: React.FC<BasicLayoutProps> = props => {
   const {
+    dispatch,
+    children,
+    settings,
+    location = {
+      pathname: '/',
+    },
+    apps,
+  } = props;
+  console.log(apps);
+  /**
+   * constructor
+   */
+
+  useEffect(() => {
+    if (dispatch) {
+      dispatch({
+        type: 'user/fetchCurrent',
+      });
+      // 获取子应用信息
+      dispatch({
+        type: 'base/getApps',
