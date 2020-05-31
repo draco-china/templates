@@ -200,3 +200,20 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
       itemRender={(route, params, routes, paths) => {
         const first = routes.indexOf(route) === 0;
         return first ? (
+          <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
+        ) : (
+          <span>{route.breadcrumbName}</span>
+        );
+      }}
+      footerRender={footerRender}
+      // menuDataRender={menuDataRender}
+      menuDataRender={(menuList: MenuDataItem[]): MenuDataItem[] =>
+        menuList.concat(apps).map(item => {
+          const localItem = {
+            ...item,
+            children: item.children ? menuDataRender(item.children) : [],
+          };
+          return Authorized.check(item.authority, localItem, null) as MenuDataItem;
+        })
+      }
+      rightContentRender={() => <RightContent />}
