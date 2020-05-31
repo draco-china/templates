@@ -136,3 +136,29 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
       // 获取子应用信息
       dispatch({
         type: 'base/getApps',
+      });
+    }
+  }, []);
+  /**
+   * init variables
+   */
+
+  const handleMenuCollapse = (payload: boolean): void => {
+    if (dispatch) {
+      dispatch({
+        type: 'global/changeLayoutCollapsed',
+        payload,
+      });
+    }
+  };
+
+  /**
+   * 获取路由路径
+   * @param routes
+   */
+  const getRoutes = (routes: Route[] = []) => {
+    const allRoute: string[] = [];
+    routes.forEach(route => {
+      if (route.path) allRoute.push(route.path);
+      if (route.routes && route.routes.length > 0) allRoute.push(...getRoutes(route.routes));
+    });
