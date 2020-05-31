@@ -162,3 +162,23 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
       if (route.path) allRoute.push(route.path);
       if (route.routes && route.routes.length > 0) allRoute.push(...getRoutes(route.routes));
     });
+    return allRoute;
+  };
+
+  // 是否为主应用子页面
+  const hasChildren = getRoutes(props.route.routes).find(route => route === location.pathname);
+
+  // get children authority
+  const authorized = getAuthorityFromRouter(props.route.routes, location.pathname || '/') || {
+    authority: undefined,
+  };
+  return (
+    <ProLayout
+      logo={logo}
+      formatMessage={formatMessage}
+      menuHeaderRender={(logoDom, titleDom) => (
+        <Link to="/">
+          {logoDom}
+          {titleDom}
+        </Link>
+      )}
