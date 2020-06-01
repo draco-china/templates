@@ -217,3 +217,21 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
         })
       }
       rightContentRender={() => <RightContent />}
+      {...props}
+      {...settings}
+    >
+      <Authorized authority={authorized!.authority} noMatch={noMatch}>
+        {hasChildren || !apps.find(app => window.location.pathname.indexOf(app.base) > -1)
+          ? children
+          : null}
+        {apps.length ? <div id="root-subapp" /> : null}
+      </Authorized>
+    </ProLayout>
+  );
+};
+
+export default connect(({ base, global, settings }: ConnectState) => ({
+  collapsed: global.collapsed,
+  settings,
+  apps: base.apps,
+}))(BasicLayout);
