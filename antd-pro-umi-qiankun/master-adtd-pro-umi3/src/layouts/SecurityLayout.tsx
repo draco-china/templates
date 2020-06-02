@@ -7,3 +7,8 @@ import { CurrentUser } from '@/models/user';
 
 interface SecurityLayoutProps extends ConnectProps {
   loading?: boolean;
+  currentUser?: CurrentUser;
+}
+
+interface SecurityLayoutState {
+  isReady: boolean;
