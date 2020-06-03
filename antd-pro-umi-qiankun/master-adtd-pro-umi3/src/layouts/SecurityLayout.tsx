@@ -17,3 +17,8 @@ interface SecurityLayoutState {
 class SecurityLayout extends React.Component<SecurityLayoutProps, SecurityLayoutState> {
   state: SecurityLayoutState = {
     isReady: false,
+  };
+
+  componentDidMount() {
+    this.setState({
+      isReady: true,
