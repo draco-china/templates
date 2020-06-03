@@ -12,3 +12,8 @@ interface SecurityLayoutProps extends ConnectProps {
 
 interface SecurityLayoutState {
   isReady: boolean;
+}
+
+class SecurityLayout extends React.Component<SecurityLayoutProps, SecurityLayoutState> {
+  state: SecurityLayoutState = {
+    isReady: false,
