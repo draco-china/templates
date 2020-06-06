@@ -3,3 +3,9 @@ import { Helmet } from 'react-helmet';
 import { Link, connect, formatMessage } from 'umi';
 import React from 'react';
 import SelectLang from '@/components/SelectLang';
+import { ConnectProps, ConnectState } from '@/models/connect';
+import logo from '../assets/logo.svg';
+import styles from './UserLayout.less';
+
+export interface UserLayoutProps extends ConnectProps {
+  breadcrumbNameMap: {
