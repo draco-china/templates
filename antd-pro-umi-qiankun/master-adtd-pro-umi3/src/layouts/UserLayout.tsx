@@ -20,3 +20,8 @@ const UserLayout: React.FC<UserLayoutProps> = props => {
     },
   } = props;
   const { routes = [] } = route;
+  const {
+    children,
+    location = {
+      pathname: '',
+    },
