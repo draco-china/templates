@@ -9,3 +9,9 @@ import styles from './UserLayout.less';
 
 export interface UserLayoutProps extends ConnectProps {
   breadcrumbNameMap: {
+    [path: string]: MenuDataItem;
+  };
+}
+
+const UserLayout: React.FC<UserLayoutProps> = props => {
+  const {
