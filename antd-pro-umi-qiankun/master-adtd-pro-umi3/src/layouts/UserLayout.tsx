@@ -41,3 +41,8 @@ const UserLayout: React.FC<UserLayoutProps> = props => {
       </Helmet>
 
       <div className={styles.container}>
+        <div className={styles.lang}>
+          <SelectLang />
+        </div>
+        <div className={styles.content}>
+          <div className={styles.top}>
