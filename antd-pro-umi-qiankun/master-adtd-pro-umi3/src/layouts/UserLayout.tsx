@@ -30,3 +30,8 @@ const UserLayout: React.FC<UserLayoutProps> = props => {
   const title = getPageTitle({
     pathname: location.pathname,
     formatMessage,
+    breadcrumb,
+    ...props,
+  });
+  return (
+    <>
