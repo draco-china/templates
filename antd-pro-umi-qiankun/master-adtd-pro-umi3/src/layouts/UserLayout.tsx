@@ -56,3 +56,10 @@ const UserLayout: React.FC<UserLayoutProps> = props => {
           </div>
           {children}
         </div>
+        <DefaultFooter />
+      </div>
+    </>
+  );
+};
+
+export default connect(({ settings }: ConnectState) => ({ ...settings }))(UserLayout);
