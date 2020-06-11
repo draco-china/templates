@@ -6,3 +6,4 @@ import settingDrawer from './en-US/settingDrawer';
 import settings from './en-US/settings';
 
 export default {
+  'navBar.lang': 'Languages',
