@@ -5,3 +5,4 @@ export default {
   'component.globalHeader.search.example3': 'Search example 3',
   'component.globalHeader.help': 'Help',
   'component.globalHeader.notification': 'Notification',
+  'component.globalHeader.notification.empty': 'You have viewed all notifications.',
