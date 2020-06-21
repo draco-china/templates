@@ -6,3 +6,8 @@ export default {
   'menu.admin.sub-page': 'Sub-Page',
   'menu.login': 'Login',
   'menu.register': 'Register',
+  'menu.register.result': 'Register Result',
+  'menu.dashboard': 'Dashboard',
+  'menu.dashboard.analysis': 'Analysis',
+  'menu.dashboard.monitor': 'Monitor',
+  'menu.dashboard.workplace': 'Workplace',
