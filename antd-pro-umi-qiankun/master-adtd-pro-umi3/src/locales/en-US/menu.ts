@@ -32,3 +32,8 @@ export default {
   'menu.profile': 'Profile',
   'menu.profile.basic': 'Basic Profile',
   'menu.profile.advanced': 'Advanced Profile',
+  'menu.result': 'Result',
+  'menu.result.success': 'Success',
+  'menu.result.fail': 'Fail',
+  'menu.exception': 'Exception',
+  'menu.exception.not-permission': '403',
