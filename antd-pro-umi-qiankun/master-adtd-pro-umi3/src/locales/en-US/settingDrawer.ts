@@ -3,3 +3,5 @@ export default {
   'app.setting.pagestyle.dark': 'Dark style',
   'app.setting.pagestyle.light': 'Light style',
   'app.setting.content-width': 'Content Width',
+  'app.setting.content-width.fixed': 'Fixed',
+  'app.setting.content-width.fluid': 'Fluid',
