@@ -8,3 +8,5 @@ export default {
   'app.setting.themecolor': 'Theme Color',
   'app.setting.themecolor.dust': 'Dust Red',
   'app.setting.themecolor.volcano': 'Volcano',
+  'app.setting.themecolor.sunset': 'Sunset Orange',
+  'app.setting.themecolor.cyan': 'Cyan',
