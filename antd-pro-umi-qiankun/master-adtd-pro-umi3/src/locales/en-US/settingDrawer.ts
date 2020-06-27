@@ -10,3 +10,6 @@ export default {
   'app.setting.themecolor.volcano': 'Volcano',
   'app.setting.themecolor.sunset': 'Sunset Orange',
   'app.setting.themecolor.cyan': 'Cyan',
+  'app.setting.themecolor.green': 'Polar Green',
+  'app.setting.themecolor.daybreak': 'Daybreak Blue (default)',
+  'app.setting.themecolor.geekblue': 'Geek Glue',
