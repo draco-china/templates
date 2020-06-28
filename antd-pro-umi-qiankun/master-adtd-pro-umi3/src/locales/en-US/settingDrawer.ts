@@ -13,3 +13,6 @@ export default {
   'app.setting.themecolor.green': 'Polar Green',
   'app.setting.themecolor.daybreak': 'Daybreak Blue (default)',
   'app.setting.themecolor.geekblue': 'Geek Glue',
+  'app.setting.themecolor.purple': 'Golden Purple',
+  'app.setting.navigationmode': 'Navigation Mode',
+  'app.setting.sidemenu': 'Side Menu Layout',
