@@ -16,3 +16,5 @@ export default {
   'app.setting.themecolor.purple': 'Golden Purple',
   'app.setting.navigationmode': 'Navigation Mode',
   'app.setting.sidemenu': 'Side Menu Layout',
+  'app.setting.topmenu': 'Top Menu Layout',
+  'app.setting.fixedheader': 'Fixed Header',
