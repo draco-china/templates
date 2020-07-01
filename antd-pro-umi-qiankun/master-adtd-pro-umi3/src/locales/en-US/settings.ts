@@ -13,3 +13,8 @@ export default {
   'app.settings.basic.profile-message': 'Please input your personal profile!',
   'app.settings.basic.profile-placeholder': 'Brief introduction to yourself',
   'app.settings.basic.country': 'Country/Region',
+  'app.settings.basic.country-message': 'Please input your country!',
+  'app.settings.basic.geographic': 'Province or city',
+  'app.settings.basic.geographic-message': 'Please input your geographic info!',
+  'app.settings.basic.address': 'Street Address',
+  'app.settings.basic.address-message': 'Please input your address!',
