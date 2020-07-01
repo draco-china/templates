@@ -18,3 +18,8 @@ export default {
   'app.settings.basic.geographic-message': 'Please input your geographic info!',
   'app.settings.basic.address': 'Street Address',
   'app.settings.basic.address-message': 'Please input your address!',
+  'app.settings.basic.phone': 'Phone Number',
+  'app.settings.basic.phone-message': 'Please input your phone!',
+  'app.settings.basic.update': 'Update Information',
+  'app.settings.security.strong': 'Strong',
+  'app.settings.security.medium': 'Medium',
