@@ -23,3 +23,8 @@ export default {
   'app.settings.basic.update': 'Update Information',
   'app.settings.security.strong': 'Strong',
   'app.settings.security.medium': 'Medium',
+  'app.settings.security.weak': 'Weak',
+  'app.settings.security.password': 'Account Password',
+  'app.settings.security.password-description': 'Current password strength',
+  'app.settings.security.phone': 'Security Phone',
+  'app.settings.security.phone-description': 'Bound phone',
