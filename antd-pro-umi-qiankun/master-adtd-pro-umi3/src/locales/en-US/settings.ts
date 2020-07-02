@@ -33,3 +33,8 @@ export default {
     'The security question is not set, and the security policy can effectively protect the account security',
   'app.settings.security.email': 'Backup Email',
   'app.settings.security.email-description': 'Bound Email',
+  'app.settings.security.mfa': 'MFA Device',
+  'app.settings.security.mfa-description':
+    'Unbound MFA device, after binding, can be confirmed twice',
+  'app.settings.security.modify': 'Modify',
+  'app.settings.security.set': 'Set',
