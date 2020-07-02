@@ -28,3 +28,8 @@ export default {
   'app.settings.security.password-description': 'Current password strength',
   'app.settings.security.phone': 'Security Phone',
   'app.settings.security.phone-description': 'Bound phone',
+  'app.settings.security.question': 'Security Question',
+  'app.settings.security.question-description':
+    'The security question is not set, and the security policy can effectively protect the account security',
+  'app.settings.security.email': 'Backup Email',
+  'app.settings.security.email-description': 'Bound Email',
