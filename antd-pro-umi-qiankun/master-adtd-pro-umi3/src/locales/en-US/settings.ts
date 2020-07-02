@@ -38,3 +38,8 @@ export default {
     'Unbound MFA device, after binding, can be confirmed twice',
   'app.settings.security.modify': 'Modify',
   'app.settings.security.set': 'Set',
+  'app.settings.security.bind': 'Bind',
+  'app.settings.binding.taobao': 'Binding Taobao',
+  'app.settings.binding.taobao-description': 'Currently unbound Taobao account',
+  'app.settings.binding.alipay': 'Binding Alipay',
+  'app.settings.binding.alipay-description': 'Currently unbound Alipay account',
