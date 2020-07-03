@@ -48,3 +48,8 @@ export default {
   'app.settings.binding.bind': 'Bind',
   'app.settings.notification.password': 'Account Password',
   'app.settings.notification.password-description':
+    'Messages from other users will be notified in the form of a station letter',
+  'app.settings.notification.messages': 'System Messages',
+  'app.settings.notification.messages-description':
+    'System messages will be notified in the form of a station letter',
+  'app.settings.notification.todo': 'To-do Notification',
