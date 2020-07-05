@@ -5,3 +5,5 @@ import pwa from './pt-BR/pwa';
 import settingDrawer from './pt-BR/settingDrawer';
 import settings from './pt-BR/settings';
 
+export default {
+  'navBar.lang': 'Idiomas',
