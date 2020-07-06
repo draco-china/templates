@@ -12,3 +12,5 @@ export default {
   'layout.user.link.terms': 'termos de serviços',
   'app.preview.down.block': 'Download this page to your local project',
   ...globalHeader,
+  ...menu,
+  ...settingDrawer,
