@@ -7,3 +7,5 @@ export default {
   'component.globalHeader.notification': 'Notificação',
   'component.globalHeader.notification.empty': 'Você visualizou todas as notificações.',
   'component.globalHeader.message': 'Mensagem',
+  'component.globalHeader.message.empty': 'Você visualizou todas as mensagens.',
+  'component.globalHeader.event': 'Evento',
