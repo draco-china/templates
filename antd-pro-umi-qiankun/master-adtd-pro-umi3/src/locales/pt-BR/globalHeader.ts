@@ -6,3 +6,4 @@ export default {
   'component.globalHeader.help': 'Ajuda',
   'component.globalHeader.notification': 'Notificação',
   'component.globalHeader.notification.empty': 'Você visualizou todas as notificações.',
+  'component.globalHeader.message': 'Mensagem',
