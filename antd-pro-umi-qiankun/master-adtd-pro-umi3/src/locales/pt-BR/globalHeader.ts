@@ -9,3 +9,5 @@ export default {
   'component.globalHeader.message': 'Mensagem',
   'component.globalHeader.message.empty': 'Você visualizou todas as mensagens.',
   'component.globalHeader.event': 'Evento',
+  'component.globalHeader.event.empty': 'Você visualizou todos os eventos.',
+  'component.noticeIcon.clear': 'Limpar',
