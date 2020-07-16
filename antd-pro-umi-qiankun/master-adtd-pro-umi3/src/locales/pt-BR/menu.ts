@@ -7,3 +7,8 @@ export default {
   'menu.admin.sub-page': 'Sub-Page',
   'menu.register': 'Registro',
   'menu.register.result': 'Resultado de registro',
+  'menu.dashboard': 'Dashboard',
+  'menu.dashboard.analysis': 'Análise',
+  'menu.dashboard.monitor': 'Monitor',
+  'menu.dashboard.workplace': 'Ambiente de Trabalho',
+  'menu.exception.403': '403',
