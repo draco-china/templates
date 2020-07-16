@@ -12,3 +12,7 @@ export default {
   'menu.dashboard.monitor': 'Monitor',
   'menu.dashboard.workplace': 'Ambiente de Trabalho',
   'menu.exception.403': '403',
+  'menu.exception.404': '404',
+  'menu.exception.500': '500',
+  'menu.form': 'Formulário',
+  'menu.form.basic-form': 'Formulário Básico',
