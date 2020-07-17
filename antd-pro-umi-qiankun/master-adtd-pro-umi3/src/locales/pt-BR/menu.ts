@@ -21,3 +21,8 @@ export default {
   'menu.form.step-form.confirm': 'Formulário Assistido(confirmar informações de transferência)',
   'menu.form.step-form.result': 'Formulário Assistido(finalizado)',
   'menu.form.advanced-form': 'Formulário Avançado',
+  'menu.list': 'Lista',
+  'menu.list.table-list': 'Tabela de Busca',
+  'menu.list.basic-list': 'Lista Básica',
+  'menu.list.card-list': 'Lista de Card',
+  'menu.list.search-list': 'Lista de Busca',
