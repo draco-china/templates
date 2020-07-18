@@ -40,3 +40,8 @@ export default {
   'menu.exception.not-find': '404',
   'menu.exception.server-error': '500',
   'menu.exception.trigger': 'Disparar',
+  'menu.account': 'Conta',
+  'menu.account.center': 'Central da Conta',
+  'menu.account.settings': 'Configurar Conta',
+  'menu.account.trigger': 'Disparar Erro',
+  'menu.account.logout': 'Sair',
