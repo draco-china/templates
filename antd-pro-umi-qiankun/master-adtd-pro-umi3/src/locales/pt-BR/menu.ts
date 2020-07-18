@@ -35,3 +35,8 @@ export default {
   'menu.result': 'Resultado',
   'menu.result.success': 'Sucesso',
   'menu.result.fail': 'Falha',
+  'menu.exception': 'Exceção',
+  'menu.exception.not-permission': '403',
+  'menu.exception.not-find': '404',
+  'menu.exception.server-error': '500',
+  'menu.exception.trigger': 'Disparar',
