@@ -6,3 +6,6 @@ export default {
   'app.setting.content-width.fixed': 'Fixo',
   'app.setting.content-width.fluid': 'Fluido',
   'app.setting.themecolor': 'Cor do Tema',
+  'app.setting.themecolor.dust': 'Dust Red',
+  'app.setting.themecolor.volcano': 'Volcano',
+  'app.setting.themecolor.sunset': 'Sunset Orange',
