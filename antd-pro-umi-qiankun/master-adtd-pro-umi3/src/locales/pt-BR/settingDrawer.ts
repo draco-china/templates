@@ -24,3 +24,6 @@ export default {
   'app.setting.hideheader.hint': 'Funciona quando o esconder cabeçalho está abilitado',
   'app.setting.othersettings': 'Outras configurações',
   'app.setting.weakmode': 'Weak Mode',
+  'app.setting.copy': 'Copiar Configuração',
+  'app.setting.copyinfo':
+    'copiado com sucesso，por favor trocar o defaultSettings em src/models/setting.js',
