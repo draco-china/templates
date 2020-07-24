@@ -18,3 +18,6 @@ export default {
   'app.setting.sidemenu': 'Layout do Menu Lateral',
   'app.setting.topmenu': 'Layout do Menu Superior',
   'app.setting.fixedheader': 'Cabeçalho fixo',
+  'app.setting.fixedsidebar': 'Barra lateral fixa',
+  'app.setting.fixedsidebar.hint': 'Funciona no layout do menu lateral',
+  'app.setting.hideheader': 'Esconder o cabeçalho quando rolar',
