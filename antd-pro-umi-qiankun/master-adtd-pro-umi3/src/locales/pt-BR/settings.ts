@@ -25,3 +25,8 @@ export default {
   'app.settings.security.medium': 'Média',
   'app.settings.security.weak': 'Fraca',
   'app.settings.security.password': 'Senha da Conta',
+  'app.settings.security.password-description': 'Força da senha',
+  'app.settings.security.phone': 'Telefone de Seguraça',
+  'app.settings.security.phone-description': 'Telefone vinculado',
+  'app.settings.security.question': 'Pergunta de Segurança',
+  'app.settings.security.question-description':
