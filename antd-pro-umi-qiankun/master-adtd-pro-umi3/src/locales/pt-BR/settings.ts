@@ -14,3 +14,8 @@ export default {
   'app.settings.basic.profile-placeholder': 'Breve introdução sua',
   'app.settings.basic.country': 'País/Região',
   'app.settings.basic.country-message': 'Por favor insira país!',
+  'app.settings.basic.geographic': 'Província, estado ou cidade',
+  'app.settings.basic.geographic-message': 'Por favor insira suas informações geográficas!',
+  'app.settings.basic.address': 'Endereço',
+  'app.settings.basic.address-message': 'Por favor insira seu endereço!',
+  'app.settings.basic.phone': 'Número de telefone',
