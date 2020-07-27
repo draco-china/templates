@@ -30,3 +30,9 @@ export default {
   'app.settings.security.phone-description': 'Telefone vinculado',
   'app.settings.security.question': 'Pergunta de Segurança',
   'app.settings.security.question-description':
+    'A pergunta de segurança não está definida e a política de segurança pode proteger efetivamente a segurança da conta',
+  'app.settings.security.email': 'Email de Backup',
+  'app.settings.security.email-description': 'Email vinculado',
+  'app.settings.security.mfa': 'Dispositivo MFA',
+  'app.settings.security.mfa-description':
+    'O dispositivo MFA não vinculado, após a vinculação, pode ser confirmado duas vezes',
