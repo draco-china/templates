@@ -36,3 +36,8 @@ export default {
   'app.settings.security.mfa': 'Dispositivo MFA',
   'app.settings.security.mfa-description':
     'O dispositivo MFA não vinculado, após a vinculação, pode ser confirmado duas vezes',
+  'app.settings.security.modify': 'Modificar',
+  'app.settings.security.set': 'Atribuir',
+  'app.settings.security.bind': 'Vincular',
+  'app.settings.binding.taobao': 'Vincular Taobao',
+  'app.settings.binding.taobao-description': 'Atualmente não vinculado à conta Taobao',
