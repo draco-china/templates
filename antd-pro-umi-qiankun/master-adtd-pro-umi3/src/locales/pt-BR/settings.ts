@@ -47,3 +47,8 @@ export default {
   'app.settings.binding.dingding-description': 'Atualmente não vinculado à conta DingTalk',
   'app.settings.binding.bind': 'Vincular',
   'app.settings.notification.password': 'Senha da Conta',
+  'app.settings.notification.password-description':
+    'Mensagens de outros usuários serão notificadas na forma de uma estação de letra',
+  'app.settings.notification.messages': 'Mensagens de Sistema',
+  'app.settings.notification.messages-description':
+    'Mensagens de sistema serão notificadas na forma de uma estação de letra',
