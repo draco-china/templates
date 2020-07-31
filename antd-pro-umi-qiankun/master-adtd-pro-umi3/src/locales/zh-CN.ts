@@ -14,3 +14,5 @@ export default {
   'app.welcome.link.fetch-blocks': '获取全部区块',
   'app.welcome.link.block-list': '基于 block 开发，快速构建标准页面',
   ...globalHeader,
+  ...menu,
+  ...settingDrawer,
