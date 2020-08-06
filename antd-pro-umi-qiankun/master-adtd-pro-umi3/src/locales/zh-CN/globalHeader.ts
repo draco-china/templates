@@ -10,3 +10,4 @@ export default {
   'component.globalHeader.message.empty': '您已读完所有消息',
   'component.globalHeader.event': '待办',
   'component.globalHeader.event.empty': '你已完成所有待办',
+  'component.noticeIcon.clear': '清空',
