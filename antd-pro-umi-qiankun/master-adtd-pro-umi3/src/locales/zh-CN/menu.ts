@@ -12,3 +12,7 @@ export default {
   'menu.dashboard.monitor': '监控页',
   'menu.dashboard.workplace': '工作台',
   'menu.exception.403': '403',
+  'menu.exception.404': '404',
+  'menu.exception.500': '500',
+  'menu.form': '表单页',
+  'menu.form.basic-form': '基础表单',
