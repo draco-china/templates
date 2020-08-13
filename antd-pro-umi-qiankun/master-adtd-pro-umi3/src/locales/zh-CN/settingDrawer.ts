@@ -23,3 +23,6 @@ export default {
   'app.setting.hideheader': '下滑时隐藏 Header',
   'app.setting.hideheader.hint': '固定 Header 时可配置',
   'app.setting.othersettings': '其他设置',
+  'app.setting.weakmode': '色弱模式',
+  'app.setting.copy': '拷贝设置',
+  'app.setting.copyinfo': '拷贝成功，请到 src/defaultSettings.js 中替换默认配置',
