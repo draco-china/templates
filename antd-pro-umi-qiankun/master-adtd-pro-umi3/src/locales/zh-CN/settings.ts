@@ -23,3 +23,8 @@ export default {
   'app.settings.basic.update': '更新基本信息',
   'app.settings.security.strong': '强',
   'app.settings.security.medium': '中',
+  'app.settings.security.weak': '弱',
+  'app.settings.security.password': '账户密码',
+  'app.settings.security.password-description': '当前密码强度',
+  'app.settings.security.phone': '密保手机',
+  'app.settings.security.phone-description': '已绑定手机',
