@@ -18,3 +18,8 @@ export default {
   'app.settings.basic.geographic-message': '请输入您的所在省市!',
   'app.settings.basic.address': '街道地址',
   'app.settings.basic.address-message': '请输入您的街道地址!',
+  'app.settings.basic.phone': '联系电话',
+  'app.settings.basic.phone-message': '请输入您的联系电话!',
+  'app.settings.basic.update': '更新基本信息',
+  'app.settings.security.strong': '强',
+  'app.settings.security.medium': '中',
