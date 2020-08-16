@@ -33,3 +33,8 @@ export default {
   'app.settings.security.email': '备用邮箱',
   'app.settings.security.email-description': '已绑定邮箱',
   'app.settings.security.mfa': 'MFA 设备',
+  'app.settings.security.mfa-description': '未绑定 MFA 设备，绑定后，可以进行二次确认',
+  'app.settings.security.modify': '修改',
+  'app.settings.security.set': '设置',
+  'app.settings.security.bind': '绑定',
+  'app.settings.binding.taobao': '绑定淘宝',
