@@ -38,3 +38,8 @@ export default {
   'app.settings.security.set': '设置',
   'app.settings.security.bind': '绑定',
   'app.settings.binding.taobao': '绑定淘宝',
+  'app.settings.binding.taobao-description': '当前未绑定淘宝账号',
+  'app.settings.binding.alipay': '绑定支付宝',
+  'app.settings.binding.alipay-description': '当前未绑定支付宝账号',
+  'app.settings.binding.dingding': '绑定钉钉',
+  'app.settings.binding.dingding-description': '当前未绑定钉钉账号',
