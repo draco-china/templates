@@ -43,3 +43,8 @@ export default {
   'app.settings.binding.alipay-description': '当前未绑定支付宝账号',
   'app.settings.binding.dingding': '绑定钉钉',
   'app.settings.binding.dingding-description': '当前未绑定钉钉账号',
+  'app.settings.binding.bind': '绑定',
+  'app.settings.notification.password': '账户密码',
+  'app.settings.notification.password-description': '其他用户的消息将以站内信的形式通知',
+  'app.settings.notification.messages': '系统消息',
+  'app.settings.notification.messages-description': '系统消息将以站内信的形式通知',
