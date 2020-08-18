@@ -5,3 +5,5 @@ import pwa from './zh-TW/pwa';
 import settingDrawer from './zh-TW/settingDrawer';
 import settings from './zh-TW/settings';
 
+export default {
+  'navBar.lang': '語言',
