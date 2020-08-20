@@ -14,3 +14,5 @@ export default {
   ...globalHeader,
   ...menu,
   ...settingDrawer,
+  ...settings,
+  ...pwa,
