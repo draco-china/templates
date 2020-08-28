@@ -7,3 +7,8 @@ export default {
   'menu.admin.sub-page': '二级管理页',
   'menu.exception.403': '403',
   'menu.exception.404': '404',
+  'menu.exception.500': '500',
+  'menu.register': '註冊',
+  'menu.register.result': '註冊結果',
+  'menu.dashboard': 'Dashboard',
+  'menu.dashboard.analysis': '分析頁',
