@@ -16,3 +16,8 @@ export default {
   'menu.dashboard.workplace': '工作臺',
   'menu.form': '表單頁',
   'menu.form.basic-form': '基礎表單',
+  'menu.form.step-form': '分步表單',
+  'menu.form.step-form.info': '分步表單（填寫轉賬信息）',
+  'menu.form.step-form.confirm': '分步表單（確認轉賬信息）',
+  'menu.form.step-form.result': '分步表單（完成）',
+  'menu.form.advanced-form': '高級表單',
