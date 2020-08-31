@@ -35,3 +35,8 @@ export default {
   'menu.result': '結果頁',
   'menu.result.success': '成功頁',
   'menu.result.fail': '失敗頁',
+  'menu.account': '個人頁',
+  'menu.account.center': '個人中心',
+  'menu.account.settings': '個人設置',
+  'menu.account.trigger': '觸發報錯',
+  'menu.account.logout': '退出登錄',
