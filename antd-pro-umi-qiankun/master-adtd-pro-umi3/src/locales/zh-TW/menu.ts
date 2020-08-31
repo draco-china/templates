@@ -40,3 +40,8 @@ export default {
   'menu.account.settings': '個人設置',
   'menu.account.trigger': '觸發報錯',
   'menu.account.logout': '退出登錄',
+  'menu.exception': '异常页',
+  'menu.exception.not-permission': '403',
+  'menu.exception.not-find': '404',
+  'menu.exception.server-error': '500',
+  'menu.exception.trigger': '触发错误',
