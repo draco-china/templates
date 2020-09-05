@@ -12,3 +12,5 @@ export default {
   'app.setting.themecolor.cyan': '明青',
   'app.setting.themecolor.green': '極光綠',
   'app.setting.themecolor.daybreak': '拂曉藍（默認）',
+  'app.setting.themecolor.geekblue': '極客藍',
+  'app.setting.themecolor.purple': '醬紫',
