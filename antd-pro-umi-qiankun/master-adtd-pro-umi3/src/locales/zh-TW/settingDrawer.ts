@@ -14,3 +14,6 @@ export default {
   'app.setting.themecolor.daybreak': '拂曉藍（默認）',
   'app.setting.themecolor.geekblue': '極客藍',
   'app.setting.themecolor.purple': '醬紫',
+  'app.setting.navigationmode': '導航模式',
+  'app.setting.sidemenu': '側邊菜單布局',
+  'app.setting.topmenu': '頂部菜單布局',
