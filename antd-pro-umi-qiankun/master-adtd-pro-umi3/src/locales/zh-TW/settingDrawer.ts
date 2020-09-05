@@ -9,3 +9,6 @@ export default {
   'app.setting.themecolor.dust': '薄暮',
   'app.setting.themecolor.volcano': '火山',
   'app.setting.themecolor.sunset': '日暮',
+  'app.setting.themecolor.cyan': '明青',
+  'app.setting.themecolor.green': '極光綠',
+  'app.setting.themecolor.daybreak': '拂曉藍（默認）',
