@@ -20,3 +20,6 @@ export default {
   'app.setting.fixedheader': '固定 Header',
   'app.setting.fixedsidebar': '固定側邊菜單',
   'app.setting.fixedsidebar.hint': '側邊菜單布局時可配置',
+  'app.setting.hideheader': '下滑時隱藏 Header',
+  'app.setting.hideheader.hint': '固定 Header 時可配置',
+  'app.setting.othersettings': '其他設置',
