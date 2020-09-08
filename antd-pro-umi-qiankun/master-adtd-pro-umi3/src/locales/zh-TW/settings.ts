@@ -13,3 +13,8 @@ export default {
   'app.settings.basic.profile-message': '請輸入個人簡介!',
   'app.settings.basic.profile-placeholder': '個人簡介',
   'app.settings.basic.country': '國家/地區',
+  'app.settings.basic.country-message': '請輸入您的國家或地區!',
+  'app.settings.basic.geographic': '所在省市',
+  'app.settings.basic.geographic-message': '請輸入您的所在省市!',
+  'app.settings.basic.address': '街道地址',
+  'app.settings.basic.address-message': '請輸入您的街道地址!',
