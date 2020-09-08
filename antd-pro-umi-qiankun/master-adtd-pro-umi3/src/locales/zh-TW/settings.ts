@@ -8,3 +8,8 @@ export default {
   'app.settings.basic.email': '郵箱',
   'app.settings.basic.email-message': '請輸入您的郵箱!',
   'app.settings.basic.nickname': '昵稱',
+  'app.settings.basic.nickname-message': '請輸入您的昵稱!',
+  'app.settings.basic.profile': '個人簡介',
+  'app.settings.basic.profile-message': '請輸入個人簡介!',
+  'app.settings.basic.profile-placeholder': '個人簡介',
+  'app.settings.basic.country': '國家/地區',
