@@ -33,3 +33,8 @@ export default {
   'app.settings.security.email': '備用郵箱',
   'app.settings.security.email-description': '已綁定郵箱',
   'app.settings.security.mfa': 'MFA 設備',
+  'app.settings.security.mfa-description': '未綁定 MFA 設備，綁定後，可以進行二次確認',
+  'app.settings.security.modify': '修改',
+  'app.settings.security.set': '設置',
+  'app.settings.security.bind': '綁定',
+  'app.settings.binding.taobao': '綁定淘寶',
