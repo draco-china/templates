@@ -28,3 +28,8 @@ export default {
   'app.settings.security.password-description': '當前密碼強度',
   'app.settings.security.phone': '密保手機',
   'app.settings.security.phone-description': '已綁定手機',
+  'app.settings.security.question': '密保問題',
+  'app.settings.security.question-description': '未設置密保問題，密保問題可有效保護賬戶安全',
+  'app.settings.security.email': '備用郵箱',
+  'app.settings.security.email-description': '已綁定郵箱',
+  'app.settings.security.mfa': 'MFA 設備',
