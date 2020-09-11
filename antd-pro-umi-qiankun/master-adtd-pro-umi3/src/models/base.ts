@@ -17,3 +17,9 @@ import { query } from '@/services/base';
 // }
 
 export interface App extends Partial<IRoute> {
+  name: string; // hack
+  entry: string;
+  base: string;
+  mountElementId: string;
+}
+
