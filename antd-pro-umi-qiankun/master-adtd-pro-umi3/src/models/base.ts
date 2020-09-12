@@ -33,3 +33,9 @@ export interface BaseModelType {
   state: BaseModelState;
   effects: {
     [key: string]: Effect;
+  };
+  reducers: {
+    [key: string]: Reducer<BaseModelState>;
+  };
+}
+
