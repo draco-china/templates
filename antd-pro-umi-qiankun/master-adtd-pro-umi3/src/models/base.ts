@@ -29,3 +29,7 @@ export interface BaseModelState {
 }
 
 export interface BaseModelType {
+  namespace: 'base';
+  state: BaseModelState;
+  effects: {
+    [key: string]: Effect;
