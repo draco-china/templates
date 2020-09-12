@@ -39,3 +39,9 @@ export interface BaseModelType {
   };
 }
 
+const BaseModel: BaseModelType = {
+  namespace: 'base',
+
+  state: {
+    name: 'Qiankun',
+    apps: [],
