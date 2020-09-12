@@ -23,3 +23,9 @@ export interface App extends Partial<IRoute> {
   mountElementId: string;
 }
 
+export interface BaseModelState {
+  name: 'Qiankun';
+  apps: App[];
+}
+
+export interface BaseModelType {
