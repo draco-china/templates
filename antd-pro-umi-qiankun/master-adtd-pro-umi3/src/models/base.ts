@@ -61,3 +61,10 @@ const BaseModel: BaseModelType = {
         type: 'save',
         payload: {
           apps,
+        },
+      });
+
+      yield setTimeout(qiankunStart, 200);
+    },
+  },
+
