@@ -68,3 +68,8 @@ const BaseModel: BaseModelType = {
     },
   },
 
+  reducers: {
+    save(state = { name: 'Qiankun', apps: [] }, { payload }) {
+      return {
+        ...state,
+        apps: payload.apps,
