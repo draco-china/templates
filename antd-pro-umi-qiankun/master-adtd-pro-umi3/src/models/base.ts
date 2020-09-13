@@ -57,3 +57,7 @@ const BaseModel: BaseModelType = {
       // yield sleep(1000);
 
       const apps = yield query();
+      yield put({
+        type: 'save',
+        payload: {
+          apps,
