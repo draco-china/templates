@@ -73,3 +73,9 @@ const BaseModel: BaseModelType = {
       return {
         ...state,
         apps: payload.apps,
+      };
+    },
+  },
+};
+
+export default BaseModel;
