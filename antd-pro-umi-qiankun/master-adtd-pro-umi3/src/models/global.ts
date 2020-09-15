@@ -23,3 +23,16 @@ export interface GlobalModelType {
     clearNotices: Effect;
     changeNoticeReadState: Effect;
   };
+  reducers: {
+    changeLayoutCollapsed: Reducer<GlobalModelState>;
+    saveNotices: Reducer<GlobalModelState>;
+    saveClearedNotices: Reducer<GlobalModelState>;
+  };
+  subscriptions: { setup: Subscription };
+}
+
+const GlobalModel: GlobalModelType = {
+  namespace: 'global',
+
+  state: {
+    collapsed: false,
