@@ -11,3 +11,15 @@ export interface NoticeItem extends NoticeIconData {
 }
 
 export interface GlobalModelState {
+  collapsed: boolean;
+  notices: NoticeItem[];
+}
+
+export interface GlobalModelType {
+  namespace: 'global';
+  state: GlobalModelState;
+  effects: {
+    fetchNotices: Effect;
+    clearNotices: Effect;
+    changeNoticeReadState: Effect;
+  };
