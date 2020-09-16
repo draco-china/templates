@@ -73,3 +73,16 @@ const GlobalModel: GlobalModelType = {
           unreadCount,
         },
       });
+    },
+    *changeNoticeReadState({ payload }, { put, select }) {
+      const notices: NoticeItem[] = yield select((state: ConnectState) =>
+        state.global.notices.map(item => {
+          const notice = { ...item };
+          if (notice.id === payload) {
+            notice.read = true;
+          }
+          return notice;
+        }),
+      );
+
+      yield put({
