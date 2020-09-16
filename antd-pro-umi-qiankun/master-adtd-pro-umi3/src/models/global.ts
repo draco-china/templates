@@ -98,3 +98,15 @@ const GlobalModel: GlobalModelType = {
         },
       });
     },
+  },
+
+  reducers: {
+    changeLayoutCollapsed(state = { notices: [], collapsed: true }, { payload }): GlobalModelState {
+      return {
+        ...state,
+        collapsed: payload,
+      };
+    },
+    saveNotices(state, { payload }): GlobalModelState {
+      return {
+        collapsed: false,
