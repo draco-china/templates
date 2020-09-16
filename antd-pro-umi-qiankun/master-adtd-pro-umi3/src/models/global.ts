@@ -86,3 +86,15 @@ const GlobalModel: GlobalModelType = {
       );
 
       yield put({
+        type: 'saveNotices',
+        payload: notices,
+      });
+
+      yield put({
+        type: 'user/changeNotifyCount',
+        payload: {
+          totalCount: notices.length,
+          unreadCount: notices.filter(item => !item.read).length,
+        },
+      });
+    },
