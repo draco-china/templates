@@ -23,3 +23,10 @@ export interface StateType {
 
 export interface LoginModelType {
   namespace: string;
+  state: StateType;
+  effects: {
+    login: Effect;
+    logout: Effect;
+  };
+  reducers: {
+    changeLoginStatus: Reducer<StateType>;
