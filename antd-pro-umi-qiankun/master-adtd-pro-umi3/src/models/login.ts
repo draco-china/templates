@@ -15,3 +15,11 @@ import { fakeAccountLogin } from '@/services/login';
 import { setAuthority } from '@/utils/authority';
 import { getPageQuery } from '@/utils/utils';
 
+export interface StateType {
+  status?: 'ok' | 'error';
+  type?: string;
+  currentAuthority?: 'user' | 'guest' | 'admin';
+}
+
+export interface LoginModelType {
+  namespace: string;
