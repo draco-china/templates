@@ -30,3 +30,13 @@ export interface LoginModelType {
   };
   reducers: {
     changeLoginStatus: Reducer<StateType>;
+  };
+}
+
+const Model: LoginModelType = {
+  namespace: 'login',
+
+  state: {
+    status: undefined,
+  },
+
