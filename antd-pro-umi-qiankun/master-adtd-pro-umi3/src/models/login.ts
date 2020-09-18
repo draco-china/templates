@@ -40,3 +40,12 @@ const Model: LoginModelType = {
     status: undefined,
   },
 
+  effects: {
+    *login({ payload }, { call, put }) {
+      const response = yield call(fakeAccountLogin, payload);
+      yield put({
+        type: 'changeLoginStatus',
+        payload: response,
+      });
+      // Login successfully
+      if (response.status === 'ok') {
