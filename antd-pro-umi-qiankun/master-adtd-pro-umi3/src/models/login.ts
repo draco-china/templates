@@ -63,3 +63,12 @@ const Model: LoginModelType = {
             window.location.href = '/';
             return;
           }
+        }
+        history.replace(redirect || '/');
+      }
+    },
+
+    logout() {
+      const { redirect } = getPageQuery();
+      // Note: There may be security issues, please note
+      if (window.location.pathname !== '/user/login' && !redirect) {
