@@ -79,3 +79,11 @@ const Model: LoginModelType = {
           }),
         });
       }
+    },
+  },
+
+  reducers: {
+    changeLoginStatus(state, { payload }) {
+      setAuthority(payload.currentAuthority);
+      return {
+        ...state,
