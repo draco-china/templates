@@ -87,3 +87,11 @@ const Model: LoginModelType = {
       setAuthority(payload.currentAuthority);
       return {
         ...state,
+        status: payload.status,
+        type: payload.type,
+      };
+    },
+  },
+};
+
+export default Model;
