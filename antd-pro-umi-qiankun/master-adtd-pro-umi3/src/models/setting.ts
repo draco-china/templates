@@ -5,3 +5,7 @@ export interface SettingModelType {
   namespace: 'settings';
   state: DefaultSettings;
   reducers: {
+    changeSetting: Reducer<DefaultSettings>;
+  };
+}
+
