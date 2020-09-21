@@ -16,3 +16,6 @@ const updateColorWeak: (colorWeak: boolean) => void = colorWeak => {
   }
 };
 
+const SettingModel: SettingModelType = {
+  namespace: 'settings',
+  state: defaultSettings,
