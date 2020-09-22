@@ -19,3 +19,7 @@ const updateColorWeak: (colorWeak: boolean) => void = colorWeak => {
 const SettingModel: SettingModelType = {
   namespace: 'settings',
   state: defaultSettings,
+  reducers: {
+    changeSetting(state = defaultSettings, { payload }) {
+      const { colorWeak, contentWidth } = payload;
+
