@@ -26,3 +26,6 @@ const SettingModel: SettingModelType = {
       if (state.contentWidth !== contentWidth && window.dispatchEvent) {
         window.dispatchEvent(new Event('resize'));
       }
+      updateColorWeak(!!colorWeak);
+      return {
+        ...state,
