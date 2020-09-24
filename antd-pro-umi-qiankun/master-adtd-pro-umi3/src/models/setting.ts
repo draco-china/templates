@@ -29,3 +29,6 @@ const SettingModel: SettingModelType = {
       updateColorWeak(!!colorWeak);
       return {
         ...state,
+        ...payload,
+      };
+    },
