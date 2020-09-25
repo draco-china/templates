@@ -22,3 +22,12 @@ export interface CurrentUser {
     key: string;
     label: string;
   }[];
+  userid?: string;
+  unreadCount?: number;
+}
+
+export interface UserModelState {
+  currentUser?: CurrentUser;
+}
+
+export interface UserModelType {
