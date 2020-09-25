@@ -32,3 +32,6 @@ const SettingModel: SettingModelType = {
         ...payload,
       };
     },
+  },
+};
+export default SettingModel;
