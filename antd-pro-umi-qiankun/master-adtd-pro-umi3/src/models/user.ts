@@ -31,3 +31,10 @@ export interface UserModelState {
 }
 
 export interface UserModelType {
+  namespace: 'user';
+  state: UserModelState;
+  effects: {
+    fetch: Effect;
+    fetchCurrent: Effect;
+  };
+  reducers: {
