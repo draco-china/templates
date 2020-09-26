@@ -38,3 +38,12 @@ export interface UserModelType {
     fetchCurrent: Effect;
   };
   reducers: {
+    saveCurrentUser: Reducer<UserModelState>;
+    changeNotifyCount: Reducer<UserModelState>;
+  };
+}
+
+const UserModel: UserModelType = {
+  namespace: 'user',
+
+  state: {
