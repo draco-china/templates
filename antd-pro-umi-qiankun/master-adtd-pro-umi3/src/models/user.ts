@@ -47,3 +47,11 @@ const UserModel: UserModelType = {
   namespace: 'user',
 
   state: {
+    currentUser: {},
+  },
+
+  effects: {
+    *fetch(_, { call, put }) {
+      const response = yield call(queryUsers);
+      yield put({
+        type: 'save',
