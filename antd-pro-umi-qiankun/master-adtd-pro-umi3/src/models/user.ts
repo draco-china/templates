@@ -63,3 +63,11 @@ const UserModel: UserModelType = {
       yield put({
         type: 'saveCurrentUser',
         payload: response,
+      });
+    },
+  },
+
+  reducers: {
+    saveCurrentUser(state, action) {
+      return {
+        ...state,
