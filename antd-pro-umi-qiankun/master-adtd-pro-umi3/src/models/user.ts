@@ -85,3 +85,11 @@ const UserModel: UserModelType = {
         currentUser: {
           ...state.currentUser,
           notifyCount: action.payload.totalCount,
+          unreadCount: action.payload.unreadCount,
+        },
+      };
+    },
+  },
+};
+
+export default UserModel;
