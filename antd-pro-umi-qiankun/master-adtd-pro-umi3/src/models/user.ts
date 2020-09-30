@@ -78,3 +78,10 @@ const UserModel: UserModelType = {
       state = {
         currentUser: {},
       },
+      action,
+    ) {
+      return {
+        ...state,
+        currentUser: {
+          ...state.currentUser,
+          notifyCount: action.payload.totalCount,
