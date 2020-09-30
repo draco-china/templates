@@ -71,3 +71,10 @@ const UserModel: UserModelType = {
     saveCurrentUser(state, action) {
       return {
         ...state,
+        currentUser: action.payload || {},
+      };
+    },
+    changeNotifyCount(
+      state = {
+        currentUser: {},
+      },
