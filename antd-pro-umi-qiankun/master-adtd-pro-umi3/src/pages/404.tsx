@@ -4,3 +4,5 @@ import { history } from 'umi';
 
 const NoFoundPage: React.FC<{}> = () => (
   <Result
+    status={404}
+    title="404"
