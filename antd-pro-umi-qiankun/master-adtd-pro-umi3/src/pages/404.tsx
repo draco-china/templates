@@ -3,3 +3,4 @@ import React from 'react';
 import { history } from 'umi';
 
 const NoFoundPage: React.FC<{}> = () => (
+  <Result
