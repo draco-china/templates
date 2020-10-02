@@ -13,3 +13,6 @@ const NoFoundPage: React.FC<{}> = () => (
       </Button>
     }
   />
+);
+
+export default NoFoundPage;
