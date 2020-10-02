@@ -10,3 +10,5 @@ const NoFoundPage: React.FC<{}> = () => (
     extra={
       <Button type="primary" onClick={() => history.push('/')}>
         Back Home
+      </Button>
+    }
