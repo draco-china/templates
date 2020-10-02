@@ -9,3 +9,4 @@ const NoFoundPage: React.FC<{}> = () => (
     subTitle="Sorry, the page you visited does not exist."
     extra={
       <Button type="primary" onClick={() => history.push('/')}>
+        Back Home
