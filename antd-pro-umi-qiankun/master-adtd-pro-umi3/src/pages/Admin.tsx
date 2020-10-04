@@ -9,3 +9,6 @@ export default (): React.ReactNode => (
       <Alert
         message="umi ui 现已发布，欢迎使用 npm run ui 启动体验。"
         type="success"
+        showIcon
+        banner
+        style={{
