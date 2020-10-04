@@ -12,3 +12,6 @@ export default (): React.ReactNode => (
         showIcon
         banner
         style={{
+          margin: -12,
+          marginBottom: 48,
+        }}
