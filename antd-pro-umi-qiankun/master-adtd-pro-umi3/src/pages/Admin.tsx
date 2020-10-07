@@ -26,3 +26,6 @@ export default (): React.ReactNode => (
         use block
       </a>
       。
+    </p>
+  </PageHeaderWrapper>
+);
