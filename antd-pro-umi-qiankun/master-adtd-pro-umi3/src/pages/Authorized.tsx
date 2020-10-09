@@ -9,3 +9,6 @@ interface AuthComponentProps extends ConnectProps {
 }
 
 const AuthComponent: React.FC<AuthComponentProps> = ({
+  children,
+  route = {
+    routes: [],
