@@ -12,3 +12,6 @@ const AuthComponent: React.FC<AuthComponentProps> = ({
   children,
   route = {
     routes: [],
+  },
+  location = {
+    pathname: '',
