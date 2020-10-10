@@ -15,3 +15,6 @@ const AuthComponent: React.FC<AuthComponentProps> = ({
   },
   location = {
     pathname: '',
+  },
+  user,
+}) => {
