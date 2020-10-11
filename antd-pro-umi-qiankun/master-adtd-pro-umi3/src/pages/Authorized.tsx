@@ -31,3 +31,6 @@ const AuthComponent: React.FC<AuthComponentProps> = ({
   );
 };
 
+export default connect(({ user }: ConnectState) => ({
+  user,
+}))(AuthComponent);
