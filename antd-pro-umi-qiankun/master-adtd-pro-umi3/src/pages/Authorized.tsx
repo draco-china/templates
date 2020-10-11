@@ -27,3 +27,7 @@ const AuthComponent: React.FC<AuthComponentProps> = ({
       noMatch={isLogin ? <Redirect to="/exception/403" /> : <Redirect to="/user/login" />}
     >
       {children}
+    </Authorized>
+  );
+};
+
