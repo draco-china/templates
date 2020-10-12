@@ -41,3 +41,17 @@ function getRule(req: Request, res: Response, u: string) {
   const { current = 1, pageSize = 10 } = req.query;
   const params = (parse(url, true).query as unknown) as TableListParams;
 
+  let dataSource = [...tableListDataSource].slice((current - 1) * pageSize, current * pageSize);
+  if (params.sorter) {
+    const s = params.sorter.split('_');
+    dataSource = dataSource.sort((prev, next) => {
+      if (s[1] === 'descend') {
+        return next[s[0]] - prev[s[0]];
+      }
+      return prev[s[0]] - next[s[0]];
+    });
+  }
+
+  if (params.status) {
+    const status = params.status.split(',');
+    let filterDataSource: TableListItem[] = [];
