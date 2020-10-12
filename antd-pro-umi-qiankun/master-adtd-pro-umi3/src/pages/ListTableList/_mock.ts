@@ -25,3 +25,19 @@ const genList = (current: number, pageSize: number) => {
       createdAt: new Date(),
       progress: Math.ceil(Math.random() * 100),
     });
+  }
+  tableListDataSource.reverse();
+  return tableListDataSource;
+};
+
+let tableListDataSource = genList(1, 100);
+
+function getRule(req: Request, res: Response, u: string) {
+  let url = u;
+  if (!url || Object.prototype.toString.call(url) !== '[object String]') {
+    // eslint-disable-next-line prefer-destructuring
+    url = req.url;
+  }
+  const { current = 1, pageSize = 10 } = req.query;
+  const params = (parse(url, true).query as unknown) as TableListParams;
+
