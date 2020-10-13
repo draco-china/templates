@@ -68,3 +68,17 @@ function getRule(req: Request, res: Response, u: string) {
     dataSource = filterDataSource;
   }
 
+  if (params.name) {
+    dataSource = dataSource.filter(data => data.name.includes(params.name || ''));
+  }
+  const result = {
+    data: dataSource,
+    total: tableListDataSource.length,
+    success: true,
+    pageSize,
+    current: parseInt(`${params.currentPage}`, 10) || 1,
+  };
+
+  return res.json(result);
+}
+
