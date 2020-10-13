@@ -55,3 +55,16 @@ function getRule(req: Request, res: Response, u: string) {
   if (params.status) {
     const status = params.status.split(',');
     let filterDataSource: TableListItem[] = [];
+    status.forEach((s: string) => {
+      filterDataSource = filterDataSource.concat(
+        dataSource.filter(item => {
+          if (parseInt(`${item.status}`, 10) === parseInt(s.split('')[0], 10)) {
+            return true;
+          }
+          return false;
+        }),
+      );
+    });
+    dataSource = filterDataSource;
+  }
+
