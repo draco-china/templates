@@ -82,3 +82,19 @@ function getRule(req: Request, res: Response, u: string) {
   return res.json(result);
 }
 
+function postRule(req: Request, res: Response, u: string, b: Request) {
+  let url = u;
+  if (!url || Object.prototype.toString.call(url) !== '[object String]') {
+    // eslint-disable-next-line prefer-destructuring
+    url = req.url;
+  }
+
+  const body = (b && b.body) || req.body;
+  const { method, name, desc, key } = body;
+
+  switch (method) {
+    /* eslint no-case-declarations:0 */
+    case 'delete':
+      tableListDataSource = tableListDataSource.filter(item => key.indexOf(item.key) === -1);
+      break;
+    case 'post':
