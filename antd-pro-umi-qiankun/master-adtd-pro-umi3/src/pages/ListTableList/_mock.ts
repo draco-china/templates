@@ -98,3 +98,16 @@ function postRule(req: Request, res: Response, u: string, b: Request) {
       tableListDataSource = tableListDataSource.filter(item => key.indexOf(item.key) === -1);
       break;
     case 'post':
+      (() => {
+        const i = Math.ceil(Math.random() * 10000);
+        const newRule = {
+          key: tableListDataSource.length,
+          href: 'https://ant.design',
+          avatar: [
+            'https://gw.alipayobjects.com/zos/rmsportal/eeHMaZBwmTvLdIwMfBpg.png',
+            'https://gw.alipayobjects.com/zos/rmsportal/udxAbMEhpwthVVcjLXik.png',
+          ][i % 2],
+          name,
+          owner: '曲丽丽',
+          desc,
+          callNo: Math.floor(Math.random() * 1000),
