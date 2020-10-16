@@ -136,3 +136,19 @@ function postRule(req: Request, res: Response, u: string, b: Request) {
       return;
     default:
       break;
+  }
+
+  const result = {
+    list: tableListDataSource,
+    pagination: {
+      total: tableListDataSource.length,
+    },
+  };
+
+  res.json(result);
+}
+
+export default {
+  'GET /api/rule': getRule,
+  'POST /api/rule': postRule,
+};
