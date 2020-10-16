@@ -124,3 +124,15 @@ function postRule(req: Request, res: Response, u: string, b: Request) {
     case 'update':
       (() => {
         let newRule = {};
+        tableListDataSource = tableListDataSource.map(item => {
+          if (item.key === key) {
+            newRule = { ...item, desc, name };
+            return { ...item, desc, name };
+          }
+          return item;
+        });
+        return res.json(newRule);
+      })();
+      return;
+    default:
+      break;
