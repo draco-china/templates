@@ -111,3 +111,16 @@ function postRule(req: Request, res: Response, u: string, b: Request) {
           owner: '曲丽丽',
           desc,
           callNo: Math.floor(Math.random() * 1000),
+          status: Math.floor(Math.random() * 10) % 2,
+          updatedAt: new Date(),
+          createdAt: new Date(),
+          progress: Math.ceil(Math.random() * 100),
+        };
+        tableListDataSource.unshift(newRule);
+        return res.json(newRule);
+      })();
+      return;
+
+    case 'update':
+      (() => {
+        let newRule = {};
