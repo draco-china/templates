@@ -10,3 +10,5 @@ const CreateForm: React.FC<CreateFormProps> = props => {
   const { modalVisible, onCancel } = props;
 
   return (
+    <Modal
+      destroyOnClose
