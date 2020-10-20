@@ -18,3 +18,5 @@ const CreateForm: React.FC<CreateFormProps> = props => {
       footer={null}
     >
       {props.children}
+    </Modal>
+  );
