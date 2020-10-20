@@ -20,3 +20,6 @@ const CreateForm: React.FC<CreateFormProps> = props => {
       {props.children}
     </Modal>
   );
+};
+
+export default CreateForm;
