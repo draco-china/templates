@@ -18,3 +18,24 @@ export interface UpdateFormProps {
   values: Partial<TableListItem>;
 }
 const FormItem = Form.Item;
+const { Step } = Steps;
+const { TextArea } = Input;
+const { Option } = Select;
+const RadioGroup = Radio.Group;
+
+export interface UpdateFormState {
+  formVals: FormValueType;
+  currentStep: number;
+}
+
+const formLayout = {
+  labelCol: { span: 7 },
+  wrapperCol: { span: 13 },
+};
+
+const UpdateForm: React.FC<UpdateFormProps> = props => {
+  const [formVals, setFormVals] = useState<FormValueType>({
+    name: props.values.name,
+    desc: props.values.desc,
+    key: props.values.key,
+    target: '0',
