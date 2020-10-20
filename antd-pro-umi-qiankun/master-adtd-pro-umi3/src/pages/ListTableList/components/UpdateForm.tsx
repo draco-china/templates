@@ -39,3 +39,29 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
     desc: props.values.desc,
     key: props.values.key,
     target: '0',
+    template: '0',
+    type: '1',
+    time: '',
+    frequency: 'month',
+  });
+
+  const [currentStep, setCurrentStep] = useState<number>(0);
+
+  const [form] = Form.useForm();
+
+  const {
+    onSubmit: handleUpdate,
+    onCancel: handleUpdateModalVisible,
+    updateModalVisible,
+    values,
+  } = props;
+
+  const forward = () => setCurrentStep(currentStep + 1);
+
+  const backward = () => setCurrentStep(currentStep - 1);
+
+  const handleNext = async () => {
+    const fieldsValue = await form.validateFields();
+
+    setFormVals({ ...formVals, ...fieldsValue });
+
