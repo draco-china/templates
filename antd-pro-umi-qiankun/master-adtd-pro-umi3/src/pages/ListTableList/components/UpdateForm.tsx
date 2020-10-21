@@ -65,3 +65,22 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
 
     setFormVals({ ...formVals, ...fieldsValue });
 
+    if (currentStep < 2) {
+      forward();
+    } else {
+      handleUpdate(formVals);
+    }
+  };
+
+  const renderContent = () => {
+    if (currentStep === 1) {
+      return (
+        <>
+          <FormItem name="target" label="监控对象">
+            <Select style={{ width: '100%' }}>
+              <Option value="0">表一</Option>
+              <Option value="1">表二</Option>
+            </Select>
+          </FormItem>
+          <FormItem name="template" label="规则模板">
+            <Select style={{ width: '100%' }}>
