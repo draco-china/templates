@@ -157,3 +157,21 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
     }
     if (currentStep === 2) {
       return (
+        <>
+          <Button style={{ float: 'left' }} onClick={backward}>
+            上一步
+          </Button>
+          <Button onClick={() => handleUpdateModalVisible(false, values)}>取消</Button>
+          <Button type="primary" onClick={() => handleNext()}>
+            完成
+          </Button>
+        </>
+      );
+    }
+    return (
+      <>
+        <Button onClick={() => handleUpdateModalVisible(false, values)}>取消</Button>
+        <Button type="primary" onClick={() => handleNext()}>
+          下一步
+        </Button>
+      </>
