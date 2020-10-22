@@ -138,3 +138,22 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
           <TextArea rows={4} placeholder="请输入至少五个字符" />
         </FormItem>
       </>
+    );
+  };
+
+  const renderFooter = () => {
+    if (currentStep === 1) {
+      return (
+        <>
+          <Button style={{ float: 'left' }} onClick={backward}>
+            上一步
+          </Button>
+          <Button onClick={() => handleUpdateModalVisible(false, values)}>取消</Button>
+          <Button type="primary" onClick={() => handleNext()}>
+            下一步
+          </Button>
+        </>
+      );
+    }
+    if (currentStep === 2) {
+      return (
