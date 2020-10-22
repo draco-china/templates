@@ -84,3 +84,21 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
           </FormItem>
           <FormItem name="template" label="规则模板">
             <Select style={{ width: '100%' }}>
+              <Option value="0">规则模板一</Option>
+              <Option value="1">规则模板二</Option>
+            </Select>
+          </FormItem>
+          <FormItem name="type" label="规则类型">
+            <RadioGroup>
+              <Radio value="0">强</Radio>
+              <Radio value="1">弱</Radio>
+            </RadioGroup>
+          </FormItem>
+        </>
+      );
+    }
+    if (currentStep === 2) {
+      return (
+        <>
+          <FormItem
+            name="time"
