@@ -120,3 +120,21 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
           </FormItem>
         </>
       );
+    }
+    return (
+      <>
+        <FormItem
+          name="name"
+          label="规则名称"
+          rules={[{ required: true, message: '请输入规则名称！' }]}
+        >
+          <Input placeholder="请输入" />
+        </FormItem>
+        <FormItem
+          name="desc"
+          label="规则描述"
+          rules={[{ required: true, message: '请输入至少五个字符的规则描述！', min: 5 }]}
+        >
+          <TextArea rows={4} placeholder="请输入至少五个字符" />
+        </FormItem>
+      </>
