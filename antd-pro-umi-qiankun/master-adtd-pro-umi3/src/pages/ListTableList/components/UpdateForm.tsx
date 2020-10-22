@@ -102,3 +102,21 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
         <>
           <FormItem
             name="time"
+            label="开始时间"
+            rules={[{ required: true, message: '请选择开始时间！' }]}
+          >
+            <DatePicker
+              style={{ width: '100%' }}
+              showTime
+              format="YYYY-MM-DD HH:mm:ss"
+              placeholder="选择开始时间"
+            />
+          </FormItem>
+          <FormItem name="frequency" label="调度周期">
+            <Select style={{ width: '100%' }}>
+              <Option value="month">月</Option>
+              <Option value="week">周</Option>
+            </Select>
+          </FormItem>
+        </>
+      );
