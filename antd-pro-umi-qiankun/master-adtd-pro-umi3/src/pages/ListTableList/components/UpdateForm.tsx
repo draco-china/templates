@@ -194,3 +194,22 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
         <Step title="配置规则属性" />
         <Step title="设定调度周期" />
       </Steps>
+      <Form
+        {...formLayout}
+        form={form}
+        initialValues={{
+          target: formVals.target,
+          template: formVals.template,
+          type: formVals.type,
+          frequency: formVals.frequency,
+          name: formVals.name,
+          desc: formVals.desc,
+        }}
+      >
+        {renderContent()}
+      </Form>
+    </Modal>
+  );
+};
+
+export default UpdateForm;
