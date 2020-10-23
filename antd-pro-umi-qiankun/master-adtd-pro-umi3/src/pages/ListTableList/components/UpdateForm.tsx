@@ -175,3 +175,22 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
           下一步
         </Button>
       </>
+    );
+  };
+
+  return (
+    <Modal
+      width={640}
+      bodyStyle={{ padding: '32px 40px 48px' }}
+      destroyOnClose
+      title="规则配置"
+      visible={updateModalVisible}
+      footer={renderFooter()}
+      onCancel={() => handleUpdateModalVisible(false, values)}
+      afterClose={() => handleUpdateModalVisible()}
+    >
+      <Steps style={{ marginBottom: 28 }} size="small" current={currentStep}>
+        <Step title="基本信息" />
+        <Step title="配置规则属性" />
+        <Step title="设定调度周期" />
+      </Steps>
