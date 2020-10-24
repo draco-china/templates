@@ -49,3 +49,29 @@ const handleUpdate = async (fields: FormValueType) => {
     message.error('配置失败请重试！');
     return false;
   }
+};
+
+/**
+ *  删除节点
+ * @param selectedRows
+ */
+const handleRemove = async (selectedRows: TableListItem[]) => {
+  const hide = message.loading('正在删除');
+  if (!selectedRows) return true;
+  try {
+    await removeRule({
+      key: selectedRows.map(row => row.key),
+    });
+    hide();
+    message.success('删除成功，即将刷新');
+    return true;
+  } catch (error) {
+    hide();
+    message.error('删除失败，请重试');
+    return false;
+  }
+};
+
+const TableList: React.FC<{}> = () => {
+  const [sorter, setSorter] = useState<string>('');
+  const [createModalVisible, handleModalVisible] = useState<boolean>(false);
