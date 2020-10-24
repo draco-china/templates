@@ -115,3 +115,22 @@ const TableList: React.FC<{}> = () => {
     {
       title: '上次调度时间',
       dataIndex: 'updatedAt',
+      sorter: true,
+      valueType: 'dateTime',
+      hideInForm: true,
+    },
+    {
+      title: '操作',
+      dataIndex: 'option',
+      valueType: 'option',
+      render: (_, record) => (
+        <>
+          <a
+            onClick={() => {
+              handleUpdateModalVisible(true);
+              setStepFormValues(record);
+            }}
+          >
+            配置
+          </a>
+          <Divider type="vertical" />
