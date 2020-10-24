@@ -23,3 +23,29 @@ const handleAdd = async (fields: TableListItem) => {
     return true;
   } catch (error) {
     hide();
+    message.error('添加失败请重试！');
+    return false;
+  }
+};
+
+/**
+ * 更新节点
+ * @param fields
+ */
+const handleUpdate = async (fields: FormValueType) => {
+  const hide = message.loading('正在配置');
+  try {
+    await updateRule({
+      name: fields.name,
+      desc: fields.desc,
+      key: fields.key,
+    });
+    hide();
+
+    message.success('配置成功');
+    return true;
+  } catch (error) {
+    hide();
+    message.error('配置失败请重试！');
+    return false;
+  }
