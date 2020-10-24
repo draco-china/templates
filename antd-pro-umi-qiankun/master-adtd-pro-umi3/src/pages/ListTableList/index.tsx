@@ -75,3 +75,23 @@ const handleRemove = async (selectedRows: TableListItem[]) => {
 const TableList: React.FC<{}> = () => {
   const [sorter, setSorter] = useState<string>('');
   const [createModalVisible, handleModalVisible] = useState<boolean>(false);
+  const [updateModalVisible, handleUpdateModalVisible] = useState<boolean>(false);
+  const [stepFormValues, setStepFormValues] = useState({});
+  const actionRef = useRef<ActionType>();
+  const columns: ProColumns<TableListItem>[] = [
+    {
+      title: '规则名称',
+      dataIndex: 'name',
+      rules: [
+        {
+          required: true,
+          message: '规则名称为必填项',
+        },
+      ],
+    },
+    {
+      title: '描述',
+      dataIndex: 'desc',
+      valueType: 'textarea',
+    },
+    {
