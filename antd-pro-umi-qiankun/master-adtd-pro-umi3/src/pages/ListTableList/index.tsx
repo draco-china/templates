@@ -134,3 +134,24 @@ const TableList: React.FC<{}> = () => {
             配置
           </a>
           <Divider type="vertical" />
+          <a href="">订阅警报</a>
+        </>
+      ),
+    },
+  ];
+
+  return (
+    <PageHeaderWrapper>
+      <ProTable<TableListItem>
+        headerTitle="查询表格"
+        actionRef={actionRef}
+        rowKey="key"
+        onChange={(_, _filter, _sorter) => {
+          const sorterResult = _sorter as SorterResult<TableListItem>;
+          if (sorterResult.field) {
+            setSorter(`${sorterResult.field}_${sorterResult.order}`);
+          }
+        }}
+        params={{
+          sorter,
+        }}
