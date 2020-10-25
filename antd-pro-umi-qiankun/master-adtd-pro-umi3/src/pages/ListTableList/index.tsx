@@ -175,3 +175,23 @@ const TableList: React.FC<{}> = () => {
                   <Menu.Item key="approval">批量审批</Menu.Item>
                 </Menu>
               }
+            >
+              <Button>
+                批量操作 <DownOutlined />
+              </Button>
+            </Dropdown>
+          ),
+        ]}
+        tableAlertRender={(selectedRowKeys, selectedRows) => (
+          <div>
+            已选择 <a style={{ fontWeight: 600 }}>{selectedRowKeys.length}</a> 项&nbsp;&nbsp;
+            <span>
+              服务调用次数总计 {selectedRows.reduce((pre, item) => pre + item.callNo, 0)} 万
+            </span>
+          </div>
+        )}
+        request={params => queryRule(params)}
+        columns={columns}
+        rowSelection={{}}
+      />
+      <CreateForm onCancel={() => handleModalVisible(false)} modalVisible={createModalVisible}>
