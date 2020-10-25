@@ -195,3 +195,23 @@ const TableList: React.FC<{}> = () => {
         rowSelection={{}}
       />
       <CreateForm onCancel={() => handleModalVisible(false)} modalVisible={createModalVisible}>
+        <ProTable<TableListItem, TableListItem>
+          onSubmit={async value => {
+            const success = await handleAdd(value);
+            if (success) {
+              handleModalVisible(false);
+              if (actionRef.current) {
+                actionRef.current.reload();
+              }
+            }
+          }}
+          rowKey="key"
+          type="form"
+          columns={columns}
+          rowSelection={{}}
+        />
+      </CreateForm>
+      {stepFormValues && Object.keys(stepFormValues).length ? (
+        <UpdateForm
+          onSubmit={async value => {
+            const success = await handleUpdate(value);
