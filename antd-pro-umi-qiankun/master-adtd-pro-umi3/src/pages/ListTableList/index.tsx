@@ -155,3 +155,23 @@ const TableList: React.FC<{}> = () => {
         params={{
           sorter,
         }}
+        toolBarRender={(action, { selectedRows }) => [
+          <Button type="primary" onClick={() => handleModalVisible(true)}>
+            <PlusOutlined /> 新建
+          </Button>,
+          selectedRows && selectedRows.length > 0 && (
+            <Dropdown
+              overlay={
+                <Menu
+                  onClick={async e => {
+                    if (e.key === 'remove') {
+                      await handleRemove(selectedRows);
+                      action.reload();
+                    }
+                  }}
+                  selectedKeys={[]}
+                >
+                  <Menu.Item key="remove">批量删除</Menu.Item>
+                  <Menu.Item key="approval">批量审批</Menu.Item>
+                </Menu>
+              }
