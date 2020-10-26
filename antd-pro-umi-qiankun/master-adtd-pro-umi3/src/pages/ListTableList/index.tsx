@@ -215,3 +215,24 @@ const TableList: React.FC<{}> = () => {
         <UpdateForm
           onSubmit={async value => {
             const success = await handleUpdate(value);
+            if (success) {
+              handleModalVisible(false);
+              setStepFormValues({});
+              if (actionRef.current) {
+                actionRef.current.reload();
+              }
+            }
+          }}
+          onCancel={() => {
+            handleUpdateModalVisible(false);
+            setStepFormValues({});
+          }}
+          updateModalVisible={updateModalVisible}
+          values={stepFormValues}
+        />
+      ) : null}
+    </PageHeaderWrapper>
+  );
+};
+
+export default TableList;
