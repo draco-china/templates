@@ -9,3 +9,6 @@ export async function queryRule(params?: TableListParams) {
 
 export async function removeRule(params: { key: number[] }) {
   return request('/api/rule', {
+    method: 'POST',
+    data: {
+      ...params,
