@@ -12,3 +12,6 @@ export async function removeRule(params: { key: number[] }) {
     method: 'POST',
     data: {
       ...params,
+      method: 'delete',
+    },
+  });
