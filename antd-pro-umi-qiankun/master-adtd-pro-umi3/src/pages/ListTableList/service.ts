@@ -15,3 +15,7 @@ export async function removeRule(params: { key: number[] }) {
       method: 'delete',
     },
   });
+}
+
+export async function addRule(params: TableListItem) {
+  return request('/api/rule', {
