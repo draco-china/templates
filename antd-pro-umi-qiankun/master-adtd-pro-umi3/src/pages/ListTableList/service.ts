@@ -22,3 +22,6 @@ export async function addRule(params: TableListItem) {
     method: 'POST',
     data: {
       ...params,
+      method: 'post',
+    },
+  });
