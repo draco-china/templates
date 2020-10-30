@@ -32,3 +32,7 @@ export async function updateRule(params: TableListParams) {
     method: 'POST',
     data: {
       ...params,
+      method: 'update',
+    },
+  });
+}
