@@ -25,3 +25,7 @@ export async function addRule(params: TableListItem) {
       method: 'post',
     },
   });
+}
+
+export async function updateRule(params: TableListParams) {
+  return request('/api/rule', {
