@@ -16,3 +16,8 @@ export default (): React.ReactNode => (
     <Card>
       <Alert
         message="umi ui 现已发布，点击右下角 umi 图标即可使用"
+        type="success"
+        showIcon
+        banner
+        style={{
+          margin: -12,
