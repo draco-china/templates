@@ -9,3 +9,10 @@ const CodePreview: React.FC<{}> = ({ children }) => (
       <Typography.Text copyable>{children}</Typography.Text>
     </code>
   </pre>
+);
+
+export default (): React.ReactNode => (
+  <PageHeaderWrapper>
+    <Card>
+      <Alert
+        message="umi ui 现已发布，点击右下角 umi 图标即可使用"
