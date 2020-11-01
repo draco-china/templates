@@ -32,3 +32,9 @@ export default (): React.ReactNode => (
       <CodePreview> npm run ui</CodePreview>
       <Typography.Text
         strong
+        style={{
+          marginBottom: 12,
+        }}
+      >
+        <a
+          target="_blank"
