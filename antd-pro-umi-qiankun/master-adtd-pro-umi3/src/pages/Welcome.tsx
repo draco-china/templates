@@ -27,3 +27,8 @@ export default (): React.ReactNode => (
       <Typography.Text strong>
         <a target="_blank" rel="noopener noreferrer" href="https://pro.ant.design/docs/block">
           基于 block 开发，快速构建标准页面
+        </a>
+      </Typography.Text>
+      <CodePreview> npm run ui</CodePreview>
+      <Typography.Text
+        strong
