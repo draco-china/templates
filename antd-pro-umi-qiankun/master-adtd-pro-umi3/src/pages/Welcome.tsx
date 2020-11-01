@@ -21,3 +21,9 @@ export default (): React.ReactNode => (
         banner
         style={{
           margin: -12,
+          marginBottom: 24,
+        }}
+      />
+      <Typography.Text strong>
+        <a target="_blank" rel="noopener noreferrer" href="https://pro.ant.design/docs/block">
+          基于 block 开发，快速构建标准页面
