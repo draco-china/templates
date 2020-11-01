@@ -38,3 +38,8 @@ export default (): React.ReactNode => (
       >
         <a
           target="_blank"
+          rel="noopener noreferrer"
+          href="https://pro.ant.design/docs/available-script#npm-run-fetchblocks"
+        >
+          获取全部区块
+        </a>
