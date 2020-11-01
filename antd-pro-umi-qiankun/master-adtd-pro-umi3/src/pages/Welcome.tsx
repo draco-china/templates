@@ -43,3 +43,9 @@ export default (): React.ReactNode => (
         >
           获取全部区块
         </a>
+      </Typography.Text>
+      <CodePreview> npm run fetch:blocks</CodePreview>
+    </Card>
+    <p
+      style={{
+        textAlign: 'center',
