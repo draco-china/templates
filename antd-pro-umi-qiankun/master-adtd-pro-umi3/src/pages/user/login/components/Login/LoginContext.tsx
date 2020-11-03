@@ -6,3 +6,5 @@ export interface LoginContextProps {
     removeTab: (id: string) => void;
   };
   updateActive?: (activeItem: { [key: string]: string } | string) => void;
+}
+
