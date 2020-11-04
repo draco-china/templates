@@ -8,3 +8,5 @@ export interface LoginContextProps {
   updateActive?: (activeItem: { [key: string]: string } | string) => void;
 }
 
+const LoginContext: React.Context<LoginContextProps> = createContext({});
+
