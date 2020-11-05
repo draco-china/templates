@@ -59,3 +59,19 @@ const getFormItemOptions = ({
 
 const LoginItem: React.FC<LoginItemProps> = props => {
   const [count, setCount] = useState<number>(props.countDown || 0);
+  const [timing, setTiming] = useState(false);
+  // 这么写是为了防止restProps中 带入 onChange, defaultValue, rules props tabUtil
+  const {
+    onChange,
+    customProps,
+    defaultValue,
+    rules,
+    name,
+    getCaptchaButtonText,
+    getCaptchaSecondText,
+    updateActive,
+    type,
+    tabUtil,
+    ...restProps
+  } = props;
+
