@@ -28,3 +28,19 @@ export interface LoginItemProps extends Partial<FormItemProps> {
   updateActive?: LoginContextProps['updateActive'];
   type?: string;
   defaultValue?: string;
+  customProps?: { [key: string]: unknown };
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  tabUtil?: LoginContextProps['tabUtil'];
+}
+
+const FormItem = Form.Item;
+
+const getFormItemOptions = ({
+  onChange,
+  defaultValue,
+  customProps = {},
+  rules,
+}: LoginItemProps) => {
+  const options: {
+    rules?: LoginItemProps['rules'];
+    onChange?: LoginItemProps['onChange'];
