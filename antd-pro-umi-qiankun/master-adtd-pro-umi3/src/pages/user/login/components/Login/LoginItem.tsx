@@ -13,3 +13,18 @@ export type LoginItemKeyType = keyof typeof ItemMap;
 export interface LoginItemType {
   UserName: React.FC<WrappedLoginItemProps>;
   Password: React.FC<WrappedLoginItemProps>;
+  Mobile: React.FC<WrappedLoginItemProps>;
+  Captcha: React.FC<WrappedLoginItemProps>;
+}
+
+export interface LoginItemProps extends Partial<FormItemProps> {
+  name?: string;
+  style?: React.CSSProperties;
+  placeholder?: string;
+  buttonText?: React.ReactNode;
+  countDown?: number;
+  getCaptchaButtonText?: string;
+  getCaptchaSecondText?: string;
+  updateActive?: LoginContextProps['updateActive'];
+  type?: string;
+  defaultValue?: string;
