@@ -44,3 +44,18 @@ const getFormItemOptions = ({
   const options: {
     rules?: LoginItemProps['rules'];
     onChange?: LoginItemProps['onChange'];
+    initialValue?: LoginItemProps['defaultValue'];
+  } = {
+    rules: rules || (customProps.rules as LoginItemProps['rules']),
+  };
+  if (onChange) {
+    options.onChange = onChange;
+  }
+  if (defaultValue) {
+    options.initialValue = defaultValue;
+  }
+  return options;
+};
+
+const LoginItem: React.FC<LoginItemProps> = props => {
+  const [count, setCount] = useState<number>(props.countDown || 0);
