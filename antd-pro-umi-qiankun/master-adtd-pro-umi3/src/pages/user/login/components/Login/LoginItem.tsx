@@ -106,3 +106,19 @@ const LoginItem: React.FC<LoginItemProps> = props => {
     return null;
   }
   // get getFieldDecorator props
+  const options = getFormItemOptions(props);
+  const otherProps = restProps || {};
+
+  if (type === 'Captcha') {
+    const inputProps = omit(otherProps, ['onGetCaptcha', 'countDown']);
+
+    return (
+      <FormItem shouldUpdate>
+        {({ getFieldValue }) => (
+          <Row gutter={8}>
+            <Col span={16}>
+              <FormItem name={name} {...options}>
+                <Input {...customProps} {...inputProps} />
+              </FormItem>
+            </Col>
+            <Col span={8}>
