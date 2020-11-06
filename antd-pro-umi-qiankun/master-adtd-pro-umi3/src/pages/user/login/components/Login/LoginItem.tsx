@@ -75,3 +75,18 @@ const LoginItem: React.FC<LoginItemProps> = props => {
     ...restProps
   } = props;
 
+  const onGetCaptcha = useCallback(async (mobile: string) => {
+    const result = await getFakeCaptcha(mobile);
+    if (result === false) {
+      return;
+    }
+    message.success('获取验证码成功！验证码为：1234');
+    setTiming(true);
+  }, []);
+
+  useEffect(() => {
+    let interval: number = 0;
+    const { countDown } = props;
+    if (timing) {
+      interval = window.setInterval(() => {
+        setCount(preSecond => {
