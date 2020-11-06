@@ -90,3 +90,19 @@ const LoginItem: React.FC<LoginItemProps> = props => {
     if (timing) {
       interval = window.setInterval(() => {
         setCount(preSecond => {
+          if (preSecond <= 1) {
+            setTiming(false);
+            clearInterval(interval);
+            // 重置秒数
+            return countDown || 60;
+          }
+          return preSecond - 1;
+        });
+      }, 1000);
+    }
+    return () => clearInterval(interval);
+  }, [timing]);
+  if (!name) {
+    return null;
+  }
+  // get getFieldDecorator props
