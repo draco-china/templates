@@ -122,3 +122,17 @@ const LoginItem: React.FC<LoginItemProps> = props => {
               </FormItem>
             </Col>
             <Col span={8}>
+              <Button
+                disabled={timing}
+                className={styles.getCaptcha}
+                size="large"
+                onClick={() => {
+                  const value = getFieldValue('mobile');
+                  onGetCaptcha(value);
+                }}
+              >
+                {timing ? `${count} 秒` : '获取验证码'}
+              </Button>
+            </Col>
+          </Row>
+        )}
