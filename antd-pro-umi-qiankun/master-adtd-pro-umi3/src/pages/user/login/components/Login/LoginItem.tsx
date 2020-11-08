@@ -136,3 +136,19 @@ const LoginItem: React.FC<LoginItemProps> = props => {
             </Col>
           </Row>
         )}
+      </FormItem>
+    );
+  }
+  return (
+    <FormItem name={name} {...options}>
+      <Input {...customProps} {...otherProps} />
+    </FormItem>
+  );
+};
+
+const LoginItems: Partial<LoginItemType> = {};
+
+Object.keys(ItemMap).forEach(key => {
+  const item = ItemMap[key];
+  LoginItems[key] = (props: LoginItemProps) => (
+    <LoginContext.Consumer>
