@@ -152,3 +152,18 @@ Object.keys(ItemMap).forEach(key => {
   const item = ItemMap[key];
   LoginItems[key] = (props: LoginItemProps) => (
     <LoginContext.Consumer>
+      {context => (
+        <LoginItem
+          customProps={item.props}
+          rules={item.rules}
+          {...props}
+          type={key}
+          {...context}
+          updateActive={context.updateActive}
+        />
+      )}
+    </LoginContext.Consumer>
+  );
+});
+
+export default LoginItems as LoginItemType;
