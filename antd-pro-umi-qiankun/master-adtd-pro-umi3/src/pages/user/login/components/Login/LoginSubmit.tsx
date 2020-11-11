@@ -9,3 +9,5 @@ const FormItem = Form.Item;
 
 interface LoginSubmitProps extends ButtonProps {
   className?: string;
+}
+
