@@ -11,3 +11,5 @@ interface LoginSubmitProps extends ButtonProps {
   className?: string;
 }
 
+const LoginSubmit: React.FC<LoginSubmitProps> = ({ className, ...rest }) => {
+  const clsString = classNames(styles.submit, className);
