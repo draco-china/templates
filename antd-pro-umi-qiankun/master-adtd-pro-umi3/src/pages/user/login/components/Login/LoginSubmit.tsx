@@ -18,3 +18,6 @@ const LoginSubmit: React.FC<LoginSubmitProps> = ({ className, ...rest }) => {
       <Button size="large" className={clsString} type="primary" htmlType="submit" {...rest} />
     </FormItem>
   );
+};
+
+export default LoginSubmit;
