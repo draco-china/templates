@@ -9,3 +9,8 @@ const generateId = (() => {
   let i = 0;
   return (prefix = '') => {
     i += 1;
+    return `${prefix}${i}`;
+  };
+})();
+
+interface LoginTabProps extends TabPaneProps {
