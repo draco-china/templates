@@ -14,3 +14,7 @@ const generateId = (() => {
 })();
 
 interface LoginTabProps extends TabPaneProps {
+  tabUtil: LoginContextProps['tabUtil'];
+  active?: boolean;
+}
+
