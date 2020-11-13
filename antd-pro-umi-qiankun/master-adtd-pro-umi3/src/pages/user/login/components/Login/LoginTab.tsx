@@ -21,3 +21,6 @@ interface LoginTabProps extends TabPaneProps {
 const LoginTab: React.FC<LoginTabProps> = props => {
   useEffect(() => {
     const uniqueId = generateId('login-tab-');
+    const { tabUtil } = props;
+    if (tabUtil) {
+      tabUtil.addTab(uniqueId);
