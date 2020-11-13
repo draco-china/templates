@@ -18,3 +18,6 @@ interface LoginTabProps extends TabPaneProps {
   active?: boolean;
 }
 
+const LoginTab: React.FC<LoginTabProps> = props => {
+  useEffect(() => {
+    const uniqueId = generateId('login-tab-');
