@@ -6,3 +6,6 @@ import LoginContext, { LoginContextProps } from './LoginContext';
 const { TabPane } = Tabs;
 
 const generateId = (() => {
+  let i = 0;
+  return (prefix = '') => {
+    i += 1;
