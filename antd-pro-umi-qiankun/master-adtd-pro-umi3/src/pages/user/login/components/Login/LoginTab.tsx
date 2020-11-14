@@ -24,3 +24,7 @@ const LoginTab: React.FC<LoginTabProps> = props => {
     const { tabUtil } = props;
     if (tabUtil) {
       tabUtil.addTab(uniqueId);
+    }
+  }, []);
+  const { children } = props;
+  return <TabPane {...props}>{props.active && children}</TabPane>;
