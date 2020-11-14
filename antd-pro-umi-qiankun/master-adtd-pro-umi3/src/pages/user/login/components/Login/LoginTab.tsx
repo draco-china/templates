@@ -32,3 +32,6 @@ const LoginTab: React.FC<LoginTabProps> = props => {
 
 const WrapContext: React.FC<TabPaneProps> & {
   typeName: string;
+} = props => (
+  <LoginContext.Consumer>
+    {value => <LoginTab tabUtil={value.tabUtil} {...props} />}
