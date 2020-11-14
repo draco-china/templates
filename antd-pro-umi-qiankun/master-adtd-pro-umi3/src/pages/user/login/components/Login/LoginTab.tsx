@@ -28,3 +28,7 @@ const LoginTab: React.FC<LoginTabProps> = props => {
   }, []);
   const { children } = props;
   return <TabPane {...props}>{props.active && children}</TabPane>;
+};
+
+const WrapContext: React.FC<TabPaneProps> & {
+  typeName: string;
