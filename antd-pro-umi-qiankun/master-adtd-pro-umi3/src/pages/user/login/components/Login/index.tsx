@@ -21,3 +21,14 @@ export interface LoginProps {
   children: React.ReactElement<typeof LoginTab>[];
 }
 
+interface LoginType extends React.FC<LoginProps> {
+  Tab: typeof LoginTab;
+  Submit: typeof LoginSubmit;
+  UserName: React.FunctionComponent<LoginItemProps>;
+  Password: React.FunctionComponent<LoginItemProps>;
+  Mobile: React.FunctionComponent<LoginItemProps>;
+  Captcha: React.FunctionComponent<LoginItemProps>;
+}
+
+const Login: LoginType = props => {
+  const { className } = props;
