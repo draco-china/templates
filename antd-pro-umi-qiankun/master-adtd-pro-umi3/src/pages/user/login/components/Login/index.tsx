@@ -62,3 +62,13 @@ const Login: LoginType = props => {
           },
           removeTab: id => {
             setTabs(tabs.filter(currentId => currentId !== id));
+          },
+        },
+        updateActive: activeItem => {
+          if (active[type]) {
+            active[type].push(activeItem);
+          } else {
+            active[type] = [activeItem];
+          }
+          setActive(active);
+        },
