@@ -52,3 +52,13 @@ const Login: LoginType = props => {
         otherChildren.push(child);
       }
     },
+  );
+  return (
+    <LoginContext.Provider
+      value={{
+        tabUtil: {
+          addTab: id => {
+            setTabs([...tabs, id]);
+          },
+          removeTab: id => {
+            setTabs(tabs.filter(currentId => currentId !== id));
