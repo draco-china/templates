@@ -42,3 +42,13 @@ const Login: LoginType = props => {
   const otherChildren: React.ReactElement<unknown>[] = [];
   React.Children.forEach(
     props.children,
+    (child: React.ReactComponentElement<typeof LoginTab> | React.ReactElement<unknown>) => {
+      if (!child) {
+        return;
+      }
+      if ((child.type as { typeName: string }).typeName === 'LoginTab') {
+        TabChildren.push(child as React.ReactComponentElement<typeof LoginTab>);
+      } else {
+        otherChildren.push(child);
+      }
+    },
