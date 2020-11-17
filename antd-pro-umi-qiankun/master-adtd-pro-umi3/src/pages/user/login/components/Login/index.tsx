@@ -72,3 +72,13 @@ const Login: LoginType = props => {
           }
           setActive(active);
         },
+      }}
+    >
+      <div className={classNames(className, styles.login)}>
+        <Form
+          form={props.from}
+          onFinish={values => {
+            if (props.onSubmit) {
+              props.onSubmit(values as LoginParamsType);
+            }
+          }}
