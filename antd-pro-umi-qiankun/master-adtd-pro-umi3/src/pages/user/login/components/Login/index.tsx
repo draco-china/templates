@@ -82,3 +82,13 @@ const Login: LoginType = props => {
               props.onSubmit(values as LoginParamsType);
             }
           }}
+        >
+          {tabs.length ? (
+            <React.Fragment>
+              <Tabs
+                animated={false}
+                className={styles.tabs}
+                activeKey={type}
+                onChange={activeKey => {
+                  setType(activeKey);
+                }}
