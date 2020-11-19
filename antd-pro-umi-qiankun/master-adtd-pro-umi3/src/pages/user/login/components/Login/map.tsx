@@ -5,3 +5,9 @@ import styles from './index.less';
 export default {
   UserName: {
     props: {
+      size: 'large',
+      id: 'userName',
+      prefix: (
+        <UserOutlined
+          style={{
+            color: '#1890ff',
