@@ -11,3 +11,10 @@ export default {
         <UserOutlined
           style={{
             color: '#1890ff',
+          }}
+          className={styles.prefixIcon}
+        />
+      ),
+      placeholder: 'admin',
+    },
+    rules: [
