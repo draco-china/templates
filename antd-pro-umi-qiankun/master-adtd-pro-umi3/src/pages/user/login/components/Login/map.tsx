@@ -31,3 +31,9 @@ export default {
       type: 'password',
       id: 'password',
       placeholder: '888888',
+    },
+    rules: [
+      {
+        required: true,
+        message: 'Please enter password!',
+      },
