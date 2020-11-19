@@ -18,3 +18,9 @@ export default {
       placeholder: 'admin',
     },
     rules: [
+      {
+        required: true,
+        message: 'Please enter username!',
+      },
+    ],
+  },
