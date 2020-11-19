@@ -24,3 +24,10 @@ export default {
       },
     ],
   },
+  Password: {
+    props: {
+      size: 'large',
+      prefix: <LockTwoTone className={styles.prefixIcon} />,
+      type: 'password',
+      id: 'password',
+      placeholder: '888888',
