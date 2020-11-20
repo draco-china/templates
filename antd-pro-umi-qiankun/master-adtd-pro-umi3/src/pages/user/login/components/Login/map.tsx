@@ -44,3 +44,9 @@ export default {
       size: 'large',
       prefix: <MobileTwoTone className={styles.prefixIcon} />,
       placeholder: 'mobile number',
+    },
+    rules: [
+      {
+        required: true,
+        message: 'Please enter mobile number!',
+      },
