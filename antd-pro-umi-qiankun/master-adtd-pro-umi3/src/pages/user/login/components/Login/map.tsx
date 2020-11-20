@@ -50,3 +50,10 @@ export default {
         required: true,
         message: 'Please enter mobile number!',
       },
+      {
+        pattern: /^1\d{10}$/,
+        message: 'Wrong mobile number format!',
+      },
+    ],
+  },
+  Captcha: {
