@@ -57,3 +57,9 @@ export default {
     ],
   },
   Captcha: {
+    props: {
+      size: 'large',
+      prefix: <MailTwoTone className={styles.prefixIcon} />,
+      placeholder: 'captcha',
+    },
+    rules: [
