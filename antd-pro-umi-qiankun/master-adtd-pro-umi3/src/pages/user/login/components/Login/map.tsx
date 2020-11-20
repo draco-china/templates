@@ -37,3 +37,10 @@ export default {
         required: true,
         message: 'Please enter password!',
       },
+    ],
+  },
+  Mobile: {
+    props: {
+      size: 'large',
+      prefix: <MobileTwoTone className={styles.prefixIcon} />,
+      placeholder: 'mobile number',
