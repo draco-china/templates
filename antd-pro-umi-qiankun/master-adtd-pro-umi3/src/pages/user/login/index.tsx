@@ -38,3 +38,16 @@ const Login: React.FC<LoginProps> = props => {
 
   const handleSubmit = (values: LoginParamsType) => {
     const { dispatch } = props;
+    dispatch({
+      type: 'login/login',
+      payload: { ...values, type },
+    });
+  };
+  return (
+    <div className={styles.main}>
+      <LoginFrom activeKey={type} onTabChange={setType} onSubmit={handleSubmit}>
+        <Tab key="account" tab="账户密码登录">
+          {status === 'error' && loginType === 'account' && !submitting && (
+            <LoginMessage content="账户或密码错误（admin/ant.design）" />
+          )}
+
