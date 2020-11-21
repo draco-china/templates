@@ -63,3 +63,10 @@ export default {
       placeholder: 'captcha',
     },
     rules: [
+      {
+        required: true,
+        message: 'Please enter Captcha!',
+      },
+    ],
+  },
+};
