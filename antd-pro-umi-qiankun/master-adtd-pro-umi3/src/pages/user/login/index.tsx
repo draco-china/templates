@@ -24,3 +24,17 @@ const LoginMessage: React.FC<{
     style={{
       marginBottom: 24,
     }}
+    message={content}
+    type="error"
+    showIcon
+  />
+);
+
+const Login: React.FC<LoginProps> = props => {
+  const { userLogin = {}, submitting } = props;
+  const { status, type: loginType } = userLogin;
+  const [autoLogin, setAutoLogin] = useState(true);
+  const [type, setType] = useState<string>('account');
+
+  const handleSubmit = (values: LoginParamsType) => {
+    const { dispatch } = props;
