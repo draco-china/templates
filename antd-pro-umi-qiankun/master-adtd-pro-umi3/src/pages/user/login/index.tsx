@@ -11,3 +11,16 @@ import LoginFrom from './components/Login';
 import styles from './style.less';
 
 const { Tab, UserName, Password, Mobile, Captcha, Submit } = LoginFrom;
+interface LoginProps {
+  dispatch: Dispatch<AnyAction>;
+  userLogin: StateType;
+  submitting?: boolean;
+}
+
+const LoginMessage: React.FC<{
+  content: string;
+}> = ({ content }) => (
+  <Alert
+    style={{
+      marginBottom: 24,
+    }}
