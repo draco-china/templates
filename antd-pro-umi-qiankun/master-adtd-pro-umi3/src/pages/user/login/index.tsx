@@ -63,3 +63,14 @@ const Login: React.FC<LoginProps> = props => {
           />
           <Password
             name="password"
+            placeholder="密码: ant.design"
+            rules={[
+              {
+                required: true,
+                message: '请输入密码！',
+              },
+            ]}
+          />
+        </Tab>
+        <Tab key="mobile" tab="手机号登录">
+          {status === 'error' && loginType === 'mobile' && !submitting && (
