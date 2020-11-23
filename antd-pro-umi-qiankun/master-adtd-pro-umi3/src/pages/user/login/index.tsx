@@ -74,3 +74,15 @@ const Login: React.FC<LoginProps> = props => {
         </Tab>
         <Tab key="mobile" tab="手机号登录">
           {status === 'error' && loginType === 'mobile' && !submitting && (
+            <LoginMessage content="验证码错误" />
+          )}
+          <Mobile
+            name="mobile"
+            placeholder="手机号"
+            rules={[
+              {
+                required: true,
+                message: '请输入手机号！',
+              },
+              {
+                pattern: /^1\d{10}$/,
