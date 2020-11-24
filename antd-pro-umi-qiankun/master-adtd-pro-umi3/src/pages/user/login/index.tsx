@@ -86,3 +86,15 @@ const Login: React.FC<LoginProps> = props => {
               },
               {
                 pattern: /^1\d{10}$/,
+                message: '手机号格式错误！',
+              },
+            ]}
+          />
+          <Captcha
+            name="captcha"
+            placeholder="验证码"
+            countDown={120}
+            getCaptchaButtonText=""
+            getCaptchaSecondText="秒"
+            rules={[
+              {
