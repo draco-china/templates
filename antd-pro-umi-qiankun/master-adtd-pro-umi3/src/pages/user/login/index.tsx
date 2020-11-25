@@ -98,3 +98,15 @@ const Login: React.FC<LoginProps> = props => {
             getCaptchaSecondText="秒"
             rules={[
               {
+                required: true,
+                message: '请输入验证码！',
+              },
+            ]}
+          />
+        </Tab>
+        <div>
+          <Checkbox checked={autoLogin} onChange={e => setAutoLogin(e.target.checked)}>
+            自动登录
+          </Checkbox>
+          <a
+            style={{
