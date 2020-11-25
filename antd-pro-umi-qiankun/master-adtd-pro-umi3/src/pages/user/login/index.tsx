@@ -122,3 +122,16 @@ const Login: React.FC<LoginProps> = props => {
           <AlipayCircleOutlined className={styles.icon} />
           <TaobaoCircleOutlined className={styles.icon} />
           <WeiboCircleOutlined className={styles.icon} />
+          <Link className={styles.register} to="/user/register">
+            注册账户
+          </Link>
+        </div>
+      </LoginFrom>
+    </div>
+  );
+};
+
+export default connect(({ login, loading }: ConnectState) => ({
+  userLogin: login,
+  submitting: loading.effects['login/login'],
+}))(Login);
