@@ -110,3 +110,15 @@ const Login: React.FC<LoginProps> = props => {
           </Checkbox>
           <a
             style={{
+              float: 'right',
+            }}
+          >
+            忘记密码
+          </a>
+        </div>
+        <Submit loading={submitting}>登录</Submit>
+        <div className={styles.other}>
+          其他登录方式
+          <AlipayCircleOutlined className={styles.icon} />
+          <TaobaoCircleOutlined className={styles.icon} />
+          <WeiboCircleOutlined className={styles.icon} />
