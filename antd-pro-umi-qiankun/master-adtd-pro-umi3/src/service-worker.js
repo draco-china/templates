@@ -44,3 +44,11 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   /^https:\/\/cdnjs.cloudflare.com\//,
   workbox.strategies.networkFirst(),
+);
+workbox.routing.registerRoute(/\/color.less/, workbox.strategies.networkFirst());
+
+/**
+ * Response to client after skipping waiting with MessageChannel
+ */
+addEventListener('message', event => {
+  const replyPort = event.ports[0];
