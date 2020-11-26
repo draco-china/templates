@@ -19,3 +19,22 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
  * Register a navigation route.
  * https://developers.google.com/web/tools/workbox/modules/workbox-routing#how_to_register_a_navigation_route
  */
+workbox.routing.registerNavigationRoute('/index.html');
+
+/**
+ * Use runtime cache:
+ * https://developers.google.com/web/tools/workbox/reference-docs/latest/workbox.routing#.registerRoute
+ *
+ * Workbox provides all common caching strategies including CacheFirst, NetworkFirst etc.
+ * https://developers.google.com/web/tools/workbox/reference-docs/latest/workbox.strategies
+ */
+
+/**
+ * Handle API requests
+ */
+workbox.routing.registerRoute(/\/api\//, workbox.strategies.networkFirst());
+
+/**
+ * Handle third party requests
+ */
+workbox.routing.registerRoute(
