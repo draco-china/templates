@@ -41,3 +41,6 @@ workbox.routing.registerRoute(
   /^https:\/\/gw.alipayobjects.com\//,
   workbox.strategies.networkFirst(),
 );
+workbox.routing.registerRoute(
+  /^https:\/\/cdnjs.cloudflare.com\//,
+  workbox.strategies.networkFirst(),
