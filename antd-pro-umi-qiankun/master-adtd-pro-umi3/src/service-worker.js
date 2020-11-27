@@ -58,3 +58,6 @@ addEventListener('message', event => {
       self.skipWaiting().then(
         () =>
           replyPort.postMessage({
+            error: null,
+          }),
+        error =>
