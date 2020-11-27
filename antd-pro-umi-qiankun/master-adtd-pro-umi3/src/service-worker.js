@@ -61,3 +61,6 @@ addEventListener('message', event => {
             error: null,
           }),
         error =>
+          replyPort.postMessage({
+            error,
+          }),
