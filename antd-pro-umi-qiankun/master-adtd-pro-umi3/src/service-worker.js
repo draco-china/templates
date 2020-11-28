@@ -64,3 +64,7 @@ addEventListener('message', event => {
           replyPort.postMessage({
             error,
           }),
+      ),
+    );
+  }
+});
