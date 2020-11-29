@@ -4,3 +4,4 @@ const CONFIG_FILE_PATH = REACT_APP_ENV === 'dev' ? 'apps.conf.dev.json' : 'apps.
 
 export async function query() {
   return request(`/config/${CONFIG_FILE_PATH}`);
+}
