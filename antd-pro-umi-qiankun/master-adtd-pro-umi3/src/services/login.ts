@@ -14,3 +14,4 @@ export async function fakeAccountLogin(params: LoginParamsType) {
   });
 }
 
+export async function getFakeCaptcha(mobile: string) {
