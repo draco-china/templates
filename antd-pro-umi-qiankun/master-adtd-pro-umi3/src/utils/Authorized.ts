@@ -13,3 +13,5 @@ const reloadAuthorized = (): void => {
  * hard code
  * block need it。
  */
+window.reloadAuthorized = reloadAuthorized;
+
