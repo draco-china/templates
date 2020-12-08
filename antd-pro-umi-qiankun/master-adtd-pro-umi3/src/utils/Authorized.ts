@@ -16,3 +16,4 @@ const reloadAuthorized = (): void => {
 window.reloadAuthorized = reloadAuthorized;
 
 export { reloadAuthorized };
+export default Authorized;
