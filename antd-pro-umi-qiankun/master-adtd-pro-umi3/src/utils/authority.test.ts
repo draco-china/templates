@@ -1,0 +1,2 @@
+import { getAuthority } from './authority';
+
