@@ -5,3 +5,5 @@ describe('getAuthority should be strong', () => {
     expect(getAuthority('admin')).toEqual(['admin']);
   });
   it('array with double quotes', () => {
+    expect(getAuthority('"admin"')).toEqual(['admin']);
+  });
