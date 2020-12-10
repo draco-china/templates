@@ -11,3 +11,4 @@ describe('getAuthority should be strong', () => {
     expect(getAuthority('["admin"]')).toEqual(['admin']);
   });
   it('array with multiple items', () => {
+    expect(getAuthority('["admin", "guest"]')).toEqual(['admin', 'guest']);
