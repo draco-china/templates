@@ -7,3 +7,6 @@ export function getAuthority(str?: string): string | string[] {
   // authorityString could be admin, "admin", ["admin"]
   let authority;
   try {
+    if (authorityString) {
+      authority = JSON.parse(authorityString);
+    }
