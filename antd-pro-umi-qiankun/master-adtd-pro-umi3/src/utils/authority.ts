@@ -21,3 +21,6 @@ export function getAuthority(str?: string): string | string[] {
   if (!authority && ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION === 'site') {
     return ['admin'];
   }
+  return authority;
+}
+
