@@ -34,3 +34,6 @@ const errorHandler = (error: { response: Response }): Response => {
 
     notification.error({
       message: `请求错误 ${status}: ${url}`,
+      description: errorText,
+    });
+  } else if (!response) {
