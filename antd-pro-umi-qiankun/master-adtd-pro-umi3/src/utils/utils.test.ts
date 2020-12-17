@@ -18,3 +18,11 @@ describe('isUrl tests', (): void => {
     expect(isUrl('bar/test')).toBeFalsy();
     expect(isUrl('http:/example.com/')).toBeFalsy();
     expect(isUrl('ttp://example.com/')).toBeFalsy();
+  });
+
+  it('should return true for valid URLs', (): void => {
+    expect(isUrl('http://example.com/')).toBeTruthy();
+    expect(isUrl('https://example.com/')).toBeTruthy();
+    expect(isUrl('http://example.com/test/123')).toBeTruthy();
+    expect(isUrl('https://example.com/test/123')).toBeTruthy();
+    expect(isUrl('http://example.com/test/123?foo=bar')).toBeTruthy();
