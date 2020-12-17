@@ -5,3 +5,10 @@ describe('isUrl tests', (): void => {
     expect(isUrl([] as any)).toBeFalsy();
     expect(isUrl({} as any)).toBeFalsy();
     expect(isUrl(false as any)).toBeFalsy();
+    expect(isUrl(true as any)).toBeFalsy();
+    expect(isUrl(NaN as any)).toBeFalsy();
+    expect(isUrl(null as any)).toBeFalsy();
+    expect(isUrl(undefined as any)).toBeFalsy();
+    expect(isUrl('')).toBeFalsy();
+  });
+
