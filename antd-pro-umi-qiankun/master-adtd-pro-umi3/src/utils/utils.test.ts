@@ -12,3 +12,9 @@ describe('isUrl tests', (): void => {
     expect(isUrl('')).toBeFalsy();
   });
 
+  it('should return false for invalid URLs', (): void => {
+    expect(isUrl('foo')).toBeFalsy();
+    expect(isUrl('bar')).toBeFalsy();
+    expect(isUrl('bar/test')).toBeFalsy();
+    expect(isUrl('http:/example.com/')).toBeFalsy();
+    expect(isUrl('ttp://example.com/')).toBeFalsy();
