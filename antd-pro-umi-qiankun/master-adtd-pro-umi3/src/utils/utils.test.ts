@@ -26,3 +26,9 @@ describe('isUrl tests', (): void => {
     expect(isUrl('http://example.com/test/123')).toBeTruthy();
     expect(isUrl('https://example.com/test/123')).toBeTruthy();
     expect(isUrl('http://example.com/test/123?foo=bar')).toBeTruthy();
+    expect(isUrl('https://example.com/test/123?foo=bar')).toBeTruthy();
+    expect(isUrl('http://www.example.com/')).toBeTruthy();
+    expect(isUrl('https://www.example.com/')).toBeTruthy();
+    expect(isUrl('http://www.example.com/test/123')).toBeTruthy();
+    expect(isUrl('https://www.example.com/test/123')).toBeTruthy();
+    expect(isUrl('http://www.example.com/test/123?foo=bar')).toBeTruthy();
