@@ -54,3 +54,9 @@ describe('getRouteAuthority tests', () => {
     expect(getRouteAuthority('/nested/user', routes)).toEqual(['admin', 'user']);
   });
 
+  it('should return authority for configured route', (): void => {
+    const routes = [
+      { path: '/nested', authority: ['admin', 'user'], exact: true },
+      { path: '/nested/user', name: 'user', authority: ['user'], exact: true },
+      { path: '/nested/admin', name: 'admin', authority: ['admin'], exact: true },
+    ];
