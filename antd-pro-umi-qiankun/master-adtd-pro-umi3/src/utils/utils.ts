@@ -39,3 +39,8 @@ export const getAuthorityFromRouter = <T extends Route>(
       (path && pathRegexp(path).exec(pathname)) ||
       (routes && getAuthorityFromRouter(routes, pathname)),
   );
+  if (authority) return authority;
+  return undefined;
+};
+
+export const getRouteAuthority = (path: string, routeData: Route[]) => {
