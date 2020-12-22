@@ -48,3 +48,7 @@ export const getRouteAuthority = (path: string, routeData: Route[]) => {
   routeData.forEach(route => {
     // match prefix
     if (pathRegexp(`${route.path}/(.*)`).test(`${path}/`)) {
+      if (route.authority) {
+        authorities = route.authority;
+      }
+      // exact match
