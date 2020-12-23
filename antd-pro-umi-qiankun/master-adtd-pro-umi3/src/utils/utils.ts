@@ -52,3 +52,7 @@ export const getRouteAuthority = (path: string, routeData: Route[]) => {
         authorities = route.authority;
       }
       // exact match
+      if (route.path === path) {
+        authorities = route.authority || authorities;
+      }
+      // get children authority recursively
