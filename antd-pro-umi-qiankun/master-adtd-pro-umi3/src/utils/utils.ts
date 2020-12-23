@@ -59,3 +59,7 @@ export const getRouteAuthority = (path: string, routeData: Route[]) => {
       if (route.routes) {
         authorities = getRouteAuthority(path, route.routes) || authorities;
       }
+    }
+  });
+  return authorities;
+};
