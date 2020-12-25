@@ -11,3 +11,7 @@ env.TEST = true;
 env.UMI_UI = 'none';
 env.PROGRESS = 'none';
 // flag to prevent multiple test
+let once = false;
+
+const startServer = spawn(/^win/.test(process.platform) ? 'npm.cmd' : 'npm', ['start'], {
+  env,
