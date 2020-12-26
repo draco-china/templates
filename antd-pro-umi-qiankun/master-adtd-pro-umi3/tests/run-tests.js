@@ -22,3 +22,7 @@ startServer.stderr.on('data', data => {
   console.log(data.toString());
 });
 
+startServer.on('exit', () => {
+  kill(process.env.PORT || 8000);
+});
+
