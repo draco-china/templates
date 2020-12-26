@@ -26,3 +26,8 @@ startServer.on('exit', () => {
   kill(process.env.PORT || 8000);
 });
 
+console.log('Starting development server for e2e tests...');
+startServer.stdout.on('data', data => {
+  console.log(data.toString());
+  // hack code , wait umi
+  if (
