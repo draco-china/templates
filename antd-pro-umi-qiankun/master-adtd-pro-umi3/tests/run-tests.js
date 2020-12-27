@@ -35,3 +35,7 @@ startServer.stdout.on('data', data => {
     data.toString().indexOf('Theme generated successfully') >= 0
   ) {
     // eslint-disable-next-line
+    once = true;
+    console.log('Development server is started, ready to run tests.');
+    const testCmd = spawn(
+      /^win/.test(process.platform) ? 'npm.cmd' : 'npm',
