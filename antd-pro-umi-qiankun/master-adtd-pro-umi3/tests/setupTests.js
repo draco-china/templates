@@ -4,3 +4,4 @@ import 'jsdom-global/register';
 const localStorageMock = (() => {
   let store = {};
 
+  return {
