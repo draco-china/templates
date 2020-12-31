@@ -14,3 +14,4 @@ const localStorageMock = (() => {
     clear() {
       store = {};
     },
+  };
