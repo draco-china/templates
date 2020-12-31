@@ -12,3 +12,5 @@ const localStorageMock = (() => {
       store[key] = value.toString();
     },
     clear() {
+      store = {};
+    },
