@@ -1,0 +1,20 @@
+const { defineConfig } = require('@lobehub/i18n-cli');
+
+module.exports = defineConfig({
+  entry: './src/i18n/locales/en-US',
+  entryLocale: 'en-US',
+  output: './src/i18n/locales',
+  outputLocales: [
+    'cs-CZ',
+    'de-DE',
+    'en-US',
+    'es-ES',
+    'es-MX',
+    'fi-FI',
+    'fr-FR',
+    'hi-IN',
+    'hu-HU',
+    'ja-JP',
+    'ko-KR',
+    'no-NO',
+    'pl-PL',
