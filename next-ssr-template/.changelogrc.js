@@ -9,3 +9,14 @@ exports.default = {
     },
     ci: {
       emoji: '👷',
+    },
+  },
+  displayTypes: ['feat', 'fix', 'style', 'pref', 'refactor'],
+  newlineTimestamp: true,
+  reduceHeadingLevel: true,
+  scopeDisplayName: {
+    '*': 'misc',
+  },
+  showAuthor: true,
+  showSummary: true,
+};
