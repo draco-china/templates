@@ -18,3 +18,22 @@ module.exports = defineConfig({
     'ko-KR',
     'no-NO',
     'pl-PL',
+    'pt-BR',
+    'ro-RO',
+    'ru-RU',
+    'th-TH',
+    'tr-TR',
+    'uk-UA',
+    'vi-VN',
+    'zh-CN',
+    'zh-TW',
+  ],
+  experimental: {
+    jsonMode: true,
+  },
+  markdown: {
+    entry: ['./README.md'],
+    entryLocale: 'en-US',
+    outputLocales: ['zh-CN', 'zh-TW'],
+  },
+});
