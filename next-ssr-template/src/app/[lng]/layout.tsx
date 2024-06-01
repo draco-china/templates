@@ -37,3 +37,36 @@ export default function RootLayout({
   children,
   params: { lng },
 }: {
+  children: React.ReactNode;
+  params: { lng: string };
+}) {
+  const mode = getMode();
+  const theme = getTheme();
+  return (
+    <html
+      lang={lng}
+      dir={dir(lng)}
+      data-mode={mode}
+      data-theme={theme}
+      style={{
+        colorScheme: mode,
+      }}
+      suppressHydrationWarning
+    >
+      <head>
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+        <HeadAnalytics />
+      </head>
+      <body className={cn('w-screen overflow-x-hidden font-sans antialiased', fontSans.variable)}>
+        <ReactQueryProvider>
+          <LayoutHeader />
+          <main className='relative min-h-[calc(100vh-65px-85px)]'>{children}</main>
+          <LayoutFooter />
+          <LayoutScroll />
+          <Toaster closeButton richColors visibleToasts={9} />
+        </ReactQueryProvider>
+        <BodyAnalytics />
+      </body>
+    </html>
+  );
+}
