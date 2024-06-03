@@ -21,3 +21,25 @@ export default function Projects() {
   return (
     <div className='container grid grid-cols-3 gap-6 py-6'>
       {data?.map((item: any) => {
+        return (
+          <Card key={item.id}>
+            <CardHeader>
+              <CardTitle>标题</CardTitle>
+              <CardDescription className='truncate'>描述</CardDescription>
+            </CardHeader>
+            <CardFooter className='flex justify-between'>
+              <Button variant='outline'>
+                <Share1Icon className='mr-2' />
+                <Link href={item.forks_url}> Fork {item.forks_count}</Link>
+              </Button>
+              <Button variant='outline'>
+                <StarIcon className='mr-2' />
+                <Link href={item.stargazers_url}>Star {item.stargazers_count}</Link>
+              </Button>
+            </CardFooter>
+          </Card>
+        );
+      })}
+    </div>
+  );
+}
