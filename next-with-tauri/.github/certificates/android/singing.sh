@@ -15,3 +15,14 @@ keyProperties.load(FileInputStream(keyPropertiesFile))
 
 cat $TARGET_FILE.part.1 $TARGET_FILE > $TEMP_FILE
 
+echo "\
+    signingConfigs {
+        create(\"release\") {
+            keyAlias = keyProperties[\"keyAlias\"] as String
+            keyPassword = keyProperties[\"keyPassword\"] as String
+            storeFile = file(keyProperties[\"storeFile\"] as String)
+            storePassword = keyProperties[\"storePassword\"] as String
+        }
+    }" > $TARGET_FILE.part.2
+
+sed -n '/buildTypes {/q;p' $TEMP_FILE > $TARGET_FILE.part.1
