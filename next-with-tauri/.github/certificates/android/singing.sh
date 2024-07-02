@@ -26,3 +26,16 @@ echo "\
     }" > $TARGET_FILE.part.2
 
 sed -n '/buildTypes {/q;p' $TEMP_FILE > $TARGET_FILE.part.1
+sed -n '/buildTypes {/,$p' $TEMP_FILE > $TARGET_FILE.part.3
+cat $TARGET_FILE.part.1 $TARGET_FILE.part.2 $TARGET_FILE.part.3 > $TEMP_FILE
+
+echo "\
+            signingConfig = signingConfigs.getByName(\"release\")
+" > $TARGET_FILE.part.2
+
+sed -n '/proguardFiles(/q;p' $TEMP_FILE > $TARGET_FILE.part.1
+sed -n '/proguardFiles(/,$p' $TEMP_FILE > $TARGET_FILE.part.3
+cat $TARGET_FILE.part.1 $TARGET_FILE.part.2 $TARGET_FILE.part.3 > $TEMP_FILE
+
+rm $TARGET_FILE.part.1 $TARGET_FILE.part.2 $TARGET_FILE.part.3
+mv $TEMP_FILE $TARGET_FILE
