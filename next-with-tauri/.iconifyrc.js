@@ -15,3 +15,27 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
   // Import icons
   const iconSet = await importDirectory(svgPath, {
     prefix: 'local',
+  });
+
+  // Validate, clean up, fix palette and optimise
+  iconSet.forEach((name, type) => {
+    if (type !== 'icon') {
+      return;
+    }
+
+    const svg = iconSet.toSVG(name);
+    if (!svg) {
+      // Invalid icon
+      iconSet.remove(name);
+      return;
+    }
+
+    // Clean up and optimise icons
+    try {
+      // Clean up icon code
+      cleanupSVG(svg);
+
+      // Assume icon is monotone: replace color with currentColor, add if missing
+      // If icon is not monotone, remove this code
+      parseColors(svg, {
+        defaultColor: 'currentColor',
