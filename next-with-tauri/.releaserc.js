@@ -24,3 +24,26 @@ const options = {
     {
       release: 'patch',
       type: 'refactor',
+    },
+    {
+      release: 'patch',
+      type: 'build',
+    },
+    { release: 'patch', scope: 'README', type: 'docs' },
+    { release: 'patch', scope: 'README.md', type: 'docs' },
+    { release: false, type: 'docs' },
+    {
+      release: false,
+      type: 'test',
+    },
+    {
+      release: false,
+      type: 'ci',
+    },
+    {
+      release: false,
+      type: 'chore',
+    },
+    {
+      release: false,
+      type: 'wip',
