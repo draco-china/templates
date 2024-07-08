@@ -24,3 +24,34 @@ function remarkGfmHighlight() {
       });
     });
   };
+}
+
+function replaceNBSP(str) {
+  return str.replaceAll(' ', ' ');
+}
+
+module.exports = {
+  $schema: 'https://json.schemastore.org/remarkrc',
+  plugins: [
+    'remark-gfm',
+    'remark-frontmatter',
+    'remark-pangu',
+    ['remark-textr', { plugins: [replaceNBSP] }],
+    remarkGfmHighlight,
+    // ----- Plugin -----------------------------------------------------------
+    'remark-sort-definitions',
+    ['remark-toc', { heading: 'TOC', maxDepth: 3 }],
+    'remark-remove-unused-definitions',
+    // ----- Presets -----------------------------------------------------------
+    'remark-preset-lint-markdown-style-guide',
+    'remark-preset-lint-recommended',
+    'remark-preset-lint-consistent',
+    // ----- Built-In ----------------------------------------------------------
+    'remark-lint-checkbox-content-indent',
+    'remark-lint-linebreak-style',
+    'remark-lint-no-duplicate-headings-in-section',
+    'remark-lint-no-empty-url',
+    'remark-lint-no-heading-indent',
+    'remark-lint-no-heading-like-paragraph',
+    'remark-lint-no-paragraph-content-indent',
+    'remark-lint-no-reference-like-url',
