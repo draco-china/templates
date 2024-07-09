@@ -8,3 +8,12 @@ const replaceVersion = async () => {
 
   const tauriConf = fs.readFileSync(tauriConfPath, 'utf-8');
   const newTauriConf = tauriConf.replace(/"version": ".*"/, `"version": "${version}"`);
+  fs.writeFileSync(tauriConfPath, newTauriConf);
+
+  const cargoTomlPath = path.resolve(__dirname, './src-tauri/Cargo.toml');
+  const cargoToml = fs.readFileSync(cargoTomlPath, 'utf-8');
+  const newCargoToml = cargoToml.replace(/version = ".*"/, `version = "${version}"`);
+  fs.writeFileSync(cargoTomlPath, newCargoToml);
+
+  const outDir = path.resolve(__dirname, './out');
+  console.log(fs.existsSync(outDir));
