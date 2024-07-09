@@ -17,3 +17,11 @@ const replaceVersion = async () => {
 
   const outDir = path.resolve(__dirname, './out');
   console.log(fs.existsSync(outDir));
+  if (fs.existsSync(outDir)) {
+    const tauriConf = fs.readFileSync(tauriConfPath, 'utf-8');
+    const newTauriConf = tauriConf.replace('npm run build', '');
+    fs.writeFileSync(tauriConfPath, newTauriConf);
+  }
+};
+
+replaceVersion();
