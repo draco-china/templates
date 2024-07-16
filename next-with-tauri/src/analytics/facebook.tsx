@@ -19,3 +19,13 @@ export default function FacebookAnalytics() {
                 appId: '${FACEBOOK_ANALYTICS_ID}',
                 xfbml: true,
                 version: 'v19.0'
+              });
+              FB.AppEvents.logPageView();
+            };
+            `,
+          }}
+        />
+      </>
+    )
+  );
+}
