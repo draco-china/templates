@@ -14,3 +14,10 @@ export function HeadAnalytics() {
 export function BodyAnalytics() {
   return (
     <>
+      <GoogleAnalytics />
+      <YandexAnalytics />
+      <FacebookAnalytics />
+      <BaiduAnalytics />
+    </>
+  );
+}
