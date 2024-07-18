@@ -16,3 +16,11 @@ export default function YandexAnalytics() {
               clickmap:true,
               trackLinks:true,
               accurateTrackBounce:true,
+              ecommerce:"dataLayer"
+            });
+        `,
+        }}
+      />
+    )
+  );
+}
