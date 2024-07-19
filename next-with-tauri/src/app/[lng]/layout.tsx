@@ -19,3 +19,23 @@ export { metadata, viewport } from '@/lib/site';
 
 export async function generateStaticParams() {
   return languages.map((lng: string) => ({ lng }));
+}
+
+export default function RootLayout({
+  children,
+  params: { lng },
+}: {
+  children: React.ReactNode;
+  params: { lng: string };
+}) {
+  return (
+    <html
+      lang={lng}
+      dir={dir(lng)}
+      data-mode={DEFAULT_SYSTEM_MODE}
+      data-theme={DEFAULT_THEME}
+      style={{
+        colorScheme: DEFAULT_SYSTEM_MODE,
+      }}
+      suppressHydrationWarning
+    >
