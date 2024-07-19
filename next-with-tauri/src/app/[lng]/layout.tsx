@@ -39,3 +39,22 @@ export default function RootLayout({
       }}
       suppressHydrationWarning
     >
+      <head>
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+        <HeadAnalytics />
+      </head>
+      <body className={cn('w-screen overflow-x-hidden font-sans antialiased', fontSans.variable)}>
+        <ReactQueryProvider>
+          <LayoutHeader lng={lng} />
+          <main className='relative min-h-[calc(100dvh-65px-138px-env(safe-area-inset-top))] lg:min-h-[calc(100dvh-65px-85px)]'>
+            {children}
+          </main>
+          <LayoutFooter />
+          <LayoutScroll />
+          <Toaster closeButton richColors visibleToasts={9} />
+        </ReactQueryProvider>
+        <BodyAnalytics />
+      </body>
+    </html>
+  );
+}
