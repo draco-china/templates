@@ -13,3 +13,10 @@ export default function Loading() {
             <div className='flex justify-between pt-0 *:h-9 *:w-24'>
               <Skeleton />
               <Skeleton />
+            </div>
+          </Skeleton>
+        );
+      })}
+    </div>
+  );
+}
