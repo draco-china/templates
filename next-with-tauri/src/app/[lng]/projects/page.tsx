@@ -16,3 +16,19 @@ export default function Projects() {
           `https://api.github.com/users/draco-china/repos?type=&sort=&direction=&per_page=&page=`,
         );
         return res.data || [];
+      } catch (error) {
+        return [];
+      }
+    },
+  });
+  return (
+    <div className='container grid w-full gap-6 py-6 lg:grid-cols-3'>
+      {data?.map((item: any) => {
+        return (
+          <Card key={item.id}>
+            <CardHeader className='w-full'>
+              <CardTitle>{item.name}</CardTitle>
+              <CardDescription className='line-clamp-1'>
+                {item.description || 'No description'}
+              </CardDescription>
+            </CardHeader>
