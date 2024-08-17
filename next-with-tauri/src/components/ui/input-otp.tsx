@@ -46,3 +46,26 @@ const InputOTPSlot = React.forwardRef<
         className
       )}
       {...props}
+    >
+      {char}
+      {hasFakeCaret && (
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+          <div className="animate-caret-blink h-4 w-px bg-foreground duration-1000" />
+        </div>
+      )}
+    </div>
+  )
+})
+InputOTPSlot.displayName = "InputOTPSlot"
+
+const InputOTPSeparator = React.forwardRef<
+  React.ElementRef<"div">,
+  React.ComponentPropsWithoutRef<"div">
+>(({ ...props }, ref) => (
+  <div ref={ref} role="separator" {...props}>
+    <DashIcon />
+  </div>
+))
+InputOTPSeparator.displayName = "InputOTPSeparator"
+
+export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator }
