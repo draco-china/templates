@@ -14,3 +14,18 @@ const ResizablePanelGroup = ({
       "flex h-full w-full data-[panel-group-direction=vertical]:flex-col",
       className
     )}
+    {...props}
+  />
+)
+
+const ResizablePanel = ResizablePrimitive.Panel
+
+const ResizableHandle = ({
+  withHandle,
+  className,
+  ...props
+}: React.ComponentProps<typeof ResizablePrimitive.PanelResizeHandle> & {
+  withHandle?: boolean
+}) => (
+  <ResizablePrimitive.PanelResizeHandle
+    className={cn(
