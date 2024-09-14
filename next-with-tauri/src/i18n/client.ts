@@ -57,3 +57,33 @@ export function useTranslation(
       setCookie(cookieName, lng);
     }, [lng]);
   }
+  return ret;
+}
+
+export function getLanguage(language?: string) {
+  const currentLanguage: string =
+    language ||
+    getCookie(cookieName) ||
+    (isBrowser() && navigator?.language.split(',')[0]) ||
+    '' ||
+    fallbackLng;
+  return currentLanguage;
+}
+
+export function useLanguage() {
+  const { lng } = useParams<{ lng: string }>();
+  const currentLanguage: string = getLanguage(lng);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const changeLanguage = (language: string) => {
+    setCookie(cookieName, language);
+    router.push(pathname.replace(`/${currentLanguage}`, `/${language}`));
+    router.refresh();
+  };
+
+  return {
+    lng: currentLanguage,
+    changeLanguage,
+  };
+}
