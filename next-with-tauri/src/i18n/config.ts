@@ -5,3 +5,9 @@ export const fallbackLng = DEFAULT_LANGUAGE || i18nrc.entryLocale;
 
 export const languages = i18nrc.outputLocales;
 export const defaultNS = 'index';
+export const cookieName = 'language';
+
+export function getOptions(lng = fallbackLng, ns: string | string[] = defaultNS) {
+  return {
+    supportedLngs: languages,
+    fallbackLng,
