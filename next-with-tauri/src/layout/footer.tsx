@@ -46,3 +46,26 @@ const Links = [
   },
 ];
 
+export default function LayoutFooter() {
+  return (
+    <footer className='border-t'>
+      <div className='container flex flex-col items-center justify-between gap-4 py-4 text-sm text-muted-foreground lg:flex-row'>
+        <div className='flex flex-col gap-4'>
+          <p>
+            © 2024 All rights reserved.
+            {/* <Link href='https://github.com/draco-china'> Draco-china </Link> */}
+          </p>
+          <nav className='flex h-4 flex-wrap items-center gap-2'>
+            {Links.map((item, index) => (
+              <Fragment key={index}>
+                {index !== 0 && <Separator orientation='vertical' />}
+                <Link href={item.href || '#'}>{item.icon}</Link>
+              </Fragment>
+            ))}
+          </nav>
+        </div>
+        <SwitchMode />
+      </div>
+    </footer>
+  );
+}
