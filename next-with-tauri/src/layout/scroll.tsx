@@ -6,3 +6,9 @@ import { useSnapshot } from 'valtio';
 import 'mac-scrollbar/dist/mac-scrollbar.css';
 
 export default function LayoutScroll() {
+  const { mode } = useSnapshot(globalState);
+  return (
+    <GlobalScrollbar
+      skin={formatMode(mode)}
+      suppressScrollX={false}
+      trackStyle={() => ({
