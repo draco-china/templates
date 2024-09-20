@@ -24,3 +24,15 @@ export default function SwitchLanguage() {
         <Icon icon={`flagpack:${country?.alpha2.toLowerCase()}`} className='size-5' />
       </SelectTrigger>
       <SelectContent align='end'>
+        {languages.map(getCountry).map((item) => (
+          <SelectItem key={`${item?.lang}-${item?.alpha2}`} value={`${item?.lang}-${item?.alpha2}`}>
+            <div className='flex items-center gap-1'>
+              <Icon icon={`flagpack:${item?.alpha2.toLowerCase()}`} />
+              {t(`${item?.lang}-${item?.alpha2}`)}
+            </div>
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
+  );
+}
