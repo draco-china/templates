@@ -12,3 +12,9 @@ export default function LayoutScroll() {
       skin={formatMode(mode)}
       suppressScrollX={false}
       trackStyle={() => ({
+        backgroundColor: 'transparent',
+        border: 'none',
+      })}
+    />
+  );
+}
