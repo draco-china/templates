@@ -12,3 +12,17 @@ export function SwitchMode() {
   const { mode } = useSnapshot(globalState);
 
   useEffect(() => {
+    if (mounted && !checkMode()) toggleMode(mode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mounted]);
+
+  return (
+    <ToggleGroup
+      type='single'
+      size='sm'
+      value={mounted ? mode : undefined}
+      onValueChange={(value) => {
+        if (value) toggleMode(value as GlobalState['mode']);
+      }}
+      className='w-fit rounded-full border p-0.5 *:rounded-full'
+    >
