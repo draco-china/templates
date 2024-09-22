@@ -104,3 +104,58 @@ export const setCookie = (key: string, data: any, options?: OptionsType): void =
       res.cookies.set(payload);
     }
     if (cookiesFn) {
+      cookiesFn().set(payload);
+    }
+    return;
+  }
+  let _cookieOptions: any;
+  let _req;
+  let _res;
+  if (options) {
+    // DefaultOptions can be casted here because the AppRouterMiddlewareOptions is narrowed using the fn: isContextFromAppRouter
+    const { req, res, ..._options } = options as DefaultOptions;
+    _req = req;
+    _res = res;
+    _cookieOptions = _options;
+  }
+
+  const cookieStr = serialize(key, stringify(data), { path: '/', ..._cookieOptions });
+  if (!isClientSide()) {
+    if (_res && _req) {
+      let currentCookies = _res.getHeader('Set-Cookie');
+
+      if (!Array.isArray(currentCookies)) {
+        currentCookies = !currentCookies ? [] : [String(currentCookies)];
+      }
+      _res.setHeader('Set-Cookie', currentCookies.concat(cookieStr));
+
+      if (_req && _req.cookies) {
+        const _cookies = _req.cookies;
+        data === '' ? delete _cookies[key] : (_cookies[key] = stringify(data));
+      }
+
+      if (_req && _req.headers && _req.headers.cookie) {
+        const _cookies = parse(_req.headers.cookie);
+
+        data === '' ? delete _cookies[key] : (_cookies[key] = stringify(data));
+
+        _req.headers.cookie = Object.entries(_cookies).reduce((accum, item) => {
+          return accum.concat(`${item[0]}=${item[1]};`);
+        }, '');
+      }
+    }
+  } else {
+    document.cookie = cookieStr;
+  }
+};
+
+export const deleteCookie = (key: string, options?: OptionsType): void => {
+  return setCookie(key, '', { ...options, maxAge: -1 });
+};
+
+export const hasCookie = (key: string, options?: OptionsType): boolean => {
+  if (!key) return false;
+
+  const cookie = getCookies(options);
+  return cookie.hasOwnProperty(key);
+};
