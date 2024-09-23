@@ -6,3 +6,10 @@ import type { CookieSerializeOptions } from 'cookie';
 export type OptionsType = DefaultOptions | AppRouterOptions;
 export interface DefaultOptions extends CookieSerializeOptions {
   res?: ServerResponse;
+  req?: IncomingMessage & {
+    cookies?: TmpCookiesObj;
+  };
+  cookies?: CookiesFn;
+}
+export type CookiesFn = typeof cookies;
+export type AppRouterOptions = {
