@@ -13,3 +13,10 @@ export interface DefaultOptions extends CookieSerializeOptions {
 }
 export type CookiesFn = typeof cookies;
 export type AppRouterOptions = {
+  res?: Response | NextResponse;
+  req?: Request | NextRequest;
+  cookies?: CookiesFn;
+};
+export type AppRouterCookies = NextResponse['cookies'] | NextRequest['cookies'];
+export type TmpCookiesObj = { [key: string]: string } | Partial<{ [key: string]: string }>;
+export type CookieValueTypes = string | undefined;
