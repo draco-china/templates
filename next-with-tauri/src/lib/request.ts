@@ -17,3 +17,19 @@ request.interceptors.request.use(
     if (Authorization) request.headers.Authorization = Authorization;
     return request;
   },
+  (error) => {
+    return Promise.reject(error);
+  },
+);
+
+request.interceptors.response.use(
+  async (response) => {
+    const { t } = await getTranslation(i18next.language, 'common');
+    const code = response.data.code;
+    if ([401, 403, 404, 500, 503, 504].includes(code)) {
+      t(`request.error.${code}`);
+    }
+    return response;
+  },
+  async (error) => {
+    const { t } = await getTranslation(i18next.language, 'common');
