@@ -39,3 +39,24 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
     nocache: true,
+    googleBot: {
+      'index': true,
+      'follow': false,
+      'noimageindex': true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+  initialScale: 1,
+  width: 'device-width',
+  userScalable: false,
+  viewportFit: 'cover',
+};
