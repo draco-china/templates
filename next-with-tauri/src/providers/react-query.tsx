@@ -14,3 +14,18 @@ const ReactQueryDevtoolsProduction = lazy(() =>
 export default function ReactQueryProvider(props: { children: ReactNode }) {
   // Instead do this, which ensures each request has its own cache:
   const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            staleTime: 5 * 1000,
+          },
+        },
+      }),
+  );
+
+  const [showDevtools, setShowDevtools] = useState(false);
+
+  useEffect(() => {
+    // @ts-ignore
+    window.toggleDevtools = () => setShowDevtools((old) => !old);
