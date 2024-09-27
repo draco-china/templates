@@ -29,3 +29,17 @@ export default function ReactQueryProvider(props: { children: ReactNode }) {
   useEffect(() => {
     // @ts-ignore
     window.toggleDevtools = () => setShowDevtools((old) => !old);
+  }, []);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryStreamedHydration>{props.children}</ReactQueryStreamedHydration>
+      {<ReactQueryDevtools initialIsOpen={false} />}
+      {showDevtools && (
+        <Suspense fallback={null}>
+          <ReactQueryDevtoolsProduction />
+        </Suspense>
+      )}
+    </QueryClientProvider>
+  );
+}
