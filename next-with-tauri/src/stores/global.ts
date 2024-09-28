@@ -26,3 +26,33 @@ export const globalState = proxy<GlobalState>({
   systemMode: (getCookie('systemMode') || DEFAULT_SYSTEM_MODE) as GlobalState['systemMode'],
   mode: (getCookie('mode') || DEFAULT_MODE) as GlobalState['mode'],
   theme: (getCookie('theme') || DEFAULT_THEME) as GlobalState['theme'],
+});
+
+export function getSystemMode() {
+  if (isBrowser()) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  return DEFAULT_SYSTEM_MODE;
+}
+
+export function formatMode(mode: GlobalState['mode']) {
+  return mode === 'system' ? getSystemMode() : mode;
+}
+
+export function checkMode(mode?: GlobalState['mode']) {
+  const currentFormatMode = formatMode(mode || globalState.mode);
+  const currentMode = document.documentElement.getAttribute(
+    'data-mode',
+  ) as GlobalState['currentMode'];
+  return currentFormatMode === currentMode;
+}
+
+export function setMode(mode: GlobalState['mode']) {
+  if (globalState.mode !== mode) setCookie('mode', mode);
+  globalState.mode = mode;
+  globalState.currentMode = formatMode(mode);
+  const el = document.documentElement;
+  el.setAttribute('data-mode', globalState.currentMode);
+  el.style.colorScheme = globalState.currentMode;
+  if (globalState.systemMode !== getSystemMode()) {
+    globalState.systemMode = getSystemMode();
