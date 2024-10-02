@@ -4,3 +4,4 @@ exports.default = {
     build: {
       emoji: '📦',
     },
+    chore: {
