@@ -7,3 +7,5 @@ exports.default = {
     chore: {
       emoji: '🔧',
     },
+    ci: {
+      emoji: '👷',
