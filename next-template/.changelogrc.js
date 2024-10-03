@@ -5,3 +5,5 @@ exports.default = {
       emoji: '📦',
     },
     chore: {
+      emoji: '🔧',
+    },
