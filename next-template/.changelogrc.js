@@ -10,3 +10,5 @@ exports.default = {
     ci: {
       emoji: '👷',
     },
+  },
+  displayTypes: ['feat', 'fix', 'style', 'pref', 'refactor'],
