@@ -13,3 +13,5 @@ exports.default = {
   },
   displayTypes: ['feat', 'fix', 'style', 'pref', 'refactor'],
   newlineTimestamp: true,
+  reduceHeadingLevel: true,
+  scopeDisplayName: {
