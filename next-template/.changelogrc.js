@@ -15,3 +15,4 @@ exports.default = {
   newlineTimestamp: true,
   reduceHeadingLevel: true,
   scopeDisplayName: {
+    '*': 'misc',
