@@ -16,3 +16,5 @@ exports.default = {
   reduceHeadingLevel: true,
   scopeDisplayName: {
     '*': 'misc',
+  },
+  showAuthor: true,
