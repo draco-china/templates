@@ -18,3 +18,5 @@ exports.default = {
     '*': 'misc',
   },
   showAuthor: true,
+  showSummary: true,
+};
