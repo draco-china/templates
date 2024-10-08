@@ -7,3 +7,5 @@ module.exports = defineConfig({
   outputLocales: [
     'cs-CZ',
     'de-DE',
+    'en-US',
+    'es-ES',
