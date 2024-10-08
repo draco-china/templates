@@ -12,3 +12,6 @@ module.exports = defineConfig({
     'es-MX',
     'fi-FI',
     'fr-FR',
+    'hi-IN',
+    'hu-HU',
+    'ja-JP',
