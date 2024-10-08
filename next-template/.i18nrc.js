@@ -9,3 +9,6 @@ module.exports = defineConfig({
     'de-DE',
     'en-US',
     'es-ES',
+    'es-MX',
+    'fi-FI',
+    'fr-FR',
