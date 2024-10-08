@@ -4,3 +4,6 @@ module.exports = defineConfig({
   entry: './src/i18n/locales/en-US',
   entryLocale: 'en-US',
   output: './src/i18n/locales',
+  outputLocales: [
+    'cs-CZ',
+    'de-DE',
