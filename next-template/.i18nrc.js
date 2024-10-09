@@ -20,3 +20,6 @@ module.exports = defineConfig({
     'pl-PL',
     'pt-BR',
     'ro-RO',
+    'ru-RU',
+    'th-TH',
+    'tr-TR',
