@@ -18,3 +18,5 @@ module.exports = defineConfig({
     'ko-KR',
     'no-NO',
     'pl-PL',
+    'pt-BR',
+    'ro-RO',
