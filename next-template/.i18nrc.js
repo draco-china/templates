@@ -23,3 +23,6 @@ module.exports = defineConfig({
     'ru-RU',
     'th-TH',
     'tr-TR',
+    'uk-UA',
+    'vi-VN',
+    'zh-CN',
