@@ -28,3 +28,6 @@ module.exports = defineConfig({
     'zh-CN',
     'zh-TW',
   ],
+  experimental: {
+    jsonMode: true,
+  },
