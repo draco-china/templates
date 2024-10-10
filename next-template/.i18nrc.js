@@ -31,3 +31,6 @@ module.exports = defineConfig({
   experimental: {
     jsonMode: true,
   },
+  markdown: {
+    entry: ['./README.md'],
+    entryLocale: 'en-US',
