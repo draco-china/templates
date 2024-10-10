@@ -26,3 +26,5 @@ module.exports = defineConfig({
     'uk-UA',
     'vi-VN',
     'zh-CN',
+    'zh-TW',
+  ],
