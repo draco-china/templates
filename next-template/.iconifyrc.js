@@ -8,3 +8,8 @@ const {
 const path = require('path');
 const fs = require('fs').promises;
 
+const svgPath = path.join(__dirname, 'icons');
+const savePath = path.join(__dirname, './src/components/icon', 'local.json');
+
+(async () => {
+  // Import icons
