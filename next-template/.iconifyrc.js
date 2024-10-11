@@ -13,3 +13,8 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
 
 (async () => {
   // Import icons
+  const iconSet = await importDirectory(svgPath, {
+    prefix: 'local',
+  });
+
+  // Validate, clean up, fix palette and optimise
