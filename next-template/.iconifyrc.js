@@ -18,3 +18,6 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
   });
 
   // Validate, clean up, fix palette and optimise
+  iconSet.forEach((name, type) => {
+    if (type !== 'icon') {
+      return;
