@@ -21,3 +21,8 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
   iconSet.forEach((name, type) => {
     if (type !== 'icon') {
       return;
+    }
+
+    const svg = iconSet.toSVG(name);
+    if (!svg) {
+      // Invalid icon
