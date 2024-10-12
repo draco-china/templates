@@ -26,3 +26,8 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
     const svg = iconSet.toSVG(name);
     if (!svg) {
       // Invalid icon
+      iconSet.remove(name);
+      return;
+    }
+
+    // Clean up and optimise icons
