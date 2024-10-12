@@ -31,3 +31,10 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
     }
 
     // Clean up and optimise icons
+    try {
+      // Clean up icon code
+      cleanupSVG(svg);
+
+      // Assume icon is monotone: replace color with currentColor, add if missing
+      // If icon is not monotone, remove this code
+      parseColors(svg, {
