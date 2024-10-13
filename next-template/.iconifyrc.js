@@ -41,3 +41,8 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
         defaultColor: 'currentColor',
         callback: (attr, colorStr, color) => {
           return !color || isEmptyColor(color) ? colorStr : 'currentColor';
+        },
+      });
+
+      // Optimise
+      runSVGO(svg);
