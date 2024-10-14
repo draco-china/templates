@@ -50,3 +50,8 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
       // Invalid icon
       console.error(`Error parsing ${name}:`, err);
       iconSet.remove(name);
+      return;
+    }
+
+    // Update icon
+    iconSet.fromSVG(name, svg);
