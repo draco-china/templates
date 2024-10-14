@@ -46,3 +46,7 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
 
       // Optimise
       runSVGO(svg);
+    } catch (err) {
+      // Invalid icon
+      console.error(`Error parsing ${name}:`, err);
+      iconSet.remove(name);
