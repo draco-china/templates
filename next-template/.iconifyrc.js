@@ -55,3 +55,11 @@ const savePath = path.join(__dirname, './src/components/icon', 'local.json');
 
     // Update icon
     iconSet.fromSVG(name, svg);
+  });
+
+  // Export as IconifyJSON
+  const exported = JSON.stringify(iconSet.export(), null, '\t') + '\n';
+
+  // Save to file
+  await fs.writeFile(savePath, exported, 'utf8');
+})();
