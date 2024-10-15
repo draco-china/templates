@@ -4,3 +4,6 @@ module.exports = {
   // $schema: 'https://json.schemastore.org/prettierrc',
   arrowParens: 'always',
   bracketSpacing: true,
+  endOfLine: 'lf',
+  importOrder: [
+    '^(react/(.*)$)|^(react$)',
