@@ -12,3 +12,6 @@ module.exports = {
     // '',
     '^types$',
     '^@/types/(.*)$',
+    '^@/config/(.*)$',
+    '^@/lib/(.*)$',
+    '^@/hooks/(.*)$',
