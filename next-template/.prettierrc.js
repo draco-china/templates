@@ -26,3 +26,6 @@ module.exports = {
   importOrderTypeScriptVersion: '5.0.0',
   jsxSingleQuote: true,
   overrides: [
+    {
+      files: '*.md',
+      options: {
