@@ -18,3 +18,8 @@ module.exports = {
     '^@/components/ui/(.*)$',
     '^@/components/(.*)$',
     '^@/styles/(.*)$',
+    '^@/app/(.*)$',
+    // '',
+    '^[./]',
+  ],
+  importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
