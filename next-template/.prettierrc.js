@@ -29,3 +29,7 @@ module.exports = {
     {
       files: '*.md',
       options: {
+        proseWrap: 'preserve',
+      },
+    },
+  ],
