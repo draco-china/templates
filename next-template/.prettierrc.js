@@ -33,3 +33,6 @@ module.exports = {
       },
     },
   ],
+  plugins: [
+    'prettier-plugin-sh',
+    'prettier-plugin-packagejson',
