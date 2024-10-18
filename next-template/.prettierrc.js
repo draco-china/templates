@@ -39,3 +39,7 @@ module.exports = {
     'prettier-plugin-sort-json',
     'prettier-plugin-two-style-order',
     '@ianvs/prettier-plugin-sort-imports',
+    'prettier-plugin-tailwindcss',
+  ],
+  printWidth: 100,
+  proseWrap: 'never',
