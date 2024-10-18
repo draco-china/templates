@@ -43,3 +43,6 @@ module.exports = {
   ],
   printWidth: 100,
   proseWrap: 'never',
+  quoteProps: 'consistent',
+  semi: true,
+  singleQuote: true,
