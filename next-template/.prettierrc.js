@@ -36,3 +36,6 @@ module.exports = {
   plugins: [
     'prettier-plugin-sh',
     'prettier-plugin-packagejson',
+    'prettier-plugin-sort-json',
+    'prettier-plugin-two-style-order',
+    '@ianvs/prettier-plugin-sort-imports',
