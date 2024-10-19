@@ -11,3 +11,8 @@ const options = {
     },
     {
       release: 'patch',
+      type: 'fix',
+    },
+    {
+      release: 'patch',
+      type: 'perf',
