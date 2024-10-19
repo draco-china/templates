@@ -6,3 +6,8 @@ const options = {
 # Changelog`,
   releaseRules: [
     {
+      release: 'minor',
+      type: 'feat',
+    },
+    {
+      release: 'patch',
