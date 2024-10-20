@@ -16,3 +16,8 @@ const options = {
     {
       release: 'patch',
       type: 'perf',
+    },
+    {
+      release: 'patch',
+      type: 'style',
+    },
