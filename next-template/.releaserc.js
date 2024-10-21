@@ -36,3 +36,8 @@ const options = {
       release: false,
       type: 'test',
     },
+    {
+      release: false,
+      type: 'ci',
+    },
+    {
