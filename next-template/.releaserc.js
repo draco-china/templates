@@ -31,3 +31,8 @@ const options = {
     },
     { release: 'patch', scope: 'README', type: 'docs' },
     { release: 'patch', scope: 'README.md', type: 'docs' },
+    { release: false, type: 'docs' },
+    {
+      release: false,
+      type: 'test',
+    },
