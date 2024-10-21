@@ -26,3 +26,8 @@ const options = {
       type: 'refactor',
     },
     {
+      release: 'patch',
+      type: 'build',
+    },
+    { release: 'patch', scope: 'README', type: 'docs' },
+    { release: 'patch', scope: 'README.md', type: 'docs' },
