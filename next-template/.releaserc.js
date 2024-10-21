@@ -41,3 +41,8 @@ const options = {
       type: 'ci',
     },
     {
+      release: false,
+      type: 'chore',
+    },
+    {
+      release: false,
