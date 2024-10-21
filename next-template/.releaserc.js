@@ -21,3 +21,8 @@ const options = {
       release: 'patch',
       type: 'style',
     },
+    {
+      release: 'patch',
+      type: 'refactor',
+    },
+    {
