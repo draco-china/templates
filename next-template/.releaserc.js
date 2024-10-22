@@ -46,3 +46,8 @@ const options = {
     },
     {
       release: false,
+      type: 'wip',
+    },
+    {
+      release: 'major',
+      type: 'BREAKING CHANGE',
