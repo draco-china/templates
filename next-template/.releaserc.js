@@ -51,3 +51,8 @@ const options = {
     {
       release: 'major',
       type: 'BREAKING CHANGE',
+    },
+    {
+      release: 'major',
+      scope: 'BREAKING CHANGE',
+    },
