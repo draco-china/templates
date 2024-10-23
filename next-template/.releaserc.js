@@ -66,3 +66,9 @@ const options = {
     { release: 'major', subject: '*force major*' },
     { release: false, subject: '*skip release*' },
   ],
+};
+
+module.exports = {
+  $schema: 'https://json.schemastore.org/semantic-release',
+  ...createConfig(options),
+};
