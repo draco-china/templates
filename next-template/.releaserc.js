@@ -56,3 +56,8 @@ const options = {
       release: 'major',
       scope: 'BREAKING CHANGE',
     },
+    {
+      release: 'major',
+      subject: '*BREAKING CHANGE*',
+    },
+    { release: 'patch', subject: '*force release*' },
