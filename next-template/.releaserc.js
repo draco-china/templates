@@ -61,3 +61,8 @@ const options = {
       subject: '*BREAKING CHANGE*',
     },
     { release: 'patch', subject: '*force release*' },
+    { release: 'patch', subject: '*force patch*' },
+    { release: 'minor', subject: '*force minor*' },
+    { release: 'major', subject: '*force major*' },
+    { release: false, subject: '*skip release*' },
+  ],
