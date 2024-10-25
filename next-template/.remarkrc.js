@@ -15,3 +15,9 @@ function remarkGfmHighlight() {
         visit(subnode, 'text', (textnode) => {
           if (!['Note', 'Tip', 'Important', 'Warning', 'Caution'].includes(textnode.value)) return;
           for (const item of gfmHighlight) {
+            if (item.from !== textnode.value) continue;
+            subnode.type = 'text';
+            subnode.value = item.to;
+            return;
+          }
+        });
