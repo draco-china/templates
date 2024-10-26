@@ -21,3 +21,9 @@ function remarkGfmHighlight() {
             return;
           }
         });
+      });
+    });
+  };
+}
+
+function replaceNBSP(str) {
