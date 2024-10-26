@@ -27,3 +27,10 @@ function remarkGfmHighlight() {
 }
 
 function replaceNBSP(str) {
+  return str.replaceAll(' ', ' ');
+}
+
+module.exports = {
+  $schema: 'https://json.schemastore.org/remarkrc',
+  plugins: [
+    'remark-gfm',
