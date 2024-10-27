@@ -40,3 +40,11 @@ module.exports = {
     remarkGfmHighlight,
     // ----- Plugin -----------------------------------------------------------
     'remark-sort-definitions',
+    ['remark-toc', { heading: 'TOC', maxDepth: 3 }],
+    'remark-remove-unused-definitions',
+    // ----- Presets -----------------------------------------------------------
+    'remark-preset-lint-markdown-style-guide',
+    'remark-preset-lint-recommended',
+    'remark-preset-lint-consistent',
+    // ----- Built-In ----------------------------------------------------------
+    'remark-lint-checkbox-content-indent',
