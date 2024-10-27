@@ -48,3 +48,8 @@ module.exports = {
     'remark-preset-lint-consistent',
     // ----- Built-In ----------------------------------------------------------
     'remark-lint-checkbox-content-indent',
+    'remark-lint-linebreak-style',
+    'remark-lint-no-duplicate-headings-in-section',
+    'remark-lint-no-empty-url',
+    'remark-lint-no-heading-indent',
+    'remark-lint-no-heading-like-paragraph',
