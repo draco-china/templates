@@ -53,3 +53,10 @@ module.exports = {
     'remark-lint-no-empty-url',
     'remark-lint-no-heading-indent',
     'remark-lint-no-heading-like-paragraph',
+    'remark-lint-no-paragraph-content-indent',
+    'remark-lint-no-reference-like-url',
+    'remark-lint-no-tabs',
+    'remark-lint-no-unneeded-full-reference-image',
+    'remark-lint-no-unneeded-full-reference-link',
+    // ----- External ----------------------------------------------------------
+    'remark-lint-no-empty-sections',
