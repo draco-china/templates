@@ -60,3 +60,9 @@ module.exports = {
     'remark-lint-no-unneeded-full-reference-link',
     // ----- External ----------------------------------------------------------
     'remark-lint-no-empty-sections',
+    'remark-lint-write-good',
+    'remark-lint-frontmatter-schema',
+    // ----- Overrides ---------------------------------------------------------
+    ['remark-lint-list-item-indent', 'space'],
+    ['remark-lint-list-item-spacing', { checkBlanks: true }],
+    ['remark-lint-no-duplicate-headings', false],
