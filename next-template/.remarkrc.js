@@ -34,3 +34,9 @@ module.exports = {
   $schema: 'https://json.schemastore.org/remarkrc',
   plugins: [
     'remark-gfm',
+    'remark-frontmatter',
+    'remark-pangu',
+    ['remark-textr', { plugins: [replaceNBSP] }],
+    remarkGfmHighlight,
+    // ----- Plugin -----------------------------------------------------------
+    'remark-sort-definitions',
