@@ -72,3 +72,8 @@ module.exports = {
     ['remark-lint-no-shell-dollars', false],
     ['remark-lint-ordered-list-marker-value', false],
   ],
+  settings: {
+    bullet: '-',
+    emphasis: '*',
+    fences: true,
+    listItemIndent: 1,
