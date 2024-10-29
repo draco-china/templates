@@ -77,3 +77,9 @@ module.exports = {
     emphasis: '*',
     fences: true,
     listItemIndent: 1,
+    rule: '-',
+    strong: '*',
+    tightDefinitions: true,
+    maximumLineLength: 100,
+  },
+};
