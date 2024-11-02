@@ -6,3 +6,4 @@ generateService({
   // schemaPath: join(__dirname, 'openapi.json'),
   // projectName: 'api',
   serversPath: './src/service',
+});
