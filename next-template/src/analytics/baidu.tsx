@@ -6,3 +6,4 @@ export default function BaiduAnalytics() {
       <script
         dangerouslySetInnerHTML={{
           __html: `
+            var _hmt = _hmt || [];
