@@ -7,3 +7,5 @@ export default function BaiduAnalytics() {
         dangerouslySetInnerHTML={{
           __html: `
             var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
