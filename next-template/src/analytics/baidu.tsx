@@ -9,3 +9,4 @@ export default function BaiduAnalytics() {
             var _hmt = _hmt || [];
             (function() {
               var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?${BAIDU_ANALYTICS_ID}";
