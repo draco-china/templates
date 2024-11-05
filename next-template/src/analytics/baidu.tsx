@@ -14,3 +14,5 @@ export default function BaiduAnalytics() {
               s.parentNode.insertBefore(hm, s);
             })();
             `,
+        }}
+      />
