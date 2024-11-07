@@ -5,3 +5,5 @@ export default function FacebookAnalytics() {
   return (
     FACEBOOK_ANALYTICS_ID && (
       <>
+        <Script
+          async
