@@ -7,3 +7,5 @@ export default function FacebookAnalytics() {
       <>
         <Script
           async
+          defer
+          crossOrigin='anonymous'
