@@ -9,3 +9,5 @@ export default function FacebookAnalytics() {
           async
           defer
           crossOrigin='anonymous'
+          src='https://connect.facebook.net/en_US/sdk.js'
+        />
