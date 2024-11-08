@@ -11,3 +11,6 @@ export default function FacebookAnalytics() {
           crossOrigin='anonymous'
           src='https://connect.facebook.net/en_US/sdk.js'
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
