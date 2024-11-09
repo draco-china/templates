@@ -14,3 +14,5 @@ export default function FacebookAnalytics() {
         <script
           dangerouslySetInnerHTML={{
             __html: `
+            window.fbAsyncInit = function() {
+              FB.init({
