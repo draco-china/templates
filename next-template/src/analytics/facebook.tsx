@@ -16,3 +16,5 @@ export default function FacebookAnalytics() {
             __html: `
             window.fbAsyncInit = function() {
               FB.init({
+                appId: '${FACEBOOK_ANALYTICS_ID}',
+                xfbml: true,
