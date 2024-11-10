@@ -20,3 +20,5 @@ export default function FacebookAnalytics() {
                 xfbml: true,
                 version: 'v19.0'
               });
+              FB.AppEvents.logPageView();
+            };
