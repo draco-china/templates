@@ -18,3 +18,5 @@ export default function FacebookAnalytics() {
               FB.init({
                 appId: '${FACEBOOK_ANALYTICS_ID}',
                 xfbml: true,
+                version: 'v19.0'
+              });
