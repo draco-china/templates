@@ -1,1 +1,2 @@
 import {
+  GoogleAnalytics as Analytics,
