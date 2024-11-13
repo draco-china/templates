@@ -8,3 +8,4 @@ import { GOOGLE_ANALYTICS_ID, GOOGLE_TAG_MANAGER_ID } from '@/lib/constants';
  * header script
  */
 export function GoogleTagManager() {
+  return GOOGLE_TAG_MANAGER_ID && <TagManager gtmId={GOOGLE_TAG_MANAGER_ID} />;
