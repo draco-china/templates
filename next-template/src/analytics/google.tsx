@@ -14,3 +14,4 @@ export function GoogleTagManager() {
 /**
  * body script
  */
+export function GoogleAnalytics() {
