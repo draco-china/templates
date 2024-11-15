@@ -15,3 +15,4 @@ export function GoogleTagManager() {
  * body script
  */
 export function GoogleAnalytics() {
+  return GOOGLE_ANALYTICS_ID && <Analytics gaId={GOOGLE_ANALYTICS_ID} />;
