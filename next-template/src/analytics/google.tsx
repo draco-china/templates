@@ -16,3 +16,4 @@ export function GoogleTagManager() {
  */
 export function GoogleAnalytics() {
   return GOOGLE_ANALYTICS_ID && <Analytics gaId={GOOGLE_ANALYTICS_ID} />;
+}
