@@ -6,3 +6,5 @@ import YandexAnalytics from './yandex';
 export function HeadAnalytics() {
   return (
     <>
+      <GoogleTagManager />
+    </>
