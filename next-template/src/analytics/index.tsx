@@ -9,3 +9,6 @@ export function HeadAnalytics() {
       <GoogleTagManager />
     </>
   );
+}
+
+export function BodyAnalytics() {
