@@ -15,3 +15,4 @@ export function BodyAnalytics() {
   return (
     <>
       <GoogleAnalytics />
+      <YandexAnalytics />
