@@ -16,3 +16,5 @@ export function BodyAnalytics() {
     <>
       <GoogleAnalytics />
       <YandexAnalytics />
+      <FacebookAnalytics />
+      <BaiduAnalytics />
