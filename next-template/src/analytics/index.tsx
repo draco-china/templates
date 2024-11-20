@@ -18,3 +18,4 @@ export function BodyAnalytics() {
       <YandexAnalytics />
       <FacebookAnalytics />
       <BaiduAnalytics />
+    </>
