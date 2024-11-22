@@ -4,3 +4,4 @@ export default function YandexAnalytics() {
   return (
     YANDEX_ANALYTICS_ID && (
       <script
+        dangerouslySetInnerHTML={{
