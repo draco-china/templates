@@ -13,3 +13,5 @@ export default function YandexAnalytics() {
           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
           ym(${YANDEX_ANALYTICS_ID}, "init", {
+              clickmap:true,
+              trackLinks:true,
