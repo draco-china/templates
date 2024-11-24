@@ -17,3 +17,4 @@ export default function YandexAnalytics() {
               trackLinks:true,
               accurateTrackBounce:true,
               ecommerce:"dataLayer"
+            });
