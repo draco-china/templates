@@ -15,3 +15,5 @@ export default function YandexAnalytics() {
           ym(${YANDEX_ANALYTICS_ID}, "init", {
               clickmap:true,
               trackLinks:true,
+              accurateTrackBounce:true,
+              ecommerce:"dataLayer"
