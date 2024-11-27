@@ -6,3 +6,8 @@ import { LayoutHeader } from '@/layout/header';
 import LayoutScroll from '@/layout/scroll';
 import { ReactQueryProvider } from '@/providers';
 import { DEFAULT_SYSTEM_MODE, DEFAULT_THEME } from '@/lib/constants';
+import { cn } from '@/lib/utils';
+import { Toaster } from '@/components/ui/sonner';
+import '../../../tailwind.css';
+
+const fontSans = FontSans({
