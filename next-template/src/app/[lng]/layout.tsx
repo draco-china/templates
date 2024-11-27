@@ -2,3 +2,7 @@ import { Noto_Sans as FontSans } from 'next/font/google';
 import { BodyAnalytics, HeadAnalytics } from '@/analytics';
 import { dir, languages } from '@/i18n';
 import LayoutFooter from '@/layout/footer';
+import { LayoutHeader } from '@/layout/header';
+import LayoutScroll from '@/layout/scroll';
+import { ReactQueryProvider } from '@/providers';
+import { DEFAULT_SYSTEM_MODE, DEFAULT_THEME } from '@/lib/constants';
