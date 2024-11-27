@@ -11,3 +11,9 @@ import { Toaster } from '@/components/ui/sonner';
 import '../../../tailwind.css';
 
 const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
+
+export { metadata, viewport } from '@/lib/site';
+
