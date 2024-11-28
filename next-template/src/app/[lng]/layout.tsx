@@ -34,3 +34,7 @@ export default function RootLayout({
       dir={dir(lng)}
       data-mode={DEFAULT_SYSTEM_MODE}
       data-theme={DEFAULT_THEME}
+      style={{
+        colorScheme: DEFAULT_SYSTEM_MODE,
+      }}
+      suppressHydrationWarning
