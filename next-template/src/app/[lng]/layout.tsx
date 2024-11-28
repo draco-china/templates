@@ -17,3 +17,8 @@ const fontSans = FontSans({
 
 export { metadata, viewport } from '@/lib/site';
 
+export async function generateStaticParams() {
+  return languages.map((lng: string) => ({ lng }));
+}
+
+export default function RootLayout({
