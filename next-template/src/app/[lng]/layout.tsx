@@ -30,3 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html
+      lang={lng}
+      dir={dir(lng)}
+      data-mode={DEFAULT_SYSTEM_MODE}
+      data-theme={DEFAULT_THEME}
