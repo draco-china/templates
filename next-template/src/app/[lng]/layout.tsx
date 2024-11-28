@@ -22,3 +22,7 @@ export async function generateStaticParams() {
 }
 
 export default function RootLayout({
+  children,
+  params: { lng },
+}: {
+  children: React.ReactNode;
