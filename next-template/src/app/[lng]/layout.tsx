@@ -42,3 +42,7 @@ export default function RootLayout({
       <head>
         <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1' />
         <HeadAnalytics />
+      </head>
+      <body className={cn('w-screen overflow-x-hidden font-sans antialiased', fontSans.variable)}>
+        <ReactQueryProvider>
+          <LayoutHeader lng={lng} />
