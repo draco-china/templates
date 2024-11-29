@@ -50,3 +50,7 @@ export default function RootLayout({
             {children}
           </main>
           <LayoutFooter />
+          <LayoutScroll />
+          <Toaster closeButton richColors visibleToasts={9} />
+        </ReactQueryProvider>
+        <BodyAnalytics />
