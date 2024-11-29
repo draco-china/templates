@@ -38,3 +38,7 @@ export default function RootLayout({
         colorScheme: DEFAULT_SYSTEM_MODE,
       }}
       suppressHydrationWarning
+    >
+      <head>
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+        <HeadAnalytics />
