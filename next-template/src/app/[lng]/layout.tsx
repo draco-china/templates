@@ -54,3 +54,7 @@ export default function RootLayout({
           <Toaster closeButton richColors visibleToasts={9} />
         </ReactQueryProvider>
         <BodyAnalytics />
+      </body>
+    </html>
+  );
+}
