@@ -81,3 +81,10 @@ export default async function Home({ params: { lng } }: { params: { lng: string 
             </span>
           </h2>
           <p className='m-0 max-w-[30ch] text-balance text-sm opacity-50'>
+            {t('deploy.description')}
+          </p>
+        </a>
+      </div>
+    </div>
+  );
+}
