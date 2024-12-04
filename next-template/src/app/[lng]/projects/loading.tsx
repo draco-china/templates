@@ -8,3 +8,5 @@ export default function Loading() {
           <Skeleton key={index} className='rounded-xl *:p-6'>
             <div className='flex flex-col space-y-1.5'>
               <Skeleton className='h-4' />
+              <Skeleton className='h-5' />
+            </div>
