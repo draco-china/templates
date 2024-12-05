@@ -10,3 +10,4 @@ export default function Loading() {
               <Skeleton className='h-4' />
               <Skeleton className='h-5' />
             </div>
+            <div className='flex justify-between pt-0 *:h-9 *:w-24'>
