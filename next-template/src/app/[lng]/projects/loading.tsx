@@ -15,3 +15,4 @@ export default function Loading() {
               <Skeleton />
             </div>
           </Skeleton>
+        );
