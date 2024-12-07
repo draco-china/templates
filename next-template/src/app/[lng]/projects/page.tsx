@@ -11,3 +11,6 @@ export default function Projects() {
   const { data } = useSuspenseQuery({
     queryKey: ['draco-china'],
     queryFn: async () => {
+      try {
+        const res = await request(
+          `https://api.github.com/users/draco-china/repos?type=&sort=&direction=&per_page=&page=`,
