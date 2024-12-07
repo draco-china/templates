@@ -7,3 +7,7 @@ import request from '@/lib/request';
 import { Button } from '@/components/ui/button';
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
+export default function Projects() {
+  const { data } = useSuspenseQuery({
+    queryKey: ['draco-china'],
+    queryFn: async () => {
