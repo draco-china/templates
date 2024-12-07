@@ -14,3 +14,7 @@ export default function Projects() {
       try {
         const res = await request(
           `https://api.github.com/users/draco-china/repos?type=&sort=&direction=&per_page=&page=`,
+        );
+        return res.data || [];
+      } catch (error) {
+        return [];
