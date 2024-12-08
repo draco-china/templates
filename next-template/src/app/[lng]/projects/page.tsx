@@ -33,3 +33,6 @@ export default function Projects() {
               </CardDescription>
             </CardHeader>
             <CardFooter className='flex justify-between'>
+              <Button variant='outline'>
+                <Share1Icon className='mr-2' />
+                <Link href={item.forks_url}> Fork {item.forks_count}</Link>
