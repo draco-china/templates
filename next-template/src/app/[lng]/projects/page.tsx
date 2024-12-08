@@ -25,3 +25,7 @@ export default function Projects() {
     <div className='container grid w-full gap-6 py-6 lg:grid-cols-3'>
       {data?.map((item: any) => {
         return (
+          <Card key={item.id}>
+            <CardHeader className='w-full'>
+              <CardTitle>{item.name}</CardTitle>
+              <CardDescription className='line-clamp-1'>
