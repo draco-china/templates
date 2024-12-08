@@ -22,3 +22,6 @@ export default function Projects() {
     },
   });
   return (
+    <div className='container grid w-full gap-6 py-6 lg:grid-cols-3'>
+      {data?.map((item: any) => {
+        return (
