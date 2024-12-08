@@ -29,3 +29,7 @@ export default function Projects() {
             <CardHeader className='w-full'>
               <CardTitle>{item.name}</CardTitle>
               <CardDescription className='line-clamp-1'>
+                {item.description || 'No description'}
+              </CardDescription>
+            </CardHeader>
+            <CardFooter className='flex justify-between'>
