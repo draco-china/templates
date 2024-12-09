@@ -36,3 +36,7 @@ export default function Projects() {
               <Button variant='outline'>
                 <Share1Icon className='mr-2' />
                 <Link href={item.forks_url}> Fork {item.forks_count}</Link>
+              </Button>
+              <Button variant='outline'>
+                <StarIcon className='mr-2' />
+                <Link href={item.stargazers_url}>Star {item.stargazers_count}</Link>
