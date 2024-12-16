@@ -7,3 +7,4 @@ export default function RootPage() {
   const { lng } = useLanguage();
 
   return redirect(`/${lng}`);
+}
