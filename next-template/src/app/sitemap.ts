@@ -6,3 +6,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: SITE_URL as string,
+      lastModified: new Date(),
+      alternates: {
