@@ -12,3 +12,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
           (acc, lng) => {
             acc[lng] = `${SITE_URL}/${lng}`;
             return acc;
+          },
+          {} as Record<string, string>,
