@@ -8,3 +8,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: SITE_URL as string,
       lastModified: new Date(),
       alternates: {
+        languages: languages.reduce(
