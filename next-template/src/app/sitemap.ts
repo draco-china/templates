@@ -9,3 +9,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       alternates: {
         languages: languages.reduce(
+          (acc, lng) => {
+            acc[lng] = `${SITE_URL}/${lng}`;
