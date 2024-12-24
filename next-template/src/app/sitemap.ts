@@ -14,3 +14,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
             return acc;
           },
           {} as Record<string, string>,
+        ),
