@@ -5,3 +5,5 @@ import { addCollection, Icon as Iconify, IconProps } from '@iconify/react';
 import Local from './local.json';
 
 addCollection(Local);
+addCollection(FlagPack);
+
