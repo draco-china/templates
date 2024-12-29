@@ -9,3 +9,4 @@ addCollection(FlagPack);
 
 export default function Icon(props: IconProps) {
   return <Iconify {...props} />;
+}
