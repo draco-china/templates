@@ -86,3 +86,12 @@ const BreadcrumbSeparator = ({
     {children ?? <ChevronRightIcon />}
   </li>
 )
+BreadcrumbSeparator.displayName = "BreadcrumbSeparator"
+
+const BreadcrumbEllipsis = ({
+  className,
+  ...props
+}: React.ComponentProps<"span">) => (
+  <span
+    role="presentation"
+    aria-hidden="true"
