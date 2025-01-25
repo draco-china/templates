@@ -69,3 +69,12 @@ const BreadcrumbPage = React.forwardRef<
     className={cn("font-normal text-foreground", className)}
     {...props}
   />
+))
+BreadcrumbPage.displayName = "BreadcrumbPage"
+
+const BreadcrumbSeparator = ({
+  children,
+  className,
+  ...props
+}: React.ComponentProps<"li">) => (
+  <li
