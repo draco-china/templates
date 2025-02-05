@@ -63,3 +63,10 @@ function Calendar({
         IconLeft: ({ ...props }) => <ChevronLeftIcon className="size-4" />,
         IconRight: ({ ...props }) => <ChevronRightIcon className="size-4" />,
       }}
+      {...props}
+    />
+  )
+}
+Calendar.displayName = "Calendar"
+
+export { Calendar }
