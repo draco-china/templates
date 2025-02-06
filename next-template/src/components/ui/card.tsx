@@ -27,3 +27,9 @@ const CardHeader = React.forwardRef<
     {...props}
   />
 ))
+CardHeader.displayName = "CardHeader"
+
+const CardTitle = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLHeadingElement>
+>(({ className, ...props }, ref) => (
