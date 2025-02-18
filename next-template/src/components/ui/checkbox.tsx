@@ -23,3 +23,5 @@ const Checkbox = React.forwardRef<
     >
       <CheckIcon className="size-4" />
     </CheckboxPrimitive.Indicator>
+  </CheckboxPrimitive.Root>
+))
