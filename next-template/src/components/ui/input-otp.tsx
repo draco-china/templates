@@ -20,3 +20,9 @@ const InputOTP = React.forwardRef<
     {...props}
   />
 ))
+InputOTP.displayName = "InputOTP"
+
+const InputOTPGroup = React.forwardRef<
+  React.ElementRef<"div">,
+  React.ComponentPropsWithoutRef<"div">
+>(({ className, ...props }, ref) => (
