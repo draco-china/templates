@@ -52,3 +52,9 @@ const InputOTPSlot = React.forwardRef<
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
           <div className="animate-caret-blink h-4 w-px bg-foreground duration-1000" />
         </div>
+      )}
+    </div>
+  )
+})
+InputOTPSlot.displayName = "InputOTPSlot"
+
