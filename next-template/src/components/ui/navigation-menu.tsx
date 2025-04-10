@@ -58,3 +58,13 @@ const NavigationMenuTrigger = React.forwardRef<
       className="relative top-px ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
       aria-hidden="true"
     />
+  </NavigationMenuPrimitive.Trigger>
+))
+NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName
+
+const NavigationMenuContent = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Content>
+>(({ className, ...props }, ref) => (
+  <NavigationMenuPrimitive.Content
+    ref={ref}
