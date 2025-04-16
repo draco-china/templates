@@ -91,3 +91,12 @@ const PaginationNext = ({
   >
     <span>Next</span>
     <ChevronRightIcon className="size-4" />
+  </PaginationLink>
+)
+PaginationNext.displayName = "PaginationNext"
+
+const PaginationEllipsis = ({
+  className,
+  ...props
+}: React.ComponentProps<"span">) => (
+  <span
