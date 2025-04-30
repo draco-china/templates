@@ -39,3 +39,7 @@ const ResizableHandle = ({
         <DragHandleDots2Icon className="size-2.5" />
       </div>
     )}
+  </ResizablePrimitive.PanelResizeHandle>
+)
+
+export { ResizablePanelGroup, ResizablePanel, ResizableHandle }
