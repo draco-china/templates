@@ -17,3 +17,5 @@ const Separator = React.forwardRef<
       ref={ref}
       decorative={decorative}
       orientation={orientation}
+      className={cn(
+        "shrink-0 bg-border",
