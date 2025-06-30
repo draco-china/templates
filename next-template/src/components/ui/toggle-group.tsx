@@ -26,3 +26,9 @@ const ToggleGroup = React.forwardRef<
   >
     <ToggleGroupContext.Provider value={{ variant, size }}>
       {children}
+    </ToggleGroupContext.Provider>
+  </ToggleGroupPrimitive.Root>
+))
+
+ToggleGroup.displayName = ToggleGroupPrimitive.Root.displayName
+
