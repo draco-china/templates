@@ -18,3 +18,4 @@ const TooltipContent = React.forwardRef<
   <TooltipPrimitive.Content
     ref={ref}
     sideOffset={sideOffset}
+    className={cn(
