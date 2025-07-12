@@ -23,3 +23,5 @@ const TooltipContent = React.forwardRef<
       className
     )}
     {...props}
+  />
+))
