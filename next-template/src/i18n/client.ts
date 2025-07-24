@@ -18,3 +18,9 @@ i18next
       (language: string, namespace: string) => import(`./locales/${language}/${namespace}.json`),
     ),
   )
+  .init({
+    ...getOptions(),
+    lng: undefined, // let detect the language on client side
+    detection: {
+      order: ['path', 'htmlTag', 'cookie', 'navigator'],
+    },
