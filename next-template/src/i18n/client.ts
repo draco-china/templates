@@ -24,3 +24,10 @@ i18next
     detection: {
       order: ['path', 'htmlTag', 'cookie', 'navigator'],
     },
+    preload: runsOnServerSide ? languages : [],
+  });
+
+export function useTranslation(
+  lng: string,
+  ns?: string,
+  options?: {
