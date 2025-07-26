@@ -66,3 +66,10 @@ export function getLanguage(language?: string) {
     getCookie(cookieName) ||
     (isBrowser() && navigator?.language.split(',')[0]) ||
     '' ||
+    fallbackLng;
+  return currentLanguage;
+}
+
+export function useLanguage() {
+  const { lng } = useParams<{ lng: string }>();
+  const currentLanguage: string = getLanguage(lng);
