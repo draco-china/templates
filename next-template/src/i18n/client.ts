@@ -60,3 +60,9 @@ export function useTranslation(
   return ret;
 }
 
+export function getLanguage(language?: string) {
+  const currentLanguage: string =
+    language ||
+    getCookie(cookieName) ||
+    (isBrowser() && navigator?.language.split(',')[0]) ||
+    '' ||
