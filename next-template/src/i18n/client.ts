@@ -80,3 +80,10 @@ export function useLanguage() {
     setCookie(cookieName, language);
     router.push(pathname.replace(`/${currentLanguage}`, `/${language}`));
     router.refresh();
+  };
+
+  return {
+    lng: currentLanguage,
+    changeLanguage,
+  };
+}
