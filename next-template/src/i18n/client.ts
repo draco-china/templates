@@ -73,3 +73,10 @@ export function getLanguage(language?: string) {
 export function useLanguage() {
   const { lng } = useParams<{ lng: string }>();
   const currentLanguage: string = getLanguage(lng);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const changeLanguage = (language: string) => {
+    setCookie(cookieName, language);
+    router.push(pathname.replace(`/${currentLanguage}`, `/${language}`));
+    router.refresh();
