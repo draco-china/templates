@@ -7,3 +7,4 @@ export const languages = i18nrc.outputLocales;
 export const defaultNS = 'index';
 export const cookieName = 'language';
 
+export function getOptions(lng = fallbackLng, ns: string | string[] = defaultNS) {
