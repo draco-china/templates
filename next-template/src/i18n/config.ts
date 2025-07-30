@@ -15,3 +15,5 @@ export function getOptions(lng = fallbackLng, ns: string | string[] = defaultNS)
     fallbackNS: defaultNS,
     defaultNS,
     ns: Array.isArray(ns) ? ns : [ns],
+  };
+}
