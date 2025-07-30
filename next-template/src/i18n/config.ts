@@ -13,3 +13,4 @@ export function getOptions(lng = fallbackLng, ns: string | string[] = defaultNS)
     fallbackLng,
     lng,
     fallbackNS: defaultNS,
+    defaultNS,
