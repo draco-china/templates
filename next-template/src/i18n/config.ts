@@ -12,3 +12,4 @@ export function getOptions(lng = fallbackLng, ns: string | string[] = defaultNS)
     supportedLngs: languages,
     fallbackLng,
     lng,
+    fallbackNS: defaultNS,
