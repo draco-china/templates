@@ -9,3 +9,5 @@ const initI18next = async (lng?: string, ns?: string | string[]) => {
     .use(initReactI18next)
     .use(
       resourcesToBackend(
+        (language: string, namespace: string) => import(`./locales/${language}/${namespace}.json`),
+      ),
