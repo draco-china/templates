@@ -5,3 +5,5 @@ import { getOptions } from './config';
 
 const initI18next = async (lng?: string, ns?: string | string[]) => {
   const i18nInstance = createInstance();
+  await i18nInstance
+    .use(initReactI18next)
