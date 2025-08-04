@@ -11,3 +11,5 @@ const initI18next = async (lng?: string, ns?: string | string[]) => {
       resourcesToBackend(
         (language: string, namespace: string) => import(`./locales/${language}/${namespace}.json`),
       ),
+    )
+    .init(getOptions(lng, ns));
