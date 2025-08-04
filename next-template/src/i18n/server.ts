@@ -13,3 +13,6 @@ const initI18next = async (lng?: string, ns?: string | string[]) => {
       ),
     )
     .init(getOptions(lng, ns));
+  return i18nInstance;
+};
+
