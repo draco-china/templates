@@ -18,3 +18,5 @@ const initI18next = async (lng?: string, ns?: string | string[]) => {
 
 export async function getTranslation(
   lng: string,
+  ns?: string | string[],
+  options?: { keyPrefix: string },
