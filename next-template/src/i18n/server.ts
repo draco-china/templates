@@ -20,3 +20,5 @@ export async function getTranslation(
   lng: string,
   ns?: string | string[],
   options?: { keyPrefix: string },
+) {
+  const i18nextInstance = await initI18next(lng, ns);
