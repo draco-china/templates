@@ -22,3 +22,5 @@ export async function getTranslation(
   options?: { keyPrefix: string },
 ) {
   const i18nextInstance = await initI18next(lng, ns);
+  return {
+    t: i18nextInstance.getFixedT(lng, Array.isArray(ns) ? ns[0] : ns, options?.keyPrefix),
