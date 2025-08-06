@@ -8,3 +8,8 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from '@radix-ui/react-icons';
+import {
+  DISCORD_LINK,
+  EMAIL,
+  GITHUB_LINK,
+  INSTAGRAM_LINK,
