@@ -13,3 +13,10 @@ import {
   EMAIL,
   GITHUB_LINK,
   INSTAGRAM_LINK,
+  LINKEDIN_LINK,
+  TWITTER_LINK,
+} from '@/lib/constants';
+import { Separator } from '@/components/ui/separator';
+import { SwitchMode } from './switch-mode';
+
+const Links = [
