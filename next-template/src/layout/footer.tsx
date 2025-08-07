@@ -25,3 +25,8 @@ const Links = [
     href: `mailto:${EMAIL}`,
   },
   {
+    icon: <GitHubLogoIcon className='size-4' />,
+    href: GITHUB_LINK,
+  },
+  {
+    icon: <TwitterLogoIcon className='size-4' />,
