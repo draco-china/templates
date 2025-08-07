@@ -20,3 +20,8 @@ import { Separator } from '@/components/ui/separator';
 import { SwitchMode } from './switch-mode';
 
 const Links = [
+  {
+    icon: <EnvelopeClosedIcon className='size-4' />,
+    href: `mailto:${EMAIL}`,
+  },
+  {
