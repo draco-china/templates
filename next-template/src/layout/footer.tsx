@@ -30,3 +30,9 @@ const Links = [
   },
   {
     icon: <TwitterLogoIcon className='size-4' />,
+    href: TWITTER_LINK,
+  },
+  {
+    icon: <DiscordLogoIcon className='size-4' />,
+    href: DISCORD_LINK,
+  },
