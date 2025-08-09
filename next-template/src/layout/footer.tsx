@@ -41,3 +41,9 @@ const Links = [
     href: INSTAGRAM_LINK,
   },
   {
+    icon: <LinkedInLogoIcon className='size-4' />,
+    href: LINKEDIN_LINK,
+  },
+];
+
+export default function LayoutFooter() {
