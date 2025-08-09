@@ -36,3 +36,8 @@ const Links = [
     icon: <DiscordLogoIcon className='size-4' />,
     href: DISCORD_LINK,
   },
+  {
+    icon: <InstagramLogoIcon className='size-4' />,
+    href: INSTAGRAM_LINK,
+  },
+  {
