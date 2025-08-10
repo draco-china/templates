@@ -58,3 +58,8 @@ export default function LayoutFooter() {
           <nav className='flex h-4 flex-wrap items-center gap-2'>
             {Links.map((item, index) => (
               <Fragment key={index}>
+                {index !== 0 && <Separator orientation='vertical' />}
+                <Link href={item.href || '#'}>{item.icon}</Link>
+              </Fragment>
+            ))}
+          </nav>
