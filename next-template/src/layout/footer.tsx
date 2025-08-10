@@ -47,3 +47,9 @@ const Links = [
 ];
 
 export default function LayoutFooter() {
+  return (
+    <footer className='border-t'>
+      <div className='container flex flex-col items-center justify-between gap-4 py-4 text-sm text-muted-foreground lg:flex-row'>
+        <div className='flex flex-col gap-4'>
+          <p>
+            © 2024 All rights reserved.
