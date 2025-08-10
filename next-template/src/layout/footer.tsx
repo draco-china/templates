@@ -53,3 +53,8 @@ export default function LayoutFooter() {
         <div className='flex flex-col gap-4'>
           <p>
             © 2024 All rights reserved.
+            {/* <Link href='https://github.com/draco-china'> Draco-china </Link> */}
+          </p>
+          <nav className='flex h-4 flex-wrap items-center gap-2'>
+            {Links.map((item, index) => (
+              <Fragment key={index}>
