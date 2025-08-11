@@ -63,3 +63,9 @@ export default function LayoutFooter() {
               </Fragment>
             ))}
           </nav>
+        </div>
+        <SwitchMode />
+      </div>
+    </footer>
+  );
+}
