@@ -16,3 +16,5 @@ export function LayoutHeader({ lng }: { lng: string }) {
         <div className='flex flex-1 items-center justify-end gap-4'>
           <nav className='flex items-center gap-1'>
             <SwitchLanguage />
+          </nav>
+        </div>
