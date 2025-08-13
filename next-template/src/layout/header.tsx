@@ -13,3 +13,5 @@ export function LayoutHeader({ lng }: { lng: string }) {
           </Link>
         </div>
 
+        <div className='flex flex-1 items-center justify-end gap-4'>
+          <nav className='flex items-center gap-1'>
