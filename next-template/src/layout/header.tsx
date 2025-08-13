@@ -9,3 +9,4 @@ export function LayoutHeader({ lng }: { lng: string }) {
         <div className='flex gap-6'>
           <Link href={`/${lng}`} className='flex items-center space-x-2'>
             <VercelLogoIcon className='size-6' />
+            <span className='inline-block font-bold'>Next Template</span>
