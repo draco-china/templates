@@ -20,3 +20,5 @@ export function LayoutHeader({ lng }: { lng: string }) {
         </div>
       </div>
     </header>
+  );
+}
