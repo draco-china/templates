@@ -18,3 +18,5 @@ export function LayoutHeader({ lng }: { lng: string }) {
             <SwitchLanguage />
           </nav>
         </div>
+      </div>
+    </header>
