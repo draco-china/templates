@@ -9,3 +9,5 @@ export default function LayoutScroll() {
   const { mode } = useSnapshot(globalState);
   return (
     <GlobalScrollbar
+      skin={formatMode(mode)}
+      suppressScrollX={false}
