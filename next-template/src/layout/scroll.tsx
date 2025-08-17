@@ -11,3 +11,4 @@ export default function LayoutScroll() {
     <GlobalScrollbar
       skin={formatMode(mode)}
       suppressScrollX={false}
+      trackStyle={() => ({
