@@ -13,3 +13,5 @@ export default function LayoutScroll() {
       suppressScrollX={false}
       trackStyle={() => ({
         backgroundColor: 'transparent',
+        border: 'none',
+      })}
