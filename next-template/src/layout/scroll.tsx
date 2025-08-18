@@ -15,3 +15,4 @@ export default function LayoutScroll() {
         backgroundColor: 'transparent',
         border: 'none',
       })}
+    />
