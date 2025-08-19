@@ -15,3 +15,5 @@ export default function SwitchLanguage() {
 
   if (!mounted) return <Skeleton className='h-8 w-14 rounded-full' />;
 
+  return (
+    <Select value={lng} onValueChange={changeLanguage}>
