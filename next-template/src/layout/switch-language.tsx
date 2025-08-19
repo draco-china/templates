@@ -10,3 +10,8 @@ import Icon from '@/components/icon';
 export default function SwitchLanguage() {
   const mounted = useMounted();
   const { lng, changeLanguage } = useLanguage();
+  const { t } = useTranslation(lng, 'language');
+  const country = getCountry(lng);
+
+  if (!mounted) return <Skeleton className='h-8 w-14 rounded-full' />;
+
