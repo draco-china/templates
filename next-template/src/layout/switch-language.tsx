@@ -17,3 +17,6 @@ export default function SwitchLanguage() {
 
   return (
     <Select value={lng} onValueChange={changeLanguage}>
+      <SelectTrigger
+        aria-label='Select Language'
+        className='h-8 w-14 rounded-full px-2 shadow-none'
