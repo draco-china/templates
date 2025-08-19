@@ -7,3 +7,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger } from '@/components/u
 import { Skeleton } from '@/components/ui/skeleton';
 import Icon from '@/components/icon';
 
+export default function SwitchLanguage() {
+  const mounted = useMounted();
+  const { lng, changeLanguage } = useLanguage();
