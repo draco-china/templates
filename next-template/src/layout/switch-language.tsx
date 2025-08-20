@@ -22,3 +22,6 @@ export default function SwitchLanguage() {
         className='h-8 w-14 rounded-full px-2 shadow-none'
       >
         <Icon icon={`flagpack:${country?.alpha2.toLowerCase()}`} className='size-5' />
+      </SelectTrigger>
+      <SelectContent align='end'>
+        {languages.map(getCountry).map((item) => (
