@@ -20,3 +20,5 @@ export default function SwitchLanguage() {
       <SelectTrigger
         aria-label='Select Language'
         className='h-8 w-14 rounded-full px-2 shadow-none'
+      >
+        <Icon icon={`flagpack:${country?.alpha2.toLowerCase()}`} className='size-5' />
