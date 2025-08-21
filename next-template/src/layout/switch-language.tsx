@@ -30,3 +30,6 @@ export default function SwitchLanguage() {
               <Icon icon={`flagpack:${item?.alpha2.toLowerCase()}`} />
               {t(`${item?.lang}-${item?.alpha2}`)}
             </div>
+          </SelectItem>
+        ))}
+      </SelectContent>
