@@ -33,3 +33,6 @@ export default function SwitchLanguage() {
           </SelectItem>
         ))}
       </SelectContent>
+    </Select>
+  );
+}
