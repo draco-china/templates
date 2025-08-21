@@ -28,3 +28,5 @@ export default function SwitchLanguage() {
           <SelectItem key={`${item?.lang}-${item?.alpha2}`} value={`${item?.lang}-${item?.alpha2}`}>
             <div className='flex items-center gap-1'>
               <Icon icon={`flagpack:${item?.alpha2.toLowerCase()}`} />
+              {t(`${item?.lang}-${item?.alpha2}`)}
+            </div>
