@@ -25,3 +25,6 @@ export default function SwitchLanguage() {
       </SelectTrigger>
       <SelectContent align='end'>
         {languages.map(getCountry).map((item) => (
+          <SelectItem key={`${item?.lang}-${item?.alpha2}`} value={`${item?.lang}-${item?.alpha2}`}>
+            <div className='flex items-center gap-1'>
+              <Icon icon={`flagpack:${item?.alpha2.toLowerCase()}`} />
