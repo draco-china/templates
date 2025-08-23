@@ -11,3 +11,8 @@ export function SwitchMode() {
   const mounted = useMounted();
   const { mode } = useSnapshot(globalState);
 
+  useEffect(() => {
+    if (mounted && !checkMode()) toggleMode(mode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mounted]);
+
