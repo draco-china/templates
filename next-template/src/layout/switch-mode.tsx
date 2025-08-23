@@ -8,3 +8,6 @@ import useMounted from '@/hooks/useMounted';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 
 export function SwitchMode() {
+  const mounted = useMounted();
+  const { mode } = useSnapshot(globalState);
+
