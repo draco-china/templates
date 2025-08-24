@@ -16,3 +16,6 @@ export function SwitchMode() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mounted]);
 
+  return (
+    <ToggleGroup
+      type='single'
