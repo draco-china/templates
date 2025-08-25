@@ -19,3 +19,5 @@ export function SwitchMode() {
   return (
     <ToggleGroup
       type='single'
+      size='sm'
+      value={mounted ? mode : undefined}
