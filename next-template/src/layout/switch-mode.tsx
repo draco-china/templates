@@ -24,3 +24,6 @@ export function SwitchMode() {
       onValueChange={(value) => {
         if (value) toggleMode(value as GlobalState['mode']);
       }}
+      className='w-fit rounded-full border p-0.5 *:rounded-full'
+    >
+      <ToggleGroupItem value='light' aria-label='Toggle light'>
