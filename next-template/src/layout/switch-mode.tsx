@@ -27,3 +27,5 @@ export function SwitchMode() {
       className='w-fit rounded-full border p-0.5 *:rounded-full'
     >
       <ToggleGroupItem value='light' aria-label='Toggle light'>
+        <SunIcon className='size-4' />
+      </ToggleGroupItem>
