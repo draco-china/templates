@@ -21,3 +21,6 @@ export function SwitchMode() {
       type='single'
       size='sm'
       value={mounted ? mode : undefined}
+      onValueChange={(value) => {
+        if (value) toggleMode(value as GlobalState['mode']);
+      }}
