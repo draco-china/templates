@@ -29,3 +29,6 @@ export function SwitchMode() {
       <ToggleGroupItem value='light' aria-label='Toggle light'>
         <SunIcon className='size-4' />
       </ToggleGroupItem>
+      <ToggleGroupItem value='system' aria-label='Toggle system'>
+        <LaptopIcon className='size-4' />
+      </ToggleGroupItem>
