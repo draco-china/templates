@@ -32,3 +32,6 @@ export function SwitchMode() {
       <ToggleGroupItem value='system' aria-label='Toggle system'>
         <LaptopIcon className='size-4' />
       </ToggleGroupItem>
+      <ToggleGroupItem value='dark' aria-label='Toggle dark'>
+        <MoonIcon className='size-4' />
+      </ToggleGroupItem>
