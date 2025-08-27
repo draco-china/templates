@@ -35,3 +35,6 @@ export function SwitchMode() {
       <ToggleGroupItem value='dark' aria-label='Toggle dark'>
         <MoonIcon className='size-4' />
       </ToggleGroupItem>
+    </ToggleGroup>
+  );
+}
