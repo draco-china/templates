@@ -6,3 +6,7 @@ export const DEFAULT_SYSTEM_MODE = DEFAULT_MODE === 'system' ? 'light' : DEFAULT
 export const DEFAULT_THEME = process.env.DEFAULT_THEME || 'blue';
 
 export const SITE_URL = process.env.SITE_URL || 'http://localhost:3000';
+export const API_URL = process.env.API_URL || '';
+
+export const EMAIL = process.env.EMAIL;
+
