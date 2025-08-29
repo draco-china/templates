@@ -10,3 +10,4 @@ export const API_URL = process.env.API_URL || '';
 
 export const EMAIL = process.env.EMAIL;
 
+export const GITHUB_LINK = process.env.GITHUB_LINK;
