@@ -14,3 +14,5 @@ export const GITHUB_LINK = process.env.GITHUB_LINK;
 export const TWITTER_LINK = process.env.TWITTER_LINK;
 export const DISCORD_LINK = process.env.DISCORD_LINK;
 export const INSTAGRAM_LINK = process.env.INSTAGRAM_LINK;
+export const LINKEDIN_LINK = process.env.LINKEDIN_LINK;
+
