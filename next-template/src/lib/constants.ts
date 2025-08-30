@@ -16,3 +16,5 @@ export const DISCORD_LINK = process.env.DISCORD_LINK;
 export const INSTAGRAM_LINK = process.env.INSTAGRAM_LINK;
 export const LINKEDIN_LINK = process.env.LINKEDIN_LINK;
 
+export const GOOGLE_TAG_MANAGER_ID = process.env.GOOGLE_TAG_MANAGER_ID;
+export const GOOGLE_ANALYTICS_ID = process.env.GOOGLE_ANALYTICS_ID;
