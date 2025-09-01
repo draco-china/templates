@@ -20,3 +20,14 @@ const isCookiesFromAppRouter = (
     'set' in cookieStore &&
     typeof cookieStore.getAll === 'function' &&
     typeof cookieStore.set === 'function'
+  );
+};
+
+const isContextFromAppRouter = (
+  context?: OptionsType,
+): context is { res?: NextResponse; req?: NextRequest; cookies?: CookiesFn } => {
+  return (
+    (!!context?.req && 'cookies' in context.req && isCookiesFromAppRouter(context?.req.cookies)) ||
+    (!!context?.res && 'cookies' in context.res && isCookiesFromAppRouter(context?.res.cookies)) ||
+    (!!context?.cookies && isCookiesFromAppRouter(context.cookies()))
+  );
