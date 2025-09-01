@@ -31,3 +31,16 @@ const isContextFromAppRouter = (
     (!!context?.res && 'cookies' in context.res && isCookiesFromAppRouter(context?.res.cookies)) ||
     (!!context?.cookies && isCookiesFromAppRouter(context.cookies()))
   );
+};
+
+const transformAppRouterCookies = (cookies: AppRouterCookies): TmpCookiesObj => {
+  const _cookies: Partial<TmpCookiesObj> = {};
+
+  cookies.getAll().forEach(({ name, value }) => {
+    _cookies[name] = value;
+  });
+  return _cookies;
+};
+
+const stringify = (value: any) => {
+  try {
