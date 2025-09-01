@@ -57,3 +57,14 @@ const stringify = (value: any) => {
 const decode = (str: string): string => {
   if (!str) return str;
 
+  return str.replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent);
+};
+
+export const getCookies = (options?: OptionsType): TmpCookiesObj => {
+  if (isContextFromAppRouter(options)) {
+    if (options?.req) {
+      return transformAppRouterCookies(options.req.cookies);
+    }
+    if (options?.cookies) {
+      return transformAppRouterCookies(options.cookies());
+    }
