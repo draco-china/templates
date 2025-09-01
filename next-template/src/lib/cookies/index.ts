@@ -44,3 +44,16 @@ const transformAppRouterCookies = (cookies: AppRouterCookies): TmpCookiesObj => 
 
 const stringify = (value: any) => {
   try {
+    if (typeof value === 'string') {
+      return value;
+    }
+    const result = JSON.stringify(value);
+    return result;
+  } catch (e) {
+    return value;
+  }
+};
+
+const decode = (str: string): string => {
+  if (!str) return str;
+
