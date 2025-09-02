@@ -86,3 +86,14 @@ export const getCookies = (options?: OptionsType): TmpCookiesObj => {
   return parse(document.cookie) || {};
 };
 
+export const getCookie = (key: string, options?: OptionsType): CookieValueTypes => {
+  const _cookies = getCookies(options);
+  const value = _cookies[key];
+  if (value === undefined) return undefined;
+  return decode(value);
+};
+
+export const setCookie = (key: string, data: any, options?: OptionsType): void => {
+  if (isContextFromAppRouter(options)) {
+    const { req, res, cookies: cookiesFn, ...restOptions } = options;
+    const payload = { name: key, value: stringify(data), ...restOptions };
