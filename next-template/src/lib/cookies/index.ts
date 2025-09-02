@@ -68,3 +68,21 @@ export const getCookies = (options?: OptionsType): TmpCookiesObj => {
     if (options?.cookies) {
       return transformAppRouterCookies(options.cookies());
     }
+  }
+
+  let req;
+  // DefaultOptions['req] can be casted here because is narrowed by using the fn: isContextFromAppRouter
+  if (options) req = options.req as DefaultOptions['req'];
+
+  if (!isClientSide()) {
+    // if cookie-parser is used in project get cookies from ctx.req.cookies
+    // if cookie-parser isn't used in project get cookies from ctx.req.headers.cookie
+
+    if (req && req.cookies) return req.cookies;
+    if (req && req.headers.cookie) return parse(req.headers.cookie);
+    return {};
+  }
+
+  return parse(document.cookie) || {};
+};
+
