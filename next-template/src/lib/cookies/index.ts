@@ -108,3 +108,15 @@ export const setCookie = (key: string, data: any, options?: OptionsType): void =
     }
     return;
   }
+  let _cookieOptions: any;
+  let _req;
+  let _res;
+  if (options) {
+    // DefaultOptions can be casted here because the AppRouterMiddlewareOptions is narrowed using the fn: isContextFromAppRouter
+    const { req, res, ..._options } = options as DefaultOptions;
+    _req = req;
+    _res = res;
+    _cookieOptions = _options;
+  }
+
+  const cookieStr = serialize(key, stringify(data), { path: '/', ..._cookieOptions });
