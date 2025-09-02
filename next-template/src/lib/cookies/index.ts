@@ -97,3 +97,14 @@ export const setCookie = (key: string, data: any, options?: OptionsType): void =
   if (isContextFromAppRouter(options)) {
     const { req, res, cookies: cookiesFn, ...restOptions } = options;
     const payload = { name: key, value: stringify(data), ...restOptions };
+    if (req) {
+      req.cookies.set(payload);
+    }
+    if (res) {
+      res.cookies.set(payload);
+    }
+    if (cookiesFn) {
+      cookiesFn().set(payload);
+    }
+    return;
+  }
