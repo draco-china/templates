@@ -120,3 +120,15 @@ export const setCookie = (key: string, data: any, options?: OptionsType): void =
   }
 
   const cookieStr = serialize(key, stringify(data), { path: '/', ..._cookieOptions });
+  if (!isClientSide()) {
+    if (_res && _req) {
+      let currentCookies = _res.getHeader('Set-Cookie');
+
+      if (!Array.isArray(currentCookies)) {
+        currentCookies = !currentCookies ? [] : [String(currentCookies)];
+      }
+      _res.setHeader('Set-Cookie', currentCookies.concat(cookieStr));
+
+      if (_req && _req.cookies) {
+        const _cookies = _req.cookies;
+        data === '' ? delete _cookies[key] : (_cookies[key] = stringify(data));
