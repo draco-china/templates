@@ -145,3 +145,17 @@ export const setCookie = (key: string, data: any, options?: OptionsType): void =
       }
     }
   } else {
+    document.cookie = cookieStr;
+  }
+};
+
+export const deleteCookie = (key: string, options?: OptionsType): void => {
+  return setCookie(key, '', { ...options, maxAge: -1 });
+};
+
+export const hasCookie = (key: string, options?: OptionsType): boolean => {
+  if (!key) return false;
+
+  const cookie = getCookies(options);
+  return cookie.hasOwnProperty(key);
+};
