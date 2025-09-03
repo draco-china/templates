@@ -132,3 +132,16 @@ export const setCookie = (key: string, data: any, options?: OptionsType): void =
       if (_req && _req.cookies) {
         const _cookies = _req.cookies;
         data === '' ? delete _cookies[key] : (_cookies[key] = stringify(data));
+      }
+
+      if (_req && _req.headers && _req.headers.cookie) {
+        const _cookies = parse(_req.headers.cookie);
+
+        data === '' ? delete _cookies[key] : (_cookies[key] = stringify(data));
+
+        _req.headers.cookie = Object.entries(_cookies).reduce((accum, item) => {
+          return accum.concat(`${item[0]}=${item[1]};`);
+        }, '');
+      }
+    }
+  } else {
