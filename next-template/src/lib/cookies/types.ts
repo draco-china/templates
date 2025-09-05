@@ -10,3 +10,4 @@ export interface DefaultOptions extends CookieSerializeOptions {
     cookies?: TmpCookiesObj;
   };
   cookies?: CookiesFn;
+}
