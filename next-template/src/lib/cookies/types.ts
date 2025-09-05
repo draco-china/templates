@@ -13,3 +13,5 @@ export interface DefaultOptions extends CookieSerializeOptions {
 }
 export type CookiesFn = typeof cookies;
 export type AppRouterOptions = {
+  res?: Response | NextResponse;
+  req?: Request | NextRequest;
