@@ -8,3 +8,5 @@ export interface DefaultOptions extends CookieSerializeOptions {
   res?: ServerResponse;
   req?: IncomingMessage & {
     cookies?: TmpCookiesObj;
+  };
+  cookies?: CookiesFn;
