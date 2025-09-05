@@ -7,3 +7,4 @@ export type OptionsType = DefaultOptions | AppRouterOptions;
 export interface DefaultOptions extends CookieSerializeOptions {
   res?: ServerResponse;
   req?: IncomingMessage & {
+    cookies?: TmpCookiesObj;
