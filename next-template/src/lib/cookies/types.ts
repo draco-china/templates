@@ -16,3 +16,5 @@ export type AppRouterOptions = {
   res?: Response | NextResponse;
   req?: Request | NextRequest;
   cookies?: CookiesFn;
+};
+export type AppRouterCookies = NextResponse['cookies'] | NextRequest['cookies'];
