@@ -15,3 +15,4 @@ export type CookiesFn = typeof cookies;
 export type AppRouterOptions = {
   res?: Response | NextResponse;
   req?: Request | NextRequest;
+  cookies?: CookiesFn;
