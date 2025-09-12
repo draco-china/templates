@@ -15,3 +15,7 @@ request.interceptors.request.use(
   async (request: InternalAxiosRequestConfig) => {
     const Authorization = getCookie('Authorization');
     if (Authorization) request.headers.Authorization = Authorization;
+    return request;
+  },
+  (error) => {
+    return Promise.reject(error);
