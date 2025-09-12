@@ -12,3 +12,6 @@ const request = axios.create({
 });
 
 request.interceptors.request.use(
+  async (request: InternalAxiosRequestConfig) => {
+    const Authorization = getCookie('Authorization');
+    if (Authorization) request.headers.Authorization = Authorization;
