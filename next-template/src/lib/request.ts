@@ -19,3 +19,7 @@ request.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
+  },
+);
+
+request.interceptors.response.use(
