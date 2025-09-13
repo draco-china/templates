@@ -30,3 +30,7 @@ request.interceptors.response.use(
       t(`request.error.${code}`);
     }
     return response;
+  },
+  async (error) => {
+    const { t } = await getTranslation(i18next.language, 'common');
+    console.log('error', error.response);
