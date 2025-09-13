@@ -27,3 +27,6 @@ request.interceptors.response.use(
     const { t } = await getTranslation(i18next.language, 'common');
     const code = response.data.code;
     if ([401, 403, 404, 500, 503, 504].includes(code)) {
+      t(`request.error.${code}`);
+    }
+    return response;
