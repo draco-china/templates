@@ -45,3 +45,8 @@ request.interceptors.response.use(
       toast.error(t('request.error.default'));
     }
 
+    return Promise.reject(error);
+  },
+);
+
+export default request;
