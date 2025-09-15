@@ -41,3 +41,7 @@ request.interceptors.response.use(
     }
     if (message) {
       toast.error(message || error.response?.data?.message || error.response?.statusText);
+    } else {
+      toast.error(t('request.error.default'));
+    }
+
