@@ -8,3 +8,7 @@ export const metadata: Metadata = {
     template: 'Next.js | %s | Next.js Template',
   },
   other: {
+    renderer: 'webkit',
+  },
+  manifest: '/site.webmanifest',
+  icons: {
