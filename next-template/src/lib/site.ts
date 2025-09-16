@@ -22,3 +22,7 @@ export const metadata: Metadata = {
         sizes: '32x32',
       },
       {
+        url: '/favicon.ico',
+        sizes: '48x48',
+      },
+    ],
