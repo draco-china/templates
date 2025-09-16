@@ -12,3 +12,8 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   icons: {
+    icon: [
+      {
+        url: '/favicon-16x16.png',
+        sizes: '16x16',
+      },
