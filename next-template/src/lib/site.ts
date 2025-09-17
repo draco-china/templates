@@ -35,3 +35,8 @@ export const metadata: Metadata = {
     canonical: '/',
     languages: Object.fromEntries(languages.map((language) => [language, `/${language}`])),
   },
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
