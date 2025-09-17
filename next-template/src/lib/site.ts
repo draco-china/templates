@@ -26,3 +26,8 @@ export const metadata: Metadata = {
         sizes: '48x48',
       },
     ],
+    apple: {
+      url: '/apple-touch-icon.png',
+    },
+  },
+  metadataBase: new URL(SITE_URL),
