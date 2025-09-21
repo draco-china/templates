@@ -8,3 +8,8 @@ import { ReactQueryStreamedHydration } from '@tanstack/react-query-next-experime
 const ReactQueryDevtoolsProduction = lazy(() =>
   import('@tanstack/react-query-devtools/build/modern/production.js').then((d) => ({
     default: d.ReactQueryDevtools,
+  })),
+);
+
+export default function ReactQueryProvider(props: { children: ReactNode }) {
+  // Instead do this, which ensures each request has its own cache:
