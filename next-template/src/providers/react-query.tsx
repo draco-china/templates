@@ -21,3 +21,8 @@ export default function ReactQueryProvider(props: { children: ReactNode }) {
             staleTime: 5 * 1000,
           },
         },
+      }),
+  );
+
+  const [showDevtools, setShowDevtools] = useState(false);
+
