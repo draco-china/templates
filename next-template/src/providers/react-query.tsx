@@ -34,3 +34,6 @@ export default function ReactQueryProvider(props: { children: ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryStreamedHydration>{props.children}</ReactQueryStreamedHydration>
+      {<ReactQueryDevtools initialIsOpen={false} />}
+      {showDevtools && (
+        <Suspense fallback={null}>
