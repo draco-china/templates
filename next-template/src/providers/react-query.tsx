@@ -26,3 +26,8 @@ export default function ReactQueryProvider(props: { children: ReactNode }) {
 
   const [showDevtools, setShowDevtools] = useState(false);
 
+  useEffect(() => {
+    // @ts-ignore
+    window.toggleDevtools = () => setShowDevtools((old) => !old);
+  }, []);
+
