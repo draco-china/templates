@@ -31,3 +31,6 @@ export default function ReactQueryProvider(props: { children: ReactNode }) {
     window.toggleDevtools = () => setShowDevtools((old) => !old);
   }, []);
 
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryStreamedHydration>{props.children}</ReactQueryStreamedHydration>
