@@ -37,3 +37,6 @@ export default function ReactQueryProvider(props: { children: ReactNode }) {
       {<ReactQueryDevtools initialIsOpen={false} />}
       {showDevtools && (
         <Suspense fallback={null}>
+          <ReactQueryDevtoolsProduction />
+        </Suspense>
+      )}
