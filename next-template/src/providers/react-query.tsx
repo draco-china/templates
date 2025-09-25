@@ -40,3 +40,6 @@ export default function ReactQueryProvider(props: { children: ReactNode }) {
           <ReactQueryDevtoolsProduction />
         </Suspense>
       )}
+    </QueryClientProvider>
+  );
+}
