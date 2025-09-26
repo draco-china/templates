@@ -5,3 +5,9 @@ import { getCookie, setCookie } from '@/lib/cookies';
 export interface GlobalState {
   currentMode?: 'light' | 'dark';
   systemMode?: 'light' | 'dark';
+  mode: 'light' | 'dark' | 'system';
+  theme:
+    | 'zinc'
+    | 'slate'
+    | 'stone'
+    | 'gray'
