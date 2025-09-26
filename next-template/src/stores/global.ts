@@ -17,3 +17,10 @@ export interface GlobalState {
     | 'orange'
     | 'green'
     | 'blue'
+    | 'yellow'
+    | 'violet'
+    | string;
+}
+
+export const globalState = proxy<GlobalState>({
+  systemMode: (getCookie('systemMode') || DEFAULT_SYSTEM_MODE) as GlobalState['systemMode'],
