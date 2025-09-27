@@ -24,3 +24,10 @@ export interface GlobalState {
 
 export const globalState = proxy<GlobalState>({
   systemMode: (getCookie('systemMode') || DEFAULT_SYSTEM_MODE) as GlobalState['systemMode'],
+  mode: (getCookie('mode') || DEFAULT_MODE) as GlobalState['mode'],
+  theme: (getCookie('theme') || DEFAULT_THEME) as GlobalState['theme'],
+});
+
+export function getSystemMode() {
+  if (isBrowser()) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
