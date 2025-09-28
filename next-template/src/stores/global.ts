@@ -45,3 +45,10 @@ export function checkMode(mode?: GlobalState['mode']) {
     'data-mode',
   ) as GlobalState['currentMode'];
   return currentFormatMode === currentMode;
+}
+
+export function setMode(mode: GlobalState['mode']) {
+  if (globalState.mode !== mode) setCookie('mode', mode);
+  globalState.mode = mode;
+  globalState.currentMode = formatMode(mode);
+  const el = document.documentElement;
