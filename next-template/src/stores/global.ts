@@ -58,3 +58,11 @@ export function setMode(mode: GlobalState['mode']) {
     globalState.systemMode = getSystemMode();
     setCookie('systemMode', getSystemMode());
   }
+}
+
+export function toggleMode(mode: GlobalState['mode'], coordinate?: { x: number; y: number }) {
+  const isDark = document.documentElement.getAttribute('data-mode') === 'dark';
+  if (!document.startViewTransition || checkMode(mode)) {
+    return setMode(mode);
+  }
+
