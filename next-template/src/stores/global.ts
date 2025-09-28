@@ -52,3 +52,9 @@ export function setMode(mode: GlobalState['mode']) {
   globalState.mode = mode;
   globalState.currentMode = formatMode(mode);
   const el = document.documentElement;
+  el.setAttribute('data-mode', globalState.currentMode);
+  el.style.colorScheme = globalState.currentMode;
+  if (globalState.systemMode !== getSystemMode()) {
+    globalState.systemMode = getSystemMode();
+    setCookie('systemMode', getSystemMode());
+  }
