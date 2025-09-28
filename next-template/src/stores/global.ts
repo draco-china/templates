@@ -31,3 +31,11 @@ export const globalState = proxy<GlobalState>({
 export function getSystemMode() {
   if (isBrowser()) {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  return DEFAULT_SYSTEM_MODE;
+}
+
+export function formatMode(mode: GlobalState['mode']) {
+  return mode === 'system' ? getSystemMode() : mode;
+}
+
