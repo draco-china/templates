@@ -39,3 +39,9 @@ export function formatMode(mode: GlobalState['mode']) {
   return mode === 'system' ? getSystemMode() : mode;
 }
 
+export function checkMode(mode?: GlobalState['mode']) {
+  const currentFormatMode = formatMode(mode || globalState.mode);
+  const currentMode = document.documentElement.getAttribute(
+    'data-mode',
+  ) as GlobalState['currentMode'];
+  return currentFormatMode === currentMode;
