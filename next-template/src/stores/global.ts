@@ -66,3 +66,12 @@ export function toggleMode(mode: GlobalState['mode'], coordinate?: { x: number; 
     return setMode(mode);
   }
 
+  const transition = document.startViewTransition(() => setMode(mode));
+
+  // 传入触发点坐标，从点击处开始扩散。否则，从🈶下角开始扩散
+  const x = coordinate?.x ?? window.innerWidth;
+  const y = coordinate?.y ?? window.innerHeight;
+
+  const endRadius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+  transition.ready.then(() => {
+    const clipPath = [`circle(0px at ${x}px ${y}px)`, `circle(${endRadius}px at ${x}px ${y}px)`];
