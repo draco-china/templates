@@ -75,3 +75,9 @@ export function toggleMode(mode: GlobalState['mode'], coordinate?: { x: number; 
   const endRadius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
   transition.ready.then(() => {
     const clipPath = [`circle(0px at ${x}px ${y}px)`, `circle(${endRadius}px at ${x}px ${y}px)`];
+    document.documentElement.animate(
+      {
+        clipPath: !isDark ? clipPath : [...clipPath].reverse(),
+      },
+      {
+        duration: 500,
