@@ -81,3 +81,9 @@ export function toggleMode(mode: GlobalState['mode'], coordinate?: { x: number; 
       },
       {
         duration: 500,
+        easing: 'ease-in',
+        pseudoElement: !isDark ? '::view-transition-new(root)' : '::view-transition-old(root)',
+      },
+    );
+  });
+}
