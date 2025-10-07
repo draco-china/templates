@@ -14,3 +14,8 @@ export default defineConfig({
   locales: i18nConfig.supportedLngs as string[],
 
   // Extraction configuration
+  extract: {
+    input: 'src/**/*.{js,jsx,ts,tsx}', // Source files to scan
+    output: 'public/locales/{{language}}/{{namespace}}.json', // Output path template
+  },
+});
