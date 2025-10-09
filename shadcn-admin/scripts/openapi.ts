@@ -102,3 +102,113 @@ function resolveSchemaPath(schemaPath: string): string | URL {
   return path.resolve(process.cwd(), schemaPath);
 }
 
+async function generateTypesForSchema(
+  schema: Config['schemas'][0],
+  globalOptions: Config['globalOptions'],
+): Promise<void> {
+  console.log(`\n🔄 Processing ${schema.name}...`);
+
+  // Resolve the schema path
+  const resolvedPath = resolveSchemaPath(schema.path);
+  const pathType =
+    typeof resolvedPath === 'string' ? 'local file' : 'remote URL';
+  console.log(`📁 Schema source: ${resolvedPath} (${pathType})`);
+
+  // Generate TypeScript types
+  console.log(`🏗️  Generating TypeScript definitions for ${schema.name}...`);
+
+  try {
+    // Merge global options with schema-specific options (schema overrides global)
+    const openapiOptions = {
+      ...globalOptions,
+      ...schema.options,
+    };
+
+    const ast = await openapiTS(resolvedPath, openapiOptions);
+
+    const contents = astToString(ast);
+
+    // Ensure output directory exists
+    const outputDir = path.dirname(schema.output);
+    ensureDir(outputDir);
+
+    // Write the generated types
+    fs.writeFileSync(schema.output, contents);
+
+    const stats = fs.statSync(schema.output);
+    console.log(
+      `✅ TypeScript definitions generated at ${schema.output} (${(stats.size / 1024).toFixed(2)}KB)`,
+    );
+  } catch (error) {
+    throw new Error(
+      `Failed to generate types for ${schema.name}: ${error instanceof Error ? error.message : String(error)}`,
+    );
+  }
+}
+
+async function main(): Promise<void> {
+  const startTime = Date.now();
+
+  console.log('🚀 Starting OpenAPI TypeScript generation...\n');
+
+  const config = loadConfig();
+
+  try {
+    for (const schema of config.schemas) {
+      await generateTypesForSchema(schema, config.globalOptions || {});
+    }
+    const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+    console.log(
+      `\n🎉 All TypeScript definitions generated successfully in ${duration}s`,
+    );
+  } catch (error) {
+    if (
+      error instanceof Error &&
+      error.message.includes('Configuration file not found')
+    ) {
+      console.error(`\n${error.message}`);
+      console.log(
+        '\n💡 Create a configuration file with the following structure:',
+      );
+      console.log(`
+{
+  "schemas": [
+    {
+      "name": "My API",
+      "path": "https://api.example.com/openapi.yaml",
+      "outputPath": "./src/types/api.ts"
+    },
+    {
+      "name": "Local API",
+      "path": "./docs/openapi.yaml",
+      "outputPath": "./src/types/local-api.ts"
+    }
+  ],
+  "globalOptions": {
+    "makePathsEnum": true,
+    "exportType": true
+  }
+}`);
+    } else {
+      console.error(
+        '\n❌ Generation failed:',
+        error instanceof Error ? error.message : String(error),
+      );
+    }
+    process.exit(1);
+  }
+}
+
+process.on('uncaughtException', (error) => {
+  console.error('❌ Uncaught exception:', error);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason) => {
+  console.error('❌ Unhandled rejection:', reason);
+  process.exit(1);
+});
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main().catch(console.error);
+}
