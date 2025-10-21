@@ -60,3 +60,65 @@ export function IconLayoutDefault(props: SVGProps<SVGSVGElement>) {
           height={8.7}
           rx={0.33}
           ry={0.33}
+          opacity={0.53}
+        />
+        <rect
+          x={69.55}
+          y={29.17}
+          width={2.01}
+          height={12.4}
+          rx={0.33}
+          ry={0.33}
+          opacity={0.66}
+        />
+      </g>
+      <g opacity={0.5}>
+        <circle cx={63.17} cy={18.63} r={7.5} />
+        <path d="M63.17 11.63c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.14-7-7 3.14-7 7-7m0-1c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z" />
+      </g>
+      <g opacity={0.74}>
+        <path d="M64.05 18.13l3.38-5.67c.93.64 1.7 1.48 2.26 2.47.56.98.89 2.08.96 3.21h-6.6z" />
+        <path d="M67.57 13.19a6.977 6.977 0 012.52 4.44h-5.17l2.65-4.44m-.31-1.43l-4.1 6.87h8c0-1.39-.36-2.75-1.04-3.95a8.007 8.007 0 00-2.86-2.92z" />
+      </g>
+      <g strokeLinecap="round" strokeMiterlimit={10}>
+        <rect
+          x={5.84}
+          y={5.02}
+          width={19.14}
+          height={40}
+          rx={2}
+          ry={2}
+          opacity={0.8}
+        />
+        <g stroke="#fff">
+          <path
+            fill="none"
+            opacity={0.72}
+            strokeWidth="2px"
+            d="M9.02 17.39L21.25 17.39"
+          />
+          <path
+            fill="none"
+            opacity={0.48}
+            strokeWidth="2px"
+            d="M9.02 24.6L19.54 24.6"
+          />
+          <path
+            fill="none"
+            opacity={0.55}
+            strokeWidth="2px"
+            d="M9.02 20.88L18.4 20.88"
+          />
+          <circle cx={10.98} cy={9.91} r={2.54} fill="#fff" opacity={0.8} />
+          <path
+            fill="none"
+            opacity={0.8}
+            strokeWidth="2px"
+            d="M15.53 8.65L21.25 8.65"
+          />
+          <path fill="none" opacity={0.6} d="M15.32 11.3L20.38 11.3" />
+        </g>
+      </g>
+    </svg>
+  );
+}
