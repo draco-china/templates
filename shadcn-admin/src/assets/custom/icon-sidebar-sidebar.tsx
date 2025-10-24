@@ -25,3 +25,29 @@ export function IconSidebarSidebar(props: SVGProps<SVGSVGElement>) {
       <path
         fill="none"
         opacity={0.48}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth="2px"
+        d="M5.56 22.09L16.08 22.09"
+      />
+      <path
+        fill="none"
+        opacity={0.55}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth="2px"
+        d="M5.56 18.38L14.93 18.38"
+      />
+      <g strokeLinecap="round" strokeMiterlimit={10}>
+        <circle cx={7.51} cy={7.4} r={2.54} opacity={0.8} />
+        <path
+          fill="none"
+          opacity={0.8}
+          strokeWidth="2px"
+          d="M12.06 6.14L17.78 6.14"
+        />
+        <path fill="none" opacity={0.6} d="M11.85 8.79L16.91 8.79" />
+      </g>
+    </svg>
+  );
+}
