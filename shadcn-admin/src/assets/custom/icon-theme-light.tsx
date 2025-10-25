@@ -37,3 +37,42 @@ export function IconThemeLight(props: SVGProps<SVGSVGElement>) {
           width={2.75}
           height={6.58}
           rx={0.33}
+          ry={0.33}
+          opacity={0.44}
+        />
+        <rect
+          x={37.16}
+          y={14.44}
+          width={2.75}
+          height={8.7}
+          rx={0.33}
+          ry={0.33}
+          opacity={0.53}
+        />
+        <rect
+          x={41.19}
+          y={10.75}
+          width={2.75}
+          height={12.4}
+          rx={0.33}
+          ry={0.33}
+          opacity={0.53}
+        />
+      </g>
+      <circle cx={62.74} cy={16.32} r={8} fill="#fff" />
+      <g fill="#d9d9d9">
+        <path d="M63.62 15.82L67 10.15c.93.64 1.7 1.48 2.26 2.47.56.98.89 2.08.96 3.21h-6.6z" />
+        <path d="M67.14 10.88a6.977 6.977 0 012.52 4.44h-5.17l2.65-4.44m-.31-1.43l-4.1 6.87h8c0-1.39-.36-2.75-1.04-3.95s-1.67-2.21-2.86-2.92z" />
+      </g>
+      <rect
+        x={29.64}
+        y={27.75}
+        width={41.62}
+        height={18.62}
+        rx={1.69}
+        ry={1.69}
+        fill="#fff"
+      />
+    </svg>
+  );
+}
