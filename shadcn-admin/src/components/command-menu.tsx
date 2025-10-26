@@ -1,0 +1,52 @@
+import { useNavigate } from '@tanstack/react-router';
+import { ArrowRight, ChevronRight, Laptop, Moon, Sun } from 'lucide-react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import {
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+} from '@/components/ui/command';
+import { useSearch } from '@/context/search-provider';
+import { useTheme } from '@/context/theme-provider';
+import { useSidebarData } from './layout/data/sidebar-data';
+import { ScrollArea } from './ui/scroll-area';
+
+export function CommandMenu() {
+  const { t } = useTranslation('components');
+  const navigate = useNavigate();
+  const { setTheme } = useTheme();
+  const { open, setOpen } = useSearch();
+
+  const sidebarData = useSidebarData();
+
+  const runCommand = React.useCallback(
+    (command: () => unknown) => {
+      setOpen(false);
+      command();
+    },
+    [setOpen],
+  );
+
+  return (
+    <CommandDialog modal open={open} onOpenChange={setOpen}>
+      <CommandInput
+        placeholder={t(
+          'commandMenu.placeholder',
+          'Type a command or search...',
+        )}
+      />
+      <CommandList>
+        <ScrollArea type="hover" className="h-72 pe-1">
+          <CommandEmpty>
+            {t('commandMenu.noResults', 'No results found.')}
+          </CommandEmpty>
+          {sidebarData.navGroups.map((group) => (
+            <CommandGroup key={group.title} heading={group.title}>
+              {group.items.map((navItem, i) => {
+                if (navItem.url)
+                  return (
