@@ -10,3 +10,14 @@ export function ComingSoon() {
       <div className="m-auto flex h-full w-full flex-col items-center justify-center gap-2">
         <Telescope size={72} />
         <h1 className="text-4xl leading-tight font-bold">
+          {t('comingSoon.title', 'Coming Soon!')}
+        </h1>
+        <p className="text-muted-foreground text-center">
+          {t('comingSoon.description', 'This page has not been created yet.')}{' '}
+          <br />
+          {t('comingSoon.stayTuned', 'Stay tuned though!')}
+        </p>
+      </div>
+    </Main>
+  );
+}
