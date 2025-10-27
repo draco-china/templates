@@ -50,3 +50,53 @@ export function CommandMenu() {
               {group.items.map((navItem, i) => {
                 if (navItem.url)
                   return (
+                    <CommandItem
+                      key={`${navItem.url}-${i}`}
+                      value={navItem.title}
+                      onSelect={() => {
+                        runCommand(() => navigate({ to: navItem.url }));
+                      }}
+                    >
+                      <div className="flex size-4 items-center justify-center">
+                        <ArrowRight className="text-muted-foreground/80 size-2" />
+                      </div>
+                      {navItem.title}
+                    </CommandItem>
+                  );
+
+                return navItem.items?.map((subItem, i) => (
+                  <CommandItem
+                    key={`${navItem.title}-${subItem.url}-${i}`}
+                    value={`${navItem.title}-${subItem.url}`}
+                    onSelect={() => {
+                      runCommand(() => navigate({ to: subItem.url }));
+                    }}
+                  >
+                    <div className="flex size-4 items-center justify-center">
+                      <ArrowRight className="text-muted-foreground/80 size-2" />
+                    </div>
+                    {navItem.title} <ChevronRight /> {subItem.title}
+                  </CommandItem>
+                ));
+              })}
+            </CommandGroup>
+          ))}
+          <CommandSeparator />
+          <CommandGroup heading={t('commandMenu.theme', 'Theme')}>
+            <CommandItem onSelect={() => runCommand(() => setTheme('light'))}>
+              <Sun /> <span>{t('theme.light', 'Light')}</span>
+            </CommandItem>
+            <CommandItem onSelect={() => runCommand(() => setTheme('dark'))}>
+              <Moon className="scale-90" />
+              <span>{t('theme.dark', 'Dark')}</span>
+            </CommandItem>
+            <CommandItem onSelect={() => runCommand(() => setTheme('system'))}>
+              <Laptop />
+              <span>{t('theme.system', 'System')}</span>
+            </CommandItem>
+          </CommandGroup>
+        </ScrollArea>
+      </CommandList>
+    </CommandDialog>
+  );
+}
