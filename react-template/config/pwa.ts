@@ -31,3 +31,36 @@ export const pwaOptions: VitePWAOptions = {
         src: "pwa-512x512.png",
         sizes: "512x512",
         type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "maskable-icon-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable",
+      },
+    ],
+    start_url: ".",
+    display: "standalone",
+    theme_color: "#000000",
+    background_color: "#ffffff",
+  },
+  minify: false,
+  workbox: {
+    globPatterns: [
+      "**/*.{js,css,html,ico,png,svg,webp,avif,woff,woff2,ttf,otf,eot,mp3,mp4,webm,wav}",
+    ],
+    globIgnores: ["**/*.map", "**/manifest.webmanifest"],
+    cleanupOutdatedCaches: true,
+    maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+  },
+  injectManifest: {
+    globPatterns: [
+      "**/*.{js,css,html,ico,png,svg,webp,avif,woff,woff2,ttf,otf,eot,mp3,mp4,webm,wav}",
+    ],
+    globIgnores: ["**/*.map", "**/manifest.webmanifest"],
+    maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+  },
+  includeManifestIcons: false,
+  disable: false,
+};
