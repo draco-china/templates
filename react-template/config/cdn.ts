@@ -32,3 +32,34 @@ const createImportMap = () => ({
 
 const resolveCdn = (id: string) => {
   for (const pkg of cdnPackages) {
+    if (id === pkg) {
+      return cdnUrl(pkg);
+    }
+    if (id.startsWith(`${pkg}/`)) {
+      const subpath = id.slice(pkg.length);
+      return cdnUrl(pkg, subpath);
+    }
+  }
+
+  return null;
+};
+
+export const createCdnImportMapPlugin = (): Plugin => {
+  const importMap = createImportMap();
+
+  return {
+    name: "cdn-importmap",
+    enforce: "pre",
+    resolveId(id) {
+      const resolved = resolveCdn(id);
+      return resolved ? { id: resolved, external: true } : null;
+    },
+    transformIndexHtml(html) {
+      const importMapScript = `<script type="importmap">${JSON.stringify(importMap)}</script>`;
+      return html.replace("</head>", `  ${importMapScript}\n  </head>`);
+    },
+  };
+};
+
+export const isCdnPackage = (id: string) =>
+  cdnPackages.some((pkg) => id === pkg || id.startsWith(`${pkg}/`));
