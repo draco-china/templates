@@ -4,3 +4,9 @@ import {
 } from "@vite-pwa/assets-generator/config";
 
 export default defineConfig({
+  preset,
+  headLinkOptions: {
+    preset: "2023",
+  },
+  images: ["public/logo.svg"],
+});
