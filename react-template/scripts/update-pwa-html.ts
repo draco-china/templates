@@ -71,3 +71,72 @@ const replaceOrInsertBlock = (html: string) => {
 
   if (html.includes(START_MARKER) && html.includes(END_MARKER)) {
     const before = html.split(START_MARKER)[0];
+    const after = html.split(END_MARKER)[1];
+    return `${before}${block}${after}`;
+  }
+
+  // biome-ignore lint/performance/useTopLevelRegex: regex is needed
+  const viewportMatch = html.match(/\s*<meta\s+name="viewport"[^>]*>\s*/);
+  if (viewportMatch && viewportMatch.index !== undefined) {
+    const insertAt = viewportMatch.index + viewportMatch[0].length;
+    return `${html.slice(0, insertAt)}\n${block}${html.slice(insertAt)}`;
+  }
+
+  const headIndex = html.indexOf("<head>");
+  if (headIndex !== -1) {
+    const insertAt = headIndex + "<head>".length;
+    return `${html.slice(0, insertAt)}\n${block}${html.slice(insertAt)}`;
+  }
+
+  return html;
+};
+
+const run = async () => {
+  const [html, manifestText] = await Promise.all([
+    readFile(INDEX_PATH, "utf8"),
+    readFile(MANIFEST_PATH, "utf8"),
+  ]);
+
+  const manifest = JSON.parse(manifestText) as Manifest;
+  const appName = manifest.name ?? manifest.short_name ?? "App";
+  const appDescription =
+    manifest.description ?? manifest.short_name ?? manifest.name ?? "App";
+
+  let updated = replaceOrInsertBlock(html);
+  updated = upsertTitle(updated, appName);
+  updated = upsertMetaTag(updated, "name", "application-name", appName);
+  updated = upsertMetaTag(
+    updated,
+    "name",
+    "apple-mobile-web-app-title",
+    appName
+  );
+  updated = upsertMetaTag(updated, "property", "og:title", appName);
+  updated = upsertMetaTag(updated, "name", "twitter:title", appName);
+  updated = upsertMetaTag(updated, "name", "description", appDescription);
+  updated = upsertMetaTag(
+    updated,
+    "property",
+    "og:description",
+    appDescription
+  );
+  updated = upsertMetaTag(
+    updated,
+    "name",
+    "twitter:description",
+    appDescription
+  );
+
+  if (updated === html) {
+    console.log("No changes needed in index.html");
+    return;
+  }
+
+  await writeFile(INDEX_PATH, updated, "utf8");
+  console.log("Updated PWA icon links in index.html");
+};
+
+run().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
