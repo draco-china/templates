@@ -79,3 +79,85 @@ export default function Header() {
                 "flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2",
             }}
             className="mb-2 flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+            to="/demo/table"
+          >
+            <Table size={20} />
+            <span className="font-medium">TanStack Table</span>
+          </Link>
+
+          <Link
+            activeProps={{
+              className:
+                "flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2",
+            }}
+            className="mb-2 flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+            to="/demo/form/simple"
+          >
+            <ClipboardType size={20} />
+            <span className="font-medium">Simple Form</span>
+          </Link>
+
+          <Link
+            activeProps={{
+              className:
+                "flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2",
+            }}
+            className="mb-2 flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+            to="/demo/form/address"
+          >
+            <ClipboardType size={20} />
+            <span className="font-medium">Address Form</span>
+          </Link>
+
+          <Link
+            activeProps={{
+              className:
+                "flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2",
+            }}
+            className="mb-2 flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+            to="/demo/tanstack-query"
+          >
+            <Network size={20} />
+            <span className="font-medium">TanStack Query</span>
+          </Link>
+
+          <Link
+            activeProps={{
+              className:
+                "flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2",
+            }}
+            className="mb-2 flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+            to="/demo/store"
+          >
+            <Store size={20} />
+            <span className="font-medium">Store</span>
+          </Link>
+
+          <Link
+            activeProps={{
+              className:
+                "flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2",
+            }}
+            className="mb-2 flex items-center gap-3 rounded-lg p-3 transition-colors hover:bg-gray-800"
+            onClick={() => setIsOpen(false)}
+            to="/demo/i18n"
+          >
+            <Languages size={20} />
+            <span className="font-medium">I18n example</span>
+          </Link>
+
+          {/* Demo Links End */}
+        </nav>
+
+        <div className="flex flex-col gap-2 border-gray-700 border-t bg-gray-800 p-4">
+          <ParaglideLocaleSwitcher />
+        </div>
+      </aside>
+    </>
+  );
+}
