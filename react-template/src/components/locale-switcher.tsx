@@ -19,3 +19,18 @@ export default function ParaglideLocaleSwitcher() {
         {locales.map((locale: Locale) => (
           <button
             className={
+              locale === currentLocale
+                ? "locale-switcher__button locale-switcher__button--active"
+                : "locale-switcher__button"
+            }
+            key={locale}
+            onClick={() => setLocale(locale)}
+            type="button"
+          >
+            {locale.toUpperCase()}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
