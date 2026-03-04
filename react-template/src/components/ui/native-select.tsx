@@ -24,3 +24,30 @@ function NativeSelect({
         )}
         {...props}
       />
+      <ChevronDownIcon
+        className="text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+        aria-hidden="true"
+        data-slot="native-select-icon"
+      />
+    </div>
+  )
+}
+
+function NativeSelectOption({ ...props }: React.ComponentProps<"option">) {
+  return <option data-slot="native-select-option" {...props} />
+}
+
+function NativeSelectOptGroup({
+  className,
+  ...props
+}: React.ComponentProps<"optgroup">) {
+  return (
+    <optgroup
+      data-slot="native-select-optgroup"
+      className={cn(className)}
+      {...props}
+    />
+  )
+}
+
+export { NativeSelect, NativeSelectOptGroup, NativeSelectOption }
