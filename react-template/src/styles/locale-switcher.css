@@ -1,0 +1,32 @@
+.locale-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: inherit;
+}
+
+.locale-switcher__label {
+  opacity: 0.85;
+}
+
+.locale-switcher__controls {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.locale-switcher__button {
+  cursor: pointer;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: transparent;
+  color: inherit;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.locale-switcher__button--active {
+  background: #0f172a;
+  color: #f8fafc;
+  font-weight: 700;
+}
