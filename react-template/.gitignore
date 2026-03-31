@@ -1,0 +1,46 @@
+# Git ignore rules
+# Reference: https://git-scm.com/docs/gitignore
+# - Keep this file organized by category
+# - Prefer project-level ignores over global ignores
+# - Do not add source or config files here unless generated
+
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+.output
+analysis
+
+# Env files
+.env
+.env.*
+.env.local
+.env.*.local
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caches
+coverage
+.cache
+.turbo
+.vite
+.nitro
+.tanstack
+.parcel-cache
+.eslintcache
+.stylelintcache
+
+# OS / editor
+.DS_Store
+
+# Misc
+count.txt
+.wrangler

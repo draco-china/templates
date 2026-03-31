@@ -1,0 +1,14 @@
+pre-commit:
+  jobs:
+    - run: bun x lint-staged
+      stage_fixed: true
+
+pre-push:
+  jobs:
+    - run: bun run check
+    - run: bun run tsc
+    - run: bun run test
+
+commit-msg:
+  jobs:
+    - run: bun x commitlint --edit "$1"
