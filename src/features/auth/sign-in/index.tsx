@@ -1,0 +1,58 @@
+import { Link, useSearch } from "@tanstack/react-router";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "#/components/ui/card";
+import { AuthLayout } from "../auth-layout";
+import { UserAuthForm } from "./components/user-auth-form";
+
+export function SignIn() {
+  const { redirect } = useSearch({ from: "/(auth)/sign-in" });
+
+  return (
+    <AuthLayout>
+      <Card className="max-w-sm gap-4">
+        <CardHeader>
+          <CardTitle className="text-lg tracking-tight">Sign in</CardTitle>
+          <CardDescription>
+            Enter your email and password below to log into{" "}
+            <br className="max-sm:hidden" /> your account. Don't have an
+            account?{" "}
+            <Link
+              className="text-nowrap underline underline-offset-4 hover:text-primary"
+              to="/sign-up"
+            >
+              Sign Up
+            </Link>
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <UserAuthForm redirectTo={redirect} />
+        </CardContent>
+        <CardFooter>
+          <p className="px-8 text-center text-muted-foreground text-sm">
+            By clicking sign in, you agree to our{" "}
+            <a
+              className="underline underline-offset-4 hover:text-primary"
+              href="/terms"
+            >
+              Terms of Service
+            </a>{" "}
+            and{" "}
+            <a
+              className="underline underline-offset-4 hover:text-primary"
+              href="/privacy"
+            >
+              Privacy Policy
+            </a>
+            .
+          </p>
+        </CardFooter>
+      </Card>
+    </AuthLayout>
+  );
+}

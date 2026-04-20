@@ -1,0 +1,38 @@
+import { useLocation, useNavigate } from "@tanstack/react-router";
+import { ConfirmDialog } from "#/components/base/confirm-dialog";
+import { useAuthStore } from "#/stores/auth-store";
+
+interface SignOutDialogProps {
+  onOpenChange: (open: boolean) => void;
+  open: boolean;
+}
+
+export function SignOutDialog({ open, onOpenChange }: SignOutDialogProps) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { auth } = useAuthStore();
+
+  const handleSignOut = () => {
+    auth.reset();
+    // Preserve current location for redirect after sign-in
+    const currentPath = location.href;
+    navigate({
+      to: "/sign-in",
+      search: { redirect: currentPath },
+      replace: true,
+    });
+  };
+
+  return (
+    <ConfirmDialog
+      className="sm:max-w-sm"
+      confirmText="Sign out"
+      desc="Are you sure you want to sign out? You will need to sign in again to access your account."
+      destructive
+      handleConfirm={handleSignOut}
+      onOpenChange={onOpenChange}
+      open={open}
+      title="Sign out"
+    />
+  );
+}
