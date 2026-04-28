@@ -1,0 +1,73 @@
+import type { Column } from "@tanstack/react-table";
+import { ArrowDown, ArrowUp, ChevronsUpDown, EyeOff } from "lucide-react";
+import { Button } from "#/components/ui/button";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuSeparator,
+	DropdownMenuTrigger,
+} from "#/components/ui/dropdown-menu";
+import { cn } from "#/lib/utils";
+import { m } from "#/paraglide/messages";
+
+type DataTableColumnHeaderProps<TData, TValue> =
+	React.HTMLAttributes<HTMLDivElement> & {
+		column: Column<TData, TValue>;
+		title: string;
+	};
+
+export function DataTableColumnHeader<TData, TValue>({
+	column,
+	title,
+	className,
+}: DataTableColumnHeaderProps<TData, TValue>) {
+	if (!column.getCanSort()) {
+		return <div className={cn(className)}>{title}</div>;
+	}
+
+	return (
+		<div className={cn("flex items-center space-x-2", className)}>
+			<DropdownMenu>
+				<DropdownMenuTrigger asChild>
+					<Button
+						className="h-8 data-[state=open]:bg-accent"
+						size="sm"
+						variant="ghost"
+					>
+						<span>{title}</span>
+						{(() => {
+							const sorted = column.getIsSorted();
+							if (sorted === "desc") {
+								return <ArrowDown className="ms-2 h-4 w-4" />;
+							}
+							if (sorted === "asc") {
+								return <ArrowUp className="ms-2 h-4 w-4" />;
+							}
+							return <ChevronsUpDown className="ms-2 h-4 w-4" />;
+						})()}
+					</Button>
+				</DropdownMenuTrigger>
+				<DropdownMenuContent align="start">
+					<DropdownMenuItem onClick={() => column.toggleSorting(false)}>
+						<ArrowUp className="size-3.5 text-muted-foreground/70" />
+						{m.table_asc()}
+					</DropdownMenuItem>
+					<DropdownMenuItem onClick={() => column.toggleSorting(true)}>
+						<ArrowDown className="size-3.5 text-muted-foreground/70" />
+						{m.table_desc()}
+					</DropdownMenuItem>
+					{column.getCanHide() && (
+						<>
+							<DropdownMenuSeparator />
+							<DropdownMenuItem onClick={() => column.toggleVisibility(false)}>
+								<EyeOff className="size-3.5 text-muted-foreground/70" />
+								{m.table_hide()}
+							</DropdownMenuItem>
+						</>
+					)}
+				</DropdownMenuContent>
+			</DropdownMenu>
+		</div>
+	);
+}
