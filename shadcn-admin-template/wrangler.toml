@@ -1,0 +1,9 @@
+name = "shadcn-admin-template"
+compatibility_date = "2026-04-14"
+
+[build]
+command = "bun run build"
+
+[assets]
+directory = "dist"
+not_found_handling = "single-page-application"
