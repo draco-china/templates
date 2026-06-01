@@ -5,3 +5,10 @@ export const staticPlugins: PluginOption[] = [
 	tanstackStart({
 		spa: {
 			enabled: true,
+			prerender: {
+				outputPath: "/index.html",
+				crawlLinks: true,
+			},
+		},
+	}),
+];
