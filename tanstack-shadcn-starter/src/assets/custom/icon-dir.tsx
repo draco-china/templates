@@ -54,3 +54,58 @@ export function IconDir({ dir, className, ...props }: IconDirProps) {
         />
         <path d="M11.85 8.79L16.91 8.79" fill="none" opacity={0.6} />
       </g>
+      <path
+        d="M29.41 7.4L34.67 7.4"
+        fill="none"
+        opacity={0.62}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth="3px"
+      />
+      <rect
+        height={2.73}
+        opacity={0.44}
+        rx={0.64}
+        ry={0.64}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        width={26.03}
+        x={28.76}
+        y={11.21}
+      />
+      <rect
+        height={13.48}
+        opacity={0.3}
+        rx={0.64}
+        ry={0.64}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        width={44.25}
+        x={28.76}
+        y={17.01}
+      />
+      <rect
+        height={4.67}
+        opacity={0.21}
+        rx={0.64}
+        ry={0.64}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        width={44.25}
+        x={28.76}
+        y={33.57}
+      />
+      <rect
+        height={4.67}
+        opacity={0.3}
+        rx={0.64}
+        ry={0.64}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        width={36.21}
+        x={28.76}
+        y={41.32}
+      />
+    </svg>
+  );
+}
