@@ -40,3 +40,44 @@ export function IconSidebarFloating(props: SVGProps<SVGSVGElement>) {
           strokeWidth="2px"
         />
         <circle cx={11.76} cy={10.88} fill="#fff" opacity={0.8} r={2.54} />
+        <path
+          d="M16.31 9.62L22.04 9.62"
+          fill="none"
+          opacity={0.8}
+          strokeWidth="2px"
+        />
+        <path d="M16.1 12.27L21.16 12.27" fill="none" opacity={0.6} />
+      </g>
+      <path
+        d="M30.59 9.62L35.85 9.62"
+        fill="none"
+        opacity={0.62}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth="3px"
+      />
+      <rect
+        height={2.73}
+        opacity={0.44}
+        rx={0.64}
+        ry={0.64}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        width={26.03}
+        x={29.94}
+        y={13.42}
+      />
+      <rect
+        height={25.87}
+        opacity={0.3}
+        rx={2}
+        ry={2}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        width={43.11}
+        x={29.94}
+        y={19.28}
+      />
+    </svg>
+  );
+}
