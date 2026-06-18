@@ -28,3 +28,32 @@ export function IconSidebarInset(props: SVGProps<SVGSVGElement>) {
         strokeMiterlimit={10}
         strokeWidth="2px"
       />
+      <path
+        d="M5.08 24.25L15.6 24.25"
+        fill="none"
+        opacity={0.48}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth="2px"
+      />
+      <path
+        d="M5.08 20.54L14.46 20.54"
+        fill="none"
+        opacity={0.55}
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth="2px"
+      />
+      <g strokeLinecap="round" strokeMiterlimit={10}>
+        <circle cx={7.04} cy={9.57} opacity={0.8} r={2.54} />
+        <path
+          d="M11.59 8.3L17.31 8.3"
+          fill="none"
+          opacity={0.8}
+          strokeWidth="2px"
+        />
+        <path d="M11.38 10.95L16.44 10.95" fill="none" opacity={0.6} />
+      </g>
+    </svg>
+  );
+}
