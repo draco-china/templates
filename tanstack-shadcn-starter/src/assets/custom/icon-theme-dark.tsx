@@ -39,3 +39,43 @@ export function IconThemeDark(props: SVGProps<SVGSVGElement>) {
           rx={0.33}
           ry={0.33}
           width={2.75}
+          x={29.64}
+          y={16.57}
+        />
+        <rect
+          height={8.7}
+          opacity={0.53}
+          rx={0.33}
+          ry={0.33}
+          width={2.75}
+          x={37.16}
+          y={14.44}
+        />
+        <rect
+          height={12.4}
+          opacity={0.53}
+          rx={0.33}
+          ry={0.33}
+          width={2.75}
+          x={41.19}
+          y={10.75}
+        />
+      </g>
+      <circle cx={62.74} cy={16.32} fill="#2f5491" opacity={0.5} r={8} />
+      <path
+        d="M62.74 16.32l4.1-6.87c1.19.71 2.18 1.72 2.86 2.92s1.04 2.57 1.04 3.95h-8z"
+        fill="#2f5491"
+        opacity={0.74}
+      />
+      <rect
+        fill="#17273f"
+        height={18.62}
+        rx={1.69}
+        ry={1.69}
+        width={41.62}
+        x={29.64}
+        y={27.75}
+      />
+    </svg>
+  );
+}
