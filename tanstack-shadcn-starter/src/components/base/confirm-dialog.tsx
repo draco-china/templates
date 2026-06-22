@@ -35,3 +35,38 @@ export function ConfirmDialog(props: ConfirmDialogProps) {
     className,
     confirmText,
     cancelBtnText,
+    destructive,
+    isLoading,
+    disabled = false,
+    form,
+    handleConfirm,
+    ...actions
+  } = props;
+  return (
+    <AlertDialog {...actions}>
+      <AlertDialogContent className={cn(className && className)}>
+        <AlertDialogHeader className="text-start">
+          <AlertDialogTitle>{title}</AlertDialogTitle>
+          <AlertDialogDescription asChild>
+            <div>{desc}</div>
+          </AlertDialogDescription>
+        </AlertDialogHeader>
+        {children}
+        <AlertDialogFooter>
+          <AlertDialogCancel disabled={isLoading}>
+            {cancelBtnText ?? "Cancel"}
+          </AlertDialogCancel>
+          <Button
+            disabled={disabled || isLoading}
+            form={form}
+            onClick={handleConfirm}
+            type={form ? "submit" : "button"}
+            variant={destructive ? "destructive" : "default"}
+          >
+            {confirmText ?? "Continue"}
+          </Button>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+    </AlertDialog>
+  );
+}
