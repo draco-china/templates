@@ -119,3 +119,100 @@ export function DataTableBulkActions<TData>({
         break;
       }
       default:
+        break;
+    }
+  };
+
+  if (selectedCount === 0) {
+    return null;
+  }
+
+  return (
+    <>
+      {/* Live region for screen reader announcements */}
+      <div
+        aria-atomic="true"
+        aria-live="polite"
+        className="sr-only"
+        role="status"
+      >
+        {announcement}
+      </div>
+
+      {/* biome-ignore lint/a11y/noNoninteractiveElementInteractions: role=toolbar is a composite interactive widget per ARIA spec */}
+      <div
+        aria-describedby="bulk-actions-description"
+        aria-label={`Bulk actions for ${selectedCount} selected ${entityName}${selectedCount > 1 ? "s" : ""}`}
+        className={cn(
+          "fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-xl",
+          "transition-all delay-100 duration-300 ease-out hover:scale-105",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+        )}
+        onKeyDown={handleKeyDown}
+        ref={toolbarRef}
+        role="toolbar"
+        tabIndex={-1}
+      >
+        <div
+          className={cn(
+            "p-2 shadow-xl",
+            "rounded-xl border",
+            "bg-background/95 backdrop-blur-lg supports-backdrop-filter:bg-background/60",
+            "flex items-center gap-x-2"
+          )}
+        >
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                aria-label="Clear selection"
+                className="size-6 rounded-full"
+                onClick={handleClearSelection}
+                size="icon"
+                title="Clear selection (Escape)"
+                variant="outline"
+              >
+                <X />
+                <span className="sr-only">Clear selection</span>
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Clear selection (Escape)</p>
+            </TooltipContent>
+          </Tooltip>
+
+          <Separator
+            aria-hidden="true"
+            className="h-5"
+            orientation="vertical"
+          />
+
+          <div
+            className="flex items-center gap-x-1 text-sm"
+            id="bulk-actions-description"
+          >
+            <Badge
+              aria-label={`${selectedCount} selected`}
+              className="min-w-8 rounded-lg"
+              variant="default"
+            >
+              {selectedCount}
+            </Badge>{" "}
+            <span className="hidden sm:inline">
+              {entityName}
+              {selectedCount > 1 ? "s" : ""}
+            </span>{" "}
+            selected
+          </div>
+
+          <Separator
+            aria-hidden="true"
+            className="h-5"
+            orientation="vertical"
+          />
+
+          {children}
+        </div>
+      </div>
+    </>
+  );
+}
