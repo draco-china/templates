@@ -72,3 +72,75 @@ export function DataTableFacetedFilter<TData, TValue>({
                       >
                         {option.label}
                       </Badge>
+                    ))
+                )}
+              </div>
+            </>
+          )}
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent align="start" className="w-[200px] p-0">
+        <Command>
+          <CommandInput placeholder={title} />
+          <CommandList>
+            <CommandEmpty>No results found.</CommandEmpty>
+            <CommandGroup>
+              {options.map((option) => {
+                const isSelected = selectedValues.has(option.value);
+                return (
+                  <CommandItem
+                    key={option.value}
+                    onSelect={() => {
+                      if (isSelected) {
+                        selectedValues.delete(option.value);
+                      } else {
+                        selectedValues.add(option.value);
+                      }
+                      const filterValues = Array.from(selectedValues);
+                      column?.setFilterValue(
+                        filterValues.length ? filterValues : undefined
+                      );
+                    }}
+                  >
+                    <div
+                      className={cn(
+                        "flex size-4 items-center justify-center rounded-sm border border-primary",
+                        isSelected
+                          ? "bg-primary text-primary-foreground"
+                          : "opacity-50 [&_svg]:invisible"
+                      )}
+                    >
+                      <Check className={cn("h-4 w-4 text-background")} />
+                    </div>
+                    {option.icon && (
+                      <option.icon className="size-4 text-muted-foreground" />
+                    )}
+                    <span>{option.label}</span>
+                    {facets?.get(option.value) && (
+                      <span className="ms-auto flex h-4 w-4 items-center justify-center font-mono text-xs">
+                        {facets.get(option.value)}
+                      </span>
+                    )}
+                  </CommandItem>
+                );
+              })}
+            </CommandGroup>
+            {selectedValues.size > 0 && (
+              <>
+                <CommandSeparator />
+                <CommandGroup>
+                  <CommandItem
+                    className="justify-center text-center"
+                    onSelect={() => column?.setFilterValue(undefined)}
+                  >
+                    Clear filters
+                  </CommandItem>
+                </CommandGroup>
+              </>
+            )}
+          </CommandList>
+        </Command>
+      </PopoverContent>
+    </Popover>
+  );
+}
