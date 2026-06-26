@@ -74,3 +74,70 @@ export function DataTable<TData>({
                   (sticky === "left" && i === lastLeftIdx) ||
                   (sticky === "right" && i === firstRightIdx);
                 return (
+                  <TableHead
+                    className={cn(
+                      CELL_STATE_CLASS,
+                      sticky && STICKY_BASE_CLASS[sticky],
+                      sticky && isEdge && STICKY_SHADOW_CLASS[sticky],
+                      thClassName
+                    )}
+                    colSpan={header.colSpan}
+                    key={header.id}
+                  >
+                    {header.isPlaceholder
+                      ? null
+                      : flexRender(
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
+                  </TableHead>
+                );
+              })}
+            </TableRow>
+          ))}
+        </TableHeader>
+        <TableBody>
+          {table.getRowModel().rows?.length ? (
+            table.getRowModel().rows.map((row) => (
+              <TableRow
+                className={ROW_GROUP_CLASS}
+                data-state={row.getIsSelected() && "selected"}
+                key={row.id}
+              >
+                {row.getVisibleCells().map((cell, i) => {
+                  const { sticky, tdClassName } =
+                    cell.column.columnDef.meta ?? {};
+                  const isEdge =
+                    (sticky === "left" && i === lastLeftIdx) ||
+                    (sticky === "right" && i === firstRightIdx);
+                  return (
+                    <TableCell
+                      className={cn(
+                        CELL_STATE_CLASS,
+                        sticky && STICKY_BASE_CLASS[sticky],
+                        sticky && isEdge && STICKY_SHADOW_CLASS[sticky],
+                        tdClassName
+                      )}
+                      key={cell.id}
+                    >
+                      {flexRender(
+                        cell.column.columnDef.cell,
+                        cell.getContext()
+                      )}
+                    </TableCell>
+                  );
+                })}
+              </TableRow>
+            ))
+          ) : (
+            <TableRow>
+              <TableCell className="h-24 text-center" colSpan={columns.length}>
+                No results.
+              </TableCell>
+            </TableRow>
+          )}
+        </TableBody>
+      </BaseTable>
+    </div>
+  );
+}
