@@ -43,3 +43,43 @@ export function LongText({
   }
 
   return (
+    <>
+      <div className="hidden sm:block">
+        <TooltipProvider delayDuration={0}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div className={cn("truncate", className)} ref={refCallback}>
+                {children}
+              </div>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className={contentClassName}>{children}</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </div>
+      <div className="sm:hidden">
+        <Popover>
+          <PopoverTrigger asChild>
+            <div className={cn("truncate", className)} ref={refCallback}>
+              {children}
+            </div>
+          </PopoverTrigger>
+          <PopoverContent className={cn("w-fit", contentClassName)}>
+            <p>{children}</p>
+          </PopoverContent>
+        </Popover>
+      </div>
+    </>
+  );
+}
+
+const checkOverflow = (textContainer: HTMLDivElement | null) => {
+  if (textContainer) {
+    return (
+      textContainer.offsetHeight < textContainer.scrollHeight ||
+      textContainer.offsetWidth < textContainer.scrollWidth
+    );
+  }
+  return false;
+};
