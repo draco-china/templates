@@ -11,3 +11,15 @@ export function NavigationProgress() {
       ref.current?.continuousStart();
     } else {
       ref.current?.complete();
+    }
+  }, [state.status]);
+
+  return (
+    <LoadingBar
+      color="var(--muted-foreground)"
+      height={2}
+      ref={ref}
+      shadow={true}
+    />
+  );
+}
