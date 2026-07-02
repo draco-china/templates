@@ -45,3 +45,48 @@ export function CommandMenu() {
                         runCommand(() => navigate({ to: navItem.url }));
                       }}
                       value={navItem.title}
+                    >
+                      <div className="flex size-4 items-center justify-center">
+                        <ArrowRight className="size-2 text-muted-foreground/80" />
+                      </div>
+                      {navItem.title}
+                    </CommandItem>
+                  );
+                }
+
+                return navItem.items?.map((subItem, i) => (
+                  <CommandItem
+                    key={`${navItem.title}-${subItem.url}-${i}`}
+                    onSelect={() => {
+                      runCommand(() => navigate({ to: subItem.url }));
+                    }}
+                    value={`${navItem.title}-${subItem.url}`}
+                  >
+                    <div className="flex size-4 items-center justify-center">
+                      <ArrowRight className="size-2 text-muted-foreground/80" />
+                    </div>
+                    {navItem.title} <ChevronRight /> {subItem.title}
+                  </CommandItem>
+                ));
+              })}
+            </CommandGroup>
+          ))}
+          <CommandSeparator />
+          <CommandGroup heading="Theme">
+            <CommandItem onSelect={() => runCommand(() => setTheme("light"))}>
+              <Sun /> <span>Light</span>
+            </CommandItem>
+            <CommandItem onSelect={() => runCommand(() => setTheme("dark"))}>
+              <Moon className="scale-90" />
+              <span>Dark</span>
+            </CommandItem>
+            <CommandItem onSelect={() => runCommand(() => setTheme("system"))}>
+              <Laptop />
+              <span>System</span>
+            </CommandItem>
+          </CommandGroup>
+        </ScrollArea>
+      </CommandList>
+    </CommandDialog>
+  );
+}
