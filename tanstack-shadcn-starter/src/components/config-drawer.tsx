@@ -180,3 +180,183 @@ function ThemeConfig() {
         onReset={() => setTheme(defaultTheme)}
         resetAriaLabel="Reset theme preference to default"
         showReset={theme !== defaultTheme}
+        title="Theme"
+      />
+      <Radio
+        aria-describedby="theme-description"
+        aria-label="Select theme preference"
+        className="grid w-full max-w-md grid-cols-3 gap-4"
+        onValueChange={setTheme}
+        value={theme}
+      >
+        {[
+          {
+            value: "system",
+            label: "System",
+            icon: IconThemeSystem,
+          },
+          {
+            value: "light",
+            label: "Light",
+            icon: IconThemeLight,
+          },
+          {
+            value: "dark",
+            label: "Dark",
+            icon: IconThemeDark,
+          },
+        ].map((item) => (
+          <RadioGroupItem isTheme item={item} key={item.value} />
+        ))}
+      </Radio>
+      <div className="sr-only" id="theme-description">
+        Choose between system preference, light mode, or dark mode
+      </div>
+    </div>
+  );
+}
+
+function SidebarConfig() {
+  const { defaultVariant, variant, setVariant } = useLayout();
+  return (
+    <div className="max-md:hidden">
+      <SectionTitle
+        onReset={() => setVariant(defaultVariant)}
+        resetAriaLabel="Reset sidebar style to default"
+        showReset={defaultVariant !== variant}
+        title="Sidebar"
+      />
+      <Radio
+        aria-describedby="sidebar-description"
+        aria-label="Select sidebar style"
+        className="grid w-full max-w-md grid-cols-3 gap-4"
+        onValueChange={setVariant}
+        value={variant}
+      >
+        {[
+          {
+            value: "inset",
+            label: "Inset",
+            icon: IconSidebarInset,
+          },
+          {
+            value: "floating",
+            label: "Floating",
+            icon: IconSidebarFloating,
+          },
+          {
+            value: "sidebar",
+            label: "Sidebar",
+            icon: IconSidebarSidebar,
+          },
+        ].map((item) => (
+          <RadioGroupItem item={item} key={item.value} />
+        ))}
+      </Radio>
+      <div className="sr-only" id="sidebar-description">
+        Choose between inset, floating, or standard sidebar layout
+      </div>
+    </div>
+  );
+}
+
+function LayoutConfig() {
+  const { open, setOpen } = useSidebar();
+  const { defaultCollapsible, collapsible, setCollapsible } = useLayout();
+
+  const radioState = open ? "default" : collapsible;
+
+  return (
+    <div className="max-md:hidden">
+      <SectionTitle
+        onReset={() => {
+          setOpen(true);
+          setCollapsible(defaultCollapsible);
+        }}
+        resetAriaLabel="Reset layout options to default"
+        showReset={radioState !== "default"}
+        title="Layout"
+      />
+      <Radio
+        aria-describedby="layout-description"
+        aria-label="Select layout style"
+        className="grid w-full max-w-md grid-cols-3 gap-4"
+        onValueChange={(v) => {
+          if (v === "default") {
+            setOpen(true);
+            return;
+          }
+          setOpen(false);
+          setCollapsible(v as Collapsible);
+        }}
+        value={radioState}
+      >
+        {[
+          {
+            value: "default",
+            label: "Default",
+            icon: IconLayoutDefault,
+          },
+          {
+            value: "icon",
+            label: "Compact",
+            icon: IconLayoutCompact,
+          },
+          {
+            value: "offcanvas",
+            label: "Full layout",
+            icon: IconLayoutFull,
+          },
+        ].map((item) => (
+          <RadioGroupItem item={item} key={item.value} />
+        ))}
+      </Radio>
+      <div className="sr-only" id="layout-description">
+        Choose between default expanded, compact icon-only, or full layout mode
+      </div>
+    </div>
+  );
+}
+
+function DirConfig() {
+  const { defaultDir, dir, setDir } = useDirection();
+  return (
+    <div>
+      <SectionTitle
+        onReset={() => setDir(defaultDir)}
+        resetAriaLabel="Reset text direction to default"
+        showReset={defaultDir !== dir}
+        title="Direction"
+      />
+      <Radio
+        aria-describedby="direction-description"
+        aria-label="Select site direction"
+        className="grid w-full max-w-md grid-cols-3 gap-4"
+        onValueChange={setDir}
+        value={dir}
+      >
+        {[
+          {
+            value: "ltr",
+            label: "Left to Right",
+            icon: (props: SVGProps<SVGSVGElement>) => (
+              <IconDir dir="ltr" {...props} />
+            ),
+          },
+          {
+            value: "rtl",
+            label: "Right to Left",
+            icon: (props: SVGProps<SVGSVGElement>) => (
+              <IconDir dir="rtl" {...props} />
+            ),
+          },
+        ].map((item) => (
+          <RadioGroupItem item={item} key={item.value} />
+        ))}
+      </Radio>
+      <div className="sr-only" id="direction-description">
+        Choose between left-to-right or right-to-left site direction
+      </div>
+    </div>
+  );
+}
