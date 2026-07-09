@@ -19,3 +19,26 @@ interface BaseNavItem {
 }
 
 type NavLink = BaseNavItem & {
+  url: LinkProps["to"] | (string & {});
+  items?: never;
+};
+
+type NavCollapsible = BaseNavItem & {
+  items: (BaseNavItem & { url: LinkProps["to"] | (string & {}) })[];
+  url?: never;
+};
+
+type NavItem = NavCollapsible | NavLink;
+
+interface NavGroup {
+  items: NavItem[];
+  title: string;
+}
+
+interface SidebarData {
+  navGroups: NavGroup[];
+  teams: Team[];
+  user: User;
+}
+
+export type { NavCollapsible, NavGroup, NavItem, NavLink, SidebarData };
