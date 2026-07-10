@@ -18,3 +18,21 @@ export function SignOutDialog({ open, onOpenChange }: SignOutDialogProps) {
     const currentPath = location.href;
     navigate({
       to: "/sign-in",
+      search: { redirect: currentPath },
+      replace: true,
+    });
+  };
+
+  return (
+    <ConfirmDialog
+      className="sm:max-w-sm"
+      confirmText="Sign out"
+      desc="Are you sure you want to sign out? You will need to sign in again to access your account."
+      destructive
+      handleConfirm={handleSignOut}
+      onOpenChange={onOpenChange}
+      open={open}
+      title="Sign out"
+    />
+  );
+}
